@@ -27,3 +27,9 @@
 - No PED, steroid, or hormone advice ever
 - Supplements only where evidence clearly supports it and fits user context and budget
 - Honest about uncertainty — never fake confidence
+## Code quality standards
+- Readability first — code should be self explanatory, not clever
+- Every function does one thing
+- Reusability — if something is used twice, abstract it
+- Think about scale when designing data structures and APIs — even if we don't build for scale now, don't make decisions that make scaling painful later
+- No premature optimisation — but no decisions that actively prevent future optimisation
