@@ -1,0 +1,115 @@
+{
+  "id": "hypertrophy-mechanical-tension-001",
+  "domain": "hypertrophy",
+  "subdomain": "mechanisms",
+  "tags": ["hypertrophy", "mechanical-tension", "mechanotransduction", "resistance-training", "mTORC1"],
+  
+  "claim": "Mechanical tension is the primary driver of resistance training-induced muscle hypertrophy, acting through mTORC1 and mechanotransduction pathways",
+  
+  "grade": "moderate",
+  "source_type": "research",
+  
+  "applies_to": {
+    "training_age": "any",
+    "natural_status": "any",
+    "sex": "any",
+    "goal": "hypertrophy"
+  },
+
+  "biological_plausibility": {
+    "passes": true,
+    "mechanism": "Mechanical load on muscle fibers activates integrin receptors, ion channels, and GPR56 — triggering mTORC1, which upregulates protein synthesis and ribosome biogenesis. Well established cellular pathway."
+  },
+
+  "sources": [
+    {
+      "citation": "Physiological Reviews, 2024",
+      "url": "https://journals.physiology.org/doi/full/10.1152/physrev.00039.2022",
+      "finding": "Comprehensive review establishing mTORC1 as central regulator of hypertrophy via mechanical load, covering protein synthesis, ribosome biogenesis, and satellite cell accretion",
+      "population": "General — review of mechanistic literature, mixed human and animal studies",
+      "effect_size": "Not applicable — mechanistic review",
+      "limitations": "Extrapolation from animal models to humans in some mechanistic claims",
+      "coi_check": "No industry funding declared",
+      "practical_translation": {
+        "text": "Study population was mixed human and animal mechanistic research. Effect observed was consistent mTORC1 activation in response to mechanical load. This translates to: progressively loaded resistance training reliably activates the primary hypertrophic signalling pathway for any training age or population. Confidence in this translation: high — because the mTORC1 pathway is well replicated across species and conditions.",
+        "confidence": "high",
+        "confidence_basis": "Multiple independent replications across species, consistent mechanistic findings"
+      }
+    },
+    {
+      "citation": "ScienceDirect, 2025",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2095254625000869",
+      "finding": "Critical re-examination of established vs overstated claims — supports mechanical tension as primary but flags metabolic stress as independent sufficient signal",
+      "population": "Review — human resistance training studies",
+      "effect_size": "Not applicable — narrative review",
+      "limitations": "Narrative not systematic — author interpretation involved",
+      "coi_check": "Not declared — flagged for verification",
+      "practical_translation": {
+        "text": "Study population was human resistance training literature broadly. Effect observed was that mechanical tension drives hypertrophy but is not the only pathway. This translates to: high load training is the most reliable hypertrophy stimulus but lower load training taken to failure also works via metabolic stress — neither is strictly superior for all users. Confidence in this translation: moderate — because the relative contribution of each pathway in real training conditions is still being quantified.",
+        "confidence": "moderate",
+        "confidence_basis": "Recent 2025 re-examination but narrative review methodology limits certainty"
+      }
+    },
+    {
+      "citation": "Sports Medicine, 2023",
+      "url": "https://link.springer.com/article/10.1007/s40279-023-01898-x",
+      "finding": "Training at long muscle lengths produces greater hypertrophy than training at short muscle lengths",
+      "population": "Resistance trained individuals, mixed sex",
+      "effect_size": "Moderate — directionally consistent but magnitude varies by muscle group",
+      "limitations": "Effect size and generalisability still being established across all muscle groups",
+      "coi_check": "No industry funding declared",
+      "practical_translation": {
+        "text": "Study population was resistance trained mixed sex individuals. Effect observed was greater hypertrophy at lengthened positions. This translates to: prioritise exercises that load muscles in a stretched position — RDLs over leg curls, incline curls over preacher curls, deficit pushups over standard. Confidence in this translation: moderate — because the effect is directionally consistent but muscle group specificity is not fully mapped.",
+        "confidence": "moderate",
+        "confidence_basis": "Multiple studies directionally consistent but effect size varies, not all muscle groups studied"
+      }
+    }
+  ],
+
+  "key_claims": [
+    {
+      "claim": "Mechanical tension is the primary driver of resistance training-induced hypertrophy",
+      "confidence": 0.88
+    },
+    {
+      "claim": "mTORC1 is the central regulator of protein synthesis and ribosomal biogenesis in response to mechanical load",
+      "confidence": 0.90
+    },
+    {
+      "claim": "Training at long muscle lengths produces greater hypertrophy than short muscle lengths",
+      "confidence": 0.72,
+      "notes": "Emerging — directionally consistent, generalisability still being established"
+    },
+    {
+      "claim": "Metabolic stress is a separate sufficient anabolic signal independent of mechanical tension",
+      "confidence": 0.78
+    }
+  ],
+
+  "mechanotransduction_pathways": [
+    "mTORC1 signaling",
+    "Ribosome biogenesis",
+    "Satellite cell accretion and myonuclear addition",
+    "MAPK pathway",
+    "Rho GTPase via GPR56, integrin, STARS",
+    "Mechanically activated ion channels"
+  ],
+
+  "eqs": 0.79,
+  "eqs_basis": "GRADE moderate — strong mechanistic evidence, some claims extrapolated from animal models. Population match high for any trained natural lifter. Reduced from high due to metabolic stress as independent pathway complicating the primary driver claim.",
+
+  "conflicting_evidence": "ScienceDirect 2025 paper explicitly states high mechanical tension is not mandatory — metabolic stress is a separate sufficient anabolic signal. This means the claim that mechanical tension is the PRIMARY driver is contested, not that it is a driver at all.",
+
+  "what_would_change_this": "A well-powered RCT directly equating mechanical tension and metabolic stress conditions showing equivalent hypertrophy outcomes would reduce confidence in the primary framing. Evidence that mTORC1 activation is not necessary for human hypertrophy would fundamentally challenge this entry.",
+
+  "open_question": true,
+  "open_question_note": "Whether mechanical tension or metabolic stress is the dominant pathway in real training conditions — and whether the distinction matters practically — is actively contested in 2025 literature.",
+
+  "practical_summary": "Load muscles progressively and take sets close to failure. Prioritise exercises that load muscles at long lengths. The exact pathway — tension vs metabolic stress — matters less than the training quality and progressive overload applied.",
+
+  "added_by": "founder",
+  "date_added": "2026-04-12",
+  "last_reviewed": "2026-04-12",
+  "next_review": "2027-04-12",
+  "review_trigger": "Any meta-analysis on mechanical tension vs metabolic stress published in JSCR, Sports Medicine, or Physiological Reviews"
+}
