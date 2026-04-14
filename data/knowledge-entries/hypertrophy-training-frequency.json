@@ -1,0 +1,136 @@
+{
+  "id": "hypertrophy-training-frequency-001",
+  "domain": "hypertrophy",
+  "subdomain": "programming",
+  "tags": ["hypertrophy", "training-frequency", "muscle-group-frequency", "session-frequency", "resistance-training", "split-routine", "total-body-training"],
+
+  "claim": "Training muscle groups at higher frequency produces greater hypertrophy than lower frequency on a volume-equated basis. Training each muscle group at least twice per week is superior to once per week. Once-per-week training still produces robust hypertrophy and remains a viable strategy. Whether three times per week is superior to twice per week cannot be determined from current evidence. Training session frequency (total weekly sessions) does not affect hypertrophy when muscle group frequency and volume are equated.",
+
+  "grade": "low",
+  "source_type": "research",
+
+  "applies_to": {
+    "training_age": "any — but see population flag; trained-specific inference is very limited",
+    "natural_status": "not reported — not an exclusion criterion across included studies",
+    "sex": "any",
+    "goal": "hypertrophy"
+  },
+
+  "population_flag": "Critical limitation: the primary muscle-group-frequency meta-analysis (7 studies, 200 subjects) includes only 2 trained-population studies — McLester et al. 2000 (n=25, recreationally trained) and Schoenfeld et al. 2015 (n=19, resistance-trained) — against 5 untrained-population studies. Trained-specific inference for the frequency advantage is therefore weak and rests primarily on two small studies. The session frequency analysis (3 studies, 54 subjects) was insufficient for meta-analysis — no reliable estimates were produced. Additional flag: Schoenfeld et al. 2015 (ref [17]), the only trained-population study showing a statistically significant frequency advantage, was authored by the lead meta-analyst (BJS) — soft circular authorship concern noted.",
+
+  "biological_plausibility": {
+    "passes": true,
+    "mechanism": "Muscle protein synthesis (MPS) elevation following a resistance training bout in trained individuals lasts approximately 24-36 hours — shorter than in untrained individuals (~48 hours). Training a muscle group twice per week (approximately every 3-4 days) ensures re-stimulation within the anabolic window on each occasion, creating more total mTORC1 activation episodes per week than once-per-week training. Each training bout activates mTORC1 via integrin and GPR56 signalling, upregulating ribosome biogenesis and MPS. Greater frequency of mTORC1 activation with adequate inter-session recovery produces greater cumulative net protein accretion over time. The null finding for session frequency (no benefit from more sessions when muscle group frequency is equated) is mechanistically coherent: the hypertrophic stimulus is muscle-group-specific and driven by mechanical tension per muscle, not by total weekly session count."
+  },
+
+  "sources": [
+    {
+      "citation": "Schoenfeld BJ, Ogborn D, Krieger JW. Effects of Resistance Training Frequency on Measures of Muscle Hypertrophy: A Systematic Review and Meta-Analysis. Sports Medicine. 2016;46(11):1689-1697.",
+      "pmid": "27102172",
+      "doi": "10.1007/s40279-016-0543-8",
+      "url": "https://doi.org/10.1007/s40279-016-0543-8",
+      "study_design": "Systematic review and meta-analysis, PRISMA-compliant. Databases: PubMed, SPORTDiscus, CINAHL (all time points to June 2015). Independent dual-coding of studies by two investigators (BJS, DIO); 30% recoding reliability check (required agreement ≥0.90). Two separate meta-regressions: (1) muscle-group frequency with volume equated — binary predictor (higher vs lower); (2) session frequency with muscle-group frequency and volume equated — binary predictor. Robust variance meta-regression (robumeta in R) with small-sample adjustments (Tipton 2015). Categorical frequency analysis (1x vs 2x vs 3x) not feasible due to insufficient sample size.",
+      "n_studies": 10,
+      "n_treatment_groups": "Muscle-group frequency: 7 studies, 15 treatment groups, 200 subjects. Session frequency: 3 studies, 7 treatment groups, 54 subjects.",
+      "methodological_quality": "No formal GRADE or TESTEX quality assessment applied by authors. PRISMA-compliant search and reporting. Robust variance meta-regression is methodologically appropriate for dependent effect sizes from hierarchical data structures. Training status could not be included as a covariate due to small number of studies — a significant limitation. All 7 forest plot studies directionally favoured higher muscle-group frequency. Publication bias not formally assessed (Egger's test not reported). Volume equated in 5/7 main analysis studies; 2 studies did not equate volume (Carneiro, Lera Orsatti) — flagged. Only 2/10 total studies used site-specific imaging (single-site ultrasound); 5/10 used DXA; 2/10 circumference; 1/10 BIA; 1/10 skinfold — inherent limitations for hypertrophy inference.",
+      "finding": "Muscle-group frequency analysis (7 studies, volume-equated, binary higher vs lower): ES 0.49 ± 0.08 (95% CI 0.29-0.69) for higher frequency vs 0.30 ± 0.07 (95% CI 0.12-0.47) for lower frequency. Between-group difference: ES 0.19 ± 0.03 (95% CI 0.11-0.28), p=0.002. Percent change: 6.8 ± 0.7% (95% CI 4.9-8.6) vs 3.7 ± 0.5% (95% CI 2.2-5.1), difference 3.1 ± 0.58% (95% CI 1.6-4.6), p=0.003. Categorical (1x vs 2x vs 3x) analysis not feasible — insufficient data. Session frequency analysis (3 studies, muscle-group frequency and volume equated): meta-analysis not possible due to inadequate sample size; directional evidence does not support a session frequency hypertrophic advantage.",
+      "effect_sizes": {
+        "higher_muscle_group_frequency_es": "0.49 ± 0.08 (95% CI 0.29-0.69)",
+        "lower_muscle_group_frequency_es": "0.30 ± 0.07 (95% CI 0.12-0.47)",
+        "between_group_es_difference": "0.19 ± 0.03 (95% CI 0.11-0.28), p=0.002",
+        "higher_frequency_percent_change": "6.8 ± 0.7% (95% CI 4.9-8.6)",
+        "lower_frequency_percent_change": "3.7 ± 0.5% (95% CI 2.2-5.1)",
+        "percent_change_difference": "3.1 ± 0.58% (95% CI 1.6-4.6), p=0.003",
+        "cohen_classification": "Lower frequency: small effect. Higher frequency: borders medium effect."
+      },
+      "population": "Muscle-group frequency analysis (7 studies): predominantly untrained. Trained populations: McLester et al. 2000 (n=25, recreationally trained young men and women, 1x vs 3x, 12 weeks, skinfold and circumference measures) — non-significant trend favouring higher frequency (~8% vs ~1% lean mass); Schoenfeld et al. 2015 (n=19, resistance-trained young men, 1x split vs 3x total-body, 8 weeks, ultrasound) — significantly greater elbow flexor thickness and trend for vastus lateralis for 3x. Untrained populations: Benton (n=21, untrained middle-aged women, BodPod), Candow and Burke (n=29, untrained mixed, DXA), Carneiro (n=53, untrained elderly women, DXA, volume not equated), Gentil (n=30, untrained young men, ultrasound), Lera Orsatti (n=30, untrained elderly women, BIA, volume not equated). Session frequency analysis (3 studies): Arazi (untrained, circumference), Calder (untrained women, DXA), Ribeiro (elite bodybuilders, DXA). Age range: ~20-65 years across all studies. Both sexes represented. Natural status: not reported in any included study, not an exclusion criterion.",
+      "limitations": "1. Only 7 studies in the primary analysis — very small evidence base for a meta-analysis. 2. Predominantly untrained populations (5/7 in main analysis) — trained-specific inference is weak; the frequency advantage in trained individuals is supported only by McLester (non-significant trend) and Schoenfeld 2015 (significant in n=19 trained men). 3. Cannot separate 1x vs 2x vs 3x per muscle group categorically — binary predictor only. Training status could not be covariate-controlled. 4. Most hypertrophy measures are indirect: only 2/10 studies used single-site ultrasound imaging; the majority used DXA, circumference, or BIA, which have inherent limitations for detecting muscle-specific hypertrophy. 5. Two studies in main analysis (Carneiro, Lera Orsatti) did not equate volume between frequency conditions — confound in those studies. 6. Study durations: 4-20 weeks; most ≤12 weeks — insufficient for long-term adaptations in trained individuals. 7. Substantial heterogeneity in age, sex, training status, protocols, and measurement across studies — limits pooled inference. 8. Publication bias not formally assessed. 9. No study examined training a muscle group more than 3 times per week — upper boundary entirely unknown. 10. Schoenfeld et al. 2015 (ref [17]) is authored by the lead meta-analyst — soft circular authorship concern.",
+      "coi_check": "No external funding. All three authors declare no conflicts of interest. Soft flag: Schoenfeld is a prolific fitness industry author and practitioner (books, coaching). Krieger operates Weightology, LLC — a subscription-based research review service. Both have commercial interests broadly aligned with the fitness industry but not with a specific protocol, supplement, or device being validated here. Additional soft flag: the single most impactful trained-population study in the analysis (Schoenfeld et al. 2015, ref [17]) was authored by the lead meta-analyst — this does not disqualify the study but is a transparency flag. Bias risk: low-moderate. Does not disqualify entry.",
+      "practical_translation": {
+        "text": "Study population was predominantly untrained healthy adults across the main analysis, with two trained-population studies (McLester: recreationally trained; Schoenfeld 2015: resistance-trained). Effect observed was: training muscle groups at higher frequency produced meaningfully greater hypertrophy on a volume-equated basis (ES 0.49 vs 0.30, p=0.002; ~6.8% vs ~3.7% growth), consistent in directionality across all 7 individual studies. Training once per week produced a small-to-medium within-group effect (ES 0.30) — not ineffective but inferior when volume is held constant. Session frequency manipulation produced no reliable differential effect when muscle group frequency and volume were equated. This translates to: for recreationally trained natural adults, training each major muscle group at least twice per week on a volume-equated basis is the evidence-supported approach for maximising hypertrophy. The frequency advantage is specific to muscle group frequency, not total session count. Split routines training each muscle group only once per week are suboptimal on a volume-equated basis, but may compensate in practice by enabling higher per-session volumes per muscle group. Whether 3x is better than 2x per week per muscle group is currently unknown. Confidence in this translation: low-moderate — the binary frequency result is statistically robust but the trained-specific evidence base is very small (2 studies, n=44 trained subjects).",
+        "confidence": "low-moderate",
+        "confidence_basis": "Binary frequency meta-regression result is statistically significant (p=0.002) with consistent directionality across all forest plot studies. However, 5/7 studies used untrained populations and training status could not be covariate-controlled. Trained-specific magnitude is unknown. Session frequency null finding is directional only — no meta-analysis was possible."
+      }
+    }
+  ],
+
+  "key_claims": [
+    {
+      "claim": "Training muscle groups at higher frequency produces greater hypertrophy than lower frequency on a volume-equated basis",
+      "confidence": 0.70,
+      "notes": "ES difference 0.19 (95% CI 0.11-0.28, p=0.002), consistent directionality across all 7 forest plot studies. Confidence limited by predominantly untrained population (5/7 studies), binary predictor only (cannot confirm this is a 1x vs 2x specific finding), and inability to covariate-control for training status."
+    },
+    {
+      "claim": "Training muscle groups once per week still produces robust hypertrophy and remains a viable programming strategy",
+      "confidence": 0.85,
+      "notes": "Lower frequency within-group ES 0.30 (95% CI 0.12-0.47) — small-to-medium effect. Consistent within-group gains across all individual studies. The claim is not that 1x/week fails; it is that it is inferior to higher frequency when volume is held constant."
+    },
+    {
+      "claim": "Whether training muscle groups 3 times per week is superior to 2 times per week cannot be determined from current evidence",
+      "confidence": 0.90,
+      "notes": "Categorical analysis (1x vs 2x vs 3x) was explicitly not feasible — insufficient studies. This is a high-confidence statement about an evidence gap. The only available data point (Schoenfeld 2015, trained men, 1x vs 3x) favoured 3x but cannot isolate the 2x vs 3x comparison."
+    },
+    {
+      "claim": "Training session frequency does not affect hypertrophy when muscle group frequency and volume are equated",
+      "confidence": 0.55,
+      "notes": "Based on 3 studies (54 subjects) — insufficient for meta-analysis. Directional evidence only. Ribeiro et al. (elite bodybuilders, 4x vs 6x, 4 weeks) found ES 0.44 vs 0.29, slightly favouring 4x. Cannot rule out a session frequency effect with better-powered studies. Treated as low-confidence directional finding."
+    },
+    {
+      "claim": "The frequency advantage is specific to muscle group training frequency, not total weekly session count",
+      "confidence": 0.65,
+      "notes": "Mechanistically supported and directionally consistent with available data. The anabolic stimulus is muscle-group-specific. Confidence is moderate-low given the session frequency analysis was underpowered."
+    }
+  ],
+
+  "frequency_analysis_components": {
+    "muscle_group_frequency": {
+      "n_studies": 7,
+      "n_subjects": 200,
+      "meta_analysis_performed": true,
+      "finding": "Higher vs lower frequency: ES 0.49 vs 0.30, difference 0.19 (95% CI 0.11-0.28), p=0.002. All 7 individual studies directionally favour higher frequency.",
+      "trained_population_studies": [
+        "McLester et al. 2000 (recreationally trained, n=25, 1x vs 3x, non-significant trend ~8% vs ~1% lean mass gain)",
+        "Schoenfeld et al. 2015 (resistance-trained men, n=19, 1x split vs 3x total-body, significant elbow flexor advantage for 3x)"
+      ],
+      "untrained_population_studies": [
+        "Benton et al. (untrained middle-aged women)",
+        "Candow and Burke (untrained mixed)",
+        "Carneiro et al. (untrained elderly women, volume not equated)",
+        "Gentil et al. (untrained young men)",
+        "Lera Orsatti et al. (untrained elderly women, volume not equated)"
+      ],
+      "categorical_analysis": "Not feasible — insufficient studies to reliably estimate 1x vs 2x vs 3x distinctly"
+    },
+    "session_frequency": {
+      "n_studies": 3,
+      "n_subjects": 54,
+      "meta_analysis_performed": false,
+      "finding": "Meta-analysis not possible due to inadequate sample size. Combined directional evidence does not support a session frequency advantage when muscle group frequency and volume are equated.",
+      "studies": [
+        "Arazi et al. (untrained, 1x vs 2x vs 3x sessions, circumference, 8 weeks — no significant between-group differences)",
+        "Calder et al. (untrained women, 2x total-body vs 4x split, DXA, 20 weeks — no significant differences)",
+        "Ribeiro et al. (elite bodybuilders, 4x vs 6x, DXA, 4 weeks — ES 0.44 vs 0.29, no significant difference)"
+      ]
+    }
+  },
+
+  "eqs": 0.20,
+  "eqs_basis": "GRADE low (~0.38): systematic review with meta-analysis meets Layer 1 design threshold, but only 7 studies in primary analysis (200 subjects total); predominantly untrained populations (5/7 studies) — the critical sub-analysis for trained individuals rests on 2 studies with 44 combined subjects; binary predictor only — cannot separate 1x vs 2x vs 3x; most hypertrophy measures indirect (DXA, circumference, BIA, skinfold) with only 2 studies using ultrasound imaging; training status not covariate-controlled; no formal quality rating applied; publication bias not assessed; 2 studies in main analysis did not equate volume. Population match partial (~0.52): 2/7 trained-population studies in main analysis; natural status unreported across all included studies; Pramana target population (recreationally trained naturals) weakly represented. EQS pulled down substantially by the small and predominantly untrained evidence base. The entry qualifies for Layer 1 inclusion on design grounds but confidence for trained-specific applications is low.",
+
+  "conflicting_evidence": "Nine of ten individual studies found no statistically significant between-group difference — the overall frequency superiority finding emerges from the meta-analytic pooling, not from individual study significance. This is not a contradiction (meta-analyses are designed to detect effects individual underpowered studies cannot), but it means the effect is modest and is not visible at the study level in most cases. A Type 2 boundary condition conflict exists regarding volume: the frequency advantage is specific to volume-equated conditions. In real-world programming, split routines training each muscle once per week can compensate by enabling higher per-session volumes per muscle group — the volume dose-response (hypertrophy-progressive-overload-volume-001) may partly offset the frequency disadvantage in unequated conditions. This does not directly contradict the finding but limits its real-world application. Ribeiro et al. (elite bodybuilders, 4x vs 6x per week, 4 weeks) found ES 0.44 for 4x vs 0.29 for 6x — a directional reversal at very high frequencies, suggesting a potential upper-bound boundary condition, though the study was too short to interpret confidently.",
+
+  "what_would_change_this": "1. A well-powered RCT in trained naturals (n≥40 per group) directly comparing 1x vs 2x vs 3x per muscle group per week with volume strictly equated would provide trained-specific evidence for each frequency comparison. 2. Evidence that the frequency advantage disappears or reverses when total weekly volume is allowed to vary freely (i.e., split routines at higher per-session volumes) would limit this claim to volume-equated conditions only and reduce its practical relevance. 3. Long-duration studies (≥24 weeks) in trained individuals would address the short intervention durations (most studies ≤12 weeks). 4. Studies examining >3x per week muscle group frequency in trained naturals would address the completely uncharted upper-frequency boundary.",
+
+  "open_question": true,
+  "open_question_note": "Three open questions: (1) Whether 3x per week per muscle group is superior to 2x — no current evidence addresses this; the categorical comparison is not feasible from existing studies. (2) Whether the frequency advantage persists in trained individuals at the same magnitude as in untrained — only 2 small trained studies exist (n=44 combined). (3) Whether optimal frequency differs by muscle group, individual recovery capacity, training intensity, or age — no data exists on this interaction.",
+
+  "practical_summary": "Train each major muscle group at least twice per week on a volume-equated basis. Two sessions per muscle group per week is supported as superior to once per week — once per week is not ineffective (ES 0.30) but is suboptimal when total volume is held constant. Whether 3x per week is better than 2x is unknown — do not make programming decisions based on claimed 3x superiority; the evidence cannot support it. Total weekly sessions do not matter independently — what matters is how often each muscle group is trained. Split routines training each muscle once per week are suboptimal on a volume-equated basis; full-body or upper/lower splits hitting each muscle group twice per week are better supported. Periodize frequency over training cycles and include deload periods when running consistently high training frequencies.",
+
+  "coi_summary": "No external funding. No declared conflicts. Soft flag: Schoenfeld and Krieger have commercial fitness industry income. Soft circular authorship flag: the most impactful trained-population study (Schoenfeld et al. 2015) was authored by the lead meta-analyst. Low-moderate bias risk. Does not disqualify entry.",
+
+  "added_by": "founder",
+  "date_added": "2026-04-14",
+  "last_reviewed": "2026-04-14",
+  "next_review": "2027-04-14",
+  "review_trigger": "Any meta-analysis on training frequency and hypertrophy in trained populations published in Sports Medicine, JSCR, JISSN, or EJSS. Triggered immediately on any RCT >12 weeks comparing muscle group training frequency in trained naturals with n>20 per group and direct hypertrophy measurement (MRI, CT, or multi-site ultrasound)."
+}

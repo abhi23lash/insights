@@ -1,0 +1,129 @@
+{
+  "id": "hypertrophy-load-independence-001",
+  "domain": "hypertrophy",
+  "subdomain": "programming",
+  "tags": ["hypertrophy", "load", "training-intensity", "low-load", "high-load", "repetition-range", "strength", "1RM", "resistance-training", "momentary-failure"],
+
+  "claim": "Muscle hypertrophy is similar between high-load (>60% 1RM) and low-load (≤60% 1RM) resistance training when all sets are taken to momentary muscular failure. High load is superior for maximal strength (1RM). Both conditions produce meaningful hypertrophy. This load-independence finding applies exclusively to training performed to momentary muscular failure — it cannot be extrapolated to submaximal, non-failure training.",
+
+  "grade": "low",
+  "source_type": "research",
+
+  "applies_to": {
+    "training_age": "any — but see population flag; trained-specific inference limited",
+    "natural_status": "not reported — not an exclusion criterion across included studies",
+    "sex": "any",
+    "goal": "hypertrophy"
+  },
+
+  "population_flag": "Predominantly untrained populations in the hypertrophy sub-analysis. Trained-population studies: Au et al. 2017 (n=46, young trained men), Morton et al. 2016 (n=49, young trained men), Schoenfeld et al. 2015 (n=18, resistance-trained men) — approximately 3 of 10 hypertrophy studies used trained subjects. The strength sub-analysis (1RM) also found that the interaction between load and training status showed the load advantage was directionally larger in trained subjects, suggesting heavier loading may become more important with training experience. Natural status unreported across all included studies. Trained-specific confidence for the hypertrophy null finding is lower than the overall result implies.",
+
+  "biological_plausibility": {
+    "passes": true,
+    "mechanism": "The size principle dictates that motor units (MUs) are recruited from smallest to largest in proportion to force production requirements. At high loads (>70% 1RM), high-threshold MUs are recruited from early in the set due to the immediate force demands. At low loads (≤60% 1RM), only low-threshold MUs are initially recruited. However, as reps progress toward momentary muscular failure, progressive fatigue in already-recruited MUs forces the nervous system to activate higher-threshold MUs to maintain force output. By the final reps at failure, the full MU pool — including the high-threshold, fast-twitch type II fibres most responsive to hypertrophy — is engaged regardless of load. This mechanistically predicts equivalent hypertrophic stimuli across load ranges when failure is reached. Critically, this mechanism requires momentary failure as a prerequisite: without approaching failure, low-load training never sufficiently recruits high-threshold MUs. The strength specificity finding (high load superior for 1RM) is mechanistically explained by the principle of training specificity — 1RM testing requires maximal force expression, which is optimally trained by heavy loading."
+  },
+
+  "sources": [
+    {
+      "citation": "Schoenfeld BJ, Grgic J, Ogborn D, Krieger JW. Strength and Hypertrophy Adaptations Between Low- vs. High-Load Resistance Training: A Systematic Review and Meta-Analysis. Journal of Strength and Conditioning Research. 2017;31(12):3508-3523.",
+      "pmid": "28834797",
+      "doi": "10.1519/JSC.0000000000002200",
+      "url": "https://journals.lww.com/nsca-jscr/fulltext/2017/12000/strength_and_hypertrophy_adaptations_between_low_.28.aspx",
+      "study_design": "Systematic review and meta-analysis, PRISMA-compliant. Databases: PubMed/MEDLINE, Cochrane Library, Scopus (inception to March 2017). Forward citation tracking in Google Scholar. Independent dual-coding (BJS and JG), 30% recoding reliability check (required agreement ≥90%). Random-effects robust variance meta-regression (metafor in R) with small-sample adjustments. Separate meta-regressions for 1RM, isometric strength, isokinetic strength, body composition, direct muscle size, and muscle fiber size. Sensitivity analysis: leave-one-out for each model. Upper/lower body interaction tested where sufficient data available. Methodological quality: modified PEDro scale (blinding items 5-7 removed; max score 7).",
+      "n_studies": 21,
+      "n_treatment_groups": "Hypertrophy: 41 ESs from 10 studies. 1RM strength: 84 ESs from 14 studies. Isometric strength: 23 ESs from 8 studies. Lean body mass: 14 ESs from 5 studies (insufficient for modelling). Muscle fiber size: 23 ESs from 4 studies (insufficient for modelling).",
+      "methodological_quality": "Mean PEDro score: 5.6 (modified 8-point scale) — rated 'good' quality. No study rated 'poor'. Robust variance meta-regression with restricted maximum likelihood estimation appropriate for multilevel dependent effect size data. Notable confounds in 3 influential studies: Fink et al. 2016b (14) used 30s rest for low-load vs 3 min for high-load — confounds rest interval with load; Popov et al. (37) low-load performed without relaxation (occlusion-like) vs high-load with isometric pauses — confounds load with blood flow restriction; Tanimoto et al. 2006 and 2008 (46,47) used 3-0-3 tempo for low-load vs 1-1-1 for high-load — confounds load with rep tempo. These studies are also 3 of the 5 influential studies identified in sensitivity analysis. Removal of Popov and Tanimoto studies individually shifts hypertrophy p-value from 0.10 to 0.26-0.46. Removal of Fink et al. (15) shifts it to 0.04 (high load significant). Bidirectional instability.",
+      "finding": "Muscle hypertrophy (10 studies, 41 ESs): High load ES 0.53 ± 0.10 (95% CI 0.30-0.76; ~8.3% gain) vs Low load ES 0.42 ± 0.08 (95% CI 0.23-0.60; ~7.0% gain). Between-group difference: D=-0.11 ± 0.06 (95% CI -0.24 to 0.03), p=0.10 — trend, not significant. Study-level analysis: ES=0.03 ± 0.05 (95% CI -0.08 to 0.14), p=0.56 — no significant impact of load. No load × body half interaction (p=0.46). 1RM strength (14 studies): High load ES 1.69 ± 0.23 (95% CI 1.25-2.14; ~35.3% gain) vs Low load ES 1.32 ± 0.23 (95% CI 0.87-1.76; ~28.0% gain). Difference: D=-0.37 ± 0.10 (95% CI -0.59 to -0.16), p=0.003 — significant, high load superior. Study-level analysis significantly favored high load (ES=0.58, 95% CI 0.28-0.89, p=0.002). Sensitivity analysis for 1RM: no influential studies. Isometric strength (8 studies): No significant difference (D=-0.09, p=0.43). Trained subanalysis for 1RM: direction of interaction favored heavier loading more in trained subjects — heavier loading may become increasingly important for maximal strength gains with training experience.",
+      "effect_sizes": {
+        "hypertrophy_high_load_es": "0.53 ± 0.10 (95% CI 0.30-0.76)",
+        "hypertrophy_low_load_es": "0.42 ± 0.08 (95% CI 0.23-0.60)",
+        "hypertrophy_group_level_difference": "D=-0.11 ± 0.06 (95% CI -0.24 to 0.03), p=0.10",
+        "hypertrophy_study_level_es": "0.03 ± 0.05 (95% CI -0.08 to 0.14), p=0.56",
+        "hypertrophy_percent_gain_high": "8.3 ± 1.5%",
+        "hypertrophy_percent_gain_low": "7.0 ± 1.2%",
+        "strength_1rm_high_load_es": "1.69 ± 0.23 (95% CI 1.25-2.14)",
+        "strength_1rm_low_load_es": "1.32 ± 0.23 (95% CI 0.87-1.76)",
+        "strength_1rm_difference": "D=-0.37 ± 0.10 (95% CI -0.59 to -0.16), p=0.003",
+        "strength_1rm_study_level_es": "0.58 ± 0.16 (95% CI 0.28-0.89), p=0.002"
+      },
+      "sensitivity_analysis_hypertrophy": {
+        "base_result": "D=-0.11, 95% CI -0.24 to 0.03, p=0.10",
+        "fink_15_removed": "D=-0.13, p=0.04 — TIPS TO SIGNIFICANCE in favor of high load",
+        "hisaeda_22_removed": "D=-0.11, p=0.11",
+        "popov_37_removed": "D=-0.08, p=0.26",
+        "tanimoto_47_removed": "D=-0.06, p=0.46",
+        "van_roie_51_removed": "D=-0.09, p=0.22",
+        "interpretation": "Bidirectional instability. Removal of confounded studies (Popov, Tanimoto — which had non-load confounds) reduces even the trend. Removal of Fink et al. (15) tips to significant high-load advantage. The study-level analysis (ES 0.03, p=0.56) is the more conservative and more robust result."
+      },
+      "population": "Predominantly untrained healthy adults. Trained-population studies include: Au et al. (n=46, young trained men, multi-exercise program), Morton et al. (n=49, young trained men, multi-exercise program), Schoenfeld et al. 2015 (n=18, resistance-trained young men, multi-exercise program). All other studies used untrained populations. Mixed sex: most studies male, several female-only (Hisaeda, Kerr, Rana, Schuenke, Stone), one mixed-sex (Van Roie 2013a). Age range: young adults (18-39) predominant; middle-aged (Kerr); older adults (Van Roie 2013b). Natural status not reported, not an exclusion criterion.",
+      "limitations": "1. Momentary muscular failure required in all studies — results cannot be extrapolated to submaximal non-failure training with different loads; this is the single most important boundary condition. 2. Predominantly untrained populations in hypertrophy analysis (3/10 trained studies); trained-specific inference is limited. 3. Three influential studies have non-load confounds: Fink 2016b (different rest intervals), Popov (no-relaxation vs paused), Tanimoto 2006+2008 (different rep tempos) — these are not purely load comparisons. 4. Sensitivity analysis shows bidirectional instability: the trend (p=0.10) is sensitive to specific influential studies in both directions. 5. Insufficient studies for isokinetic strength, lean body mass, and muscle fiber size analyses — these outcomes cannot be concluded on. 6. Natural status unreported across all studies. 7. Study durations: 6-52 weeks (Kerr 1 year is an outlier; most 6-13 weeks). 8. PMID/DOI noted as requiring verification from database — confirm from PubMed.",
+      "coi_check": "No external funding sources declared. No conflicts of interest declared by Schoenfeld, Grgic, Ogborn, or Krieger. Same soft flag as frequency paper: Schoenfeld is a fitness industry author and practitioner; Krieger operates Weightology, LLC. Grgic is an academic researcher with no known industry ties. Bias risk: low-moderate — same assessment as prior Schoenfeld-Krieger entries. The null hypertrophy finding is not commercially advantageous to any party, reducing incentive bias. Note: Schoenfeld et al. 2015 (ref [42]) is one of the 10 hypertrophy studies and was authored by the lead meta-analyst — same circular authorship flag as in the frequency entry, low concern here as the Schoenfeld 2015 trained-population result showed no significant between-group difference.",
+      "practical_translation": {
+        "text": "Study population was predominantly untrained healthy adults, with 3 trained-population studies among the 10 hypertrophy studies. Effect observed was: both high load (>60% 1RM) and low load (≤60% 1RM) produced similar muscle hypertrophy when all sets were taken to momentary muscular failure (study-level ES 0.03, p=0.56; group-level trend p=0.10); high load produced significantly greater 1RM strength gains (p=0.003). This translates to: for recreationally trained natural adults who consistently train to or near momentary muscular failure, load selection is not the primary determinant of hypertrophy — a range of loads (~6RM to ~30RM) can produce equivalent muscle growth. Programming load based on preference, exercise suitability, joint tolerance, or logistical constraints (e.g., home training with limited equipment) is supported. However, this finding must not be applied to non-failure training — it cannot be assumed that low-load submaximal sets produce equivalent hypertrophy to high-load submaximal sets. Confidence in this translation: low-moderate — the study-level null is robust but applies only to failure training, the evidence base is predominantly untrained, and bidirectional sensitivity exists in the trend-level analysis.",
+        "confidence": "low-moderate",
+        "confidence_basis": "Study-level hypertrophy null (ES 0.03, p=0.56) is robust. Within-group effect sizes are meaningful for both conditions (~7-8% growth). However, population mismatch (mostly untrained), the failure-only boundary condition, and confounds in influential studies limit confidence in trained-specific applications."
+      }
+    }
+  ],
+
+  "key_claims": [
+    {
+      "claim": "Muscle hypertrophy is similar between high-load and low-load training when all sets are taken to momentary muscular failure",
+      "confidence": 0.74,
+      "notes": "Study-level ES 0.03 (p=0.56) is near-zero and robust. Group-level trend p=0.10 is not conventionally significant. Both conditions produced meaningful within-group hypertrophy (~7-8%). Confidence limited by predominantly untrained population, confounds in 3 influential studies, and bidirectional sensitivity (Fink removal → p=0.04). The study-level result is the more conservative and appropriate primary reference."
+    },
+    {
+      "claim": "The load-independence finding applies exclusively to training taken to momentary muscular failure — it cannot be extrapolated to submaximal non-failure training at different loads",
+      "confidence": 0.92,
+      "notes": "Explicitly stated by the authors in Practical Applications. Mechanistically required: without failure, low-load training does not recruit high-threshold MUs. The proximity-to-failure literature (hypertrophy-proximity-to-failure-001) confirms that very low effort (velocity loss <20%) produces attenuated hypertrophy, consistent with this boundary condition. This is the single most important constraint on this entry's applicability."
+    },
+    {
+      "claim": "High load is significantly superior to low load for maximal strength (1RM) gains",
+      "confidence": 0.80,
+      "notes": "1RM: D=-0.37, p=0.003; study-level ES 0.58, p=0.002. No influential studies in sensitivity analysis. Consistent with training specificity principle. Confidence is 0.80 rather than higher because it is primarily based on untrained subjects; trained subanalysis directionally supported heavier loading mattering more with experience but was underpowered."
+    },
+    {
+      "claim": "Both high-load and low-load training produce large, meaningful hypertrophy when performed to momentary failure",
+      "confidence": 0.85,
+      "notes": "Within-group ES 0.53 for high load and 0.42 for low load — both medium-large effects. Consistent across the evidence base. The absolute hypertrophy gain is not the contested question; what is load-independent is the between-group difference."
+    },
+    {
+      "claim": "Load may become a more important moderator of hypertrophy in trained individuals than in untrained individuals",
+      "confidence": 0.52,
+      "notes": "Directional inference from trained strength subanalysis: load × training status interaction directionally favored heavier loading in trained subjects for 1RM strength. If this pattern extends to hypertrophy, the null finding may be weaker in trained populations. Currently unconfirmed — insufficient trained data for hypertrophy subanalysis. Confidence is low but the direction warrants monitoring."
+    }
+  ],
+
+  "failure_boundary_condition": {
+    "required": true,
+    "description": "All 21 included studies required all sets to be performed to momentary muscular failure as an inclusion criterion. This was a deliberate methodological choice, not an incidental feature. The mechanistic rationale — progressive MU recruitment at fatigue equalising high-threshold fibre exposure across load ranges — requires failure or near-failure to operate. The authors explicitly state in Practical Applications: 'comparable results cannot reasonably be assumed for submaximal, non-failure training based on the present analysis.'",
+    "implication_for_practice": "An athlete or coach who uses low loads with comfortable submaximal effort (e.g., 3 sets of 20 with 5 reps in reserve) cannot invoke this finding to justify that approach. The load-independence finding only applies when effort is high — which intersects with the proximity-to-failure evidence (hypertrophy-proximity-to-failure-001) suggesting a minimum effort threshold (>20% velocity loss equivalent) is required for full hypertrophic response regardless of load.",
+    "cross_reference": "hypertrophy-proximity-to-failure-001 — confirms minimum proximity to failure is required for the hypertrophic dose-response to operate."
+  },
+
+  "load_definitions": {
+    "high_load": ">60% 1RM, or ≤15 repetitions if load reported as rep count",
+    "low_load": "≤60% 1RM, or >15 repetitions if load reported as rep count",
+    "failure_requirement": "All sets in BOTH conditions performed to momentary muscular failure (concentric failure) — non-negotiable inclusion criterion for all 21 studies"
+  },
+
+  "eqs": 0.21,
+  "eqs_basis": "GRADE low (~0.42): systematic review with meta-analysis, good methodological quality (mean PEDro 5.6, no poor studies), sound statistical approach. Downgrades: predominantly untrained populations in the critical hypertrophy sub-analysis (3/10 trained studies); confounds in 3 influential studies that are also central to the sensitivity analysis (Fink 2016b, Popov, Tanimoto — non-load variables differed between conditions in these studies); bidirectional sensitivity analysis instability; study-level result (ES 0.03, p=0.56) is more robust than group-level trend (p=0.10) but both deserve credibility weighting. Population match partial (~0.50): 3 of 10 hypertrophy studies used trained populations; natural status unreported; Pramana target (recreationally trained naturals) partially represented. EQS limited by the failure boundary condition — the finding is practically applicable only when effort is consistently high, which further narrows the real-world match.",
+
+  "conflicting_evidence": "Schoenfeld et al. 2016 (Eur J Sport Sci 16:1-10), the predecessor meta-analysis with 9 studies by the same first author, found statistical probability favored heavier load conditions for both outcomes — this was updated and reversed by the present 2017 analysis with 21 studies. The reversal was driven by additional studies lowering the pooled between-group ES difference below significance for hypertrophy. This is not a true conflict but an instructive example of how small meta-analyses (n=9) can be misleading. Campos et al. 2002 (included) found CSA increases only in high-load groups (3-5RM and 9-11RM) but not in the low-load group (20-28RM) — this was a Type 2 boundary condition conflict for very low-rep/very high-load vs very high-rep comparisons. Emerging fiber type-specific evidence suggests high loads preferentially grow type II fibres while low loads preferentially grow type I fibres (Netreba et al., Vinogradova et al.) — total CSA equivalence may mask differential fibre composition adaptations. This is not a contradiction but a nuance relevant to long-term performance goals beyond pure hypertrophy.",
+
+  "what_would_change_this": "1. A well-powered RCT in trained naturals (n≥40 per group) comparing load conditions with failure strictly controlled, using direct imaging (MRI or CT), would provide trained-specific evidence — the trained subanalysis currently rests on approximately 3 small studies. 2. Evidence from non-failure conditions comparing load effects directly would test whether the failure boundary condition is truly necessary or merely conservative. 3. Long-duration studies (≥24 weeks) in trained individuals are needed — most studies are 6-13 weeks, which may not capture load-dependent differences that accumulate over longer training periods. 4. Larger biopsy studies would resolve the fibre type-specific question: if high loads consistently produce greater type II CSA, this could matter for performance outcomes beyond pure hypertrophy.",
+
+  "open_question": true,
+  "open_question_note": "Two open questions: (1) Whether load-independence holds in trained individuals specifically — the trained subanalysis for strength showed a directionally larger load advantage with training experience, and it is unknown whether hypertrophy follows the same pattern. (2) Whether load affects fibre type composition of hypertrophy — high loads may preferentially grow type II fibres while low loads grow type I fibres, producing equivalent total CSA but different functional outcomes. This has not been confirmed with sufficient power.",
+
+  "practical_summary": "For hypertrophy: load is flexible. Train with whatever load range suits your exercise, equipment, joint tolerance, and preference — provided you consistently reach near-failure effort. A rep range of roughly 6-30 reps per set, all taken to or within 1-2 reps of momentary failure, produces equivalent hypertrophy. Do not use this finding to justify low-effort, low-load sets — the load-independence applies only when effort is high. For strength: train heavy. 1RM strength gains require specificity to heavy loading. A hypertrophy programme using only light-to-moderate loads will produce less 1RM strength transfer than a programme including heavy work. Practical recommendation: use primarily moderate loads (8-15 reps) for efficiency and joint safety, occasionally include heavier (4-8 reps) and lighter (15-30 reps) work for variation and fibre type coverage.",
+
+  "coi_summary": "No external funding. No declared conflicts. Soft flag: Schoenfeld and Krieger have commercial fitness industry income. Low-moderate bias risk. Schoenfeld 2015 (ref [42]) is authored by lead meta-analyst and is one of 10 hypertrophy studies — soft circular authorship flag. Does not disqualify entry.",
+
+  "added_by": "founder",
+  "date_added": "2026-04-14",
+  "last_reviewed": "2026-04-14",
+  "next_review": "2027-04-14",
+  "review_trigger": "Any meta-analysis comparing load and hypertrophy in trained populations published in Sports Medicine, JSCR, JISSN, or EJSS. Triggered immediately on publication of any RCT >12 weeks in trained naturals (n>30 per group) comparing load conditions with failure controlled and direct hypertrophy imaging. Also triggered on any study providing powered analysis of fibre type-specific hypertrophy across load ranges."
+}

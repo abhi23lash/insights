@@ -1,0 +1,176 @@
+{
+  "id": "hypertrophy-lengthened-position-001",
+  "domain": "hypertrophy",
+  "subdomain": "programming",
+  "tags": ["hypertrophy", "muscle-length", "lengthened-position", "exercise-selection", "biarticular", "external-torque", "range-of-motion", "mechanical-tension", "resistance-training"],
+
+  "claim": "Training biarticular muscles at longer lengths with relevant external torque at that stretched position produces greater hypertrophy than training at shorter lengths. Muscle length alone without meaningful external torque in the lengthened position is insufficient — the combination of both is required. The effect is biarticular-muscle-specific: monoarticular muscles are not responsive to joint angle changes that do not affect their own length-tension relationship.",
+
+  "grade": "low",
+  "source_type": "research",
+
+  "applies_to": {
+    "training_age": "any — but see population flag; all primary evidence from untrained populations",
+    "natural_status": "not reported — not an exclusion criterion across included studies",
+    "sex": "any — but see population flag; primary empirical anchor is all-male",
+    "goal": "hypertrophy"
+  },
+
+  "population_flag": "The primary empirical anchor (Maeo et al. 2024) used exclusively untrained young males (no systematic training for ≥18 months, age 24-27 years, all male). Supporting corroborating studies (Maeo 2021, Maeo 2023, Larsen 2025) are similarly predominantly untrained, mostly male. No study in the primary evidence base used recreationally trained naturals. The practical translation to trained populations is supported by mechanistic plausibility and directional consistency across muscle groups, but has not been directly confirmed with appropriate power. Additionally, the Pedrosa 2026 review notes that structural adaptations from lengthened training (sarcomerogenesis, increased fascicle length) may theoretically attenuate the additional benefit over time — whether the advantage persists in trained individuals with longer training histories is unknown.",
+
+  "biological_plausibility": {
+    "passes": true,
+    "mechanism": "Biarticular muscles (e.g., biceps femoris long head, semimembranosus, semitendinosus, gastrocnemius heads, triceps long head, rectus femoris) cross two joints simultaneously, meaning their length is determined by both joint positions together. Placing a biarticular muscle in a lengthened configuration (e.g., hip-flexed seated leg curl for the hamstrings) creates greater passive tension from titin — a mechanosensor molecule that transmits stretch-induced signals to activate mTORC1 and satellite cells. Passive tension at long lengths sums with active tension from cross-bridge formation to produce a higher total mechanical stimulus than at short lengths, where passive tension is absent and active force production may be limited by suboptimal sarcomere overlap. The neuromechanical matching principle further predicts that muscles experiencing the greatest mechanical load in a given exercise — determined by their internal moment arm and length — receive the greatest hypertrophic stimulus. For monoarticular muscles (e.g., biceps femoris short head, vastus lateralis, soleus), their length is determined by only one joint, so manipulating a second joint angle has no effect on their mechanical environment or hypertrophic response. This mechanistically explains the observed biarticular-specific nature of the lengthened-position advantage. The external torque requirement follows logically: without meaningful resistance at the stretched position, the passive tension advantage is present but the muscle is not producing significant active force against an external load at that length, limiting the total mechanical stimulus."
+  },
+
+  "sources": [
+    {
+      "citation": "Maeo S, Balshaw TG, Nin DZ, McDermott EJ, Osborne T, Cooper NB, Massey GJ, Kong PW, Pain MTG, Folland JP. Hamstrings Hypertrophy Is Specific to the Training Exercise: Nordic Hamstring versus Lengthened State Eccentric Training. Medicine & Science in Sports & Exercise. 2024;56(10):1893-1905.",
+      "pmid": "38988282",
+      "doi": "10.1249/MSS.0000000000003490",
+      "url": "https://doi.org/10.1249/MSS.0000000000003490",
+      "study_design": "Randomised controlled trial, 3 arms: LSET (lengthened state eccentric training, modified seated leg curl at 120° hip flexion) vs NHT (Nordic hamstring training, hip at anatomical position) vs CON (habitual activity control). 12 weeks, 34 sessions, progressive loading (2-4 eccentric sets × 6-10 reps per leg). Primary outcome: MRI-measured muscle volume (3-T GE scanner, T1-weighted axial images, cubic spline interpolation) of 7 individual knee flexor muscles including BFlh aponeurosis morphology. Secondary outcomes: maximum knee flexion torque (eccentric, concentric, isometric) via isokinetic dynamometer. Ethics approved by Loughborough University and Nanyang Technological University IRB.",
+      "n_studies": 1,
+      "n_subjects": 42,
+      "n_per_group": 14,
+      "methodological_quality": "RCT with active and passive control conditions. MRI-measured muscle volumes — gold standard for hypertrophy measurement. Blinded MRI analysis (investigators blinded to group). Duplicate pre- and post-measurement sessions to reduce error. Progressive loading with training logs. No formal quality rating applied (single RCT, not subject to TESTEX or PEDro in standard form). Key limitation: LSET and NHT are inherently different exercises differing in multiple variables beyond hip angle — loading mechanism (weight stack vs bodyweight), bilateral vs unilateral eccentrics, presence of concentric component (LSET only), and range of motion. The study explicitly did not isolate a single experimental variable. Hip angle difference is the most mechanistically relevant distinction but is one of several confounds.",
+      "finding": "LSET induced greater hamstrings hypertrophy (+18% vs +11%, p≤0.001) and BFlh hypertrophy (+19% vs +5%, p≤0.001) than NHT. Semimembranosus: LSET +14% vs NHT ~0% (SM within NHT p=0.423, non-significant). Semitendinosus: LSET +27% vs NHT +20%, no significant between-group difference (p=0.072). Biceps femoris short head: NHT +22% superior to LSET +6% (p≤0.001). Knee flexors that also extend the hip (KF and HE: BFlh, SM, ST): LSET +20% vs NHT +9%, 2.2-fold LSET advantage (p≤0.001). Knee flexors that do not extend the hip (KF not HE: BFsh, SAR, GRA, POP): NHT +22% vs LSET +11%, 1.9-fold NHT advantage (p≤0.001). Overall knee flexor volume: LSET +17% vs NHT +14%, no significant between-group difference (p=0.095). BFlh aponeurosis area: LSET +9% vs NHT +3% (p=0.001, NHT not different from CON +2%). Eccentric torque: LSET +17%, NHT +11%, only LSET significantly greater than CON (p=0.009); no LSET vs NHT difference (p=0.237).",
+      "muscle_volume_data": {
+        "BFlh_LSET": "+19% (189→224 cm³, p<0.001)",
+        "BFlh_NHT": "+5% (200→211 cm³, p<0.021)",
+        "BFlh_between_group_p": "<0.001",
+        "ST_LSET": "+27% (202→257 cm³, p<0.001)",
+        "ST_NHT": "+20% (227→273 cm³, p<0.001)",
+        "ST_between_group_p": "0.072 (similar)",
+        "SM_LSET": "+14% (237→270 cm³, p<0.001)",
+        "SM_NHT": "~0% (248→252 cm³, p=0.423 non-significant)",
+        "SM_between_group_p": "<0.001",
+        "BFsh_LSET": "+6% (108→115 cm³, p<0.001)",
+        "BFsh_NHT": "+22% (103→126 cm³, p<0.001)",
+        "BFsh_between_group_p": "<0.001 (NHT superior)",
+        "HAMS_LSET": "+18% (736→867 cm³, p<0.001)",
+        "HAMS_NHT": "+11% (778→861 cm³, p<0.001)",
+        "HAMS_between_group_p": "<0.001",
+        "KF_and_HE_LSET": "+20%",
+        "KF_and_HE_NHT": "+9%",
+        "KF_not_HE_LSET": "+11%",
+        "KF_not_HE_NHT": "+22%",
+        "overall_KF_between_group_p": "0.095 (similar)"
+      },
+      "population": "Healthy untrained young males (no systematic exercise training of any kind for ≥18 months). LSET: n=14, age 25±4 yr, body mass 77±11 kg. NHT: n=14, age 27±3 yr, body mass 76±13 kg. CON: n=11 (after MRI exclusions), age 24±3 yr, body mass 73±6 kg. No baseline between-group differences in muscle volume, strength, or EMG. All male. Natural status not reported.",
+      "limitations": "1. LSET and NHT differ in multiple variables beyond hip angle — weight stack vs bodyweight, unilateral vs bilateral eccentrics, presence of concentric component (LSET only), different range of motion arcs. Cannot attribute the hypertrophic differences to muscle length alone. 2. Untrained males only — trained-specific and female-specific responses unknown. 3. n=14/group — limited statistical power for subgroup analyses. 4. Short intervention (12 weeks) — cannot determine whether the lengthened-position advantage persists or diminishes in trained populations over longer periods. 5. Natural status unreported. 6. The specific contribution of each confounding variable (hip angle, loading mechanism, bilateral/unilateral, concentric component) to the differential hypertrophic response is unresolved.",
+      "coi_check": "No conflicts of interest declared. Funded by Singapore National Institute of Education Academic Research Fund (RI 4/15 KPW) — government research fund, no commercial interests. Bias risk: low.",
+      "practical_translation": {
+        "text": "Study population was untrained healthy young males. Effect observed was: lengthened state eccentric training (hip at 120° flexion) produced 1.7-fold greater overall hamstrings hypertrophy and 3.5-fold greater BFlh hypertrophy than Nordic hamstring training (hip at anatomical extension), while producing similar overall knee flexor hypertrophy. The differential was specific to biarticular knee flexors (KF and HE: 2.2-fold LSET advantage) — muscles whose length is determined by both hip and knee joint angle. Monoarticular knee flexors (KF not HE: BFsh) showed the opposite pattern (1.9-fold NHT advantage). This translates to: for recreationally trained natural adults targeting hamstrings hypertrophy — especially the biceps femoris long head — exercises that position the hip in flexion while loading the knee (seated leg curl, hip-flexed position) should be prioritised over exercises that train the hamstrings with the hip extended (prone leg curl, Nordic exercise). The pattern is specific to biarticular muscles — monoarticular muscles within the same muscle group do not respond to hip angle changes. Confidence in this translation: low-moderate — the finding is mechanistically coherent and directionally consistent with other muscle groups (triceps long head, gastrocnemius, rectus femoris), but the primary study is untrained males with confounded exercise comparison.",
+        "confidence": "low-moderate",
+        "confidence_basis": "Strong MRI-measured effects (p≤0.001) in a well-controlled RCT with gold-standard measurement. Directionally consistent with corroborating evidence across multiple muscle groups. Confidence is limited by untrained population, all-male sample, confounded exercise comparison (multiple variables differ between LSET and NHT, not just hip angle)."
+      }
+    },
+    {
+      "citation": "Pedrosa GF, Pereira MR, Kassiano W. The interplay between muscle length, range of motion, and exercise selection: a review. Sports Medicine International Open. 2026;10:a27337605.",
+      "pmid": null,
+      "doi": "10.1055/a-2733-7605",
+      "url": "https://doi.org/10.1055/a-2733-7605",
+      "study_design": "Unstructured narrative review — NOT a systematic review or meta-analysis. Three unstructured sub-reviews: (1) isometric training at different joint angles (5 studies); (2) training with different ROMs (13 studies); (3) resistance exercise comparisons at different muscle lengths or torque positions (10 studies). Databases: PubMed and Scopus. Design flag: narrative review does NOT meet Layer 1 design threshold. Role in this entry: synthesis framework and conceptual model only. Maeo et al. 2024 is cited as reference [67] in this review's exercise comparison section.",
+      "n_studies": "28 training studies synthesised across 3 sub-reviews",
+      "design_flag": "Narrative/unstructured review. Cannot serve as primary empirical anchor. Included for conceptual synthesis value and to support the muscle-length × external-torque interaction model. Evidence quality assessment is the responsibility of the individual studies, not this review.",
+      "finding": "Across three lines of investigation, muscle length plays a role in hypertrophy. Key overarching conclusion: muscle length alone is necessary but not sufficient — the combination of moderate-to-long muscle lengths WITH relevant external torque at that position appears to be required for superior hypertrophy. Evidence for this: (1) full and initial ROM training (longer length + high external torque) induces more muscle growth than final ROM (short length); (2) initial ROM superior to full ROM in some studies when initial ROM group trains with heavier loads (greater external torque at long length); (3) inclined biceps curl (longer length, but no relevant external torque at most lengthened position) did NOT produce superior elbow flexor hypertrophy vs preacher curl (Zabaleta-Korta et al.); (4) exercise comparisons consistently show biarticular muscle advantage when loaded at lengthened position (Maeo 2021 seated vs prone leg curl; Maeo 2024 LSET vs NHT; Maeo 2023 overhead vs neutral triceps). Monoarticular muscles show no length-dependent hypertrophic advantage across studies (vastus lateralis in leg extension studies; soleus across calf studies). Isometric training evidence is mixed — 3/5 studies favour LL, with one possible muscle-length threshold effect (insufficient growth below ~50° knee flexion in one study).",
+      "key_conceptual_contributions": {
+        "muscle_length_x_torque_interaction": "Hypertrophic stimulus is maximised by the COMBINATION of moderate-to-long muscle length AND high external torque at that position. Neither alone is sufficient to consistently produce superior hypertrophy.",
+        "biarticular_specificity": "Effects are specific to biarticular muscles whose length is altered by the joint angle manipulation. Monoarticular muscles within the same group (e.g., vastus lateralis, BFsh, soleus) are unaffected by joint angle changes that don't alter their own length.",
+        "sarcomerogenesis_hypothesis": "Training at long lengths may induce sarcomerogenesis (addition of sarcomeres in series) and increased fascicle length, which could theoretically attenuate the passive tension advantage over time — the benefit may diminish in longer-trained populations. Requires further investigation.",
+        "training_status_gap": "Most studies included untrained individuals (23/28). Only 3 studies used trained populations. Whether the lengthened-position advantage holds in trained individuals over longer periods is unresolved."
+      },
+      "population": "Across reviewed studies: predominantly untrained young adults (23 of 28 studies). Only 3 studies used trained populations. Both sexes represented but male-dominant. Mostly young adults (18-35 years). Duration 5-15 weeks in most studies.",
+      "limitations": "Unstructured review — subject to selection bias and author interpretation. Excludes multi-joint exercises (by design — to isolate single-joint evidence). Individual study confounds (rest intervals, tempo, volume) not systematically controlled. No quantitative synthesis of effect sizes. ROM manipulation changes multiple variables simultaneously (muscle length, external torque, total work performed) — isolating the individual contribution of muscle length is not possible from most included studies.",
+      "coi_check": "No conflicts of interest declared. No external funding acknowledged. Pedrosa is a co-author on several included studies — potential confirmation bias toward the lengthened-position hypothesis. Kassiano is also a co-author on multiple cited primary studies. Soft flag: authors may emphasise findings from their own work. Bias risk: low-moderate.",
+      "practical_translation": {
+        "text": "Synthesis population was predominantly untrained healthy young adults across ~28 training studies. Effect synthesised was: training at moderate-to-long muscle lengths with relevant external torque at that position consistently produces more favourable hypertrophy than training at short lengths. Muscle length alone without external torque was insufficient. Biarticular muscles specifically benefit from exercise selection that maximises their length during the loaded portion of the movement. This translates to: when designing resistance programmes, prioritise exercises that apply meaningful resistance in the stretched position for target muscles. ROM configuration matters less than whether the muscle is loaded at length with relevant torque — partial ROM performed at long lengths can outperform full ROM if full ROM dilutes external torque at the lengthened position. Confidence in this translation: low-moderate — synthesis is directionally consistent but based on an unstructured review with predominantly untrained populations and confounded exercise comparisons.",
+        "confidence": "low-moderate",
+        "confidence_basis": "Narrative synthesis across 28 studies, directionally consistent across muscle groups. Confidence limited by narrative (non-systematic) design, predominantly untrained populations, and confounded exercise comparisons that cannot isolate muscle length as the sole variable."
+      }
+    }
+  ],
+
+  "key_claims": [
+    {
+      "claim": "Training biarticular muscles at longer lengths with relevant external torque at that position produces greater hypertrophy than training at shorter lengths",
+      "confidence": 0.72,
+      "notes": "Supported by Maeo 2024 (BFlh +19% vs +5%, p≤0.001, MRI), corroborated by Maeo 2021 (seated vs prone leg curl, BFlh 14.4% vs 6.5%), Maeo 2023 (overhead vs neutral triceps long head, 28.9% vs 19.6%), Kinoshita/Burke (standing vs seated calf raises for gastrocnemius), and Larsen 2025 (RF: lower hip flexion angle > higher). Directional consistency is strong across >5 independent studies and multiple muscle groups. Confidence limited by untrained populations throughout, confounded comparisons, and absence of a systematic meta-analysis."
+    },
+    {
+      "claim": "Muscle length alone without relevant external torque at the lengthened position is insufficient to produce superior hypertrophy",
+      "confidence": 0.76,
+      "notes": "Directly supported by Zabaleta-Korta et al. — inclined biceps curl (longer ML but no external torque at stretch) did not outperform preacher curl. Multiple ROM studies (Pedrosa review) show that initial ROM groups using heavier weights (higher external torque) outperformed full ROM groups, while initial ROM groups not using heavier weights did not consistently outperform. The interaction is the driver, not length alone."
+    },
+    {
+      "claim": "The lengthened-position hypertrophic advantage is specific to biarticular muscles; monoarticular muscles within the same muscle group do not show this pattern",
+      "confidence": 0.80,
+      "notes": "Directly observed in Maeo 2024: KF and HE (biarticular: BFlh, SM, ST) — 2.2-fold LSET advantage; KF not HE (monoarticular: BFsh, GRA, SAR) — 1.9-fold NHT advantage. Consistent with Larsen 2025 (RF lengthened advantage vs no vastus lateralis advantage, as VL is monoarticular). Consistent with calf raise studies (gastrocnemius advantage for standing = longer length, but no soleus advantage). Strong mechanistic basis via two-joint geometry."
+    },
+    {
+      "claim": "Nordic hamstring training produces little to no hypertrophy of the biceps femoris long head and semimembranosus despite strong activation signals",
+      "confidence": 0.74,
+      "notes": "Observed in Maeo 2024 (BFlh NHT +5%, p<0.021 within-group but only minimally; SM NHT non-significant p=0.423). Consistent with Bourne et al. (fMRI showing low BFlh/SM activation during NHT, high BFsh/ST activation). Consistent with Maeo 2021 (seated vs prone) and Maeo ref [67] cited in Pedrosa 2026. The EMG-based assumption that NHT strongly activates BFlh is contradicted by functional MRI and hypertrophy outcomes — EMG surface signal is not reliable for individual muscle discrimination."
+    },
+    {
+      "claim": "The greater hypertrophic response to lengthened-position training may attenuate over time as sarcomerogenesis adapts muscle architecture",
+      "confidence": 0.45,
+      "notes": "Theoretical/mechanistic hypothesis from Pedrosa 2026. Sarcomerogenesis (longitudinal addition of sarcomeres) and increased fascicle length after lengthened training would theoretically shift the passive tension advantage. Currently unconfirmed empirically — all relevant studies are ≤15 weeks in untrained individuals. No data from trained populations over longer periods. Low confidence, worth monitoring."
+    }
+  ],
+
+  "muscle_specificity_notes": {
+    "biarticular_muscles_affected": [
+      "Biceps femoris long head (BFlh) — crosses hip and knee; load at hip-flexed, knee-extended position (seated leg curl with hip flexion)",
+      "Semimembranosus (SM) — crosses hip and knee; same as BFlh",
+      "Semitendinosus (ST) — crosses hip and knee; similar but less pronounced than BFlh and SM",
+      "Triceps brachii long head — crosses shoulder and elbow; loaded at stretched position with arm overhead",
+      "Gastrocnemius (medial and lateral heads) — crosses knee and ankle; loaded at stretched position with knee extended (standing calf raise)",
+      "Rectus femoris — crosses hip and knee; loaded at stretched position with hip more extended (lower hip flexion angle during knee extension)"
+    ],
+    "monoarticular_muscles_not_affected": [
+      "Biceps femoris short head (BFsh) — crosses only knee; not affected by hip angle changes",
+      "Vastus lateralis — crosses only knee; not affected by hip angle changes in leg extension",
+      "Soleus — crosses only ankle; not affected by knee angle changes in calf raises",
+      "Short-head muscles generally: BFsh, vastus group, soleus"
+    ],
+    "interpretation": "When selecting exercises to maximise hypertrophy of a specific muscle, first determine whether it is biarticular. If biarticular, prioritise exercises that create a lengthened position with meaningful resistance at that stretch. If monoarticular, muscle-length optimisation via joint angle has limited relevance — exercise selection should focus on other variables (resistance profile, load, proximity to failure)."
+  },
+
+  "external_torque_requirement": {
+    "description": "Muscle length during exercise is a necessary but not sufficient condition for enhanced hypertrophy. The external torque applied at the lengthened position must be meaningful. This means the resistance curve of the exercise must be high at the stretched position — not merely that the muscle passes through a stretched state during the movement.",
+    "practical_implication": "An inclined biceps curl puts the biceps at a longer length than a flat curl, but the external torque is near zero at the most stretched position (arm behind the body, where the weight is almost directly below the shoulder joint). This does not provide the required stimulus. In contrast, a seated leg curl with hip flexed provides both: the biarticular hamstrings are at long length AND the weight stack provides meaningful resistance throughout the eccentric movement from knee extension to knee flexion.",
+    "examples_meeting_criterion": [
+      "Seated leg curl (hip flexed) — BFlh, SM, ST at long length, weight stack provides external torque throughout",
+      "Overhead triceps extension — long head of triceps at long length, meaningful resistance from cable or dumbbell at stretch",
+      "Standing calf raise (knee extended) — gastrocnemius at long length (not shortened at knee), meaningful resistance from bodyweight or load",
+      "Leg extension at low hip flexion (~40°) — rectus femoris at longer length, machine provides torque throughout"
+    ],
+    "examples_failing_criterion": [
+      "Inclined biceps curl — biceps at longer length but near-zero external torque at most stretched position",
+      "Nordic hamstring exercise — hip at anatomical extension (biarticular hamstrings at short length), body weight resistance concentrated at shorter muscle length",
+      "Prone leg curl — hip extended placing biarticular hamstrings at shorter length despite knee flexion"
+    ]
+  },
+
+  "eqs": 0.22,
+  "eqs_basis": "GRADE low (~0.42): Multiple converging RCTs across different muscle groups (Maeo 2024 hamstrings, Maeo 2021 hamstrings, Maeo 2023 triceps, Larsen 2025 rectus femoris, Kinoshita gastrocnemius) all directionally consistent — exceeds the 3-RCT threshold for Layer 1 qualification. MRI-measured outcomes in primary anchor. However, no systematic meta-analysis exists; each individual study is small (n=14-50 per group), untrained populations throughout, and comparisons are confounded (exercise protocols differ in multiple variables beyond muscle length). GRADE elevated by convergent corroboration across muscle groups and the mechanistically necessary nature of the prediction. Population match partial (~0.52): untrained young males in all primary studies; natural status unreported; female-specific and trained-specific data absent. EQS reflects the honest state of the evidence: a directionally strong and mechanistically coherent finding that has not yet been tested in the target population (recreationally trained natural adults) with adequate statistical power or clean experimental isolation of the muscle-length variable.",
+
+  "conflicting_evidence": "Zabaleta-Korta et al. (2023, cited in Pedrosa 2026) found that inclined biceps curl (longer muscle length) was NOT superior to preacher curl (shorter muscle length) for elbow flexor hypertrophy — confirming that longer muscle length per se is insufficient without external torque. This is not a direct contradiction of this entry's claim but an important boundary condition specification that shaped the refined claim. Stasinaki et al. (2018) found NO significant difference in triceps long head hypertrophy between overhead and neutral elbow extension — conflicting with Maeo et al. 2023. Possible explanations: shorter intervention (6 vs 12 weeks), different measurement (muscle thickness vs MRI volume), exercise execution differences. This is a Type 2 boundary condition conflict (EQS × 0.85 applied). Nakao et al. (2023, isometric hamstrings at different lengths with hip at 90°) found no difference between length conditions — explained by both groups training at moderate-to-long lengths due to the 90° hip flexion across conditions, providing a mechanistic rationale rather than a true contradiction. Larsen et al. (2024, cable vs dumbbell lateral raise) found NO significant difference in deltoid hypertrophy despite different torque profiles — suggesting monoarticular muscles like the deltoid may not follow the same pattern, consistent with the biarticular-specificity claim.",
+
+  "what_would_change_this": "1. A systematic meta-analysis isolating the muscle-length variable with external torque controlled (or vice versa) across multiple studies would provide higher-quality evidence for either the combined claim or the individual components. 2. RCTs in recreationally trained natural adults (n≥30 per group, ≥16 weeks) comparing exercise pairs that differ only in muscle length — e.g., seated vs prone leg curl — would confirm whether the advantage holds in trained populations. 3. Studies demonstrating that sarcomerogenesis eliminates the lengthened-position advantage after sustained lengthened training (>6 months) would support the attenuation hypothesis from Pedrosa 2026 and limit the practical longevity of the recommendation. 4. A well-powered study in trained women finding no biarticular muscle advantage at lengthened positions would challenge the sex-generalisability of the claim.",
+
+  "open_question": true,
+  "open_question_note": "Four open questions: (1) Does the lengthened-position advantage persist in recreationally trained natural adults — all primary evidence comes from untrained populations and structural adaptations may change the response. (2) Does sarcomerogenesis attenuate the advantage over time — a mechanistically plausible but empirically unconfirmed hypothesis. (3) Whether muscle-length effects extend to major multi-joint movement patterns (bench press, squat, deadlift) — Pedrosa 2026 explicitly excluded multi-joint exercises to reduce confounds. (4) The precise minimum external torque threshold required at the lengthened position — no study has systematically varied torque while holding length constant.",
+
+  "practical_summary": "Select exercises that load muscles at their stretched position with meaningful resistance. For biarticular muscles specifically: use seated (hip-flexed) leg curl over prone for hamstrings; use overhead triceps extension (cable or dumbbell) over pushdown for triceps long head; use standing calf raises (knee extended) over seated for gastrocnemius; use leg extension with lower hip flexion angle for rectus femoris. These are not wholesale exercise replacements — Nordic hamstring training remains effective for BFsh, ST, and injury prevention; pushdowns work triceps lateral and medial heads. The principle applies at the level of individual biarticular muscles within a muscle group, not the entire muscle group. Monoarticular muscles (BFsh, vastus lateralis, soleus) are not meaningfully affected by joint angle changes that do not alter their own length-tension relationship — prioritise other programming variables for these muscles.",
+
+  "coi_summary": "Maeo 2024: No COI, Singapore NIE government funding. Pedrosa 2026: No COI declared, no funding. Soft flag for Pedrosa 2026: first and third authors are co-authors on multiple included primary studies (Pedrosa et al. knee extension ROM studies; Kassiano et al. calf raise studies) — potential confirmation bias toward the lengthened-position hypothesis. Low-moderate bias risk. Does not disqualify either entry.",
+
+  "added_by": "founder",
+  "date_added": "2026-04-14",
+  "last_reviewed": "2026-04-14",
+  "next_review": "2026-10-14",
+  "review_trigger": "Any systematic review or meta-analysis comparing muscle hypertrophy across exercises or training conditions that differ in muscle length published in Sports Medicine, MSSE, JSCR, JISSN, or EJSS. Triggered immediately on any RCT in trained naturals (n>20 per group) comparing exercises differing primarily in muscle length using MRI or CT measurement. Triggered on publication of a Kassiano et al. exercise selection meta-analysis or any study testing the sarcomerogenesis attenuation hypothesis in a longitudinal trained-population design. Review cycle: 6 months (contested claims — Stasinaki vs Maeo conflict for triceps; trained population gap)."
+}

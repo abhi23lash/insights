@@ -1,0 +1,110 @@
+{
+  "id": "hypertrophy-proximity-to-failure-001",
+  "domain": "hypertrophy",
+  "subdomain": "programming",
+  "tags": ["hypertrophy", "proximity-to-failure", "training-to-failure", "RIR", "velocity-loss", "resistance-training", "effort"],
+
+  "claim": "Resistance training does not need to be performed to momentary muscular failure to maximise muscle hypertrophy. Both failure and non-failure training produce meaningful hypertrophy, with no significant between-group advantage for momentary failure. Some minimum proximity to failure is required — very low effort (velocity loss <20%) produces attenuated hypertrophy versus moderate/high effort — suggesting a non-linear relationship between proximity-to-failure and hypertrophy.",
+
+  "grade": "low",
+  "source_type": "research",
+
+  "applies_to": {
+    "training_age": "any — but see population flag below",
+    "natural_status": "not reported — not an exclusion criterion across included studies",
+    "sex": "any",
+    "goal": "hypertrophy"
+  },
+
+  "population_flag": "Critical limitation: studies comparing failure vs non-failure (Themes A+B) included 7/9 untrained populations and only 2/9 trained populations. The velocity loss threshold studies (Theme C) exclusively used trained individuals. Trained-specific inferences are much stronger from Theme C than from Themes A+B. Layer 1 confidence is therefore highest for the non-linearity claim (Theme C, all trained) and lowest for the no-superiority-of-failure claim (Theme A, mostly untrained).",
+
+  "biological_plausibility": {
+    "passes": true,
+    "mechanism": "Proximity-to-failure determines the progressive recruitment of type II muscle fibres within a set. As reps approach failure, higher-threshold motor units are activated, exposing fast-twitch fibres to increasing mechanical tension — the primary hypertrophic stimulus. The non-linear relationship is mechanistically explained by cumulative neuromuscular fatigue: at very high proximities (i.e. momentary failure), acute fatigue impairs neural drive and excitation-contraction coupling across subsequent sets, potentially reducing total mechanical tension exposure over a session. Thus moderate proximity (stopping 1-4 reps shy of failure) may produce near-maximal fibre activation while preserving capacity for subsequent sets."
+  },
+
+  "sources": [
+    {
+      "citation": "Refalo MC, Helms ER, Trexler ET, Hamilton DL, Fyfe JJ. Influence of Resistance Training Proximity-to-Failure on Skeletal Muscle Hypertrophy: A Systematic Review with Meta-analysis. Sports Medicine. 2023;53:649-665.",
+      "pmid": "36334240",
+      "doi": "10.1007/s40279-022-01784-y",
+      "url": "https://doi.org/10.1007/s40279-022-01784-y",
+      "study_design": "Systematic review with meta-analysis, PRISMA compliant, pre-registered on OSF (osf.io/rzn63). Multi-level mixed-effects meta-analysis in R (metafor). TESTEX quality scale. Three themed sub-analyses.",
+      "n_studies": 15,
+      "n_treatment_groups": "Theme A: 5 studies (MMF vs non-failure); Theme B: 4 studies (set failure vs non-failure); Theme C: 6 studies (velocity loss thresholds)",
+      "methodological_quality": "TESTEX scores ranged 7-12 (max 15). Mean/median: 9.9/10. 11/15 studies scored >10. All studies lost points for no allocation concealment and no activity monitoring. I² was near-zero across all three meta-analyses (I²=0-7.38%) — very low heterogeneity. No publication bias per Egger's test.",
+      "finding": "Theme A (momentary muscular failure vs non-failure): ES=0.12 (95% CI −0.13, 0.37), p=0.343 — trivial, not significant. Theme A+B combined (any set failure definition vs non-failure): ES=0.19 (95% CI 0.00, 0.37), p=0.045 — trivial, statistically significant but sensitive to assumed correlation (not significant at r<0.73). Theme C (high >25% vs moderate 20-25% velocity loss): ES=0.08 (95% CI −0.16, 0.32), p=0.529 — trivial, not significant. No moderating effect of volume load (p=0.884) or relative load (p=0.525) on the failure vs non-failure comparison. Both conditions produced meaningful within-group hypertrophy across all themes.",
+      "within_group_effect_sizes": {
+        "momentary_muscular_failure": "ES=0.41 (95% CI 0.27, 0.55), p<0.001",
+        "non_failure_theme_a": "ES=0.37 (95% CI 0.15, 0.58), p=0.001",
+        "set_failure_theme_b": "ES=0.46 (95% CI 0.12, 0.80), p=0.077",
+        "non_failure_theme_b": "ES=0.32 (95% CI 0.05, 0.60), p=0.023",
+        "low_velocity_loss_under_20pct": "ES=0.20 (95% CI −0.02, 0.41), p=0.072",
+        "moderate_velocity_loss_20_25pct": "ES=0.39 (95% CI 0.09, 0.70), p=0.010",
+        "high_velocity_loss_over_25pct": "ES=0.42 (95% CI 0.12, 0.71), p=0.005"
+      },
+      "population": "Healthy adults of any age and resistance training experience. Themes A+B: 7/9 studies untrained (UT), 2/9 trained (T). Santanielo 2020 (n=14, trained males) and Karsten 2021 (n=18, trained males) are the only trained-population studies in Themes A+B. Theme C: all 6 studies exclusively resistance-trained participants. Age range: ~20-26 years in most studies; Bergamasco et al. used older adults (65.5±4.5y). Predominantly male; some mixed-sex studies. Natural status: not reported in any included study, not an exclusion criterion.",
+      "limitations": "1. Theme A (the most important sub-analysis) contains only 5 studies, 2 of which included trained participants. Power to detect training-status moderation is near-zero. 2. No consensus definition of 'failure' across studies — the true proximity-to-failure in non-failure conditions is unknown and varied. 3. Assumed correlation r=0.75 between pre/post measures: sensitivity analysis shows the overall set-failure vs non-failure result (ES=0.19, p=0.045) loses statistical significance at r<0.73 — this result should be treated with caution. 4. Theme C result (no advantage for >25% vs 20-25% velocity loss) is more robust across the full sensitivity range (p=0.356-0.612 regardless of r). 5. Allocation concealment not described in 8/15 studies. 6. Short intervention durations (6-14 weeks across included studies). 7. Volume load in Theme C studies was not equated — high velocity loss groups completed substantially more volume load, yet still showed no additional hypertrophy advantage.",
+      "coi_check": "No external funding. Open access via CAUL. Refalo, Hamilton, Fyfe: no conflicts declared. Eric Helms and Eric Trexler both earn income as writers and practitioners in the fitness industry — flagged per framework. This creates a soft potential bias toward findings that support non-failure training (which is commercially aligned with their programming philosophy). However, their financial interest is in writing and coaching broadly, not in a specific supplement, device, or protocol product. The finding (non-failure works equivalently) is consistent with the broader literature and not implausible. Bias risk: low-moderate. Flag and note — do not disqualify.",
+      "practical_translation": {
+        "text": "Study population was healthy adults of any age and training experience — predominantly untrained in the failure vs non-failure comparison, and trained across all velocity loss threshold studies. Effect observed was: momentary muscular failure produced no significant additional hypertrophy versus non-failure training (ES=0.12, p=0.343), while both conditions produced meaningful gains within-group (ES ~0.37-0.41). Velocity loss data showed a non-linear pattern: low effort (<20% velocity loss) produced less hypertrophy (ES=0.20) than moderate (ES=0.39) or high (ES=0.42) velocity loss, with no additional benefit from exceeding 25% velocity loss. This translates to: for recreationally trained natural adults, stopping sets 1-4 repetitions before momentary failure is sufficient for near-maximal hypertrophy, provided sets are performed with sufficient effort (not trivially easy). Grinding to momentary failure on every set is unnecessary and likely counterproductive across a full session due to accumulated neuromuscular fatigue impairing subsequent set quality. Confidence in this translation: moderate for the minimum-effort requirement (robust across all sensitivity analyses), low for the no-superiority-of-failure claim when applied specifically to trained individuals (only 2 trained studies in Theme A).",
+        "confidence": "moderate",
+        "confidence_basis": "Theme C finding (velocity loss dose-response non-linearity) is robust, all-trained population, and statistically stable across all sensitivity parameters. Theme A finding (no MMF superiority) is directionally consistent with prior meta-analyses but underpowered in trained-specific sub-analysis and sensitive to the assumed correlation coefficient."
+      }
+    }
+  ],
+
+  "key_claims": [
+    {
+      "claim": "Momentary muscular failure is not superior to non-failure training for muscle hypertrophy",
+      "confidence": 0.68,
+      "notes": "Supported by Theme A (ES=0.12, p=0.343) but only 5 studies, mostly untrained. Consistent with two prior meta-analyses (Grgic et al. 2022; Vieira et al. 2021). Confidence would be higher with more trained-population data."
+    },
+    {
+      "claim": "Both failure and non-failure training produce meaningful hypertrophy when effort is sufficient",
+      "confidence": 0.82,
+      "notes": "Within-group ES values consistently significant and practically meaningful across all conditions (ES 0.32-0.46). This is the most robustly supported claim in the paper."
+    },
+    {
+      "claim": "The relationship between proximity-to-failure and hypertrophy is non-linear — very low effort produces attenuated gains, but going beyond moderate proximity does not add benefit",
+      "confidence": 0.72,
+      "notes": "Velocity loss data (Theme C, all trained): low VeL ES=0.20 vs moderate ES=0.39 vs high ES=0.42. No significant advantage for >25% vs 20-25% velocity loss (ES=0.08, p=0.529, robust across all sensitivity analyses). Mechanistically coherent via cumulative fatigue model."
+    },
+    {
+      "claim": "Volume load and relative load do not moderate the proximity-to-failure effect on hypertrophy",
+      "confidence": 0.65,
+      "notes": "Moderator analyses: volume load p=0.884, relative load p=0.525. However, sub-group samples were small, limiting statistical power to detect moderation. Cannot rule out moderation with larger samples."
+    },
+    {
+      "claim": "Lower load training may require closer proximity to failure than higher load training to produce equivalent hypertrophy",
+      "confidence": 0.60,
+      "notes": "Directional: lower load (≤50% 1-RM) ES=0.28 vs higher load (>50% 1-RM) ES=0.15, but both non-significant and CIs overlap substantially. Mechanistically supported but not confirmed with statistical power in this paper."
+    }
+  ],
+
+  "proximity_to_failure_themes": {
+    "theme_a": "Momentary muscular failure (involuntary concentric failure) vs non-failure — 5 studies, 7/9 untrained",
+    "theme_b": "Set failure by any other definition vs non-failure — 4 studies, mostly untrained",
+    "theme_c": "Velocity loss threshold comparisons (high >25% vs moderate 20-25%) — 6 studies, all trained"
+  },
+
+  "eqs": 0.26,
+  "eqs_basis": "GRADE low (~0.45): systematic review with meta-analysis meets design threshold, but only 15 studies, assumed correlation coefficient affects key result, predominantly untrained populations in the most important sub-analysis (Theme A), no formal GRADE applied by authors, TESTEX quality moderate (mean 9.9/15). Population match partial (~0.57): Theme C (all trained) is most relevant to Pramana's user base and supports the non-linearity claim well; Theme A (mostly untrained) is where the no-superiority-of-failure claim originates and is the weakest match. Combined partial match applied. EQS pulled down by the population mismatch in the critical sub-analysis. The entry is included at Layer 1 as a boundary condition finding for the broader progressive overload claim — it defines the minimum effort threshold required for the dose-response relationship to hold.",
+
+  "conflicting_evidence": "Lasevicius et al. 2019 (included in Theme A) found muscle failure promotes greater hypertrophy in low-load but not high-load conditions — a boundary condition conflict. This is consistent with the non-linear hypothesis: at low loads, proximity-to-failure matters more (because effort is needed to recruit higher-threshold fibres), while at high loads, even non-failure sets achieve near-maximal fibre recruitment. A prior meta-analysis (Hickmott et al. 2022, Sports Med Open) found velocity loss >25% superior to ≤25% for hypertrophy — Refalo et al. 2023 resolved this conflict by showing the effect was driven by comparisons with <20% velocity loss, not by the 20-25% vs >25% comparison specifically. These are Type 2 boundary condition conflicts, not direct contradictions.",
+
+  "what_would_change_this": "1. A well-powered RCT in trained naturals (n≥60 per group) directly comparing MMF vs RIR 2-3 with volume and set count equated would either confirm or overturn the no-superiority claim for trained populations. 2. If the assumed correlation coefficient is substantially lower than r=0.75 in future studies, the combined set-failure vs non-failure result (ES=0.19, p=0.045) would no longer be significant — further reducing confidence in even the trivial advantage. 3. Long-duration studies (≥6 months) in trained individuals comparing failure vs non-failure training would provide stronger evidence than the current 6-14 week studies.",
+
+  "open_question": true,
+  "open_question_note": "The specific proximity-to-failure that theoretically maximises hypertrophy in trained individuals is unknown. The non-failure conditions across included studies had unknown and variable true proximities-to-failure — some non-failure groups may have been training at RIR 1-2 (close to failure), others at RIR 6+ (far from failure). Until better-controlled studies quantify actual RIR in non-failure conditions, the lower boundary of effective effort cannot be precisely specified. Current practical recommendation is operationalised as RIR 1-4 based on mechanistic reasoning, not direct evidence.",
+
+  "practical_summary": "You do not need to grind to failure on every set. Stop most sets 1-4 reps before failure — this produces near-equivalent hypertrophy while preserving quality across subsequent sets in the session. Reserve failure sets for: the last set of an exercise, single-joint low-complexity exercises (machines, cables), and lower-volume muscle groups. Do not train with trivially low effort — very easy sets (<20% velocity loss equivalent) produce meaningfully less hypertrophy. The goal is sufficient proximity to failure across the week's total volume, not maximum proximity on every individual set.",
+
+  "coi_summary": "Helms and Trexler fitness industry income — soft flag, low-moderate risk. No industry product funding. Does not disqualify entry.",
+
+  "added_by": "founder",
+  "date_added": "2026-04-14",
+  "last_reviewed": "2026-04-14",
+  "next_review": "2027-04-14",
+  "review_trigger": "Any meta-analysis on proximity-to-failure and hypertrophy in trained populations published in Sports Medicine, JSCR, or JISSN. Triggered immediately on any RCT >12 weeks comparing MMF vs non-failure in trained naturals with n>30 per group."
+}
