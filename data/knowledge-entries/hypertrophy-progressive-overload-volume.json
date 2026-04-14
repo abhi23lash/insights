@@ -1,0 +1,126 @@
+{
+  "id": "hypertrophy-progressive-overload-volume-001",
+  "domain": "hypertrophy",
+  "subdomain": "programming",
+  "tags": ["hypertrophy", "progressive-overload", "training-volume", "weekly-sets", "dose-response", "resistance-training"],
+
+  "claim": "Weekly resistance training volume has a graded dose-response relationship with muscle hypertrophy in recreationally trained adults. More sets per muscle group per week produces greater hypertrophy up to a recoverable ceiling, via cumulative mechanical tension driving mTOR activation.",
+
+  "grade": "moderate",
+  "source_type": "research",
+
+  "applies_to": {
+    "training_age": "recreational (≥1 year)",
+    "natural_status": "assumed natural — steroid use not exclusion criterion in primary studies, natural status unconfirmed",
+    "sex": "any",
+    "goal": "hypertrophy"
+  },
+
+  "biological_plausibility": {
+    "passes": true,
+    "mechanism": "Greater total weekly volume increases cumulative time under mechanical tension across the training week. Each set activates mTORC1 via integrin and GPR56 signalling. More sets per week means more total MPS episodes, resulting in greater net protein accretion over time provided recovery is adequate."
+  },
+
+  "sources": [
+    {
+      "citation": "Schoenfeld BJ, Ogborn D, Krieger JW. Dose-response relationship between weekly resistance training volume and increases in muscle mass: A systematic review and meta-analysis. Journal of Sports Sciences. 2017;35(11):1073-1082.",
+      "pmid": "27433992",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27433992/",
+      "study_design": "Systematic review and meta-analysis (meta-regression)",
+      "n_studies": 15,
+      "n_treatment_groups": 34,
+      "finding": "Graded dose-response between weekly sets and hypertrophy ES. Continuous: each additional weekly set per muscle group → ES increase of 0.023 (0.37% gain). Higher vs lower volume groups: ES difference of 0.241 (3.9% greater gain). Relationship significant at P = 0.002.",
+      "population": "Mixed trained and untrained healthy adults, primarily young. Training status not stratified in meta-regression — trained individuals present but not isolated.",
+      "effect_size": "ES 0.241 between higher and lower volume conditions; 0.023 per additional weekly set. Small-to-moderate. Practically meaningful for hypertrophy outcomes.",
+      "limitations": "Training status pooled — trained and untrained not separated. No GRADE ratings applied. Meta-regression assumes linearity. Primary studies mostly 6–12 weeks. Natural status not reported or required. Categorical threshold analysis (P = 0.074) did not reach significance — continuous effect is more robust than the ≥10 sets threshold specifically.",
+      "coi_check": "No industry funding identified. Schoenfeld holds Tonal Corp advisory role (confirmed in later work) — not relevant to this paper. Low bias risk.",
+      "practical_translation": {
+        "text": "Study population was mixed trained and untrained healthy adults. Effect observed was a graded dose-response: each additional weekly set produced incrementally greater hypertrophy, with higher volume groups gaining 3.9% more muscle than lower volume groups. This translates to: recreationally trained natural adults performing 10–20 weekly sets per muscle group will accumulate meaningfully greater hypertrophy than those performing fewer than 5, because cumulative mechanical tension drives mTOR activation in proportion to total weekly stimulus. Confidence in this translation: moderate — because training status was not stratified and the trained-specific magnitude is inferred, not directly measured.",
+        "confidence": "moderate",
+        "confidence_basis": "Robust meta-analytic dose-response (P = 0.002) but mixed population limits direct inference to trained individuals specifically"
+      }
+    },
+    {
+      "citation": "Ralston GW et al. A Systematic Review of The Effects of Different Resistance Training Volumes on Muscle Hypertrophy. PMC8884877. 2022.",
+      "pmid": "35291645",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8884877/",
+      "study_design": "Systematic review and meta-analysis",
+      "n_studies": 7,
+      "n_treatment_groups": null,
+      "finding": "In trained men (≥1 year experience), 12–20 weekly sets per muscle group is the operational range for hypertrophy. Triceps showed significant advantage for high volume (ES −0.5, p = 0.01). Quadriceps (ES −0.2, p = 0.19) and biceps (ES −0.1, p = 0.59) showed no significant differences between moderate and high volume.",
+      "population": "Trained men only — inclusion required ≥1 year resistance training experience. Age 18–35. All-male sample. Supplement exclusion not reported.",
+      "effect_size": "Triceps ES 0.5 favouring high volume (significant). Quadriceps and biceps differences non-significant. Confirms dose-response plateaus at higher volumes in trained populations.",
+      "limitations": "All-male sample limits sex generalisation. Only 7 studies. Compared moderate (12–20) vs high (>20) sets — does not address low volume. No GRADE ratings — used Oxford Level of Evidence and PEDro (mean score 4.7 ± 1.1). Inconsistent measurement sites across studies. No nutritional controls.",
+      "coi_check": "CAPES government funding (Brazil). No COI declared. Low bias risk.",
+      "practical_translation": {
+        "text": "Study population was trained men with ≥1 year experience. Effect observed was that 12–20 weekly sets per muscle group is sufficient for hypertrophy — gains did not consistently increase above 20 sets/week at standard training frequency. This translates to: for recreationally trained natural adults, targeting 12–20 weekly sets per muscle group is the practical upper bound before returns diminish, with muscle group specificity (triceps may benefit from higher volumes than quadriceps at standard frequency). Confidence in this translation: moderate — because the sample is male-only and the comparison range (moderate vs high) does not cover low volume conditions.",
+        "confidence": "moderate",
+        "confidence_basis": "Trained-specific population with appropriate inclusion criteria. All-male limits generalisation. Confirms Schoenfeld 2017 dose-response and adds an upper boundary in trained populations."
+      }
+    },
+    {
+      "citation": "Krieger JW et al. The Resistance Training Dose-Response: Meta-Regressions Exploring the Effects of Weekly Volume and Frequency on Muscle Hypertrophy and Strength Gains. SportRxiv preprint. 2024.",
+      "pmid": null,
+      "url": "https://sportrxiv.org/index.php/server/preprint/view/460",
+      "study_design": "Multi-level meta-regression (preprint — not yet peer reviewed)",
+      "n_studies": 67,
+      "n_treatment_groups": null,
+      "finding": "100% posterior probability of positive volume-hypertrophy slope — gains increase with volume. Relationship shows diminishing returns. Frequency showed weaker effect on hypertrophy than volume. Distinguishing direct vs indirect sets essential for predicting adaptations.",
+      "population": "Mixed trained and untrained, both sexes. Training status controlled in models.",
+      "effect_size": "Posterior probability 100% for positive volume-hypertrophy slope. Diminishing returns modelled. Specific ES not extractable from available content.",
+      "limitations": "Preprint — not peer reviewed. Specific ES values not fully accessible. Pooled population. Preprint status means this should be treated as corroborating, not anchoring, evidence.",
+      "coi_check": "Not explicitly stated. Krieger is a recognised independent statistician in exercise science with no known industry conflicts.",
+      "practical_translation": {
+        "text": "Study population was mixed trained and untrained adults across 67 studies. Effect observed was a confirmed positive volume-hypertrophy dose-response with diminishing returns as volume increases. This corroborates and extends Schoenfeld 2017 with larger sample and more sophisticated methods. Confidence in this translation: moderate — preprint status, but directionally consistent with peer-reviewed anchor.",
+        "confidence": "moderate",
+        "confidence_basis": "Largest meta-regression to date on this question. Preprint — peer review pending. Treated as corroborating evidence only."
+      }
+    }
+  ],
+
+  "key_claims": [
+    {
+      "claim": "Weekly resistance training volume has a graded dose-response relationship with muscle hypertrophy",
+      "confidence": 0.88
+    },
+    {
+      "claim": "Each additional weekly set per muscle group produces incrementally greater hypertrophy (ES ~0.023 per set)",
+      "confidence": 0.78
+    },
+    {
+      "claim": "For recreationally trained individuals (≥1 year), 10–20 weekly sets per muscle group is the practical effective range",
+      "confidence": 0.72,
+      "notes": "Upper bound from trained-specific review (PMC8884877). Lower bound from Schoenfeld 2017 categorical threshold. Both anchored on moderate-quality evidence."
+    },
+    {
+      "claim": "The dose-response relationship plateaus or exhibits diminishing returns beyond 20 weekly sets per muscle group in trained individuals",
+      "confidence": 0.68,
+      "notes": "Supported by PMC8884877 and SportRxiv preprint. Not yet confirmed by high-quality GRADE evidence in trained-specific populations."
+    },
+    {
+      "claim": "Both load progression and repetition progression are valid mechanisms of progressive overload producing equivalent hypertrophy",
+      "confidence": 0.74,
+      "notes": "Supported by PMC9528903 (Schoenfeld et al. RCT, 8 weeks, trained individuals). Single RCT — not sufficient alone for Layer 1 but consistent with volume dose-response logic."
+    }
+  ],
+
+  "eqs": 0.42,
+  "eqs_basis": "GRADE moderate (0.62) — meta-analytic anchor (Schoenfeld 2017) with robust dose-response finding, but primary analysis pools trained and untrained populations without stratification. Population match partial-to-close (0.68) — trained individuals are represented and confirmed by PMC8884877 which isolates ≥1 year trained adults, but natural status unconfirmed across primary studies. Combined EQS boosted by convergent corroboration from three independent sources across different methodologies.",
+
+  "conflicting_evidence": "PMC8884877 found no significant hypertrophy advantage for volumes above 20 sets/week in trained men for quadriceps and biceps at standard training frequency — only triceps showed a significant high-volume advantage. This is a boundary condition conflict (Type 2), not a direct contradiction: the dose-response exists but plateaus in trained individuals, particularly for large muscle groups at standard frequency. EQS adjusted accordingly per framework (×0.85 for boundary condition conflict).",
+
+  "what_would_change_this": "1. A well-powered RCT or meta-analysis stratifying trained naturals specifically and finding no volume-hypertrophy dose-response would directly challenge this entry. 2. Evidence that the dose-response disappears entirely above 6–8 sets/week would reduce the practical upper bound. 3. A study confirming that high responders at low volume and low responders at high volume cancel out the pooled effect would indicate individual variation overrides the population mean.",
+
+  "open_question": false,
+  "open_question_note": "The dose-response relationship is well established. The open questions are the precise upper ceiling in trained populations and whether the relationship holds equally for all muscle groups — both boundary conditions, not challenges to the core claim.",
+
+  "practical_summary": "Train each muscle group 10–20 sets per week. Progressive overload the volume or load over time — both work. Below 10 sets/week, you are leaving adaptation on the table. Above 20 sets/week, the evidence for additional gain is weak in trained individuals, and recovery cost rises. Muscle group specificity applies — triceps and smaller muscles may respond better to higher volumes than large compound-dominant groups like quadriceps.",
+
+  "natural_status_note": "No study in this entry's evidence base used a validated natural status exclusion method beyond self-report or supplement exclusion. Natural status is assumed, not confirmed. This is a structural gap across the volume-hypertrophy literature. Flag this in any population where steroid use prevalence is elevated.",
+
+  "added_by": "founder",
+  "date_added": "2026-04-13",
+  "last_reviewed": "2026-04-13",
+  "next_review": "2027-04-13",
+  "review_trigger": "Any meta-analysis on volume-hypertrophy dose-response in trained individuals published in JSCR, Sports Medicine, JISSN, or AJCN. Triggered immediately on peer-reviewed publication of Krieger 2024 SportRxiv preprint."
+}
