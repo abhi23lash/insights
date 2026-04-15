@@ -1,0 +1,140 @@
+{
+  "id": "biomechanics-knee-mechanics-001",
+  "domain": "biomechanics",
+  "subdomain": "knee",
+  "tags": ["knee", "patellofemoral", "valgus", "knee-tracking", "femoral-rotation", "quad-dominance", "squat", "PF-joint", "tibia-femur-ratio", "neuromuscular-control", "hip-abductors", "compressive-force"],
+
+  "score_type": "BAC",
+
+  "claim": "Knee tracking in the frontal plane is governed by femoral rotation and hip position, not independent knee mechanics. Dynamic valgus collapse under load is primarily a neuromuscular control failure — not a fixed structural condition — and is therefore modifiable. Patellofemoral compressive force increases with knee flexion depth, making depth management a legitimate load-management tool. Femur-to-tibia segment length ratio is a primary structural determinant of squat torso angle and knee travel requirements. Quad dominance is a load distribution pattern driven by hip engagement and body position, modifiable through cueing and exercise selection.",
+
+  "grade": "not_applicable",
+  "source_type": "research",
+
+  "applies_to": {
+    "population": "anatomically typical adults — claims hold for individuals without significant structural knee pathology, severe tibial torsion, or post-surgical anatomy; the valgus claim applies specifically to dynamic loading contexts (not resting structural alignment)",
+    "individual_variation": "meaningful — femur:tibia ratio, femoral anteversion, Q-angle, and tibial torsion all produce genuine inter-individual differences in knee mechanics under load; see bac_dimensions.transferability",
+    "goal": "any — biomechanical facts are goal-agnostic; practical application varies by goal (hypertrophy, strength, injury prevention, athletic performance)"
+  },
+
+  "biological_plausibility": {
+    "passes": true,
+    "mechanism": "The knee joint lacks significant frontal-plane independent mobility — it is principally a hinge joint with its axis of rotation determined proximally by the femur and distally by the tibia. Femoral internal rotation adducts the distal femur medially, driving the knee inward; femoral external rotation abducts it laterally. Hip abductors and external rotators (gluteus medius, piriformis, obturators) are the primary controllers of femoral rotation during closed-chain loading. Patellofemoral joint reaction force is the vector resultant of quadriceps tension and patellar ligament tension acting across the patellofemoral contact area — as knee flexion increases, the quadriceps moment arm shortens and tension must increase to maintain extension torque, directly elevating compressive load on the patellar cartilage. The femur:tibia ratio determines the geometry of the squat's centre-of-mass path — longer femurs displace the hip further from the ankle, requiring greater torso forward lean and knee travel to maintain a balanced base of support."
+  },
+
+  "bac_score": 0.71,
+  "bac_dimensions": {
+    "derivation": {
+      "score": 0.875,
+      "basis": "Split derivation basis across the five claims. Joint mechanics, force vectors, and segment geometry (knee tracking, PF compressive force, femur:tibia ratio, quad dominance as load distribution) are derived from physics and direct measurement — moment arms measurable via goniometry and motion capture, contact forces measurable via instrumented implants and mathematical modelling: derivation score 1.0 for these four claims. The valgus collapse claim (primarily neuromuscular, not structural) is based on prospective cohort data and EMG/motion capture research rather than pure mechanics — it is falsifiable via laboratory measurement but the 'primarily neuromuscular' characterisation is empirical, not geometrically deterministic: derivation score 0.75. Entry-level score = average of 1.0 (×4 claims) and 0.75 (×1 claim) = 0.875."
+    },
+    "replication": {
+      "score": 0.75,
+      "basis": "Knee tracking and PF compressive force relationships are replicated across multiple independent biomechanics laboratories and confirmed in cadaveric, in-vivo, and computational modelling studies. The neuromuscular basis of valgus collapse is supported by multiple prospective and intervention studies (Hewett, Powers, Myer groups), but the relative contribution of neuromuscular vs structural factors is not resolved with a single definitive study — consensus is strong but not unanimous. Femur:tibia segment effects on squat mechanics are theoretically robust but have fewer direct comparative studies than spinal mechanics."
+    },
+    "transferability": {
+      "score": 0.50,
+      "basis": "Meaningful individual variation expected. The directional relationships (femoral rotation drives knee tracking; depth increases PF load; longer femurs require more lean) are universal. However, optimal practical application varies substantially due to: (1) femur:tibia ratio — longer femurs relative to tibia require more forward torso lean and greater ankle dorsiflexion or heel elevation to maintain balance; (2) femoral anteversion/retroversion — alters the neutral tracking axis and optimal foot turn-out angle; (3) Q-angle (angle between quadriceps force vector and patellar ligament) — larger Q-angles increase lateral patellar tracking stress, common in females due to wider pelvis; (4) tibial torsion — alters the relationship between foot position and tibial tracking axis. These structural variables mean that identical cueing produces different mechanical outcomes across individuals."
+    }
+  },
+  "bac_basis": "BAC = (0.875 + 0.75 + 0.50) / 3 = 0.71. Strongest confidence in the joint mechanics and force vector claims (derivation 1.0, physics-derived). Moderate confidence in the valgus claim (derivation 0.75, empirically supported but the neuromuscular vs structural characterisation involves judgement beyond pure measurement). Transferability capped at 0.50 due to meaningful individual anatomical variation in femur:tibia ratio, anteversion, Q-angle, and tibial torsion.",
+
+  "eqs": null,
+  "eqs_basis": "null — pure mechanics and neuromuscular control entry. Claims are falsifiable by measuring force, joint angle, segment geometry, and muscle activation directly. No biological adaptation outcome (hypertrophy, strength gain, injury rate) is asserted. EQS does not apply.",
+
+  "sources": [
+    {
+      "citation": "Neumann DA. Kinesiology of the Musculoskeletal System: Foundations for Rehabilitation. 3rd ed. Mosby/Elsevier; 2016.",
+      "type": "biomechanics_textbook",
+      "authority": "Standard kinesiology reference across physical therapy and exercise science. Synthesises joint mechanics from primary anatomy and biomechanics literature across multiple decades and independent research groups.",
+      "relevant_content": "Joint mechanics of the knee: patellofemoral contact forces across the flexion range; quadriceps force-angle relationships; the role of the iliotibial band and lateral retinaculum in patellar tracking; tibiofemoral kinematics in the frontal and transverse planes. Documents that the knee has minimal independent frontal plane mobility — its frontal plane position is determined by proximal (femoral) and distal (tibial) rotations. Provides anatomical basis for the Q-angle and its relationship to lateral patellar tracking stress. Segment geometry effects (femur and tibia lengths) on closed-chain lower extremity mechanics.",
+      "coi_check": "Academic textbook. No industry funding conflict.",
+      "role_in_entry": "Primary source for knee joint mechanics, PF compressive force, Q-angle anatomy, and segment geometry claims"
+    },
+    {
+      "citation": "Powers CM. The influence of abnormal hip mechanics on knee injury: a biomechanical perspective. Journal of Orthopaedic and Sports Physical Therapy. 2010;40(2):42-51.",
+      "pmid": "20118526",
+      "doi": "10.2519/jospt.2010.3337",
+      "url": "https://doi.org/10.2519/jospt.2010.3337",
+      "type": "research_paper",
+      "authority": "Christopher Powers — Director, Program in Biokinesiology, University of Southern California. One of the foremost researchers on patellofemoral and knee biomechanics. This paper is among the most cited on the hip-knee mechanics relationship.",
+      "relevant_content": "Establishes the biomechanical chain from hip to knee: femoral internal rotation produced by hip abductor/external rotator weakness drives dynamic knee valgus. Demonstrates that apparent knee valgus in weight-bearing tasks is frequently a proximal (hip) problem expressed distally at the knee, not a structural knee or foot problem. Reviews patellofemoral mechanics and the role of femoral rotation in altering PF joint stress distribution — internal femoral rotation shifts the patella laterally relative to the femoral groove, increasing lateral contact stress. Provides the mechanistic basis for hip-strengthening interventions for PF pain and ACL injury prevention.",
+      "coi_check": "No industry funding identified. Powers has no known commercial conflicts relevant to these claims. Low COI risk.",
+      "role_in_entry": "Primary source for the knee-tracking-follows-femoral-rotation claim and the neuromuscular basis of valgus. Also supports PF mechanics claims."
+    },
+    {
+      "citation": "Hewett TE, Myer GD, Ford KR, Heidt RS Jr, Colosimo AJ, McLean SG, van den Bogert AJ, Paterno MV, Succop P. Biomechanical measures of neuromuscular control and valgus loading of the knee predict anterior cruciate ligament injury risk in female athletes: a prospective study. American Journal of Sports Medicine. 2005;33(4):492-501.",
+      "pmid": "15722287",
+      "doi": "10.1177/0363546504269591",
+      "url": "https://doi.org/10.1177/0363546504269591",
+      "type": "research_paper",
+      "authority": "Timothy Hewett — Director, Sports Medicine Biodynamics Center, Cincinnati Children's Hospital. Landmark prospective study establishing dynamic valgus as a neuromuscular control phenomenon and ACL injury predictor.",
+      "relevant_content": "Prospective cohort (n=205 female athletes) with pre-season motion capture and force plate measurements during jump-landing tasks. Athletes who subsequently sustained ACL injury showed significantly greater dynamic knee valgus (abduction moment) at landing than uninjured athletes. The valgus loading was measured mechanically — by motion capture and force plate — and predicted injury prospectively, confirming that dynamic valgus is a modifiable movement pattern rather than a fixed structural characteristic. Valgus collapse was associated with reduced hip abductor and external rotator control, supporting the neuromuscular (not structural) characterisation.",
+      "key_numbers": {
+        "n": 205,
+        "design": "Prospective cohort — pre-season measurements predicting in-season ACL injury",
+        "finding": "Knee abduction moment predicted ACL injury with 73% sensitivity and 78% specificity; injured athletes showed 2.5× greater knee abduction moments than uninjured",
+        "implication": "Dynamic valgus is a measurable, variable neuromuscular pattern — not a fixed structural trait — and responds to neuromuscular training interventions"
+      },
+      "limitations": "1. Female athletes only — the prospective predictive relationship may not generalise directly to males or the general population. 2. The study establishes valgus as a neuromuscular predictor of injury; it does not directly test the modifiability claim (though intervention studies support this separately). 3. Jump-landing context — may not fully characterise valgus mechanics in loaded squatting.",
+      "coi_check": "Funded by NIH and the Pearlman Cardiovascular Institute — no industry funding. Low COI risk.",
+      "role_in_entry": "Primary empirical support for the valgus-is-neuromuscular claim — the prospective design and force plate measurement confirm that dynamic valgus is a variable, measurable pattern rather than a fixed structural position"
+    }
+  ],
+
+  "key_claims": [
+    {
+      "claim": "Knee tracking alignment in the frontal plane follows femoral rotation — the knee tracks inward when the femur internally rotates and outward when it externally rotates",
+      "confidence": 0.95,
+      "score_type": "BAC",
+      "notes": "Geometrically determined by the tibiofemoral joint's hinge architecture. The knee has minimal independent frontal plane mobility — its frontal plane position is set by the proximal femur and distal tibia. Well-established across anatomy, physical therapy, and biomechanics literature. Near-universal consensus; confidence below 1.0 only because minor contributions from tibial torsion and foot pronation add complexity."
+    },
+    {
+      "claim": "Dynamic valgus collapse under load is primarily a neuromuscular control failure driven by hip abductor and external rotator weakness, not a fixed structural condition",
+      "confidence": 0.78,
+      "score_type": "BAC",
+      "notes": "Supported by Powers 2010 (mechanistic) and Hewett 2005 (prospective cohort). The 'primarily neuromuscular' characterisation is directionally well-supported: hip abductor strengthening interventions consistently reduce dynamic valgus, confirming modifiability. Confidence below 0.90 because structural contributors (Q-angle, femoral anteversion, tibial torsion, foot pronation) are not negligible — calling it 'primarily' neuromuscular involves a degree of emphasis that is empirically supported but not definitively quantified as a proportion."
+    },
+    {
+      "claim": "Patellofemoral joint compressive force increases with knee flexion depth, peaking at or near maximum flexion under load",
+      "confidence": 0.88,
+      "score_type": "BAC",
+      "notes": "Mechanistically well-established: as knee flexion increases, quadriceps tension must increase to maintain the extension moment (shorter moment arm), and the PF contact area, while also increasing, does not fully offset the rising force vector — net contact stress increases. Quantitatively: PF reaction force approximately 0.5× bodyweight at 60° flexion, rising to 6-8× bodyweight at deep squat angles under load (values from instrumented implant and mathematical modelling studies). Confidence below 0.95 because the precise force values vary by modelling assumptions, load magnitude, and individual anatomy."
+    },
+    {
+      "claim": "Femur-to-tibia segment length ratio is a primary structural determinant of squat torso angle requirements and degree of forward knee travel",
+      "confidence": 0.82,
+      "score_type": "BAC",
+      "notes": "Follows from the same geometric principles as femur length in the hip hinge entry. A longer femur relative to tibia displaces the hip further behind the ankle at any given knee flexion angle, requiring greater torso forward lean to keep the centre of mass over the base of support. Directly measurable via segment length measurement and centre-of-mass modelling. Confidence below 0.90 because the interaction with ankle dorsiflexion range of motion is a meaningful confound — restricted dorsiflexion amplifies the forward lean requirement and may dominate over segment ratios in practice."
+    },
+    {
+      "claim": "Quad dominance is a load distribution pattern — a greater proportion of the extension demand is met by the knee extensors rather than hip extensors — and is modifiable through verbal cueing, box squats, and hip-hinge-reinforcing exercises",
+      "confidence": 0.72,
+      "score_type": "BAC",
+      "notes": "The 'quad dominant' movement pattern is mechanistically coherent: torso angle, hip flexion depth, and bar position all determine the relative moment demands at the hip and knee. A more vertical torso reduces the hip extension moment and increases relative knee contribution. Cueing ('sit back', 'push the floor away', 'chest up') modifies torso angle and thus moment distribution — this is measurable via motion capture and force plate. Confidence capped at 0.72 because the modifiability claim extends beyond pure mechanics into motor control and coaching efficacy — the effectiveness of specific cues varies by individual, and the long-term retention of cue-induced changes is not guaranteed."
+    }
+  ],
+
+  "individual_variation_notes": {
+    "femur_to_tibia_ratio": "The ratio of femur length to tibia length determines how the hip travels backward relative to the knee as squat depth increases. High femur:tibia ratio (long femur, short tibia) produces a more inclined torso at equivalent squat depth and typically greater forward knee travel. Low ratio (short femur, long tibia) allows a more upright torso. This is structural — it cannot be changed with cueing, only accommodated.",
+    "femoral_anteversion": "Greater anteversion (inward femoral twist) produces a natural toe-in tendency and may increase medial knee stress in a toe-out squat. Forcing universal foot position ignores this. Optimal foot angle in the squat is partly determined by femoral torsion.",
+    "Q_angle": "The quadriceps angle — between the line from ASIS to patella centre and patella to tibial tuberosity — averages approximately 14° in males and 17° in females. Higher Q-angle increases lateral patellar tracking stress and is one structural contributor to female athletes' higher rates of patellofemoral pain. Not modifiable by training; accommodated by exercise selection and load management.",
+    "ankle_dorsiflexion": "Restricted ankle dorsiflexion interacts with femur:tibia ratio to amplify forward lean and knee travel requirements. This is modifiable (soft tissue work, joint mobilisation) — unlike segment ratios — and is frequently a more addressable intervention point than structural length ratios.",
+    "tibial_torsion": "External tibial torsion shifts the foot outward relative to the knee's mechanical axis. This affects the relationship between foot position and patellar tracking. Excessive internal or external tibial torsion may require modified foot and stance positioning to achieve optimal tracking alignment."
+  },
+
+  "conflicting_evidence": "The relative contribution of structural vs neuromuscular factors to dynamic valgus is not fully resolved. Some researchers and clinicians argue that foot pronation and tibial torsion contribute more substantially than Powers 2010 and Hewett 2005 suggest — the 'primarily neuromuscular' framing may underweight structural contributors in some populations. The femur:tibia effect on squat mechanics is geometrically robust but its practical dominance relative to ankle dorsiflexion restriction is contested in clinical and coaching contexts — restricted dorsiflexion may functionally override segment ratio effects in many individuals. The PF compressive force values vary substantially across modelling studies depending on assumptions about quadriceps line of action, contact area geometry, and load placement.",
+
+  "what_would_change_this": "1. A large-sample (n≥100) comparative study directly measuring the relative contribution of structural variables (Q-angle, anteversion, tibial torsion) vs neuromuscular variables (hip abductor strength, motor control) to dynamic valgus across diverse populations would either confirm or revise the 'primarily neuromuscular' characterisation. 2. Instrumented implant data across squat depths in a sufficient sample would precisely characterise the PF force-depth relationship and replace the current mathematical modelling estimates. 3. Motion capture studies specifically isolating femur:tibia ratio vs dorsiflexion restriction as predictors of squat torso angle across a large sample would clarify the relative dominance of each structural variable.",
+
+  "open_question": true,
+  "open_question_note": "The quantitative weighting of structural vs neuromuscular contributions to dynamic valgus — and therefore the correct emphasis in coaching and rehabilitation — is unresolved. The current evidence supports 'primarily neuromuscular' but cannot exclude meaningful structural contribution in individuals with significant anatomical variation. The optimal squat depth for PF health in the context of progressive loading (where increased depth increases both stress and adaptation stimulus) is also not resolved by current evidence — depth management is a legitimate tool but the optimal balance between training stimulus and PF load is individual and context-dependent.",
+
+  "practical_summary": "Knee tracking is set by the hip, not the knee — improving frontal plane alignment during squats and lunges starts with hip abductor and external rotator control, not knee-specific cues. Dynamic valgus is primarily modifiable through hip strengthening and motor pattern work; it is not a fixed structural fate. Patellofemoral compressive load rises with depth — manage depth as a load variable, not a technique failure: shallower squats are a legitimate prescription for PF-sensitive individuals, not a compromise. Femur:tibia ratio determines how much forward lean and knee travel an individual needs for a balanced squat — coaching should accommodate this structure rather than enforce a vertical tibia template. Quad dominance is a modifiable load distribution pattern: cueing, box squats, and hip-dominant exercise selection (RDLs, hip thrusts) can shift demand toward the posterior chain.",
+
+  "added_by": "founder",
+  "date_added": "2026-04-15",
+  "last_reviewed": "2026-04-15",
+  "next_review": "2028-04-15",
+  "review_trigger": "24-month default for BAC entries. Triggered immediately on publication of a large-sample imaging or motion capture study quantifying structural vs neuromuscular contributions to dynamic valgus, or on instrumented implant data characterising PF compressive force across squat depths in a loaded training context."
+}

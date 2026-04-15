@@ -1,0 +1,123 @@
+{
+  "id": "biomechanics-ankle-mobility-001",
+  "domain": "biomechanics",
+  "subdomain": "ankle",
+  "tags": ["ankle", "dorsiflexion", "squat", "knee-travel", "gastrocnemius", "soleus", "biarticular", "monoarticular", "heel-elevation", "compensation", "Silfverskiold", "tibial-inclination", "mobility"],
+
+  "score_type": "BAC",
+
+  "claim": "Ankle dorsiflexion range directly limits how far the knee can travel over the toe during squat-pattern movements — restricted dorsiflexion propagates upstream as one or more compensatory patterns: knee valgus, excessive forward lean, or lumbar flexion. The gastrocnemius and soleus restrict dorsiflexion through distinct mechanisms: the gastrocnemius is biarticular and its restriction is knee-position-dependent; soleus restriction is monoarticular and present regardless of knee angle. Heel elevation mechanically compensates for dorsiflexion deficit by reducing the tibial inclination required to reach equivalent squat depth.",
+
+  "grade": "not_applicable",
+  "source_type": "research",
+
+  "applies_to": {
+    "population": "anatomically typical adults performing squat-pattern movements — claims hold for individuals without significant ankle pathology, post-surgical restriction, or bony ankle impingement",
+    "individual_variation": "moderate — dorsiflexion ROM varies substantially between individuals (normal range approximately 15-20° non-weight-bearing; functional squat requirement approximately 35-40°), but the upstream compensation pattern when ROM is insufficient is consistent across individuals",
+    "goal": "any — biomechanical facts are goal-agnostic; practical application differs by goal (strength, hypertrophy, injury prevention, athletic performance)"
+  },
+
+  "biological_plausibility": {
+    "passes": true,
+    "mechanism": "During a squat, the tibia must incline forward over the fixed foot — this motion is talocrural dorsiflexion. The degree of forward knee travel over the toe is geometrically coupled to the amount of tibial inclination, which is in turn coupled to available dorsiflexion ROM. When dorsiflexion is restricted and the squat descends to depth, the body must find an alternative path: (1) the heel rises off the floor (transferring load forward), (2) the foot pronates and everts, driving the talus into internal rotation and the tibia/femur into internal rotation and adduction (valgus), (3) the torso inclines further forward to maintain centre-of-mass over the base of support (increasing hip flexion demand and lumbar moment), or (4) the pelvis posteriorly tilts and lumbar spine flexes to reduce the effective squat depth required. These are geometric compensations — they follow deterministically from the kinematic constraint imposed by restricted dorsiflexion, not from individual choice or strength deficits."
+  },
+
+  "bac_score": 0.83,
+  "bac_dimensions": {
+    "derivation": {
+      "score": 1.0,
+      "basis": "Physics and direct measurement. The relationship between tibial inclination and dorsiflexion ROM is geometrically deterministic — it is calculable from first principles given foot length, tibial length, and joint angle. The biarticular nature of the gastrocnemius (crossing both ankle and knee) and monoarticular nature of the soleus (crossing ankle only) are established anatomy, confirmed across multiple cadaveric studies and clinical measurement frameworks (Silfverskiöld test). Heel elevation compensation is a straightforward trigonometric relationship: raising the heel pre-positions the ankle in relative plantar flexion, reducing the dorsiflexion ROM required for a given tibial inclination. All claims in this entry are falsifiable by direct joint angle measurement."
+    },
+    "replication": {
+      "score": 0.75,
+      "basis": "The gastrocnemius vs soleus distinction and Silfverskiöld test are replicated across clinical anatomy, physical therapy, and sports medicine literature without meaningful disagreement — this is textbook-level consensus. The specific dorsiflexion-squat mechanics relationship (Whitting et al. 2016 and others) is replicated directionally across biomechanics studies, with minor disagreement on the precise dorsiflexion angle required for full depth and the relative contribution of each compensatory pattern (valgus vs forward lean vs lumbar flexion) across individuals. Heel elevation compensation is well-replicated in both clinical and training contexts."
+    },
+    "transferability": {
+      "score": 0.75,
+      "basis": "Minor variation expected. The geometric coupling between dorsiflexion ROM and tibial inclination applies universally — restricted ankle means constrained knee travel for everyone. The compensation pattern (valgus, forward lean, or lumbar flexion) is broadly consistent in direction, though which compensation dominates varies by individual neuromuscular strategy, hip mobility, and thoracic mobility. The absolute dorsiflexion requirement for a given squat depth varies with foot length and tibia length but the directional relationships are universal. Heel elevation effect is geometrically universal. Rated 0.75 rather than 1.0 because the dominant compensation pathway varies individually and the precise angular thresholds differ by body segment proportions."
+    }
+  },
+  "bac_basis": "BAC = (1.0 + 0.75 + 0.75) / 3 = 0.83. All claims are derived from first principles anatomy and joint mechanics (derivation 1.0). The dorsiflexion-squat coupling and compensation cascade are replicated but with minor variation in compensation dominance across individuals (replication 0.75). Universal in direction but compensation pattern varies individually (transferability 0.75).",
+
+  "eqs": null,
+  "eqs_basis": "null — pure joint mechanics and anatomy entry. All claims are falsifiable by measuring joint angles, segment lengths, and anatomy directly. No biological adaptation outcome is asserted. EQS does not apply.",
+
+  "sources": [
+    {
+      "citation": "Neumann DA. Kinesiology of the Musculoskeletal System: Foundations for Rehabilitation. 3rd ed. Mosby/Elsevier; 2016.",
+      "type": "biomechanics_textbook",
+      "authority": "Standard kinesiology reference. Synthesises ankle and foot joint mechanics, muscle anatomy, and closed-chain kinematics from primary anatomy and biomechanics literature.",
+      "relevant_content": "Ankle joint mechanics: talocrural dorsiflexion and plantar flexion range, normal values, and functional requirements. Gastrocnemius anatomy — origin on posterior femoral condyles (biarticular: crosses knee and ankle); effect of knee position on available dorsiflexion. Soleus anatomy — origin on posterior tibia and fibula (monoarticular: crosses ankle only); restriction independent of knee position. Kinematic coupling in closed-chain lower extremity movement: tibial inclination, talus motion, and calcaneal eversion patterns. Silfverskiöld test rationale and clinical application for distinguishing gastrocnemius vs soleus restriction.",
+      "coi_check": "Academic textbook. No industry funding conflict.",
+      "role_in_entry": "Primary anatomical and biomechanical source for all five claims — joint mechanics, biarticular vs monoarticular distinction, kinematic compensation cascade"
+    },
+    {
+      "citation": "Whitting JW, Meir RA, Crowley-McHattan ZJ, Holding RC. Influence of footwear type on barbell back squat using 50, 70, and 90% of one repetition maximum: a biomechanical analysis. Journal of Strength and Conditioning Research. 2016;30(4):1085-1092.",
+      "pmid": "26840440",
+      "doi": "10.1519/JSC.0000000000001180",
+      "url": "https://doi.org/10.1519/JSC.0000000000001180",
+      "type": "research_paper",
+      "authority": "Jason Whitting — exercise biomechanics researcher. Peer-reviewed JSCR publication examining footwear effects on squat mechanics — directly relevant to the heel elevation compensation claim.",
+      "relevant_content": "Examined the effect of different footwear conditions (bare feet, running shoes, weightlifting shoes with elevated heel) on squat mechanics across multiple load intensities. Weightlifting shoes — which provide heel elevation — produced measurable changes in tibial inclination and knee travel compared to flat-soled footwear, directly demonstrating the mechanical compensation effect of heel elevation on squat kinematics. Provides quantitative support for the geometric relationship between heel height, dorsiflexion demand, and knee travel over toe.",
+      "note": "This paper specifically addresses footwear and heel elevation rather than dorsiflexion restriction per se. The dorsiflexion-squat depth coupling is addressed in the biomechanics literature broadly; Neumann 2016 provides the anatomical framework and this paper provides the applied squat mechanics data.",
+      "coi_check": "No industry funding identified. Low COI risk.",
+      "role_in_entry": "Empirical support for the heel elevation compensation claim and its effect on tibial inclination in squatting"
+    }
+  ],
+
+  "key_claims": [
+    {
+      "claim": "Ankle dorsiflexion range of motion directly limits forward knee travel over the toe during squat-pattern movements",
+      "confidence": 0.95,
+      "score_type": "BAC",
+      "notes": "Geometrically deterministic. Forward knee travel = tibial inclination = talocrural dorsiflexion in closed chain. The coupling is direct and measurable. Confidence below 1.0 because foot pronation and subtalar mechanics introduce a small secondary dorsiflexion contribution that slightly decouples pure talocrural measurement from functional squat ROM."
+    },
+    {
+      "claim": "Restricted dorsiflexion propagates upstream as knee valgus, excessive forward lean, or lumbar flexion — the dominant compensation pattern is consistent in direction but varies individually",
+      "confidence": 0.88,
+      "score_type": "BAC",
+      "notes": "The compensation cascade is geometrically necessary — the body must find an alternative path to squat depth when the ankle cannot dorsiflex sufficiently. The three compensations (valgus, forward lean, lumbar flexion) are all observed clinically and biomechanically. Which one dominates in a given individual depends on relative mobility and strength elsewhere in the chain. Confidence below 0.95 because the individual-level dominant compensation cannot be predicted from ankle restriction alone."
+    },
+    {
+      "claim": "Gastrocnemius restriction is biarticular — reducing knee extension during the Silfverskiöld test increases available dorsiflexion if gastrocnemius is the restricting structure",
+      "confidence": 0.97,
+      "score_type": "BAC",
+      "notes": "Established anatomy and well-replicated clinical test. The gastrocnemius origin on the posterior femoral condyles means knee flexion slackens the muscle and increases dorsiflexion ROM. This is the basis of the Silfverskiöld test and is taught as core physical therapy and sports medicine curriculum worldwide. Near-universal consensus."
+    },
+    {
+      "claim": "Soleus restriction is monoarticular — dorsiflexion is equally limited whether the knee is extended or flexed",
+      "confidence": 0.97,
+      "score_type": "BAC",
+      "notes": "Same anatomical basis as the gastrocnemius claim. Soleus origin is on posterior tibia and fibula — it does not cross the knee. Restriction is therefore independent of knee position. Distinguishable from gastrocnemius restriction by the Silfverskiöld test: no change in dorsiflexion when knee is flexed = soleus as limiting factor. Near-universal consensus."
+    },
+    {
+      "claim": "Heel elevation mechanically compensates for dorsiflexion deficit by reducing the tibial inclination required to reach equivalent squat depth",
+      "confidence": 0.92,
+      "score_type": "BAC",
+      "notes": "Geometrically deterministic: raising the heel pre-positions the ankle in relative plantarflexion, so the same forward tibial inclination requires less true talocrural dorsiflexion. Empirically confirmed by Whitting et al. 2016 and the widespread clinical and coaching use of heel elevation. Confidence below 1.0 because the precise heel height required to compensate a given dorsiflexion deficit varies with foot length, tibia length, and squat style."
+    }
+  ],
+
+  "gastrocnemius_vs_soleus_distinction": {
+    "silfverskiold_test": "Clinical test to differentiate: measure dorsiflexion ROM with knee extended, then with knee flexed to 90°. If dorsiflexion increases substantially with knee flexed, gastrocnemius restriction is primary. If dorsiflexion is equally limited in both positions, soleus is the restricting structure.",
+    "training_implication": "Gastrocnemius stretching must be performed with the knee extended to place the muscle on tension (standing calf stretch, downward dog). Soleus stretching requires a bent-knee position (bent-knee calf raise stretch, deep squat with heel support). Confusing the two produces ineffective stretching protocols.",
+    "functional_squat_implication": "In a deep squat, the knee is flexed — gastrocnemius is partially slackened. Residual dorsiflexion restriction in a deep squat position is therefore more likely soleus or bony/capsular restriction, not gastrocnemius. Gastrocnemius restriction is more relevant to lunge patterns and single-leg squats at shallower knee flexion angles."
+  },
+
+  "heel_elevation_note": "Heel elevation is a compensation tool, not a long-term solution if the underlying restriction is soft tissue (gastrocnemius or soleus). Soft tissue restrictions are modifiable through stretching and loading the tissue at length. Bony impingement and post-surgical restriction may not be fully addressable, making heel elevation a permanent accommodation in those cases. For training purposes, heel elevation is a legitimate load management tool while mobility is being developed — it allows productive training stimulus without the kinematic compensations that may increase injury risk.",
+
+  "conflicting_evidence": "The precise dorsiflexion ROM threshold required for unrestricted full-depth squatting is debated — estimates range from 15-20° to 35-40° depending on foot position, stride length, and measurement method. Studies using weight-bearing dorsiflexion measurement (lunge test) report different thresholds than non-weight-bearing goniometry. The relative contribution of gastrocnemius vs soleus vs bony impingement to clinically relevant dorsiflexion restriction is also not uniformly characterised across populations.",
+
+  "what_would_change_this": "1. Motion capture studies directly quantifying the threshold dorsiflexion ROM below which specific compensatory patterns (valgus, forward lean, lumbar flexion) emerge in a large population would sharpen the practical recommendation. 2. Comparative studies measuring compensation prevalence across individuals with matched dorsiflexion restriction but varying hip and thoracic mobility would clarify why different compensations dominate in different people. 3. Evidence that subtalar and midfoot motion contribute substantially more to functional dorsiflexion than currently modelled would require revision of the talocrural-centric framing.",
+
+  "open_question": false,
+  "open_question_note": "The core mechanical relationships (dorsiflexion limits knee travel; gastrocnemius is biarticular; heel elevation compensates) are well-established. The open practical question — which compensation dominates in a given individual — is not a challenge to the mechanics but a coaching/assessment challenge addressed by clinical screening.",
+
+  "practical_summary": "Screen dorsiflexion before prescribing squat depth. Use the Silfverskiöld test (or lunge test with wall) to determine whether restriction is gastrocnemius (biarticular — knee-position-dependent) or soleus (monoarticular — knee-independent). Stretch accordingly: standing straight-leg calf stretch for gastrocnemius; bent-knee stretch for soleus. Use heel elevation as a short-term training accommodation while mobility is developed, not as a permanent crutch for soft tissue restriction. Recognise valgus, excessive forward lean, and butt wink in the squat as potential downstream consequences of dorsiflexion restriction before attributing them to hip mobility or technique error.",
+
+  "added_by": "founder",
+  "date_added": "2026-04-15",
+  "last_reviewed": "2026-04-15",
+  "next_review": "2028-04-15",
+  "review_trigger": "24-month default for BAC entries. Triggered on publication of a large-sample study establishing precise weight-bearing dorsiflexion thresholds for squat compensation patterns, or any study directly quantifying the heel-height-to-dorsiflexion-deficit compensation ratio across body segment proportions."
+}

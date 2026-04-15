@@ -1,0 +1,133 @@
+{
+  "id": "biomechanics-hip-abduction-001",
+  "domain": "biomechanics",
+  "subdomain": "hip",
+  "tags": ["hip-abduction", "glute-medius", "glute-minimus", "TFL", "frontal-plane", "pelvic-stability", "Trendelenburg", "single-leg", "valgus", "hip-adduction", "internal-rotation", "knee-health", "contralateral-pelvic-drop"],
+
+  "score_type": "BAC",
+
+  "claim": "Hip abductors — primarily gluteus medius, with contributions from gluteus minimus and tensor fasciae latae — control frontal plane pelvic stability during single-leg loading. When hip abductor force is insufficient, the contralateral pelvis drops (Trendelenburg pattern). Contralateral pelvic drop drives ipsilateral hip adduction and internal rotation under the fixed foot, increasing valgus stress at the knee. Gluteus medius is the primary frontal plane stabiliser; gluteus maximus is primarily a sagittal plane hip extensor and is not a substitute for gluteus medius function in the frontal plane.",
+
+  "grade": "not_applicable",
+  "source_type": "research",
+
+  "applies_to": {
+    "population": "anatomically typical adults during weight-bearing single-leg tasks — walking, running, single-leg stance, split squats, lunges, step-ups; claims hold for individuals without significant hip pathology or post-surgical anatomy",
+    "individual_variation": "moderate — hip abductor strength and neuromuscular activation levels vary substantially between individuals, but the kinematic consequence of abductor insufficiency (contralateral pelvic drop) is consistent in direction; the magnitude of pelvic drop and downstream valgus varies by strength level and fatigue",
+    "goal": "any — biomechanical facts apply equally to injury prevention, performance, and hypertrophy contexts"
+  },
+
+  "biological_plausibility": {
+    "passes": true,
+    "mechanism": "During single-leg stance, the body's centre of mass lies medial to the stance leg's hip joint. This creates an external adduction moment at the stance hip — the contralateral side of the pelvis tends to fall due to gravity. The hip abductors of the stance leg must generate a counterbalancing abduction moment to maintain a level pelvis. When abductor force is insufficient to balance this gravitational moment, the contralateral pelvis drops below horizontal (positive Trendelenburg). As the pelvis drops on the swing side, the stance femur adducts and internally rotates relative to the fixed tibia and foot. Because the knee is positioned between the femur and tibia, femoral adduction and internal rotation translate directly into medial knee displacement — dynamic valgus — increasing the valgus (abduction) moment at the tibiofemoral and patellofemoral joints. This is a deterministic kinematic chain: pelvis drop → femoral adduction/IR → knee valgus. The magnitude is proportional to the degree of pelvic drop."
+  },
+
+  "bac_score": 0.79,
+  "bac_dimensions": {
+    "derivation": {
+      "score": 0.875,
+      "basis": "Split derivation basis. The frontal plane moment balance (hip abductors must counteract the gravitational adduction moment during single-leg stance), Trendelenburg kinematics (contralateral pelvic drop geometry), and the kinematic chain from pelvic drop to femoral adduction/IR to knee valgus are derived from physics and direct measurement — joint angles, moment arms, and force vectors are all directly measurable via goniometry, motion capture, and force plates: derivation 1.0 for these structural and kinematic claims. The claim that gluteus medius is the primary frontal plane stabiliser relative to TFL and gluteus minimus involves EMG evidence and anatomical moment arm data that is well-supported but not purely geometric — the relative contributions of each muscle depend on activation patterns, moment arm differences, and force capacity, which are empirically derived: derivation 0.75 for this specific claim. Entry-level derivation = average of 1.0 (×4 claims) and 0.75 (×1 claim) = 0.875."
+    },
+    "replication": {
+      "score": 0.75,
+      "basis": "The Trendelenburg sign and its relationship to hip abductor weakness is among the most established findings in musculoskeletal physical therapy and orthopaedics — replicated across clinical, biomechanics, and rehabilitation literature without meaningful disagreement. The kinematic chain from pelvic drop to valgus is confirmed in the Powers 2010 framework and corroborated by Hewett et al. 2005 prospective ACL data. The primary stabiliser claim (glute medius over TFL) is replicated in EMG studies but with minor disagreement on TFL contribution magnitude and the role of muscle activation timing. Replication is strong but not universal — rated 0.75 rather than 1.0 to reflect the EMG variability in the muscle contribution data."
+    },
+    "transferability": {
+      "score": 0.75,
+      "basis": "Minor variation expected. The frontal plane moment balance and Trendelenburg pattern apply universally — anyone with insufficient hip abductor force relative to the gravitational demand will show contralateral pelvic drop. The kinematic chain to knee valgus is directionally universal. Variation exists in: (1) the absolute strength threshold at which drop occurs — varies by body mass, femur length, and moment arm geometry; (2) the degree of valgus produced per unit of pelvic drop — varies by femoral anteversion, tibial torsion, and foot mechanics; (3) which of the three abductors contributes most — varies by activation patterns and relative muscle cross-sectional areas. Rated 0.75 rather than 0.50 because the directional pattern (abductor insufficiency → pelvic drop → valgus) is highly consistent across individuals, even though magnitude and specific muscle contributions vary."
+    }
+  },
+  "bac_basis": "BAC = (0.875 + 0.75 + 0.75) / 3 = 0.79. The kinematic chain from abductor insufficiency to Trendelenburg to valgus is mechanistically robust and well-replicated. The primary uncertainty is in the relative muscle contribution data (glute medius vs minimus vs TFL), which relies on EMG evidence rather than pure mechanics, pulling the entry-level derivation to 0.875 rather than 1.0. Transferability is 0.75 because the directional pattern is universal even though magnitudes vary individually.",
+
+  "eqs": null,
+  "eqs_basis": "null — pure joint mechanics, anatomy, and kinematic chain entry. Claims are falsifiable by measuring joint angles, pelvic position, muscle activation (EMG), and moment arms directly. No biological adaptation outcome is asserted. EQS does not apply.",
+
+  "sources": [
+    {
+      "citation": "Neumann DA. Kinesiology of the Musculoskeletal System: Foundations for Rehabilitation. 3rd ed. Mosby/Elsevier; 2016.",
+      "type": "biomechanics_textbook",
+      "authority": "Standard kinesiology reference. Synthesises hip joint mechanics, abductor muscle anatomy, and single-leg loading biomechanics from primary anatomy and biomechanics literature.",
+      "relevant_content": "Hip abductor anatomy: gluteus medius (origin ilium between anterior and posterior gluteal lines; insertion greater trochanter — primary abductor and frontal plane stabiliser), gluteus minimus (origin ilium between anterior and inferior gluteal lines; insertion greater trochanter — secondary abductor and internal rotator), tensor fasciae latae (origin ASIS; inserts into IT band — abductor and internal rotator via IT band). Frontal plane moment analysis during single-leg stance: external adduction moment from body weight × distance to hip joint axis requires counterbalancing abductor moment. Trendelenburg sign mechanics and clinical significance. EMG and moment arm data confirming gluteus medius as primary contributor to hip abductor moment.",
+      "coi_check": "Academic textbook. No industry funding conflict.",
+      "role_in_entry": "Primary source for hip abductor anatomy, frontal plane moment balance, Trendelenburg mechanics, and gluteus medius as primary stabiliser"
+    },
+    {
+      "citation": "Bolgla LA, Malone TR. Hip strengthening to decrease lower extremity injuries in female runners: a prospective study during a competitive season. Athletic Training and Sports Health Care. 2004.",
+      "type": "research_paper",
+      "authority": "Lori Bolgla — physical therapy researcher with specialisation in patellofemoral pain and hip-knee kinematics. Thomas Malone — clinical biomechanics researcher. Published in sports medicine/athletic training context.",
+      "relevant_content": "Examines the relationship between hip abductor strength and lower extremity kinematics and injury patterns. Establishes the clinical relevance of hip abductor function for knee-level outcomes. Supports the kinematic chain from hip abductor insufficiency to increased lower extremity injury risk via altered frontal plane mechanics. Provides evidence that hip abductor strengthening modifies downstream knee kinematics — confirming the neuromuscular modifiability of the chain.",
+      "note": "Full citation details (volume, issue, pages, DOI) not confirmed at time of entry — verify before citing externally. The user-specified citation is Bolgla & Malone 2004 on hip abductor function.",
+      "coi_check": "No industry funding identified. Low COI risk.",
+      "role_in_entry": "Empirical support for hip abductor function and its relationship to lower extremity kinematics and injury"
+    },
+    {
+      "citation": "Powers CM. The influence of abnormal hip mechanics on knee injury: a biomechanical perspective. Journal of Orthopaedic and Sports Physical Therapy. 2010;40(2):42-51.",
+      "pmid": "20118526",
+      "doi": "10.2519/jospt.2010.3337",
+      "url": "https://doi.org/10.2519/jospt.2010.3337",
+      "type": "research_paper",
+      "authority": "Christopher Powers — University of Southern California. Foremost researcher on hip-knee biomechanical chain. Also cited in biomechanics-knee-mechanics entry.",
+      "relevant_content": "Establishes the full biomechanical chain from hip abductor/external rotator control to knee joint mechanics and injury risk. Documents that femoral adduction and internal rotation — driven by hip abductor insufficiency — produce dynamic valgus at the knee by displacing the femoral condyles medially relative to the tibial plateau. Provides the mechanistic link between hip abductor function (this entry) and knee valgus mechanics (biomechanics-knee-mechanics entry). Specifically identifies gluteus medius as a key target for intervention.",
+      "coi_check": "No industry funding identified. Low COI risk.",
+      "role_in_entry": "Links hip abductor insufficiency to knee valgus stress — the distal endpoint of the kinematic chain described in this entry"
+    }
+  ],
+
+  "key_claims": [
+    {
+      "claim": "Hip abductors must generate a frontal plane abduction moment to prevent contralateral pelvic drop during single-leg loading — this is a gravitational balance problem, not an optional muscle action",
+      "confidence": 0.97,
+      "score_type": "BAC",
+      "notes": "Geometrically deterministic. The centre of mass lies medial to the stance hip joint in single-leg stance, creating an external adduction moment. Hip abductors must counteract this moment or the pelvis falls contralaterally. This is pure statics — M = F × d. Near-universal consensus."
+    },
+    {
+      "claim": "When hip abductor force is insufficient, the contralateral pelvis drops below horizontal (Trendelenburg pattern)",
+      "confidence": 0.97,
+      "score_type": "BAC",
+      "notes": "Direct consequence of the moment balance failure. The Trendelenburg sign is among the most established clinical findings in musculoskeletal assessment. Positive Trendelenburg = ipsilateral hip abductor weakness. Well-replicated across orthopaedics, physical therapy, and biomechanics literature for over a century."
+    },
+    {
+      "claim": "Contralateral pelvic drop drives ipsilateral femoral adduction and internal rotation, increasing valgus stress at the knee",
+      "confidence": 0.90,
+      "score_type": "BAC",
+      "notes": "Kinematically deterministic given the rigid body chain: pelvis drops on swing side → stance femur adducts and internally rotates relative to fixed tibia → knee moves medially → valgus abduction moment increases. Confirmed by Powers 2010 and consistent with Hewett 2005 prospective ACL data. Confidence below 0.97 because the magnitude of knee valgus per unit of pelvic drop varies individually by femoral anteversion and tibial torsion."
+    },
+    {
+      "claim": "Gluteus medius is the primary frontal plane stabiliser at the hip — the largest moment arm for hip abduction and the highest EMG activation during single-leg stance tasks",
+      "confidence": 0.82,
+      "score_type": "BAC",
+      "notes": "Supported by Neumann 2016 anatomical moment arm data and multiple EMG studies. Gluteus medius has a larger abduction moment arm than TFL and a larger physiological cross-section than gluteus minimus. Confidence below 0.90 because EMG data shows meaningful TFL co-activation in some tasks, and the relative contribution shifts with hip position and movement velocity — the 'primary' designation involves some simplification of a distributed muscle synergy."
+    },
+    {
+      "claim": "Gluteus maximus is primarily a sagittal plane hip extensor — it does not substitute for gluteus medius function in the frontal plane",
+      "confidence": 0.85,
+      "score_type": "BAC",
+      "notes": "Gluteus maximus has a predominantly posterior and inferior fibre orientation, producing hip extension and external rotation in the sagittal and transverse planes. Its frontal plane abduction moment arm is substantially smaller than gluteus medius. Training gluteus maximus (squats, hip thrusts, deadlifts) does not equivalently develop the frontal plane control deficit addressed by glute medius training (lateral band walks, clamshells, abduction exercises). Confidence below 0.95 because the upper fibres of gluteus maximus do have a small abduction contribution — the 'not a substitute' claim is directionally correct but not absolute."
+    }
+  ],
+
+  "muscle_hierarchy_notes": {
+    "gluteus_medius": "Primary hip abductor and frontal plane stabiliser. Origin: iliac crest between anterior and posterior gluteal lines. Insertion: greater trochanter (superior and posterior surfaces). Action: abduction (all fibres); anterior fibres assist internal rotation; posterior fibres assist external rotation. The most important target for frontal plane stability training.",
+    "gluteus_minimus": "Secondary hip abductor. Origin: ilium between anterior and inferior gluteal lines. Insertion: anterior greater trochanter. Action: abduction and internal rotation. Functions synergistically with gluteus medius. Smaller cross-section — contributes less peak force.",
+    "tensor_fasciae_latae": "Hip abductor via IT band insertion. Also a hip internal rotator and hip flexor. Active during hip abduction but with significant co-activation in walking and running. May compensate for gluteus medius weakness but introduces internal rotation bias that can worsen valgus patterns in some individuals.",
+    "gluteus_maximus": "Primary hip extensor and external rotator. Largest muscle in the body by mass. Primary sagittal plane motor — not a frontal plane stabiliser. Upper fibres have a small abduction component but insufficient moment arm and activation pattern to substitute for gluteus medius in pelvic stability tasks."
+  },
+
+  "cross_reference": "See biomechanics-knee-mechanics entry (biomechanics-knee-mechanics-001) for the distal expression of this kinematic chain — femoral adduction and internal rotation producing dynamic valgus at the knee. The hip abduction entry describes the proximal cause; the knee mechanics entry describes the distal consequence. Together they form the complete hip-knee mechanical chain relevant to valgus injury prevention and frontal plane stability."
+  ,
+
+  "conflicting_evidence": "The relative EMG contribution of gluteus medius vs TFL during specific exercises is debated — some studies show high TFL activation in exercises commonly used to target glute medius (lateral band walk, clamshell), raising questions about whether these exercises effectively preferentially recruit glute medius or both muscles equally. This does not challenge the primary stabiliser claim (moment arm and anatomical data favour glute medius) but does complicate the exercise prescription inference. The degree to which TFL compensation for glute medius weakness contributes to IT band syndrome is also debated.",
+
+  "what_would_change_this": "1. EMG studies with fine-wire electrodes (more specific than surface EMG) directly comparing gluteus medius and TFL activation during single-leg tasks across a large sample would either confirm or revise the primary stabiliser hierarchy. 2. Motion capture studies quantifying the relationship between measured hip abductor strength deficits and the degree of contralateral pelvic drop and knee valgus across diverse body morphologies would sharpen the magnitude predictions. 3. Evidence that TFL can functionally substitute for gluteus medius in frontal plane stability tasks without increasing IT band stress would reduce the distinctiveness of the glute medius emphasis.",
+
+  "open_question": false,
+  "open_question_note": "The core kinematic chain (abductor insufficiency → Trendelenburg → valgus) is well-established. The open question is exercise prescription: which exercises most efficiently and specifically develop gluteus medius activation without excessive TFL co-activation — a coaching and rehabilitation question, not a mechanics question.",
+
+  "practical_summary": "Single-leg loading is a frontal plane stability test for the hip abductors. Frontal plane knee problems (valgus collapse, PF pain, IT band syndrome, ACL risk) frequently trace proximally to hip abductor insufficiency. Develop gluteus medius specifically — not just gluteus maximus. Hip thrusts and squats are not sufficient for frontal plane stability; lateral band walks, side-lying clamshells, and single-leg stability work are necessary to address the frontal plane demand. Assess Trendelenburg pattern on single-leg stance as a screen: contralateral pelvic drop during single-leg squat or step-down indicates hip abductor insufficiency on the stance side before looking downstream at the knee or foot.",
+
+  "added_by": "founder",
+  "date_added": "2026-04-15",
+  "last_reviewed": "2026-04-15",
+  "next_review": "2028-04-15",
+  "review_trigger": "24-month default for BAC entries. Triggered on publication of fine-wire EMG studies comparing gluteus medius vs TFL activation during common abductor training exercises across a large sample, or motion capture studies quantifying pelvic drop to knee valgus relationships across diverse hip morphologies."
+}
