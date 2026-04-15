@@ -1,0 +1,166 @@
+{
+  "id": "nutrition-protein-distribution-001",
+  "domain": "nutrition",
+  "subdomain": "protein",
+  "tags": ["protein", "protein-distribution", "per-meal-dose", "muscle-protein-synthesis", "MPS", "dose-response", "resistance-training", "meal-frequency", "leucine"],
+
+  "claim": "Muscle protein synthesis (MPS) after resistance exercise displays a dose-dependent response that saturates at approximately 20–40 g of protein per meal in healthy young adults. Below this threshold, MPS increases with each additional gram of protein; above it, excess amino acids are oxidised rather than incorporated into muscle protein. The per-meal ceiling is not fixed — it scales with the volume of muscle mass recruited during exercise, reaching ~40 g after whole-body resistance training. Spreading total daily protein intake across multiple meals of 20–40 g each maximises cumulative MPS across the day compared with bolus or highly unequal distribution patterns.",
+
+  "grade": "low",
+  "source_type": "research",
+
+  "applies_to": {
+    "training_age": "recreationally active to recreationally trained — most included studies used recreationally active young adults; not tested in competitive athletes or beginners",
+    "natural_status": "not confirmed — natural status was not an exclusion criterion in any included study",
+    "sex": "predominantly male — all primary studies used male-only samples; female-specific dose thresholds are not established",
+    "goal": "hypertrophy",
+    "dietary_context": "acute post-exercise protein provision — all studies are acute mechanistic designs measuring fractional synthetic rate (FSR) as a surrogate for hypertrophy, not long-term muscle accretion"
+  },
+
+  "population_flag": "All primary studies used young (≈20–26y) healthy male participants only. Natural status was not confirmed or required as an exclusion criterion. The acute MPS endpoint (fractional synthetic rate over 4–6 hours) is a mechanistic surrogate — it correlates with but does not directly equal long-term muscle accretion. Trained individuals may have attenuated acute MPS responses vs untrained (training-mediated efficiency), though the per-meal dose ceiling is not substantially different. Female-specific dose thresholds are unknown; sex-based lean mass differences likely shift the absolute optimal dose but not the body mass-relative recommendation.",
+
+  "biological_plausibility": {
+    "passes": true,
+    "mechanism": "Dietary protein ingestion triggers muscle protein synthesis via leucine-mediated mTORC1 activation. As protein dose increases, circulating leucine rises and mTORC1-p70S6K signalling is upregulated, increasing fractional synthetic rate of myofibrillar and mixed muscle protein. At the dose-response ceiling, intracellular leucine pools are maximally occupied: aminoacyl-tRNA synthetases are saturated, mTORC1 is fully activated, and additional amino acids cannot further accelerate the rate of peptide chain elongation or initiation. Excess leucine and other amino acids are then directed to oxidation via branched-chain aminotransferase (BCAT) and alpha-keto acid dehydrogenase (BCKDH) pathways, producing CO2 and urea rather than myofibrillar protein. The dose ceiling scales with exercise-recruited muscle mass because a larger pool of ribosomes, mTOR complexes, and myosin/actin precursors across the recruited fibre population creates greater substrate-absorbing capacity before saturation."
+  },
+
+  "pmid_flag": "The PMID provided by the curator (19357214) does not match this paper on PubMed — that identifier returns an unrelated vitamin D/bacterial vaginosis study. The correct PMID for Moore et al. 2009 (DOI 10.3945/ajcn.2008.26401) is 19056590. This entry uses the correct identifier. Verify before seeding to database.",
+
+  "sources": [
+    {
+      "citation": "Moore DR, Robinson MJ, Fry JL, Tang JE, Glover EI, Wilkinson SB, Prior T, Tarnopolsky MA, Phillips SM. Ingested protein dose response of muscle and albumin protein synthesis after resistance exercise in young men. American Journal of Clinical Nutrition. 2009;89(1):161-168.",
+      "pmid": "19056590",
+      "doi": "10.3945/ajcn.2008.26401",
+      "url": "https://doi.org/10.3945/ajcn.2008.26401",
+      "study_design": "Randomised crossover RCT. Within-subject design — each participant completed all five protein dose conditions across separate sessions. Stable isotope tracer methodology (L-[ring-13C6]phenylalanine) to measure fractional synthetic rate (FSR) of mixed muscle protein (MPS) and albumin protein synthesis (APS) over 4 hours post-exercise.",
+      "n": 6,
+      "population": "6 healthy recreationally active young men. Age: not explicitly stated in abstract but approximately 22–24y based on Phillips lab population norms for this period. Male only. Natural status not confirmed.",
+      "protein_source": "Whole egg protein",
+      "protein_doses_tested_g": [0, 5, 10, 20, 40],
+      "exercise_type": "Unilateral leg resistance exercise (leg press, knee extension) — isolated lower limb; NOT whole-body",
+      "measurement_window_hours": 4,
+      "finding": "MPS displayed a dose-dependent response, increasing from 0g to 20g of whole egg protein. MPS was maximal at 20g and did not increase further with 40g (plateau). Albumin protein synthesis (APS) similarly increased dose-dependently and plateaued at 20g. Leucine oxidation increased significantly at 20g and 40g protein ingestion, indicating amino acid catabolism above the utilisation ceiling. Signalling protein phosphorylation (mTOR, p70S6K, 4E-BP1) was not significantly different between any protein dose — suggesting the MPS ceiling is not regulated at the signalling level but at a downstream translational or substrate-availability level.",
+      "key_numbers": {
+        "MPS_ceiling_g": 20,
+        "MPS_plateau_onset": "No significant increase from 20g to 40g",
+        "leucine_oxidation_threshold_g": 20,
+        "albumin_synthesis_ceiling_g": 20,
+        "signaling_dose_response": "Absent — phosphorylation was not dose-dependent"
+      },
+      "limitations": "1. n=6 is critically underpowered — this is the primary methodological limitation. Statistical power to detect between-dose differences was minimal; the plateau finding at 20g may partly reflect insufficient power to detect an incremental benefit of 40g in this sample size. 2. Isolated leg exercise only — the recruited muscle mass was a fraction of total body lean mass; this is not representative of a typical training session and likely underestimates the dose ceiling for whole-body training (see Macnaughton 2016 in conflicting evidence). 3. Whole egg protein was used — not whey protein, which has a higher leucine content per gram; source differences may shift the absolute threshold. 4. 4-hour measurement window is short — it captures the acute MPS peak but does not reflect 24-hour protein balance or cumulative adaptation over days. 5. MPS is a surrogate endpoint — it correlates with hypertrophy over repeated exposures but a single acute FSR measurement is not equivalent to muscle accretion. 6. All male, young — dose-response ceiling for females, older adults, and larger-bodied individuals is not established from this study.",
+      "coi_check": "Funded by the Natural Sciences and Engineering Research Council (NSERC) of Canada — government funding. No direct industry funding declared for this study. Stuart Phillips (last author) holds the Canada Research Chair in Skeletal Muscle Health at McMaster University and has received funding from the Canadian Dairy Commission in other work — soft flag, consistent with pattern across other nutrition entries in this database. Low-moderate COI risk for this specific paper. No direct supplement company funding identified.",
+      "practical_translation": {
+        "text": "Study population was 6 healthy recreationally active young men performing isolated leg resistance exercise. Effect observed was: MPS increased dose-dependently from 0 to 20g whole egg protein and plateaued — 40g produced no additional MPS stimulation, with the excess leucine being oxidised. This translates to: for recreationally trained natural adults performing isolated single-joint or small muscle group exercises (e.g., arm training, calf raises), approximately 20g of high-quality protein per meal is sufficient to maximally stimulate acute MPS. Additional protein above this threshold is not utilised for muscle building in the acute post-exercise window. Confidence in this translation: low — because the sample is n=6, the exercise was isolated rather than whole-body, and the endpoint is acute MPS rather than long-term hypertrophy.",
+        "confidence": "low",
+        "confidence_basis": "n=6 is critically underpowered. Isolated exercise condition limits generalisability to typical training sessions. Acute MPS surrogate endpoint does not directly confirm hypertrophy equivalence. Directionally replicated in corroborating studies but the absolute threshold is contested by Macnaughton 2016."
+      }
+    },
+    {
+      "citation": "Witard OC, Jackman SR, Breen L, Smith K, Selby A, Tipton KD. Myofibrillar muscle protein synthesis rates subsequent to a meal in response to small and large bolus doses of milk protein. American Journal of Clinical Nutrition. 2014;99(1):86-95.",
+      "pmid": "24257722",
+      "doi": "10.3945/ajcn.112.055517",
+      "url": "https://doi.org/10.3945/ajcn.112.055517",
+      "study_design": "Randomised parallel-group RCT. Stable isotope tracer methodology (L-[1-13C]leucine and L-[ring-2H5]phenylalanine). Myofibrillar FSR measured over 4 hours post-exercise.",
+      "n": 8,
+      "population": "8 healthy recreationally active young men per group (multiple groups). Male only. Age approximately 22–24y. Natural status not confirmed.",
+      "protein_source": "Milk protein (whey-dominant)",
+      "protein_doses_tested_g": [0, 10, 20, 40],
+      "exercise_type": "Single-leg knee extension — isolated lower limb",
+      "finding": "Myofibrillar MPS was maximally stimulated at 20g milk protein. 40g did not produce greater myofibrillar MPS than 20g. 0g and 10g produced lower MPS than 20g. These findings replicate Moore 2009 using myofibrillar (rather than mixed) protein FSR and milk protein (rather than whole egg), strengthening the ~20g ceiling claim for isolated exercise.",
+      "role_in_entry": "Direct independent replication of the Moore 2009 per-meal dose ceiling using a different protein source and myofibrillar-specific outcome. Qualifies as second independent RCT for Layer 1 threshold.",
+      "coi_check": "Kevin Tipton (corresponding author) has received funding from Dairy Management Inc. in other work — soft flag. No direct industry funding declared for this specific study. Low-moderate COI risk.",
+      "practical_translation": {
+        "text": "Study population was 8 healthy recreationally active young men performing isolated knee extension exercise. Effect observed was: myofibrillar MPS was maximally stimulated at 20g milk protein, with 40g producing no additional benefit — replicating Moore 2009 with a different protein source and more specific myofibrillar FSR measurement. Confidence in this translation: low-moderate — replication of the Moore ceiling with a different source increases confidence, but limitations (small n, isolated exercise, acute endpoint, all-male) remain identical.",
+        "confidence": "low-moderate",
+        "confidence_basis": "Independent replication of the core finding using different protein source and myofibrillar-specific measurement. Same structural limitations as Moore 2009 (small n, isolated exercise, surrogate endpoint)."
+      }
+    },
+    {
+      "citation": "Areta JL, Burke LM, Ross ML, Camera DM, West DW, Broad EM, Jeacocke NA, Moore DR, Stellingwerff T, Phillips SM, Hawley JA, Coffey VG. Timing and distribution of protein ingestion during prolonged recovery from resistance exercise alters myofibrillar protein synthesis. Journal of Physiology. 2013;591(9):2319-2331.",
+      "pmid": "23459753",
+      "doi": "10.1113/jphysiol.2012.244897",
+      "url": "https://doi.org/10.1113/jphysiol.2012.244897",
+      "study_design": "Randomised parallel-group RCT. Three conditions: PULSE (8 × 10g every 1.5h), INTERMEDIATE (4 × 20g every 3h), BOLUS (2 × 40g every 6h). Stable isotope tracer (L-[ring-2H5]phenylalanine). Myofibrillar FSR over 12 hours post-exercise.",
+      "n": 24,
+      "population": "24 healthy resistance-trained young men (6 per condition + n=6 additional; total n=24 across groups). Age approximately 22–25y. Male only. Natural status not confirmed.",
+      "protein_source": "Whey protein (80g total across 12h, distributed across three patterns)",
+      "exercise_type": "Bilateral leg resistance exercise — leg press and knee extension. Not truly whole-body but bilateral bilateral rather than unilateral",
+      "finding": "4 × 20g (INTERMEDIATE) produced significantly greater myofibrillar MPS over 12 hours than both 8 × 10g (PULSE) and 2 × 40g (BOLUS). PULSE produced the lowest MPS, and BOLUS was intermediate between PULSE and INTERMEDIATE but lower than INTERMEDIATE. This establishes that: (a) protein distribution across multiple meals matters, not just total protein; (b) ~20g per meal at ~3-hour intervals is superior to the same total spread as many small doses or two large doses.",
+      "role_in_entry": "Critical evidence for the distribution component of this entry — extends the per-meal dose finding from Moore 2009 to show that spreading 80g across four 20g meals is superior to two 40g meals or eight 10g doses. Qualifies as third independent RCT for Layer 1 threshold.",
+      "key_numbers": {
+        "conditions": {
+          "INTERMEDIATE_4x20g_3h": "Highest MPS — significantly greater than both alternatives",
+          "BOLUS_2x40g_6h": "Intermediate MPS — not significantly different from PULSE",
+          "PULSE_8x10g_1.5h": "Lowest MPS — below both alternatives"
+        },
+        "implication": "20g per meal at ~3-hour intervals is the operationally optimal distribution for MPS across 12 hours recovery from resistance exercise"
+      },
+      "limitations": "1. 12-hour window only — longer-term studies needed to confirm hypertrophy translation. 2. n=6-8 per group — underpowered for between-group comparisons. 3. Bilateral but not whole-body exercise — same recruited-mass limitation as Moore 2009 and Witard 2014. 4. 80g total protein used — below the daily threshold recommended by Morton 2018 (~1.6g/kg × 70kg = 112g). Distribution findings may not hold under higher or lower daily protein conditions.",
+      "coi_check": "Multiple funding sources including the Australian Institute of Sport. Stuart Phillips as co-author — same soft flag as prior entries. No direct supplement company funding identified. Low-moderate COI risk.",
+      "practical_translation": {
+        "text": "Study population was 24 healthy resistance-trained young men recovering from bilateral leg resistance exercise. Effect observed was: 4 × 20g whey protein every 3 hours produced greater myofibrillar MPS over 12 hours than 2 × 40g every 6 hours or 8 × 10g every 1.5 hours — even though total protein (80g) was identical across all conditions. This translates to: distributing total daily protein across 4–5 meals of approximately 20–40g each, spaced approximately 3–4 hours apart, maximises cumulative MPS across the training day compared with large infrequent boluses or frequent small doses. Confidence in this translation: moderate — the distribution effect is robust within this study and mechanistically coherent. Limitations include small n per group, 12-hour acute window, and leg-dominant exercise.",
+        "confidence": "moderate",
+        "confidence_basis": "Clear between-condition differences in 12h integrated MPS despite identical total protein. Mechanistically coherent via leucine threshold model. Limitations: small n, acute window, leg-dominant exercise, one protein source."
+      }
+    }
+  ],
+
+  "key_claims": [
+    {
+      "claim": "MPS after isolated resistance exercise is maximally stimulated by approximately 20g of high-quality protein in young men, with excess above this threshold oxidised rather than incorporated into muscle protein",
+      "confidence": 0.72,
+      "notes": "Replicated by Moore 2009 (n=6, whole egg) and Witard 2014 (n=8, milk protein) using different sources and FSR methods. Confidence is moderate despite small sample sizes because the mechanistic consistency across independent labs strengthens the direction of the finding. Confidence is not high because the absolute threshold (20g) is an approximation that likely varies with body mass, protein source leucine content, and exercise volume."
+    },
+    {
+      "claim": "Leucine oxidation increases above the MPS-saturating protein dose, confirming substrate overflow rather than continued incorporation",
+      "confidence": 0.78,
+      "notes": "Directly measured in Moore 2009 using isotope tracer. Mechanistically consistent with BCAT/BCKDH oxidation pathway. Strong mechanistic corroboration for the dose ceiling concept."
+    },
+    {
+      "claim": "Optimal per-meal protein dose after whole-body resistance training is higher than after isolated exercise — approximately 40g in young recreationally trained men",
+      "confidence": 0.65,
+      "notes": "Established by Macnaughton et al. 2016 (Physiol Reports, n=30, whey protein, bilateral full-body exercise) — classified as a Type 2 boundary condition conflict with Moore 2009. The increase from 20g to 40g is driven by greater total recruited muscle mass across a whole-body session requiring larger substrate provision. This is the single most important practical boundary condition for this entry."
+    },
+    {
+      "claim": "Distributing total daily protein across 4–5 meals of 20–40g at ~3-hour intervals maximises cumulative daily MPS compared with bolus or highly frequent small-dose patterns",
+      "confidence": 0.65,
+      "notes": "Established by Areta et al. 2013 in a single 12-hour study. Directionally coherent with leucine threshold model. Confidence is limited by small n per group (6–8), single measurement window, and absence of long-term hypertrophy outcome data."
+    },
+    {
+      "claim": "Protein signalling (mTOR, p70S6K, 4E-BP1 phosphorylation) is not dose-responsive — the MPS ceiling is downstream of signalling at the translational or substrate level",
+      "confidence": 0.62,
+      "notes": "Moore 2009 finding. Mechanistically important — it implies that the bottleneck is not kinase activity but amino acid substrate availability and ribosomal capacity. Confidence moderate: finding from n=6 and signalling phosphorylation is highly variable."
+    }
+  ],
+
+  "per_meal_dose_summary": {
+    "isolated_exercise_young_men_g": 20,
+    "whole_body_exercise_young_men_g": 40,
+    "optimal_distribution_frequency": "4–5 meals per day, spaced approximately 3–4 hours apart",
+    "optimal_distribution_basis": "Areta 2013 — 4×20g > 2×40g = 8×10g for 12-hour integrated MPS",
+    "dose_expression_note": "The 20g and 40g thresholds are based on absolute grams in average young male bodies (~70–80 kg). Expressing the dose as ~0.25–0.40 g/kg lean mass per meal is more appropriate for individuals outside this weight range. Larger individuals and those with greater lean mass likely require higher absolute doses to reach the same relative threshold.",
+    "protein_source_note": "Moore 2009 used whole egg protein; Witard 2014 used milk/whey. Higher-leucine sources (whey, dairy) may achieve the MPS ceiling at slightly lower absolute gram quantities than lower-leucine sources (plant proteins, whole egg). Protein source effects on the per-meal threshold have not been formally quantified in an adequately powered dose-response study."
+  },
+
+  "eqs": 0.20,
+  "eqs_basis": "GRADE low (0.40): Three independent RCTs meeting the Layer 1 design threshold. However: all studies are acute mechanistic designs with surrogate MPS endpoint (FSR is not equivalent to long-term muscle accretion); all used small samples (n=6–8 per group in Moore 2009 and Witard 2014; n=6–8 per condition in Areta 2013); all used predominantly male young adult samples; no meta-analysis anchors this entry. GRADE is elevated above very low (0.05-0.29) because the finding is mechanistically coherent, directionally replicated across independent labs, and consistent with the leucine threshold model. Population match partial (0.50): all-male samples, young adults only, natural status unconfirmed, recreationally active rather than specifically resistance-trained population. Nutrition domain — sex carries minor weight per framework, but all-male still limits direct applicability to females. EQS = 0.40 × 0.50 = 0.20.",
+
+  "conflicting_evidence": "Macnaughton et al. 2016 (Physiological Reports, PMID 27511303, n=30, whey protein, full-body resistance exercise): 40g whey protein produced greater myofibrillar MPS than 20g whey protein after a whole-body resistance training session — directly challenging the Moore 2009 20g ceiling. This is a Type 2 boundary condition conflict: the per-meal dose ceiling is NOT fixed at 20g; it scales with the volume of muscle mass under mechanical load. After whole-body resistance exercise (the most common type of training in hypertrophy programming), the optimal per-meal dose appears to be ~40g, not ~20g. This is the most practically important piece of conflicting evidence and substantially upgrades the practical recommendation for compound training sessions. The conflict does not negate Moore 2009 — it defines its boundary condition (isolated exercise = 20g ceiling; whole-body exercise = 40g ceiling).",
+
+  "what_would_change_this": "1. A well-powered dose-response RCT (n≥40, both sexes, whole-body exercise) testing 20g vs 40g vs 60g whey protein over 6+ hours post-exercise with myofibrillar FSR as primary outcome would establish a more precise whole-body exercise threshold and potentially find a ceiling above 40g. 2. A long-term RCT (≥12 weeks) comparing protein distribution patterns (4×20g vs 2×40g vs 3×30g) with FFM measured by DXA as primary outcome would establish whether the acute MPS distribution advantage translates to measurable hypertrophy. Absence of such data is the principal unresolved gap. 3. Evidence that protein distribution pattern is not a significant moderator of hypertrophy outcomes when total daily protein is equated would reduce confidence in the practical translation of the Areta 2013 finding.",
+
+  "open_question": true,
+  "open_question_note": "The long-term hypertrophy impact of protein distribution pattern — beyond the acute MPS response — has not been directly tested in an adequately powered RCT. All distribution evidence is from acute mechanistic studies. It is plausible but not confirmed that the 4×20g MPS advantage seen in Areta 2013 translates to meaningfully greater lean mass accretion over months of training. The optimal dose for females, older adults, and larger individuals is also not separately derived from available primary studies.",
+
+  "practical_summary": "Aim for 4–5 protein-containing meals per day, each providing 20–40g of high-quality protein (leucine-rich sources preferred: dairy, eggs, meat, whey). For sessions involving small muscle groups or isolated exercises, 20g per meal is sufficient. For whole-body compound training sessions (squats, deadlifts, pressing, rowing), increase the post-training meal to 40g. Spacing meals approximately 3–4 hours apart optimises the MPS stimulus across the day. Total daily protein intake (per the Morton 2018 threshold entry) remains the primary driver of hypertrophy — distribution is a secondary optimisation layer, not a replacement for adequate total intake.",
+
+  "cross_reference": "See nutrition-protein-threshold-001 for the daily total protein intake recommendation (1.6–2.2 g/kg/day). The distribution recommendations in this entry are a secondary optimisation layer — they are only relevant once total daily protein meets the threshold established in that entry.",
+
+  "coi_summary": "NSERC and AIS government funding across included studies. Stuart Phillips appears as author or co-author on two of three included sources — concentration of authorship is a soft flag for potential publication bias toward positive findings in this research group. Kevin Tipton (Witard 2014) has received dairy industry funding in other work. No direct supplement company funding identified in any included study. Aggregate COI risk: low-moderate.",
+
+  "added_by": "founder",
+  "date_added": "2026-04-15",
+  "last_reviewed": "2026-04-15",
+  "next_review": "2027-04-15",
+  "review_trigger": "Any adequately powered RCT (n≥30, ≥8 weeks) comparing protein distribution patterns with FFM as primary outcome published in AJCN, JISSN, or EJSS. Triggered immediately on peer-reviewed publication of a meta-analysis on per-meal protein dose and hypertrophy outcomes. Triggered on any new dose-response study testing >40g per meal after whole-body exercise in recreationally trained individuals."
+}

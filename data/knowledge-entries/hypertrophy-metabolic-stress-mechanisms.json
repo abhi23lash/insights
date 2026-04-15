@@ -7,7 +7,7 @@
   "claim": "Exercise-induced metabolic stress may contribute to muscle hypertrophy via up to five distinct mechanisms — increased fibre recruitment, elevated systemic hormonal production, altered myokine output, reactive oxygen species signalling, and cell swelling — operating in addition to, or independently of, mechanical tension. BFR/Kaatsu training provides the strongest empirical support. Evidence for most individual mechanisms is speculative or mechanistic only. The hormonal hypothesis is actively contested.",
 
   "grade": "very_low",
-  "source_type": "mechanistic_review",
+  "source_type": "research",
 
   "applies_to": {
     "training_age": "any — but cited studies largely confined to untrained subjects; author explicitly flags this limitation",

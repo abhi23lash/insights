@@ -1,0 +1,169 @@
+{
+  "id": "nutrition-protein-threshold-001",
+  "domain": "nutrition",
+  "subdomain": "protein",
+  "tags": ["protein", "protein-supplementation", "protein-threshold", "dose-response", "saturation", "resistance-training", "hypertrophy", "FFM", "lean-mass", "strength"],
+
+  "claim": "Protein supplementation significantly augments resistance training-induced gains in fat-free mass (FFM) and strength in healthy adults. This effect follows a dose-response relationship that saturates at approximately 1.62 g of total daily protein per kg body weight — above this threshold of total protein intake (from all dietary sources combined), additional protein supplementation does not further increase RT-induced FFM gains.",
+
+  "grade": "moderate",
+  "source_type": "research",
+
+  "applies_to": {
+    "training_age": "any — untrained and recreationally trained both included; trained individuals show smaller marginal benefit (see moderator analyses)",
+    "natural_status": "not confirmed — natural status was not an exclusion criterion and was not reported across included studies",
+    "sex": "any — predominantly male sample; sex moderation was limited by the small number of female-only studies (see population flag)",
+    "goal": "hypertrophy",
+    "dietary_context": "free-living — baseline dietary protein intake varied across included studies and was often inadequately controlled; the threshold is expressed in terms of total daily protein from all sources, not supplement dose alone"
+  },
+
+  "population_flag": "The included sample was predominantly male (most studies used male-only or male-majority designs) and predominantly young (approximately 18-35y across most studies). Natural status was not confirmed or required as an exclusion criterion in any included study. Training status was mixed — both untrained and recreationally trained participants were included and pooled in the primary analysis, with training status treated as a moderator rather than a stratification variable. The protein threshold (1.62 g/kg/day) was derived from piecewise linear meta-regression across this mixed population. It has not been independently derived in a trained-only, confirmed-natural sample.",
+
+  "biological_plausibility": {
+    "passes": true,
+    "mechanism": "Resistance training acutely elevates muscle protein synthesis (MPS) for 24-48 hours via mTORC1 activation. Dietary protein — specifically its leucine content — provides the amino acid substrate required for net protein accretion during this elevated MPS window. Below the saturation threshold, additional protein increases circulating leucine and extends the MPS response above resting. Above the threshold, intracellular amino acid pools are saturated; leucine-stimulated mTORC1 signalling is already maximised and further substrate is oxidised or converted to glucose rather than incorporated into myofibrillar protein. The threshold reflects the ceiling of substrate-driven MPS amplification under mechanical loading, not the ceiling of total MPS."
+  },
+
+  "sources": [
+    {
+      "citation": "Morton RW, Murphy KT, McKellar SR, Schoenfeld BJ, Henselmans M, Helms E, Aragon AA, Devries MC, Banfield L, Krieger JW, Phillips SM. A systematic review, meta-analysis and meta-regression of the effect of protein supplementation on resistance training-induced gains in muscle mass and strength in healthy adults. British Journal of Sports Medicine. 2018;52(6):376-384.",
+      "pmid": "28698222",
+      "doi": "10.1136/bjsports-2017-097608",
+      "url": "https://doi.org/10.1136/bjsports-2017-097608",
+      "study_design": "PRISMA-compliant systematic review with multi-level mixed-effects meta-analysis and piecewise (broken-stick) linear meta-regression to identify the protein intake saturation threshold. Random-effects model. Moderator analyses via meta-regression.",
+      "n_studies": 49,
+      "n_participants": 1863,
+      "methodological_quality": "Standardised quality assessment applied across included studies. Mean study quality rated moderate. Eligible studies required to be randomised controlled trials with a protein supplement vs control design, RT intervention ≥6 weeks, and FFM or strength as outcomes. Publication bias assessed (funnel plot and statistical test).",
+      "finding": "Protein supplementation significantly increased RT-induced FFM gains vs control: ES 0.22 (95% CI 0.07, 0.36), p=0.003. Protein supplementation also significantly increased leg press 1RM (ES 0.36, 95% CI 0.14, 0.58, p=0.001) and bench press 1RM (ES 0.39, 95% CI 0.11, 0.67, p=0.007). Piecewise linear meta-regression identified a total protein intake saturation point of approximately 1.62 g/kg/day (95% CI 1.03, 2.20) — beyond this threshold, additional protein supplementation produced no further increase in RT-induced FFM gains. Training status was a significant moderator of the FFM response: untrained individuals showed a larger benefit from supplementation than trained individuals. Protein timing and protein source were not significant moderators of the FFM outcome.",
+      "effect_sizes": {
+        "FFM_overall": {
+          "ES": 0.22,
+          "CI_95": [0.07, 0.36],
+          "p": 0.003,
+          "interpretation": "Small but statistically robust — protein supplementation reliably augments RT-induced FFM gains when total protein intake is below the saturation threshold"
+        },
+        "leg_press_1RM": {
+          "ES": 0.36,
+          "CI_95": [0.14, 0.58],
+          "p": 0.001,
+          "interpretation": "Small-to-moderate — strength benefit is larger in magnitude than the FFM benefit"
+        },
+        "bench_press_1RM": {
+          "ES": 0.39,
+          "CI_95": [0.11, 0.67],
+          "p": 0.007,
+          "interpretation": "Small-to-moderate — consistent with leg press finding; strength augmentation appears more sensitive to protein supplementation than FFM at this time scale"
+        }
+      },
+      "saturation_threshold": {
+        "value_g_per_kg_per_day": 1.62,
+        "CI_95": [1.03, 2.20],
+        "method": "Piecewise linear (broken-stick) meta-regression on total daily protein intake",
+        "interpretation": "Above 1.62 g/kg/day of total dietary protein from all sources, protein supplementation did not produce additional FFM gains in the pooled sample. The wide CI (1.03-2.20) means the true threshold in any individual could be as low as ~1.0 or as high as ~2.2 g/kg/day. Conservative practical application targets the upper CI bound.",
+        "critical_note": "This threshold applies to TOTAL daily protein intake — food plus any supplement combined. It is not a supplement dose threshold. A person already eating 1.8 g/kg/day from food alone sits above the threshold; adding a protein supplement will not increase their FFM gains from RT."
+      },
+      "moderator_analyses": {
+        "training_status": {
+          "finding": "Significant moderator — untrained individuals showed a larger FFM benefit from protein supplementation than trained individuals",
+          "direction": "Untrained > trained",
+          "confidence": "moderate — trained individuals were underrepresented in the primary dataset; the trained-specific magnitude estimate is less precise"
+        },
+        "age": {
+          "finding": "Significant moderator — younger adults (approximately ≤35y) showed a larger FFM response than older adults (>35y), though both groups showed a significant positive effect",
+          "direction": "Younger > older",
+          "confidence": "moderate"
+        },
+        "protein_timing": {
+          "finding": "Not a significant moderator — consuming protein immediately pre/post-training did not produce greater FFM gains than non-timed supplementation",
+          "direction": "Null",
+          "confidence": "moderate — consistent with subsequent evidence disputing the anabolic window hypothesis for FFM outcomes"
+        },
+        "protein_source": {
+          "finding": "Not a significant moderator — whey, soy, casein, and mixed sources did not differ significantly in FFM outcomes",
+          "direction": "Null",
+          "confidence": "low — the analysis was limited by the number of source-stratified comparisons and may be underpowered to detect true source-specific differences"
+        },
+        "sex": {
+          "finding": "Limited — insufficient female-only studies to derive robust sex-stratified estimates in this meta-analysis",
+          "direction": "Undetermined for FFM; directionally larger in males for strength outcomes",
+          "confidence": "low — do not use this analysis to draw sex-specific protein threshold conclusions"
+        }
+      },
+      "population": "Healthy adults across mixed training status (untrained and recreationally trained), predominantly young (18-35y in most studies), predominantly male. No confirmed exclusion of enhanced athletes. Free-living dietary conditions.",
+      "limitations": "1. Baseline dietary protein intake was inconsistently reported and often poorly characterised — the pre-supplementation protein status of participants was frequently unknown, making the threshold calculation sensitive to unmeasured confounding. 2. Body composition measurement methods varied widely across studies (DXA, BodPod, underwater weighing, BIA, skinfolds) — DXA and hydrostatic weighing are criterion methods; BIA and skinfolds introduce substantial error. 3. Intervention durations ranged from 6 to 24 weeks — shorter studies may underestimate the long-term threshold or long-term benefit of supplementation. 4. Predominantly male sample limits direct application of the 1.62 g/kg threshold to females. 5. The saturation threshold was derived from exploratory piecewise meta-regression — this is a data-driven curve-fitting method, not a prospectively tested hypothesis. The wide 95% CI (1.03-2.20) reflects this uncertainty. 6. Natural status unconfirmed: enhanced athletes were not excluded. If any included participants were using anabolic steroids, their protein utilisation kinetics differ from natural individuals and would systematically bias threshold estimates upward.",
+      "coi_check": "This meta-analysis was funded by the Natural Sciences and Engineering Research Council of Canada (NSERC) — a government research council. No direct industry funding declared for this study. However: Stuart Phillips (corresponding author, McMaster University) has received research funding from the Canadian Dairy Commission and has spoken at events supported by protein supplement companies in other contexts — soft flag. Robert Morton (first author) was a PhD student under Phillips at the time. Several co-authors (Schoenfeld, Helms, Aragon, Henselmans, Krieger) earn income as fitness writers and practitioners — the same soft flag applied to other entries in this database. The direction of any financial bias (toward finding a protein benefit and toward the supplement industry's preferred narrative) is consistent with the finding. Bias risk: low-moderate. The NSERC government funding and the BJSM peer review process partially offset the soft flags. Does not disqualify entry.",
+      "practical_translation": {
+        "text": "Study population was healthy adults of mixed training status (predominantly untrained, predominantly male, predominantly young). Effect observed was: protein supplementation significantly increased RT-induced FFM gains (ES 0.22, p=0.003) and strength gains (leg press ES 0.36, bench press ES 0.39), with both effects reaching statistical and practical significance. This effect saturated at approximately 1.62 g/kg/day of total protein intake (95% CI 1.03-2.20). This translates to: for recreationally trained natural adults seeking hypertrophy, total daily protein intake of at least 1.6-2.2 g/kg body weight is the practical target — not because protein beyond this range is harmful, but because FFM gains from RT do not increase above this threshold. A protein supplement is only a meaningful intervention if it bridges the gap between current food-only intake and this threshold. If habitual dietary protein intake already meets or exceeds 1.62 g/kg/day, adding a protein supplement will not increase muscle gains. Confidence in this translation: moderate — the threshold is robust across the pooled sample but was derived from a mixed (predominantly untrained) dataset using an exploratory statistical method with wide confidence intervals.",
+        "confidence": "moderate",
+        "confidence_basis": "The main effect (ES 0.22, p=0.003, n=1,863) is robust and well-powered. The saturation threshold (1.62 g/kg/day) is supported by piecewise meta-regression but has a wide CI (1.03-2.20) reflecting exploratory methodology. The trained-specific threshold has not been separately derived. Conservative practical application targets the upper CI bound (~2.2 g/kg/day) to account for this uncertainty."
+      }
+    }
+  ],
+
+  "key_claims": [
+    {
+      "claim": "Protein supplementation significantly augments RT-induced fat-free mass gains in healthy adults",
+      "confidence": 0.85,
+      "notes": "ES 0.22 (p=0.003), n=1,863 across 49 studies. Robust finding. Small but practically meaningful effect. The augmentation is conditional on total protein intake being below the saturation threshold — once threshold is met from food alone, supplementation is redundant for FFM."
+    },
+    {
+      "claim": "Protein supplementation augments RT-induced strength gains (1RM) in healthy adults",
+      "confidence": 0.82,
+      "notes": "Leg press ES 0.36 (p=0.001), bench press ES 0.39 (p=0.007). Strength augmentation appears larger in magnitude than FFM augmentation. This is likely because 1RM is also sensitive to neural adaptations that are acutely responsive to protein-supported tissue repair."
+    },
+    {
+      "claim": "Total daily protein intake of approximately 1.62 g/kg/day is the saturation threshold above which additional protein supplementation does not further increase RT-induced FFM gains",
+      "confidence": 0.62,
+      "notes": "Derived from piecewise linear meta-regression — exploratory method. Wide 95% CI (1.03-2.20 g/kg/day). Threshold applies to total protein from all dietary sources. Not separately derived in trained-only or confirmed-natural populations. Conservative practical application uses the upper CI: ~2.2 g/kg/day."
+    },
+    {
+      "claim": "Trained individuals benefit less from protein supplementation for FFM gains than untrained individuals",
+      "confidence": 0.68,
+      "notes": "Significant training status moderation in meta-regression. Mechanistically coherent: trained individuals have higher habitual protein intake and more efficient protein utilisation at rest. However, trained individuals were underrepresented in the primary dataset — the trained-specific effect size estimate is imprecise."
+    },
+    {
+      "claim": "Protein timing (immediate peri-workout consumption) does not significantly moderate FFM gains from protein supplementation",
+      "confidence": 0.72,
+      "notes": "Not a significant moderator in this meta-analysis. Consistent with the broader literature disputing the narrow anabolic window hypothesis. Total daily protein intake is a stronger determinant than distribution timing for FFM outcomes."
+    },
+    {
+      "claim": "Protein source (whey vs soy vs casein vs mixed) does not significantly moderate FFM gains from protein supplementation",
+      "confidence": 0.60,
+      "notes": "Not a significant moderator in this meta-analysis. Underpowered for source-specific comparisons. The null finding should not be interpreted as definitive equivalence — leucine content and digestibility differences between sources may have practical relevance that this analysis lacked power to detect."
+    }
+  ],
+
+  "protein_threshold_analysis": {
+    "method": "Piecewise (broken-stick) linear meta-regression",
+    "threshold_g_per_kg_per_day": 1.62,
+    "CI_95": [1.03, 2.20],
+    "threshold_type": "total_daily_protein_all_sources",
+    "below_threshold_relationship": "Positive linear dose-response — additional protein intake increases RT-induced FFM gains",
+    "above_threshold_relationship": "Flat — additional protein supplementation does not further increase RT-induced FFM gains",
+    "practical_conservative_target": "2.2 g/kg/day — upper bound of 95% CI; recommended for trained individuals where the threshold may be at the higher end of the distribution",
+    "practical_minimum_target": "1.6 g/kg/day — point estimate; sufficient for most of the pooled sample but may underestimate trained individual requirements",
+    "what_this_is_not": "The threshold is not a recommendation to avoid protein above 1.62 g/kg/day. Higher intakes may support satiety, preserve lean mass during caloric restriction, and support connective tissue repair. The threshold applies specifically to the supplementation-mediated FFM augmentation outcome in a resistance training context."
+  },
+
+  "supplement_policy_note": "Per the Pramana supplement policy, protein supplementation is recommended only where evidence supports it and it fits the user's context and budget. The evidence here clearly supports supplementation as a tool to bridge the gap to the ~1.6-2.2 g/kg/day threshold. Whole food protein sources meeting this threshold are equivalent — supplementation is a convenience tool, not a mandatory intervention. Recommend whole food first; supplement only if the threshold cannot be reliably met through diet alone.",
+
+  "eqs": 0.33,
+  "eqs_basis": "GRADE moderate (0.62): large meta-analysis (49 studies, 1,863 participants), PRISMA-compliant, published in high-impact peer-reviewed journal (BJSM), with a statistically robust primary finding (FFM ES 0.22, p=0.003). GRADE capped at moderate rather than high because: (a) the saturation threshold — the primary novel claim in this entry — was derived from exploratory piecewise meta-regression with a wide CI (1.03-2.20); (b) baseline protein intake was inconsistently characterised across included studies, introducing confounding into the threshold estimate; (c) heterogeneity in measurement methods across studies. Population match partial (0.54): mixed trained/untrained sample (predominantly untrained in most included studies), predominantly male, predominantly young, natural status unconfirmed. Training status is the principal mismatch for Pramana's user base. Nutrition domain — sex carries minor weight per framework (does not heavily penalise male-dominated sample). EQS = 0.62 × 0.54 = 0.33.",
+
+  "conflicting_evidence": "1. Stokes et al. 2018 (AJCN, individual participant data meta-analysis) found a similar threshold of ~1.62 g/kg/day using a different analytical method and individual-level data — this is corroborating, not conflicting. 2. Some studies in the high-performance and elite athlete literature suggest higher protein requirements (>2.2 g/kg/day) during intense training phases or caloric restriction — this is a boundary condition (Type 2) conflict, not a direct contradiction: the threshold may shift upward under energy deficit or high training volume. 3. Antonio et al. (2014, 2015) in JISSN found no additional FFM benefit from very high protein intakes (3-4 g/kg/day) vs recommended intakes in trained individuals — consistent with the saturation finding. 4. Witard et al. 2016 (Nutrients) found protein requirements for athletes were best estimated at ~1.6 g/kg/day — directly corroborates the Morton threshold.",
+
+  "what_would_change_this": "1. A well-powered RCT or IPD meta-analysis in confirmed-natural, recreationally trained adults comparing total protein intakes of 1.6 vs 2.2 vs 2.6 g/kg/day with body composition measured by DXA would either confirm the 1.62 threshold or identify a higher trained-specific threshold. 2. Evidence that the wide CI (1.03-2.20) is driven by population heterogeneity — with trained individuals clustering toward the upper bound and untrained toward the lower — would require a higher practical recommendation for trained users. 3. A meta-analysis incorporating IPD and carefully controlling for baseline dietary protein intake would substantially sharpen the threshold estimate and reduce the current CI uncertainty.",
+
+  "open_question": true,
+  "open_question_note": "The trained-specific protein threshold is not separately derived in this meta-analysis. The current 1.62 g/kg/day estimate is from a predominantly untrained pooled sample. Whether trained natural individuals require a higher threshold (consistent with the CI upper bound of 2.20 g/kg/day) is an open empirical question. Pramana applies 1.6 g/kg/day as the minimum and 2.2 g/kg/day as the conservative target pending a trained-specific derivation.",
+
+  "practical_summary": "Total daily protein intake of 1.6-2.2 g/kg body weight is the evidence-based target for maximising RT-induced muscle gain. Below this range, adding protein (from food or supplement) meaningfully increases muscle and strength gains. Above the upper bound (~2.2 g/kg/day), additional protein does not increase muscle gain further — it is neither harmful nor beneficial for hypertrophy specifically. Use a protein supplement only if whole food protein intake cannot reliably meet this range. Timing protein intake around workouts provides no additional FFM benefit over equivalent total daily intake. Protein source choice (whey, soy, casein) does not significantly alter the hypertrophy outcome at matched total daily intake.",
+
+  "coi_summary": "NSERC government-funded — no direct industry funding for this meta-analysis. Stuart Phillips has received dairy and supplement industry funding in other work — soft flag, low-moderate risk. Multiple co-authors (Schoenfeld, Helms, Aragon, Henselmans, Krieger) have fitness industry income — same soft flag applied consistently across this database. Does not disqualify entry.",
+
+  "added_by": "founder",
+  "date_added": "2026-04-15",
+  "last_reviewed": "2026-04-15",
+  "next_review": "2027-04-15",
+  "review_trigger": "Any meta-analysis on protein requirements or protein supplementation for hypertrophy in trained individuals published in AJCN, JISSN, Sports Medicine, or JSCR. Triggered immediately on peer-reviewed publication of an IPD meta-analysis stratifying the protein threshold by training status. Triggered on any well-powered RCT (n>60, ≥12 weeks) comparing total protein intakes bracketing the 1.62 g/kg/day threshold in trained natural adults."
+}
