@@ -1,0 +1,121 @@
+{
+  "id": "biomechanics-hip-hinge-001",
+  "domain": "biomechanics",
+  "subdomain": "hip-hinge",
+  "tags": ["hip-hinge", "deadlift", "Romanian-deadlift", "moment-arm", "lumbar-spine", "posterior-chain", "glutes", "hamstrings", "erectors", "hip-morphology", "femur-length", "individual-variation", "spine-loading"],
+
+  "score_type": "BAC",
+
+  "claim": "During a hip hinge, the lumbar spine moment arm relative to the load increases as the torso becomes more horizontal, requiring progressively greater posterior chain force output to maintain a neutral spine. Gluteus maximus, hamstrings, and lumbar erectors are the primary force producers. Hip socket depth and femur length are the primary structural sources of individual variation in optimal stance width and torso angle — not technique error.",
+
+  "grade": "not_applicable",
+  "source_type": "research",
+
+  "applies_to": {
+    "population": "anatomically typical adults — claims hold for individuals without hip pathology, significant spinal deformity, or post-surgical anatomy",
+    "individual_variation": "meaningful — hip socket depth and femur length create genuine between-person differences in optimal mechanics; see bac_dimensions.transferability",
+    "goal": "any — biomechanical facts are goal-agnostic; practical application differs by goal (strength, hypertrophy, athletic performance)"
+  },
+
+  "biological_plausibility": {
+    "passes": true,
+    "mechanism": "The lumbar spine moment arm is the perpendicular distance from the load's line of action (vertical, assuming axial loading) to the instantaneous centre of rotation of the lumbar motion segment (approximately L4-L5 or L5-S1). As the torso rotates forward toward horizontal, the horizontal distance between the load and the lumbar spine increases — directly increasing the external flexion moment the spinal extensors must counterbalance. This is a deterministic consequence of Newtonian mechanics: M = F × d, where M is the required extensor moment, F is the load magnitude, and d is the moment arm. The relationship is not statistical — it is geometrically fixed given the load position and torso angle."
+  },
+
+  "bac_score": 0.75,
+  "bac_dimensions": {
+    "derivation": {
+      "score": 1.0,
+      "basis": "physics and direct measurement — moment arms are calculable from first principles (M = F × d) and have been directly measured via cadaveric studies, motion capture, and in-vivo MRI. Lumbar spine loading during hip hinge movements is among the most thoroughly characterised areas of biomechanics. Muscle attachment points are established from cadaveric anatomy atlases replicated across multiple institutional programmes."
+    },
+    "replication": {
+      "score": 0.75,
+      "basis": "confirmed across multiple independent laboratories (McGill at Waterloo, Neumann's kinesiology synthesis of multiple sources, Vigotsky & Bryanton 2016, and the broader biomechanics literature). Minor disagreement exists on the precise moment arm magnitudes at specific joint angles and on the relative contribution of each posterior chain muscle across the range of hip flexion — but the directional relationship (greater torso inclination → greater lumbar moment arm → greater extensor demand) is not contested."
+    },
+    "transferability": {
+      "score": 0.50,
+      "basis": "meaningful individual variation expected. The mechanical relationships (moment arm increases with torso inclination) are universal. However, the optimal implementation — stance width, foot angle, torso angle, degree of knee bend — varies substantially between individuals due to: (1) hip socket depth and acetabular orientation, which determines how much hip abduction and external rotation is required before femoral impingement; (2) femur length relative to torso length, which changes the horizontal displacement of the hip from the midfoot and therefore how far forward the torso must lean for the barbell to remain over the base of support; (3) femoral neck angle (anteversion/retroversion), which further modulates optimal foot turn-out. These are structural differences, not technique errors."
+    }
+  },
+  "bac_basis": "BAC = (1.0 + 0.75 + 0.50) / 3 = 0.75. The mechanical relationships are fully physics-derived and well-replicated. The primary uncertainty is in the practical translation — identical moment arm physics apply to all individuals, but the optimal expression of those mechanics differs person to person based on hip morphology.",
+
+  "eqs": null,
+  "eqs_basis": "null — this is a pure mechanics entry. No outcome RCTs are needed or appropriate. EQS applies to biological outcome claims (hypertrophy, strength gain, injury rate). The claims in this entry are falsifiable by measuring force, angle, and anatomy directly — BAC applies.",
+
+  "sources": [
+    {
+      "citation": "McGill SM. Low Back Disorders: Evidence-Based Prevention and Rehabilitation. 3rd ed. Human Kinetics; 2015.",
+      "type": "biomechanics_textbook",
+      "authority": "Stuart McGill — Professor Emeritus, University of Waterloo Spine Biomechanics Laboratory. The standard reference for lumbar spine loading mechanics. Based on decades of in-vivo spine loading research, cadaveric studies, and mathematical modelling.",
+      "relevant_content": "Comprehensive quantification of lumbar spine moment arms across spinal postures and loading conditions. Establishes that the L4-L5 compressive and shear forces increase directly with the horizontal moment arm of the load about the lumbar spine. Documents that lumbar erector spinae and multifidus are the primary resistors of forward flexion moment. Provides the biomechanical basis for the 'neutral spine' recommendation during loaded hip hinges — not because some postures are categorically dangerous, but because moment arms and co-contraction demands are minimised in neutral.",
+      "coi_check": "Academic textbook. No industry funding conflict identified. McGill has consulted for organisations including the NFL and various clinical bodies — none with a direct interest in hip hinge biomechanics claims.",
+      "role_in_entry": "Primary source for lumbar moment arm mechanics and spinal extensor force requirements"
+    },
+    {
+      "citation": "Neumann DA. Kinesiology of the Musculoskeletal System: Foundations for Rehabilitation. 3rd ed. Mosby/Elsevier; 2016.",
+      "type": "biomechanics_textbook",
+      "authority": "Donald Neumann — Professor of Physical Therapy, Marquette University. Standard kinesiology reference used in physical therapy and exercise science curricula. Synthesises musculoskeletal anatomy and joint mechanics from primary anatomy and biomechanics literature.",
+      "relevant_content": "Joint mechanics of the hip, including force vector analysis of gluteus maximus and hamstring contribution to hip extension moment. Documents the moment arm of the hip extensors across the hip flexion range and confirms that posterior chain muscles (gluteus maximus, biceps femoris long head, semitendinosus, semimembranosus) are the primary hip extension force producers. Addresses how acetabular morphology (socket depth, orientation) affects hip joint mechanics and loading patterns — the anatomical basis for individual variation in hip hinge expression.",
+      "coi_check": "Academic textbook. No industry funding conflict.",
+      "role_in_entry": "Source for posterior chain muscle force vectors and hip morphology as a driver of individual variation"
+    },
+    {
+      "citation": "Vigotsky AD, Bryanton MA. Relative Muscular Effort of the Hip and Knee Extensors and Their Relative Involvement in the Squat, Step-Up, Lunge, and Leg Press Exercises. 2016.",
+      "type": "research_paper",
+      "authority": "Andrew Vigotsky — biomechanics researcher with published work on muscle moment arms and exercise mechanics. Bryanton — sport science researcher. Published 2016.",
+      "relevant_content": "Moment arm data for hip and knee extensors across joint angles relevant to hip hinge-type movements. Confirms that gluteus maximus moment arm for hip extension is a function of hip flexion angle — moment arm and therefore muscular demand at the hip change across the range of motion. Provides quantitative basis for the claim that posterior chain muscles are primary force producers during hip hinge movements.",
+      "note": "Title as provided by curator. Full journal and DOI not confirmed at time of entry — verify citation before citing externally.",
+      "coi_check": "No industry funding identified. Vigotsky has published prolifically on biomechanics topics with no identified commercial conflicts.",
+      "role_in_entry": "Quantitative moment arm data supporting posterior chain force production claims"
+    }
+  ],
+
+  "key_claims": [
+    {
+      "claim": "The lumbar spine moment arm relative to the load increases as the torso angle approaches horizontal during a hip hinge",
+      "confidence": 0.97,
+      "score_type": "BAC",
+      "notes": "Geometrically deterministic consequence of M = F × d. The horizontal distance from load to lumbar spine increases as the torso rotates forward — this is not subject to biological variability or statistical uncertainty. Confidence is not 1.0 only because real-world loads are not perfectly axial and breath/bracing alter the instantaneous centre of rotation slightly."
+    },
+    {
+      "claim": "Gluteus maximus, hamstrings (biceps femoris long head, semitendinosus, semimembranosus), and lumbar erector spinae are the primary force producers during a hip hinge",
+      "confidence": 0.90,
+      "score_type": "BAC",
+      "notes": "Well-established from anatomy and EMG literature. The exact relative contribution of each muscle varies with individual anatomy, load magnitude, and hip angle — but the identity of the primary movers is not contested. Adductor magnus also contributes meaningfully to hip extension, particularly at deeper hip flexion angles; this is sometimes underappreciated."
+    },
+    {
+      "claim": "Hip socket depth and femur length are the primary structural sources of individual variation in optimal hip hinge stance width and torso angle",
+      "confidence": 0.78,
+      "score_type": "BAC",
+      "notes": "Well-supported directionally but the relative contribution of each variable (socket depth vs femur length vs tibial length vs torso length ratio) has not been comprehensively quantified in a single study. The claim that these are 'primary' sources is mechanistically coherent and clinically corroborated but is not derived from a direct parametric study isolating each variable. Femoral anteversion/retroversion and acetabular version are additional contributors not captured in the two-variable simplification."
+    },
+    {
+      "claim": "Individual differences in hip hinge expression (stance width, foot angle, torso inclination) reflect structural anatomy — not technique error",
+      "confidence": 0.85,
+      "score_type": "BAC",
+      "notes": "Follows directly from the hip socket depth and femur length claim. If optimal mechanics are determined by structural geometry, then the 'correct' hinge looks different from person to person. The practical implication — that coaching cues should accommodate anatomy rather than enforce a universal template — is well-supported by this biomechanical reasoning, even though comparative outcome RCTs do not exist."
+    }
+  ],
+
+  "individual_variation_notes": {
+    "hip_socket_depth": "Deeper acetabulum requires greater femoral abduction before the femoral neck contacts the acetabular rim — allowing a narrower stance. Shallower acetabulum may benefit from wider stance and greater external rotation to avoid impingement at the bottom of the hinge.",
+    "femur_length": "Longer femurs increase the horizontal displacement of the hip joint from the midfoot at any given torso angle. To keep the barbell over the base of support, longer-femured individuals must lean the torso further forward — a structural necessity, not a technique flaw. This also increases the lumbar spine moment arm at equivalent load and depth.",
+    "femoral_anteversion": "Anteversion (inward twist of the femoral neck) is associated with internally rotated hips at rest and a natural preference for a toe-in or parallel stance. Retroversion produces the opposite preference. Forcing universal foot angles ignores this structural reality.",
+    "torso_to_leg_ratio": "A shorter torso relative to femur length produces more forward lean for the same reasons as femur length — the hip travels further horizontally before the torso can be vertical over the foot. This is why some individuals appear to have an exaggerated forward lean in a conventional deadlift despite technically correct form."
+  },
+
+  "conflicting_evidence": "Minor disagreement in the literature on the precise optimal torso angle for hamstring vs glute emphasis in loaded hip hinges — some authors suggest greater forward lean (more horizontal) maximises hamstring stretch and tension, while others note this simultaneously increases lumbar compressive load and may shift demand toward erectors at the expense of glute contribution. This is not a contradiction of the moment arm mechanics — both positions are consistent with the mechanical framework — but represents genuine uncertainty about the optimal application of those mechanics for specific training goals. The magnitude of individual variation from hip morphology is directionally agreed upon but not precisely quantified in an adequately powered study isolating each anatomical variable.",
+
+  "what_would_change_this": "1. Cadaveric or in-vivo imaging studies systematically quantifying how hip socket depth and femur length independently alter optimal hinge mechanics would either confirm or refine the two-variable simplification. 2. Motion capture data across a large population (n≥100) of individuals with measured hip morphology performing loaded hip hinges would allow parametric modelling of the anatomy-to-mechanics relationship. 3. Evidence that a third variable (e.g., tibial length, thoracic kyphosis) consistently dominates hip socket depth and femur length as a driver of inter-individual variation would require revision of the hierarchy.",
+
+  "open_question": true,
+  "open_question_note": "The relative contribution of each anatomical variable (socket depth, femur length, femoral anteversion, tibial length, torso:leg ratio) to inter-individual variation in optimal hip hinge expression has not been comprehensively quantified in a single adequately powered study. The two-variable simplification (socket depth + femur length) captures the most clinically relevant drivers but is an approximation. Additionally, the precise torso angle at which lumbar compressive load becomes a meaningful injury risk concern — versus a manageable structural demand under appropriate loading — is contested and likely highly individual.",
+
+  "practical_summary": "The lumbar spine moment arm is largest when the torso is horizontal — this is physics, not opinion. Posterior chain training during hip hinges (deadlifts, RDLs, good mornings) should be loaded progressively, with spinal loading managed via torso angle and bracing rather than avoided. Individual differences in stance width, foot angle, and forward lean are structural, not technical errors — coaching should assess hip morphology first and fit the cue to the anatomy. A person with long femurs and a short torso will always hinge with more forward lean than a person with short femurs; attempting to force an upright position violates the geometry of their skeleton.",
+
+  "added_by": "founder",
+  "date_added": "2026-04-15",
+  "last_reviewed": "2026-04-15",
+  "next_review": "2028-04-15",
+  "review_trigger": "BAC entries on purely mechanical claims have a 24-month default review cycle — the underlying physics does not change. Triggered immediately on publication of a large-sample (n≥100) imaging or motion capture study directly quantifying the relationship between hip morphology variables and optimal hip hinge mechanics."
+}

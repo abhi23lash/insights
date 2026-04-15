@@ -68,6 +68,51 @@ Always noted in entry metadata regardless.
 
 ---
 
+## Biomechanical and Anatomical Consensus (BAC)
+
+A second scoring system for claims that are not biological outcome claims — moment arms, joint angles, force vectors, anatomical attachments, and similar physical or structural facts. These claims are not amenable to RCT evidence and EQS does not apply.
+
+### BAC Score
+```
+BAC = average of three dimensions
+```
+
+### Dimension 1 — Derivation basis
+- 1.00 — physics / direct measurement (goniometry, cadaveric measurement, motion capture, force plate)
+- 0.50 — multiple independent expert consensus (biomechanics textbooks across authors, professional anatomy atlases)
+- 0.25 — single textbook or single theoretical source
+
+### Dimension 2 — Replication status
+- 1.00 — multiple independent labs or measurement teams
+- 0.75 — two independent sources
+- 0.50 — single high-quality source
+- 0.25 — theoretical only
+
+### Dimension 3 — Population transferability
+- 1.00 — universal (applies to all anatomically typical humans)
+- 0.75 — minor variation expected (limb length proportions, minor attachment site variation)
+- 0.50 — meaningful variation expected (significant individual anatomical differences, e.g. hip socket depth, femoral anteversion)
+- 0.25 — highly individual (claim depends on specific anatomy that varies substantially person to person)
+
+### Conflict resolution rule
+BAC 1.00 derivation overrides EQS **only for purely mechanical claims**.
+
+**BAC can override when:** the claim is falsifiable by directly measuring force, angle, or anatomy — moment arms, joint angles, force vectors, anatomical attachment points.
+
+**EQS always wins when:** the claim requires measuring a biological adaptation — hypertrophy, strength gain, MPS, injury rate, fat loss, hormonal response.
+
+In ambiguous cases: if the claim has a biological outcome component, treat as EQS. BAC is reserved for claims where the measurement instrument is a ruler, goniometer, or force transducer, not a biopsy or DXA scan.
+
+### Score type labelling
+Every knowledge entry carries an explicit score type label:
+- `EQS` — biological outcome claim, scored against GRADE × population match
+- `BAC` — mechanical or anatomical claim, scored against BAC dimensions
+- `hybrid` — entry contains both claim types; both scores displayed separately
+
+Both scores are always displayed separately. They are never combined into a single number.
+
+---
+
 ## Layer 1 Entry Review Process
 
 ### Step 0 — Biological Plausibility Check

@@ -28,25 +28,31 @@ async function seed() {
     const raw = fs.readFileSync(path.join(entriesDir, file), 'utf-8')
     const entry = JSON.parse(raw)
 
+    const payload: Record<string, unknown> = {
+      claim: entry.claim,
+      domain: entry.domain,
+      subdomain: entry.subdomain,
+      grade: entry.grade,
+      source_type: entry.source_type,
+      applies_to: entry.applies_to,
+      conflicting_evidence: entry.conflicting_evidence,
+      what_would_change_this: entry.what_would_change_this,
+      practical_translation: entry.practical_summary,
+      tags: entry.tags,
+      added_by: entry.added_by,
+      next_review: entry.next_review,
+      open_question: entry.open_question,
+      active: true,
+    }
+
+    // BAC entries carry eqs: null — only include when present
+    if (entry.eqs !== null && entry.eqs !== undefined) {
+      payload.eqs = entry.eqs
+    }
+
     const { error } = await supabase
       .from('knowledge_entries')
-      .upsert({
-        claim: entry.claim,
-        domain: entry.domain,
-        subdomain: entry.subdomain,
-        grade: entry.grade,
-        source_type: entry.source_type,
-        applies_to: entry.applies_to,
-        eqs: entry.eqs,
-        conflicting_evidence: entry.conflicting_evidence,
-        what_would_change_this: entry.what_would_change_this,
-        practical_translation: entry.practical_summary,
-        tags: entry.tags,
-        added_by: entry.added_by,
-        next_review: entry.next_review,
-        open_question: entry.open_question,
-        active: true
-      })
+      .upsert(payload)
 
     if (error) {
       console.error(`Failed to seed ${file}:`, error)
