@@ -1,0 +1,146 @@
+{
+  "id": "biomechanics-scapular-mechanics-001",
+  "domain": "biomechanics",
+  "subdomain": "shoulder",
+  "tags": ["scapula", "scapular-mechanics", "upward-rotation", "posterior-tilting", "external-rotation", "serratus-anterior", "trapezius", "pec-minor", "thoracic-kyphosis", "scapular-dyskinesis", "arm-elevation", "force-couple", "scapulohumeral-rhythm"],
+
+  "score_type": "BAC",
+
+  "claim": "Full arm elevation requires three simultaneous scapular motions — upward rotation, posterior tilting, and external rotation — all of which increase subacromial space and allow the glenoid to follow the humeral head through the elevation arc. Serratus anterior is the primary driver of scapular upward rotation, acting in a force couple with upper and lower trapezius. Tight pectoralis minor anteriorly tilts the scapula and mechanically limits available posterior tilting during elevation. Thoracic kyphosis couples to scapular anterior tilt, further restricting upward rotation and posterior tilting range. Scapular dyskinesis describes an altered movement pattern — it is a response to underlying structural or neuromuscular causes, not a diagnosis in itself.",
+
+  "grade": "not_applicable",
+  "source_type": "research",
+
+  "applies_to": {
+    "population": "anatomically typical adults performing arm elevation — claims hold for individuals without significant thoracic spinal deformity, post-surgical scapular anatomy, or serratus palsy; the dyskinesis claim applies in clinical and sport contexts where scapular motion is assessed",
+    "individual_variation": "moderate — thoracic kyphosis magnitude, pec minor resting length, and serratus anterior strength vary substantially between individuals; the directional requirements for elevation are universal but the degree of restriction imposed by each factor varies individually",
+    "goal": "any — biomechanical facts apply equally to injury prevention, strength, hypertrophy, and athletic performance contexts"
+  },
+
+  "biological_plausibility": {
+    "passes": true,
+    "mechanism": "The scapula sits on the posterior thoracic cage and must move in three planes simultaneously to optimise the glenohumeral relationship during arm elevation. Upward rotation (inferior angle moves laterally, superior angle moves medially) is required to keep the glenoid tracking under the rising humeral head — without it, the glenohumeral joint would reach its structural end-range well before full arm elevation. Posterior tilting (inferior border moves away from the ribcage) opens the posterior subacromial outlet and prevents anterior acromion impingement as the arm elevates forward. External rotation of the scapula (glenoid faces slightly more anterolaterally) accommodates the external rotation of the humerus occurring simultaneously during elevation. Serratus anterior — attaching along the medial border and inferior angle of the scapula — is mechanically positioned to pull the inferior angle anterolaterally, producing upward rotation when the scapula is stabilised against the ribcage. Upper trapezius elevates the acromion end and lower trapezius depresses the spine of the scapula — together with serratus, this creates the force couple for upward rotation. Pectoralis minor — attaching from the coracoid process to ribs 3-5 — has a lever arm that tilts the scapula anteriorly when shortened. A shortened pec minor applies a constant anterior tilt moment that opposing posterior-tilting muscles must overcome during elevation, effectively reducing available posterior tilt ROM."
+  },
+
+  "bac_score": 0.79,
+  "bac_dimensions": {
+    "derivation": {
+      "score": 0.875,
+      "basis": "Split derivation basis. The three required scapular motions (upward rotation, posterior tilting, external rotation) during elevation are kinematically established from 3-D motion analysis and are geometrically necessary given the subacromial space constraints (derivation 1.0). The serratus anterior force couple with trapezius is derived from muscle attachment anatomy and moment arm geometry — directly measurable (derivation 1.0). Pec minor anterior tilt effect is anatomy-based — insertion on coracoid process with line of action driving anterior tilt when shortened (derivation 1.0). Thoracic kyphosis coupling to scapular anterior tilt is geometrically deterministic given the scapula's articulation with the posterior thorax (derivation 1.0). Scapular dyskinesis as a pattern-not-diagnosis characterisation is derived from clinical consensus and epidemiological evidence (Kibler et al. 2013) — involves interpretation beyond pure measurement: derivation 0.75. Entry-level derivation = average of 1.0 (×4) and 0.75 (×1) = 0.875."
+    },
+    "replication": {
+      "score": 0.75,
+      "basis": "The three-motion requirement during arm elevation is replicated across multiple 3-D kinematic studies including Ludewig & Cook 2000 and subsequent motion analysis work — strong consensus. Serratus anterior and trapezius force couple is replicated in EMG and anatomical studies without meaningful disagreement. Pec minor anterior tilt effect is anatomically established and clinically replicated. Thoracic kyphosis-scapular coupling is well-supported in clinical biomechanics. Scapular dyskinesis as a clinical pattern — and the Kibler et al. 2013 consensus framework — is adopted by major shoulder societies but the precise classification and its clinical significance are still being refined. Rated 0.75 to acknowledge minor disagreement in the dyskinesis literature and some variation in the quantification of force couple contributions."
+    },
+    "transferability": {
+      "score": 0.75,
+      "basis": "Minor variation expected. The requirement for all three scapular motions during elevation is universal — it follows from the fixed geometry of the subacromial space and glenohumeral joint. The directional effects of pec minor tightness and thoracic kyphosis are universal. However: (1) the resting position of the scapula varies between individuals due to thoracic kyphosis magnitude and habitual posture; (2) the degree of pec minor tightness required before it functionally limits posterior tilting varies with opposing muscle strength; (3) individual differences in scapular geometry and thoracic cage shape produce different scapulohumeral rhythm patterns. Rated 0.75 because the required motions are universal but individual structural and postural variation modulates both the resting starting position and the range available for elevation-associated motion."
+    }
+  },
+  "bac_basis": "BAC = (0.875 + 0.75 + 0.75) / 3 = 0.79. The kinematic requirements and force couple mechanics are robustly established. The dyskinesis characterisation is the weakest claim, receiving 0.75 derivation as a consensus-based clinical framework rather than pure measurement. Replication and transferability both 0.75 — directional consensus is strong, individual variation in magnitude and clinical significance is moderate.",
+
+  "eqs": null,
+  "eqs_basis": "null — pure kinematics, anatomy, and clinical movement pattern entry. Claims are falsifiable by 3-D motion analysis, EMG, muscle length measurement, and thoracic kyphosis angle measurement. No biological adaptation outcome is asserted. EQS does not apply.",
+
+  "sources": [
+    {
+      "citation": "Neumann DA. Kinesiology of the Musculoskeletal System: Foundations for Rehabilitation. 3rd ed. Mosby/Elsevier; 2016.",
+      "type": "biomechanics_textbook",
+      "authority": "Standard kinesiology reference. Synthesises scapular and shoulder mechanics from primary anatomy and biomechanics literature.",
+      "relevant_content": "Scapular kinematics during arm elevation: upward rotation, posterior tilting, and external rotation as the three coupled motions. Serratus anterior anatomy (origin: ribs 1-9 lateral surfaces; insertion: costal surface of medial scapular border and inferior angle) and its role as the primary upward rotator via inferior angle traction. Trapezius force couple: upper trapezius elevates the clavicular-acromial end while lower trapezius depresses the scapular spine — together with serratus creating upward rotation without excessive elevation or winging. Pectoralis minor anatomy (coracoid process insertion) and the mechanical basis for anterior tilting with shortened resting length. Coupling between thoracic spine position and scapular resting alignment on the posterior thorax.",
+      "coi_check": "Academic textbook. No industry funding conflict.",
+      "role_in_entry": "Primary source for all five claims — scapular kinematics, force couple anatomy, pec minor mechanics, kyphosis coupling, and baseline movement pattern framework"
+    },
+    {
+      "citation": "Ludewig PM, Cook TM. Alterations in shoulder kinematics and associated muscle activity in people with symptoms of shoulder impingement. Physical Therapy. 2000;80(3):276-291.",
+      "pmid": "10696154",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10696154/",
+      "type": "research_paper",
+      "authority": "Paula Ludewig — University of Minnesota. Landmark kinematic study on scapular motion. Also cited in biomechanics-shoulder-mechanics entry.",
+      "relevant_content": "3-D electromagnetic motion tracking of scapular kinematics during arm elevation in symptomatic and asymptomatic workers. Quantified all three scapular motions (upward rotation, posterior tilting, and internal/external rotation) throughout the elevation arc. Individuals with impingement symptoms showed reduced upward rotation and posterior tilting — directly supporting the requirement for these motions and their role in subacromial space maintenance. Provides quantitative data for scapulohumeral rhythm and demonstrates altered serratus anterior and trapezius activation in symptomatic individuals.",
+      "key_numbers": {
+        "n": "50 symptomatic, 50 asymptomatic male workers",
+        "method": "3-D electromagnetic motion tracking",
+        "scapular_motions_quantified": "Upward rotation, posterior tilting, internal/external rotation across 0-120° arm elevation",
+        "finding": "Reduced upward rotation and posterior tilting in symptomatic group confirms kinematic requirement for these motions"
+      },
+      "coi_check": "No industry funding identified. Low COI risk.",
+      "role_in_entry": "Empirical quantification of all three required scapular motions and their alteration in impingement — supports the kinematic requirements and the force couple muscle activation changes"
+    },
+    {
+      "citation": "Kibler WB, Ludewig PM, McClure PW, Michener LA, Bak K, Sciascia AD. Clinical implications of scapular dyskinesis in shoulder injury: the 2013 consensus statement from the 'Scapular Summit'. British Journal of Sports Medicine. 2013;47(14):877-885.",
+      "pmid": "23818263",
+      "doi": "10.1136/bjsports-2013-092425",
+      "url": "https://doi.org/10.1136/bjsports-2013-092425",
+      "type": "consensus_statement",
+      "authority": "W. Ben Kibler — Lexington Clinic Sports Medicine Centre. Paula Ludewig and leading shoulder biomechanics/clinical experts. Consensus statement from international expert meeting ('Scapular Summit') representing the current clinical framework for scapular dyskinesis.",
+      "relevant_content": "Defines scapular dyskinesis as observable alteration in scapular position and motion patterns — emphasising that it is a descriptive term for an observed pattern, not a pathological diagnosis. Establishes the consensus that dyskinesis is a non-specific response to multiple possible underlying causes: pain inhibition, muscle weakness or inhibition, soft tissue tightness (pec minor, posterior capsule), thoracic kyphosis, or neurological dysfunction. Provides the clinical classification framework and recommendations against treating dyskinesis as a diagnosis rather than a symptom. Notes that the same kinematic pattern can be produced by different underlying causes requiring different interventions.",
+      "coi_check": "No industry or device funding identified. International expert consensus. Low COI risk.",
+      "role_in_entry": "Primary source for the dyskinesis-as-pattern-not-diagnosis claim — the consensus framework that governs how scapular dyskinesis should be clinically interpreted"
+    }
+  ],
+
+  "key_claims": [
+    {
+      "claim": "Full arm elevation requires three simultaneous scapular motions: upward rotation, posterior tilting, and external rotation — all three are kinematic requirements, not optional contributions",
+      "confidence": 0.92,
+      "score_type": "BAC",
+      "notes": "Established by 3-D kinematic studies including Ludewig & Cook 2000. All three motions are geometrically necessary to maintain subacromial space and allow the glenoid to track the humeral head through 180° of elevation. Confidence below 1.0 because the exact magnitude of each motion required varies with elevation plane (scapular plane vs sagittal vs coronal), load, and individual anatomy — some individuals achieve adequate elevation with altered but not absent contributions from each motion."
+    },
+    {
+      "claim": "Serratus anterior is the primary driver of scapular upward rotation, acting in a force couple with upper trapezius (acromion elevation) and lower trapezius (scapular spine depression)",
+      "confidence": 0.88,
+      "score_type": "BAC",
+      "notes": "The force couple model — serratus pulling the inferior angle anterolaterally, upper trapezius elevating the lateral end, lower trapezius depressing the medial end — is established in EMG and anatomical moment arm studies and is textbook consensus. Confidence below 0.95 because the relative contribution of each muscle shifts with elevation angle and load, and middle trapezius also contributes to scapular retraction that modulates the rotation pattern. The 'primary' designation for serratus is supported by its large moment arm for inferior angle traction and its consistent high activation in upward rotation tasks."
+    },
+    {
+      "claim": "Tight pectoralis minor anteriorly tilts the scapula and mechanically limits available posterior tilting during arm elevation",
+      "confidence": 0.88,
+      "score_type": "BAC",
+      "notes": "Anatomically deterministic: pec minor inserts on the coracoid process and applies a constant anterior tilt moment when shortened. A shortened pec minor at rest means the scapula starts in anterior tilt and must travel further into posterior tilting to reach the same absolute position — effectively reducing available range. Directly measurable by clinical resting scapular position assessment and pec minor length testing. Confidence below 0.95 because the threshold of pec minor shortening required to functionally limit elevation varies with opposing muscle strength."
+    },
+    {
+      "claim": "Thoracic kyphosis is geometrically coupled to scapular anterior tilt — increased kyphosis positions the scapula in anterior tilt at rest, reducing available range for the posterior tilting required during elevation",
+      "confidence": 0.85,
+      "score_type": "BAC",
+      "notes": "Geometrically deterministic: the scapula articulates with the posterior thoracic cage. As thoracic kyphosis increases, the upper thorax becomes more convex in the sagittal plane, pushing the superior scapula anteriorly. The scapula adapts its resting position to the thoracic contour, beginning in greater anterior tilt. Confirmed in posture and shoulder kinematics research. Confidence below 0.95 because scapular position is influenced by multiple factors beyond thoracic curvature (muscle tone, glenohumeral pathology, habit), and the precise kyphosis angle threshold at which scapular motion is meaningfully limited is not established."
+    },
+    {
+      "claim": "Scapular dyskinesis is an observable alteration in scapular movement pattern — it is a response to underlying causes (weakness, tightness, pain, thoracic kyphosis), not a diagnosis or pathology in itself",
+      "confidence": 0.82,
+      "score_type": "BAC",
+      "notes": "Kibler et al. 2013 consensus framework directly establishes this characterisation. Supported by clinical evidence that the same pattern of dyskinesis (e.g., inferior angle winging, anterior tilt) can be produced by different underlying causes requiring different interventions — suggesting the pattern is non-specific and should not be treated as a standalone diagnosis. Confidence below 0.90 because the boundary between clinically significant dyskinesis (requiring intervention) and normal kinematic variation is not fully established; prevalence of dyskinesis in asymptomatic athletic populations complicates the clinical interpretation framework."
+    }
+  ],
+
+  "force_couple_detail": {
+    "serratus_anterior": "Primary upward rotator. Pulls inferior angle anterolaterally against the thorax. Also responsible for scapular protraction and posterior tilting. Loss of serratus function (e.g., long thoracic nerve palsy) produces medial scapular winging — the inferior angle lifts off the thorax. The most critical muscle for scapular upward rotation in overhead activities.",
+    "upper_trapezius": "Elevates the acromion end of the scapula — the superior arm of the upward rotation force couple. Often over-activated in individuals with dyskinesis; its elevation component can compress the cervicothoracic junction if not balanced by adequate lower trapezius and serratus co-activation.",
+    "lower_trapezius": "Depresses the medial scapular spine — the inferior arm of the force couple. Frequently underactivated in shoulder dysfunction. Its depression of the scapular spine, combined with serratus upward rotation of the inferior angle and upper trapezius acromion elevation, creates the full upward rotation arc without excessive scapular elevation.",
+    "pectoralis_minor": "Antagonises posterior tilting. When shortened, its constant anterior tilt moment must be overcome by the elevation-phase posterior-tilting muscles (serratus, lower trapezius). Pec minor tightness is a modifiable soft tissue restriction — specific stretching (doorway stretch in horizontal abduction with slight extension) and loading at length can restore resting length."
+  },
+
+  "dyskinesis_causes_framework": {
+    "structural": "Thoracic kyphosis (kyphosis-scapula coupling), AC joint pathology, clavicle fracture malunion",
+    "soft_tissue": "Pec minor tightness (anterior tilt), posterior capsule tightness (internal rotation restriction driving compensatory anterior tilt), posterior shoulder muscle tightness",
+    "neuromuscular": "Serratus anterior weakness or inhibition, lower trapezius underactivation, pain inhibition of scapular stabilisers",
+    "clinical_implication": "Identifying the underlying cause determines the appropriate intervention. The same dyskinesis pattern requires different treatment depending on whether it originates from pec minor tightness, serratus weakness, or thoracic kyphosis. Treating the pattern without identifying the cause is mechanically unsound."
+  },
+
+  "cross_reference": "See biomechanics-shoulder-mechanics entry (biomechanics-shoulder-mechanics-001) for the joint-level consequences of scapular motion — subacromial space, rotator cuff mechanics, and glenohumeral stability. This entry describes the scapular muscular drivers and movement requirements; the shoulder mechanics entry describes what happens at the glenohumeral joint when scapular motion is adequate or inadequate.",
+
+  "conflicting_evidence": "Scapular dyskinesis is highly prevalent in asymptomatic athletic populations — some studies report altered scapular kinematics in the majority of overhead athletes without shoulder pain. This challenges the clinical significance of the pattern: if dyskinesis is common in pain-free, high-functioning individuals, it may represent a normal adaptation rather than a pathological finding requiring intervention. The Kibler 2013 consensus acknowledges this but does not fully resolve the question of when dyskinesis requires intervention vs when it is an acceptable kinematic variant. The relative contribution of serratus anterior vs trapezius in the force couple also shows meaningful inter-individual and task variability in EMG studies.",
+
+  "what_would_change_this": "1. A large-sample study directly quantifying the resting pec minor length threshold at which posterior tilting during elevation is functionally limited would sharpen the pec minor claim from directional to quantitative. 2. Evidence that thoracic kyphosis magnitude does not predict scapular resting position in a population-representative sample would challenge the kyphosis-anterior tilt coupling claim. 3. Resolution of the clinical significance threshold for scapular dyskinesis — establishing the magnitude of kinematic alteration at which intervention produces measurable outcome benefit — would strengthen the practical translation of the dyskinesis framework.",
+
+  "open_question": true,
+  "open_question_note": "The clinical significance threshold for scapular dyskinesis — below which kinematic alteration represents normal variation and above which it represents a meaningful risk factor — is not established. The prevalence of dyskinesis in high-functioning asymptomatic athletes suggests that the kinematic patterns described are not intrinsically pathological, but the threshold at which they increase injury risk or require intervention is unknown.",
+
+  "practical_summary": "Train the full scapular force couple — not just upper trapezius. Serratus anterior (push-up plus, wall slides, serratus punches) and lower trapezius (Y and T exercises, prone lower trap raises) are the underworked components of the upward rotation mechanism. Assess and address pec minor length before prescribing overhead pressing volume — stretch pec minor with the arm in horizontal abduction and slight extension, not in the common shortened anterior position. Address thoracic mobility for individuals with significant kyphosis before expecting full scapular posterior tilting during elevation. Interpret scapular dyskinesis as a symptom, not a diagnosis — identify whether the cause is pec minor tightness, serratus weakness, thoracic restriction, or pain inhibition before prescribing intervention.",
+
+  "added_by": "founder",
+  "date_added": "2026-04-16",
+  "last_reviewed": "2026-04-16",
+  "next_review": "2028-04-16",
+  "review_trigger": "24-month default for BAC entries. Triggered on publication of studies establishing a clinical threshold for scapular dyskinesis significance in asymptomatic populations, or large-sample studies quantifying pec minor length thresholds for functional posterior tilting restriction."
+}
