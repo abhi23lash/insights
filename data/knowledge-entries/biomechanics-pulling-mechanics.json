@@ -1,0 +1,134 @@
+{
+  "id": "biomechanics-pulling-mechanics-001",
+  "domain": "biomechanics",
+  "subdomain": "pulling",
+  "tags": ["pulling", "lat-pulldown", "pull-up", "row", "latissimus-dorsi", "rear-deltoid", "rhomboids", "biceps", "elbow-path", "shoulder-adduction", "shoulder-extension", "scapular-retraction", "scapular-depression", "torso-angle", "grip-type", "EMG", "rowing", "vertical-pull", "horizontal-pull"],
+
+  "score_type": "BAC",
+
+  "claim": "During vertical pulling (lat pulldown, pull-up), latissimus dorsi is the primary mover via shoulder adduction and extension — not shoulder flexion. Elbow path determines muscle dominance: elbows travelling toward the hips emphasises shoulder extension and adduction (latissimus dorsi); elbows travelling posteriorly emphasises shoulder horizontal abduction (posterior deltoid and rhomboids). Scapular depression and retraction during pulling positions the latissimus dorsi with greater mechanical advantage by reducing passive tension on structures that would otherwise limit shoulder extension range. Supinated grip during pulling places the biceps brachii in optimal position for elbow flexion contribution, increasing elbow flexor force production at the cost of grip comfort under load. Torso angle during rowing movements shifts muscle emphasis — more horizontal torso (greater forward lean) increases latissimus dorsi stretch at the start of the pull; more vertical torso reduces lat stretch and increases the relative contribution of posterior deltoid and mid-back musculature.",
+
+  "grade": "not_applicable",
+  "source_type": "research",
+
+  "applies_to": {
+    "population": "anatomically typical adults performing vertical pulling (pull-up, lat pulldown) and horizontal pulling (barbell row, cable row, dumbbell row) movements — claims hold for individuals without significant shoulder pathology, rotator cuff tears, or post-surgical anatomy",
+    "individual_variation": "moderate — arm length, torso length, and individual latissimus dorsi attachment geometry affect the absolute elbow path and torso angle at which maximum lat contribution occurs; grip supination effects on biceps contribution vary with individual biceps moment arm geometry; directional relationships are universal",
+    "goal": "any — biomechanical facts apply equally to hypertrophy, strength, and performance contexts"
+  },
+
+  "biological_plausibility": {
+    "passes": true,
+    "mechanism": "Latissimus dorsi originates on the thoracolumbar fascia (T7-T12 vertebrae, posterior iliac crest, and lower ribs) and inserts on the intertubercular groove of the humerus. Its primary actions are shoulder extension (moving the humerus posteriorly from a flexed position) and shoulder adduction (moving the humerus toward the torso from an abducted position). In a lat pulldown or pull-up, the arm begins overhead in shoulder flexion and abduction — the lat's force vector during the pull is directed toward shoulder extension and adduction, driving the elbow toward the hip. This is distinct from the shoulder flexors (anterior deltoid, pectoralis major clavicular head), which would oppose the pulling direction. Posterior deltoid originates on the posterior scapular spine and inserts on the deltoid tuberosity — its line of pull is directed toward shoulder extension and horizontal abduction (elbows moving posteriorly and laterally). When the elbow path is directed posteriorly rather than toward the hip, shoulder horizontal abduction is the dominant motion and posterior deltoid is the primary mover. Rhomboids retract the scapula (medially), providing the anchor for horizontal abduction at the shoulder. Scapular depression (serratus anterior and lower trapezius) and retraction (middle and lower trapezius, rhomboids) stabilise and position the scapula to allow unrestricted shoulder extension range — without scapular depression, the acromion approaches the humeral head as the lat pulls the arm down, reducing clearance and mechanical efficiency. Supinated grip positions the forearm with the radius supinated, placing the biceps brachii (radius insertion) at optimal mechanical advantage for elbow flexion contribution (see biomechanics-elbow-mechanics entry) — increasing elbow flexor contribution to the pull. Torso angle during rowing determines the starting position of the shoulder joint relative to the load — a more horizontal torso increases the distance the shoulder must travel in extension to bring the elbows past the torso, increasing lat stretch at the start and lengthened-position stimulus; a more vertical torso shortens this range and places the shoulder more neutral, increasing the proportion of movement that is horizontal rather than sagittal-plane extension."
+  },
+
+  "bac_score": 0.79,
+  "bac_dimensions": {
+    "derivation": {
+      "score": 0.875,
+      "basis": "Split derivation basis. The latissimus dorsi as primary mover via shoulder adduction and extension (anatomy — insertion geometry and line of pull are directly measurable from cadaveric dissection), the elbow path determining muscle dominance (geometry — elbows toward hips = shoulder extension/adduction = lat; elbows back = horizontal abduction = posterior deltoid), and the supinated grip increasing biceps mechanical advantage (anatomy — radius rotation mechanics, fully established in biomechanics-elbow-mechanics entry) are derived from physics and anatomy — directly measurable via goniometry, cadaveric dissection, and moment arm calculation: derivation 1.0 for these three claims. The scapular depression and retraction claim (mechanical advantage for lat) and the torso angle shifting emphasis between lat and rear delt involve both anatomical reasoning and EMG evidence — the direction is anatomically coherent but the magnitude of the mechanical advantage change from scapular position, and the precise torso angle at which emphasis shifts, require empirical support beyond pure geometry: derivation 0.75 for these two claims. Entry-level derivation = average of 1.0 (×3) and 0.75 (×2) = 0.875."
+    },
+    "replication": {
+      "score": 0.75,
+      "basis": "Latissimus dorsi as primary vertical pulling mover via shoulder adduction and extension is replicated across anatomy, kinesiology, and EMG literature — textbook consensus. Elbow path effects on lat vs rear delt emphasis are confirmed in Fees et al. 1998 and consistent with pulling biomechanics literature and EMG studies comparing pull-up variations. Supinated grip effects on biceps activation during pulling are replicated across multiple lab studies (see biomechanics-elbow-mechanics cross-reference). Scapular position effects on lat mechanical advantage are anatomically established but less extensively replicated in training-specific EMG studies. Torso angle effects on lat vs rear delt contribution during rowing are clinically and empirically recognised but quantitative EMG data on the precise angle-contribution relationship is limited. Rated 0.75 to reflect the directional consensus combined with variability in quantitative evidence quality across the five claims."
+    },
+    "transferability": {
+      "score": 0.75,
+      "basis": "Minor variation expected. The directional relationships are universal: lat is always the primary shoulder extension/adduction mover; elbows toward hips always emphasises extension over horizontal abduction; supinated grip always increases biceps mechanical advantage. Variation exists in: (1) arm length and torso geometry — the elbow path angle at which maximum lat contribution occurs varies with limb proportions; (2) individual latissimus dorsi attachment geometry — insertion height on the humerus and origin extent across the thoracolumbar fascia vary; (3) the torso angle at which lat vs rear delt emphasis shifts is not precisely defined and varies with individual morphology. Rated 0.75 because directional relationships are highly consistent even though optimal positions and thresholds vary individually."
+    }
+  },
+  "bac_basis": "BAC = (0.875 + 0.75 + 0.75) / 3 = 0.79. Latissimus dorsi anatomy and the elbow path geometry claim are robustly physics-derived. Scapular positioning effects on mechanical advantage and torso angle effects on muscle emphasis involve EMG evidence alongside anatomy, producing 0.75 derivation for those two claims. Replication and transferability both 0.75 — strong directional consensus with moderate individual variation in optimal positions.",
+
+  "eqs": null,
+  "eqs_basis": "null — pure joint mechanics, muscle anatomy, and EMG activation entry. Claims are falsifiable by measuring joint angles, EMG activation, and moment arms directly. No biological adaptation outcome (hypertrophy, strength gain) is asserted. EQS does not apply.",
+
+  "sources": [
+    {
+      "citation": "Neumann DA. Kinesiology of the Musculoskeletal System: Foundations for Rehabilitation. 3rd ed. Mosby/Elsevier; 2016.",
+      "type": "biomechanics_textbook",
+      "authority": "Standard kinesiology reference. Synthesises shoulder joint mechanics, latissimus dorsi and posterior deltoid anatomy and moment arms, and scapular stabiliser mechanics from primary anatomy and biomechanics literature.",
+      "relevant_content": "Latissimus dorsi anatomy: extensive thoracolumbar origin, intertubercular groove insertion; primary actions — shoulder extension, adduction, and internal rotation; moment arm geometry confirming extension and adduction as the dominant force vectors during overhead pulling. Posterior deltoid anatomy: posterior scapular spine origin; primary action — shoulder extension and horizontal abduction; force vector analysis distinguishing it from latissimus dorsi in pulling mechanics. Scapular muscle force couples: serratus anterior and trapezius for upward rotation, lower trapezius and rhomboids for retraction and depression. Role of scapular positioning in allowing unrestricted glenohumeral extension range. Biceps brachii supination-dependence (cross-referenced in elbow mechanics entry).",
+      "coi_check": "Academic textbook. No industry funding conflict.",
+      "role_in_entry": "Primary source for latissimus dorsi and posterior deltoid anatomy, force vectors, scapular stabiliser mechanics, and the biomechanical basis for elbow path and torso angle effects"
+    },
+    {
+      "citation": "Lehman GJ. The influence of grip width and forearm pronation/supination on upper-body myoelectric activity during the flat bench press. Journal of Strength and Conditioning Research. 2005;19(3):587-591.",
+      "pmid": "16095408",
+      "doi": "10.1519/R-15024.1",
+      "url": "https://doi.org/10.1519/R-15024.1",
+      "type": "research_paper",
+      "authority": "Greg Lehman — chiropractor and biomechanics researcher. Widely cited on grip and forearm rotation effects on upper-body muscle activation.",
+      "relevant_content": "Documents the effect of forearm pronation/supination on muscle activation patterns — directly relevant to the grip type claim in this entry. While focused on bench press, the forearm rotation mechanics and their effects on biceps contribution are applicable to pulling movements with equivalent grip positions. Provides empirical support for supination increasing biceps activation relative to pronated conditions.",
+      "note": "This citation is most directly relevant to the supinated grip and biceps contribution claim — the bench press context transfers mechanistically because the underlying forearm rotation-to-biceps mechanical advantage principle is grip-type, not movement-specific.",
+      "coi_check": "No industry funding identified. Low COI risk.",
+      "role_in_entry": "Supporting empirical source for grip rotation effects on biceps activation, applicable across pressing and pulling movement contexts"
+    },
+    {
+      "citation": "Fees M, Decker T, Snyder-Mackler L, Axe MJ. Upper extremity weight-training modifications for the injured athlete. A clinical perspective. American Journal of Sports Medicine. 1998;26(5):732-742.",
+      "pmid": "9784822",
+      "type": "research_paper",
+      "authority": "Published in the American Journal of Sports Medicine — peer-reviewed. Snyder-Mackler — Professor at University of Delaware, biomechanics and sports medicine researcher. Clinical biomechanics perspective on upper extremity weight training mechanics and injury risk.",
+      "relevant_content": "Addresses the biomechanics of pulling movements including lat pulldown and pull-up variations — elbow path, grip type, and torso position effects on shoulder and lat mechanics. Provides clinical biomechanics perspective on which pulling variations preferentially load the latissimus dorsi vs posterior deltoid depending on elbow direction and torso inclination. Documents lat pulldown to the front vs behind the neck mechanics, grip width effects, and the importance of scapular positioning during pulling for shoulder health.",
+      "note": "Full PMID and DOI not independently confirmed at time of entry — verify citation details before citing externally. The user-specified citation is Fees et al. 1998 on lat activation.",
+      "coi_check": "No industry funding identified. Academic clinical paper. Low COI risk.",
+      "role_in_entry": "Empirical support for elbow path effects on lat vs posterior deltoid contribution during pulling movements, and clinical biomechanics of lat pulldown variations"
+    }
+  ],
+
+  "key_claims": [
+    {
+      "claim": "Latissimus dorsi is the primary mover in vertical pulling (lat pulldown, pull-up) via shoulder adduction and extension — not shoulder flexion",
+      "confidence": 0.93,
+      "score_type": "BAC",
+      "notes": "Anatomically deterministic. The latissimus dorsi insertion on the intertubercular groove of the humerus and its thoracolumbar origin produce shoulder extension and adduction — both of which occur during vertical pulling as the elbow moves from overhead toward the hip. Shoulder flexors (anterior deltoid, clavicular pec) would oppose this direction. This is among the most established muscle mechanics facts in kinesiology. Confidence below 1.0 because the precise percentage of shoulder extension vs adduction in the lat's force vector varies with arm position throughout the pull, and co-contraction from other muscles (teres major, posterior deltoid) contributes variable amounts at different points in the range."
+    },
+    {
+      "claim": "Elbow path determines muscle dominance — elbows directed toward the hips emphasises latissimus dorsi; elbows directed posteriorly emphasises posterior deltoid and rhomboids",
+      "confidence": 0.88,
+      "score_type": "BAC",
+      "notes": "Mechanistically derived from muscle line of pull. Elbows toward hips = shoulder extension and adduction = lat line of pull. Elbows toward posterior = shoulder horizontal abduction = posterior deltoid and rhomboid direction. This is the principle behind the lat pulldown vs face pull movement distinction. Confirmed in pulling mechanics literature (Fees 1998). Confidence below 0.93 because the elbow path in most pulling movements is a continuum — a purely lat-dominant path vs a purely rear-delt-dominant path represents endpoints, and most movements use an intermediate path with co-activation of both muscle groups. The threshold angle at which the shift from lat to rear delt emphasis occurs is not precisely defined."
+    },
+    {
+      "claim": "Scapular depression and retraction during pulling increases latissimus dorsi mechanical advantage by positioning the shoulder for unrestricted extension range",
+      "confidence": 0.82,
+      "score_type": "BAC",
+      "notes": "Anatomically coherent: the lat must be able to pull the humerus into full extension and adduction without the scapula blocking or the acromion impinging. Scapular retraction and depression positions the glenoid to allow greater glenohumeral extension range by clearing the anterior structures (coracoacromial arch, subscapularis tendon). Without active scapular depression, passive elevation of the scapula during pulling creates an impingement pattern that limits shoulder extension. Supported by scapular mechanics literature (see biomechanics-scapular-mechanics entry). Confidence below 0.90 because quantitative studies specifically measuring the change in lat mechanical advantage with controlled scapular position during pulling are limited — the reasoning is mechanistically coherent but less precisely quantified than the elbow path and grip type claims."
+    },
+    {
+      "claim": "Supinated grip during pulling places biceps brachii in optimal position for elbow flexion contribution — increasing elbow flexor force production relative to pronated grip",
+      "confidence": 0.90,
+      "score_type": "BAC",
+      "notes": "Directly follows from the biceps supination-dependence established in biomechanics-elbow-mechanics entry. Supinated grip during chin-up (compared to pronated grip in pull-up) places the forearm supinated, optimising biceps mechanical advantage for elbow flexion. EMG studies consistently show greater biceps activation in chin-up vs pull-up at equivalent load. Confidence below 0.95 because motor control compensation partially offsets the mechanical advantage difference — the grip effect reduces but does not eliminate biceps contribution in pronated grip pulling, and the magnitude of the shift varies between individuals."
+    },
+    {
+      "claim": "More horizontal torso during rowing increases latissimus dorsi stretch at the start position; more vertical torso reduces lat stretch and increases posterior deltoid and mid-back contribution",
+      "confidence": 0.82,
+      "score_type": "BAC",
+      "notes": "Anatomically coherent: a more horizontal torso (greater forward lean) places the shoulder in a more flexed position relative to the torso at the start of the row — the lat is stretched further into its lengthened position. As the row is pulled to completion (elbow past torso), a more horizontal torso requires greater shoulder extension range, loading the lat through a longer arc. A more vertical torso places the shoulder more neutral at the start, producing less lat stretch and shifting the movement toward horizontal abduction as the primary elbow-travel direction — engaging posterior deltoid and mid-back (rhomboids, middle trapezius) more. Practically observed in the difference between a Pendlay row (near horizontal torso) and an upright cable row (vertical torso). Confidence below 0.90 because precise EMG comparisons controlling torso angle as an isolated variable across a range of angles are limited — the directional claim is mechanistically sound but quantitative thresholds are not established."
+    }
+  ],
+
+  "pulling_mechanics_reference": {
+    "vertical_pull_lat_focus": "Elbows drive toward the hips (not posteriorly). Shoulders actively depress before and during the pull. Supinated grip (chin-up) or neutral grip increases biceps assistance. Scapular depression cue at the initiation of the pull — 'pull your shoulder blades into your back pockets' — directly addresses the scapular positioning claim.",
+    "vertical_pull_rear_delt_focus": "Wide grip with elbows flared — elbows move laterally and posteriorly rather than toward hips. Greater shoulder abduction angle shifts to rear deltoid and rhomboid-dominant horizontal abduction. Face pull with rope is the purest expression of this direction.",
+    "horizontal_pull_lat_focus": "Greater forward lean during row — more horizontal torso increases lat stretch. Elbow path close to torso (elbows toward hip rather than flaring out). Example: barbell row with 30-45 degree torso lean, pulling to the lower abdomen.",
+    "horizontal_pull_rear_delt_focus": "More vertical torso during row reduces lat stretch and shifts movement toward horizontal abduction. Elbow path directed posteriorly. Example: seated cable row with upright torso, elbows flaring out — increases rear delt and mid-trap contribution relative to lat."
+  },
+
+  "cross_reference": "See biomechanics-elbow-mechanics entry (biomechanics-elbow-mechanics-001) for the mechanical basis of supinated vs pronated grip effects on biceps brachii contribution — the supination-dependence of biceps mechanical advantage is the underlying mechanism for the chin-up vs pull-up activation difference. See biomechanics-scapular-mechanics entry (biomechanics-scapular-mechanics-001) for the scapular force couple mechanics that enable scapular depression and retraction during pulling — those muscles (lower trapezius, serratus anterior) are the proximal drivers of the mechanical advantage claim in this entry. See biomechanics-wrist-grip-mechanics entry (biomechanics-wrist-grip-mechanics-001) for grip strength as a limiting factor in pulling movements under heavy loads.",
+
+  "conflicting_evidence": "EMG studies comparing lat pulldown variations show less consistent results than the anatomical model predicts — some studies find minimal difference in lat EMG between pronated and neutral grip at matched loads, suggesting motor control compensation can partially offset the mechanical grip disadvantage. The precise torso angle at which emphasis shifts from lat to rear delt during rowing is contested — some EMG studies find the shift is gradual and the difference is smaller than coaching lore suggests. The claim that scapular retraction increases lat mechanical advantage is mechanistically coherent but less robustly quantified — some clinical observations suggest that the scapular cue matters more for injury prevention (acromial clearance) than for lat force production specifically.",
+
+  "what_would_change_this": "1. Controlled EMG studies comparing lat vs posterior deltoid activation across a systematic range of elbow path angles (from elbows-to-hips to elbows-back) in a large sample would precisely quantify the elbow path to muscle contribution relationship. 2. Studies specifically measuring lat EMG during rowing with controlled torso angle as the only independent variable would establish whether the lat vs rear delt shift is meaningful or overstated. 3. Evidence that scapular position does not significantly affect lat mechanical advantage or EMG during pulling would reduce the scapular depression cue from a biomechanical requirement to a positional preference.",
+
+  "open_question": false,
+  "open_question_note": "The directional relationships are well-established: elbows toward hips drives lat via extension and adduction; supinated grip increases biceps contribution; horizontal torso increases lat stretch in rows. The main open questions are magnitude-related (how much does torso angle actually change lat vs rear delt EMG? how large is the elbow path shift in practice?) rather than directional — these do not challenge the practical recommendations.",
+
+  "practical_summary": "Lat pulldown and pull-up are lat exercises only if the elbow path is correct — drive the elbows toward the hips, not posteriorly. Depress the scapulas before and during the pull ('shoulder blades into back pockets'). Use supinated or neutral grip when biceps assistance is desired; pronated grip when biceps involvement is less important (e.g., to isolate lat and avoid biceps fatigue limiting the set). For rowing movements targeting the lat, use greater forward lean — horizontal torso = greater lat stretch = more lat-biased stimulus. For rowing targeting rear delts and mid-back, use a more upright torso and direct the elbows posteriorly. These are genuinely different movements producing different stimuli — selecting them deliberately rather than interchangeably is mechanistically justified.",
+
+  "added_by": "founder",
+  "date_added": "2026-04-16",
+  "last_reviewed": "2026-04-16",
+  "next_review": "2028-04-16",
+  "review_trigger": "24-month default for BAC entries. Triggered on publication of controlled EMG studies isolating elbow path angle as an independent variable across a range of pulling movements in a large sample, or studies quantifying torso angle effects on lat vs rear deltoid contribution during rowing with precise angle control."
+}
