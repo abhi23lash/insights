@@ -1,0 +1,142 @@
+{
+  "id": "biomechanics-pushing-mechanics-001",
+  "domain": "biomechanics",
+  "subdomain": "pushing",
+  "tags": ["pressing", "bench-press", "overhead-press", "incline-press", "horizontal-press", "vertical-press", "pectoralis-major", "anterior-deltoid", "triceps", "elbow-flare", "grip-width", "shoulder-abduction", "incline-angle", "EMG", "upper-pec", "clavicular-head", "sternal-head", "muscle-contribution"],
+
+  "score_type": "BAC",
+
+  "claim": "In horizontal pressing, pectoralis major is the primary mover — anterior deltoid and triceps brachii are synergists. The contribution ratio shifts with grip width and elbow flare angle: wider grip and greater elbow flare increase shoulder abduction, increasing pec contribution at the cost of range of motion and shoulder joint stress. Elbow flare specifically redirects the force vector toward front delt and away from pec by increasing shoulder abduction angle. In vertical pressing above 90 degrees of arm elevation, anterior deltoid becomes the primary mover as pec major reaches mechanical disadvantage. Incline pressing at 30-45 degrees from horizontal maximises clavicular head (upper pec) contribution relative to flat pressing while maintaining sufficient pec mechanical advantage across the range of motion.",
+
+  "grade": "not_applicable",
+  "source_type": "research",
+
+  "applies_to": {
+    "population": "anatomically typical adults performing barbell and dumbbell pressing movements — claims hold for individuals without significant shoulder pathology, rotator cuff tears, or post-surgical anatomy; the incline angle window is most relevant to hypertrophy-oriented programming",
+    "individual_variation": "moderate — arm length, shoulder width, and clavicle length affect the absolute grip width at which a given shoulder abduction angle is reached; pectoralis major fibre architecture (size of clavicular vs sternal head, pennation angle) varies between individuals; directional relationships are universal but optimal grip and incline positions vary individually",
+    "goal": "any — biomechanical facts apply equally to hypertrophy, strength, and performance contexts"
+  },
+
+  "biological_plausibility": {
+    "passes": true,
+    "mechanism": "Pectoralis major has two distinct fibre groups with different lines of action: the sternal (lower) head performs shoulder horizontal adduction and extension from an abducted position; the clavicular (upper) head performs shoulder horizontal adduction and flexion, with greatest mechanical advantage at lower arm positions. During flat horizontal pressing, the sternal head dominates because the line of action aligns with horizontal adduction. Anterior deltoid performs shoulder flexion — it is a synergist during flat pressing but becomes increasingly important as the arm elevates toward vertical pressing because it is positioned on the anterior surface of the shoulder joint and its line of pull becomes the primary elevator above 90 degrees. Grip width determines shoulder abduction angle during pressing by fixing the distance of the hands relative to the torso — a wider grip forces greater shoulder abduction to bring the hands to the bar, increasing the proportion of the movement that is horizontal adduction (pec-dominant) rather than shoulder flexion (anterior deltoid-dominant). Elbow flare angle is an independent variable from grip width — flaring the elbows out (increasing the angle between upper arm and torso) increases shoulder abduction, further shifting load to the pec at lower angles but also increasing the valgus stress on the medial elbow. At incline angles of 30-45 degrees, the barbell path during pressing combines shoulder flexion (clavicular head direction) with horizontal adduction (sternal head direction), producing the greatest activation of the clavicular head relative to the sternal head without completely eliminating the sternal contribution."
+  },
+
+  "bac_score": 0.79,
+  "bac_dimensions": {
+    "derivation": {
+      "score": 0.875,
+      "basis": "Split derivation basis. The grip width and shoulder abduction angle relationship (geometry — wider grip = greater shoulder abduction), elbow flare increasing shoulder abduction angle (geometry — upper arm angle relative to torso is directly measurable), and wider grip reducing range of motion (geometry — with hands fixed further apart, the bar travels less distance before reaching the chest) are derived from physics and anatomy — directly measurable from joint angles and moment arm calculations: derivation 1.0 for these three claims. The anterior deltoid becoming primary mover above 90 degrees of elevation and the 30-45 degree incline window for upper pec maximisation extend beyond pure geometry into EMG evidence and muscle activation research — the directional shift from pec to front delt with elevation is anatomically predictable but the threshold (90 degrees) and the optimal incline window (30-45 degrees) are empirically derived from activation studies: derivation 0.75 for these two claims. Entry-level derivation = average of 1.0 (×3) and 0.75 (×2) = 0.875."
+    },
+    "replication": {
+      "score": 0.75,
+      "basis": "Grip width effects on pec vs deltoid activation during bench press are replicated in Lehman 2005 and across subsequent EMG studies — directional consensus is strong. Barnett et al. 1995 directly measured pectoralis major (clavicular and sternal heads), anterior deltoid, and triceps EMG across flat, incline, and decline bench press, establishing that incline increases upper pec relative to lower pec activation. The 90-degree elevation threshold for anterior deltoid dominance in vertical pressing is consistent across shoulder biomechanics literature (Neumann 2016). The 30-45 degree incline window is replicated directionally — some studies suggest slightly different optimal angles (up to 60 degrees) for clavicular head activation, and the magnitude differences between angles are debated. Rated 0.75 to reflect the variation in quantitative detail across studies while acknowledging strong directional consensus."
+    },
+    "transferability": {
+      "score": 0.75,
+      "basis": "Minor variation expected. The geometric relationships are universal in direction: wider grip always increases shoulder abduction angle; elbow flare always increases abduction; arm elevation always shifts load toward front delt. Variation exists in: (1) arm and shoulder geometry — absolute grip width producing a given abduction angle varies with shoulder width and arm length; (2) pectoralis major fibre architecture — the ratio of clavicular to sternal head varies between individuals, affecting the relative response to incline angle; (3) the precise incline angle at which upper pec activation peaks may vary by a few degrees with individual anatomy. Rated 0.75 because directional relationships are universal even though optimal positions and thresholds vary individually."
+    }
+  },
+  "bac_basis": "BAC = (0.875 + 0.75 + 0.75) / 3 = 0.79. Grip width and elbow flare geometry are robustly physics-derived. The anterior deltoid dominance threshold above 90 degrees and the 30-45 degree incline window involve EMG evidence alongside anatomy, producing 0.75 derivation for those two claims. Replication and transferability both 0.75 — strong directional consensus with moderate individual variation in optimal positions.",
+
+  "eqs": null,
+  "eqs_basis": "null — pure joint mechanics, muscle anatomy, and EMG activation entry. Claims are falsifiable by measuring joint angles, EMG activation, and moment arms directly. No biological adaptation outcome (hypertrophy, strength gain) is asserted. EQS does not apply.",
+
+  "sources": [
+    {
+      "citation": "Neumann DA. Kinesiology of the Musculoskeletal System: Foundations for Rehabilitation. 3rd ed. Mosby/Elsevier; 2016.",
+      "type": "biomechanics_textbook",
+      "authority": "Standard kinesiology reference. Synthesises shoulder joint mechanics, pectoralis major and anterior deltoid anatomy and moment arms, and pressing movement biomechanics from primary anatomy and biomechanics literature.",
+      "relevant_content": "Pectoralis major anatomy: clavicular head (origin — medial clavicle; function — shoulder flexion and horizontal adduction with arm below shoulder level); sternal head (origin — sternum and ribs; function — shoulder extension and horizontal adduction from abducted position, adduction). Force vector analysis of pec major vs anterior deltoid during arm elevation — anterior deltoid becomes dominant elevator above approximately 90 degrees of shoulder flexion as pec major reaches mechanical disadvantage. Shoulder abduction angle and its effect on pec major vs deltoid force vector alignment during pressing. Triceps brachii as elbow extensor synergist in pressing.",
+      "coi_check": "Academic textbook. No industry funding conflict.",
+      "role_in_entry": "Primary source for pectoralis major and anterior deltoid anatomy, force vectors, and the biomechanical basis for muscle contribution shifts with arm position"
+    },
+    {
+      "citation": "Lehman GJ. The influence of grip width and forearm pronation/supination on upper-body myoelectric activity during the flat bench press. Journal of Strength and Conditioning Research. 2005;19(3):587-591.",
+      "pmid": "16095408",
+      "doi": "10.1519/R-15024.1",
+      "url": "https://doi.org/10.1519/R-15024.1",
+      "type": "research_paper",
+      "authority": "Greg Lehman — chiropractor and biomechanics researcher. This paper is among the most cited on grip width and muscle activation during bench pressing.",
+      "relevant_content": "Measured pectoralis major, anterior deltoid, and triceps EMG during flat bench press with narrow grip (hands at shoulder width) and wide grip (hands at 2× shoulder width) and across forearm rotation conditions. Wider grip was associated with greater shoulder abduction angle and greater pectoralis major activation relative to anterior deltoid. Forearm and grip position significantly affected upper arm muscle activation patterns. Provides direct empirical support for grip width and elbow position effects on the pec-vs-deltoid contribution ratio.",
+      "key_numbers": {
+        "n": "Not confirmed in abstract — small sample typical of EMG study design",
+        "grip_conditions": "Narrow (shoulder width), wide (2× shoulder width)",
+        "finding": "Wider grip increased pectoralis major relative contribution; grip width significantly affected muscle activation patterns"
+      },
+      "note": "Small sample size typical of EMG study design. Directional findings replicated across subsequent pressing studies, though exact EMG values vary between studies.",
+      "coi_check": "No industry funding identified. Low COI risk.",
+      "role_in_entry": "Primary empirical source for grip width effects on pec vs deltoid activation during horizontal pressing"
+    },
+    {
+      "citation": "Barnett C, Kippers V, Turner P. Effects of variations of the bench press exercise on the EMG activity of five shoulder muscles. Journal of Strength and Conditioning Research. 1995;9(4):222-227.",
+      "type": "research_paper",
+      "authority": "Published in Journal of Strength and Conditioning Research — peer-reviewed. One of the earliest systematic EMG comparisons of bench press angle variations (flat, incline, decline) on muscle activation across the five primary pressing muscles.",
+      "relevant_content": "Measured EMG of pectoralis major (upper — clavicular head), pectoralis major (lower — sternal head), anterior deltoid, posterior deltoid, and triceps brachii across flat, incline (45 degrees), and decline bench press. Incline press produced greater upper pectoralis major (clavicular head) activation relative to flat press. Flat and decline press produced greater lower pectoralis major (sternal head) activation. Anterior deltoid activation increased with incline angle. Triceps activation was consistent across conditions. Provides the empirical basis for the incline angle effects on upper vs lower pec contribution and the anterior deltoid shift with incline.",
+      "key_numbers": {
+        "incline_tested": "45 degrees (one incline condition)",
+        "finding": "Incline increased clavicular head EMG; decline and flat increased sternal head EMG relative to each other; anterior deltoid increased with incline angle"
+      },
+      "note": "The study tested 45 degrees incline — the 30-45 degree window claim extrapolates from Barnett 1995 and subsequent angle-comparison studies. Verify full citation details (volume, issue, pages) before citing externally.",
+      "coi_check": "No industry funding identified. Academic study. Low COI risk.",
+      "role_in_entry": "Primary empirical source for incline angle effects on upper vs lower pectoralis major activation and anterior deltoid contribution shift"
+    }
+  ],
+
+  "key_claims": [
+    {
+      "claim": "In horizontal pressing, pectoralis major is the primary mover — anterior deltoid and triceps are synergists; their relative contribution shifts with grip width and elbow flare",
+      "confidence": 0.88,
+      "score_type": "BAC",
+      "notes": "Anatomically well-established. Pec major's sternal head line of action is optimally aligned with horizontal adduction from an abducted position — the primary movement in flat pressing. Anterior deltoid and triceps are synergists. The contribution ratio shift with grip width is confirmed by Lehman 2005. Confidence below 0.95 because EMG studies show wide variation in absolute activation ratios between individuals, and the precise contribution ratio at any given grip position depends on individual anatomy and motor control strategy."
+    },
+    {
+      "claim": "Wider grip increases pec stretch at the bottom of the pressing range of motion but reduces total range of motion",
+      "confidence": 0.90,
+      "score_type": "BAC",
+      "notes": "Geometrically deterministic. At wider grip, the hands are further apart — the bar contacts the chest before the shoulder reaches maximum horizontal abduction, reducing ROM. The greater shoulder abduction angle at wide grip also places the pec major in a more lengthened position at the bottom, increasing passive and active tension at that position. Confirmed in pressing biomechanics literature. Confidence below 0.95 because the degree of pec stretch change per unit of grip width increase depends on individual thoracic depth and shoulder mobility."
+    },
+    {
+      "claim": "Elbow flare increases shoulder abduction angle and shifts the force vector toward anterior deltoid and away from pectoralis major",
+      "confidence": 0.87,
+      "score_type": "BAC",
+      "notes": "Mechanistically derived from shoulder joint geometry — elbow flare (increasing upper arm angle relative to torso in the horizontal plane) directly increases shoulder abduction angle at any given joint position. Greater shoulder abduction shifts the movement toward deltoid-dominant range and away from pec-dominant horizontal adduction. This is consistent with Lehman 2005 and the anatomical principles in Neumann 2016. Confidence below 0.95 because the precise relationship between elbow flare angle and shoulder abduction angle varies with torso width and arm length, and EMG studies do not uniformly isolate elbow flare as an independent variable."
+    },
+    {
+      "claim": "In vertical pressing, anterior deltoid becomes the primary mover above approximately 90 degrees of arm elevation — pectoralis major mechanical advantage drops significantly above this point",
+      "confidence": 0.85,
+      "score_type": "BAC",
+      "notes": "Anatomically derived from pec major force vector geometry: the sternal head line of pull transitions from mechanically advantageous (below horizontal) to disadvantageous (above 90 degrees, where the muscle is shortened and its vector no longer aligns with the elevation direction). Anterior deltoid has a consistent moment arm for shoulder flexion throughout the elevation arc and becomes the dominant elevator above 90 degrees. Supported by shoulder biomechanics literature (Neumann 2016). Confidence below 0.90 because the exact elevation angle at which pec contribution drops to negligible varies with individual pec geometry and the precise threshold is not established from direct force measurement."
+    },
+    {
+      "claim": "Incline pressing at 30-45 degrees from horizontal maximises clavicular head (upper pec) contribution while maintaining meaningful total pectoralis major involvement",
+      "confidence": 0.78,
+      "score_type": "BAC",
+      "notes": "Supported directionally by Barnett 1995 (45 degrees produced greater clavicular head EMG than flat) and anatomically coherent — the clavicular head fibres run in a direction that is best aligned with the load vector at incline rather than horizontal. The 30-45 degree window is a synthesis from multiple angle-comparison EMG studies. Confidence capped at 0.78 because different studies identify different optimal angles (some finding peak upper pec activation closer to 30 degrees, others closer to 45-60 degrees) and the magnitude of upper pec advantage over flat at these angles varies substantially between subjects. The directional relationship (incline > flat for upper pec) is robust; the precise optimal angle within the incline range is not."
+    }
+  ],
+
+  "pressing_mechanics_reference": {
+    "flat_bench_press": "Primary mover: sternal pectoralis major via horizontal adduction. Synergists: anterior deltoid, triceps brachii. Grip width adjusts the pec:delt ratio — wider grip increases pec contribution at cost of ROM and shoulder joint stress. Optimal grip for pec stimulus without excessive shoulder stress: hands 1.5× shoulder width, bar path slightly below nipple line.",
+    "incline_press_30_45": "Increased clavicular pec contribution relative to flat. Anterior deltoid contribution increases with incline angle. Upper pec and front delt co-targeted in this zone. Above 60-70 degrees, the movement approaches a shoulder press — pec contribution diminishes and front delt dominates.",
+    "overhead_press": "Primary mover: anterior deltoid. Pectoralis major is a negligible contributor above 90 degrees of elevation. Triceps is the primary elbow extensor. Shoulder abduction angle, external rotation cue (see biomechanics-shoulder-mechanics entry), and scapular upward rotation (see biomechanics-scapular-mechanics entry) are the relevant mechanical variables.",
+    "elbow_flare_note": "Elbow flare is an independent variable from grip width. With a fixed grip, flaring the elbows increases shoulder abduction, shifts load toward front delt, and increases valgus stress at the medial elbow (see biomechanics-elbow-mechanics entry). Tucking the elbows reduces shoulder abduction, shifts load toward pec and triceps, and reduces medial elbow stress — the mechanism behind the 'tuck' cue in powerlifting pressing."
+  },
+
+  "cross_reference": "See biomechanics-wrist-grip-mechanics entry (biomechanics-wrist-grip-mechanics-001) for wrist position effects during pressing — grip width is addressed there in the context of shoulder abduction angle geometry, which links directly to this entry. See biomechanics-shoulder-mechanics entry (biomechanics-shoulder-mechanics-001) for subacromial space management during overhead pressing. See biomechanics-elbow-mechanics entry (biomechanics-elbow-mechanics-001) for medial elbow stress and the carrying angle effects relevant to elbow flare during pressing.",
+
+  "conflicting_evidence": "EMG studies on incline press angle show inconsistent results on the precise optimal incline for upper pec activation — Barnett 1995 tested 45 degrees and found greater clavicular head activation; other studies have found peak activation at 30 degrees or as high as 60 degrees. This inconsistency is partly explained by between-subject variation in pec fibre architecture and partly by methodological differences in electrode placement and load selection. The clinical significance of small activation differences between 30 and 45 degrees is also debated — the differences may be too small to meaningfully affect hypertrophy outcomes at matched volumes. Studies on the 90-degree threshold for anterior deltoid dominance are also less precise than anatomical models predict — the transition is gradual, and some subjects show meaningful pec contribution at higher elevation angles depending on grip width and torso position.",
+
+  "what_would_change_this": "1. In-vivo force measurement studies (or high-density EMG with ultrasound-confirmed electrode placement) measuring clavicular vs sternal pec head contribution across a full range of incline angles (15-75 degrees) in a large sample would resolve the incline angle debate. 2. Studies specifically isolating elbow flare angle as an independent variable (controlling for grip width) with simultaneous pec and deltoid EMG would quantify the elbow flare effect independently of grip. 3. Evidence that anterior deltoid becomes dominant at a substantially different elevation angle (e.g., 75 degrees rather than 90 degrees) in a large sample would revise the vertical press threshold claim.",
+
+  "open_question": false,
+  "open_question_note": "The directional relationships are well-established: incline increases upper pec relative to lower pec; elbow flare increases front delt relative to pec; vertical pressing is front-delt-dominant above 90 degrees. The open questions are magnitude-related (precise optimal incline angle for upper pec; exact elbow flare angle thresholds) rather than directional — these do not challenge the practical recommendations.",
+
+  "practical_summary": "For chest emphasis in horizontal pressing: use a grip 1.5× shoulder width, keep elbows at approximately 45-75 degrees from the torso (not fully flared, not fully tucked), and control bar path to the lower chest. For upper pec emphasis: use 30-45 degree incline — this is a real mechanical distinction, not just marketing. For shoulder press: the pec is largely a spectator above 90 degrees — this is front delt and triceps work. Elbow flare is a variable to adjust deliberately, not an error to correct universally: wider flare shifts load to front delt, narrower tuck shifts load to pec and triceps. Match elbow position to the target muscle.",
+
+  "added_by": "founder",
+  "date_added": "2026-04-16",
+  "last_reviewed": "2026-04-16",
+  "next_review": "2028-04-16",
+  "review_trigger": "24-month default for BAC entries. Triggered on publication of large-sample EMG or in-vivo force measurement studies resolving the optimal incline angle debate with controlled conditions, or studies specifically isolating elbow flare as an independent variable in pressing mechanics."
+}
