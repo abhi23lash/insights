@@ -1,0 +1,122 @@
+{
+  "id": "biomechanics-elbow-mechanics-001",
+  "domain": "biomechanics",
+  "subdomain": "elbow",
+  "tags": ["elbow", "carrying-angle", "valgus", "biceps", "brachialis", "brachioradialis", "supination", "pronation", "UCL", "medial-elbow", "triceps-long-head", "biarticular", "elbow-flexion", "elbow-extension", "grip"],
+
+  "score_type": "BAC",
+
+  "claim": "The carrying angle (5-15° of valgus in anatomical position) determines the orientation of forearm force vectors relative to the humerus during pressing and pulling. Brachialis is the primary elbow flexor regardless of forearm rotation; biceps brachii contribution is supination-dependent due to its insertion on the radius. Forearm supination increases biceps mechanical advantage, shifting load away from brachialis and brachioradialis. Valgus loading at the elbow generates medial tensile stress on the ulnar collateral ligament — relevant in overhead throwing and during pressing when the elbow tracks inside the wrist. The triceps long head is biarticular — shoulder position modulates its length and therefore its contribution to elbow extension.",
+
+  "grade": "not_applicable",
+  "source_type": "research",
+
+  "applies_to": {
+    "population": "anatomically typical adults — claims hold for individuals without significant elbow pathology, post-surgical anatomy, or cubitus valgus/varus deformity beyond normal range; the medial elbow stress claim applies in both athletic and loaded training contexts",
+    "individual_variation": "moderate — carrying angle varies between individuals (and typically differs between males and females), affecting force vector orientation; biceps moment arm varies with radial tuberosity position; but the directional relationships between forearm rotation and biceps/brachialis contribution are universal",
+    "goal": "any — biomechanical facts apply equally to hypertrophy, strength, injury prevention, and athletic performance contexts"
+  },
+
+  "biological_plausibility": {
+    "passes": true,
+    "mechanism": "The carrying angle places the forearm in valgus relative to the humerus in anatomical position — this means the long axis of the forearm is not colinear with the humerus, creating an oblique force vector during elbow flexion and extension. Brachialis inserts on the ulnar tuberosity — the ulna does not rotate with forearm supination or pronation, so brachialis produces elbow flexion regardless of forearm rotation. Biceps brachii inserts on the radial tuberosity — when the forearm supinates, the radius aligns with the biceps line of pull and the muscle is mechanically positioned to both flex the elbow and supinate the forearm; when pronated, the radius crosses over the ulna and the biceps insertion moves away from the optimal line of pull, reducing its mechanical advantage for elbow flexion. Valgus loading at the elbow stretches the medial structures — the ulnar collateral ligament (UCL) resists this tensile stress. The magnitude of UCL loading increases with the applied valgus moment (force × moment arm). The triceps long head originates on the infraglenoid tubercle of the scapula, crossing the shoulder joint before reaching the elbow — shoulder elevation stretches the long head, increasing its passive tension and total force contribution to elbow extension."
+  },
+
+  "bac_score": 0.79,
+  "bac_dimensions": {
+    "derivation": {
+      "score": 0.875,
+      "basis": "Split derivation basis. The carrying angle and its geometric effect on force vectors, brachialis as a rotation-independent elbow flexor (insertion on ulna, non-rotating), biceps supination-dependence (radius-insertion mechanics and moment arm geometry), and triceps long head biarticular length-tension relationship are all derived from anatomy and first principles mechanics — directly measurable via goniometry, cadaveric dissection, and moment arm calculation: derivation 1.0 for these four claims. The medial elbow stress claim — while mechanistically sound (UCL under tensile stress during valgus loading) — involves dynamic loading patterns during throwing and pressing that require biomechanical measurement under sport-specific conditions; the clinical relevance and loading magnitude involve research-based interpretation beyond pure geometry: derivation 0.75. Entry-level derivation = average of 1.0 (×4) and 0.75 (×1) = 0.875."
+    },
+    "replication": {
+      "score": 0.75,
+      "basis": "Brachialis as the primary elbow flexor regardless of rotation and biceps supination-dependence are replicated across anatomy, kinesiology, and EMG literature — textbook consensus. Triceps long head biarticular mechanics are established across cadaveric and EMG studies. The medial elbow UCL stress during valgus loading is well-established in overhead sport biomechanics literature. Minor disagreement exists on the precise magnitude of biceps vs brachialis contribution across the flexion arc and the exact carrying angle thresholds at which force vector alignment becomes clinically relevant."
+    },
+    "transferability": {
+      "score": 0.75,
+      "basis": "Minor variation expected. The directional relationships (brachialis works regardless of rotation; biceps works best supinated; valgus loads medial elbow; shoulder elevation stretches triceps long head) are universal. Variation exists in: (1) carrying angle magnitude — average approximately 10-15° in females, 5-10° in males, but individual range is wide; (2) radial tuberosity position and biceps moment arm geometry vary between individuals; (3) the degree of triceps long head contribution change with shoulder angle varies with individual muscle cross-section and resting length. Rated 0.75 because direction is universal but the practical magnitude of each effect varies individually."
+    }
+  },
+  "bac_basis": "BAC = (0.875 + 0.75 + 0.75) / 3 = 0.79. The insertion-site mechanics (brachialis on ulna, biceps on radius) are pure anatomy and directly account for the supination-dependence finding. The medial elbow stress claim involves dynamic loading data alongside the geometric UCL mechanics, producing 0.75 derivation. Replication and transferability both 0.75 — strong directional consensus with moderate individual variation.",
+
+  "eqs": null,
+  "eqs_basis": "null — pure joint mechanics and anatomy entry. Claims are falsifiable by measuring joint angles, moment arms, EMG activation, and force vectors directly. No biological adaptation outcome is asserted. EQS does not apply.",
+
+  "sources": [
+    {
+      "citation": "Neumann DA. Kinesiology of the Musculoskeletal System: Foundations for Rehabilitation. 3rd ed. Mosby/Elsevier; 2016.",
+      "type": "biomechanics_textbook",
+      "authority": "Standard kinesiology reference. Synthesises elbow joint mechanics, muscle anatomy and moment arms, and kinematic coupling from primary anatomy and biomechanics literature.",
+      "relevant_content": "Elbow joint anatomy: humeroulnar and humeroradial articulations, carrying angle definition and sex-based normal ranges (males approximately 5-10°, females approximately 10-15°). Biceps brachii anatomy: long and short head origins, insertion on radial tuberosity and bicipital aponeurosis, function as elbow flexor and forearm supinator — with supination-dependent moment arm geometry. Brachialis anatomy: origin on anterior humerus, insertion on ulnar tuberosity — rotation-independent elbow flexor, largest cross-sectional area of the elbow flexors. Brachioradialis: insertion on styloid process of radius — active in mid-range and with neutral grip. Triceps long head origin on infraglenoid tubercle — biarticular implications for length-tension relationship with shoulder position. UCL anatomy and valgus stress mechanics at the medial elbow.",
+      "coi_check": "Academic textbook. No industry funding conflict.",
+      "role_in_entry": "Primary source for all five claims — carrying angle, flexor hierarchy by rotation, biceps supination mechanics, UCL anatomy, and triceps long head biarticular geometry"
+    },
+    {
+      "citation": "Morrey BF. The Elbow and Its Disorders. 2nd ed. Philadelphia: WB Saunders; 1993.",
+      "type": "clinical_biomechanics_textbook",
+      "authority": "Bernard Morrey — Mayo Clinic orthopaedic surgeon and elbow specialist. The standard clinical reference on elbow biomechanics, pathology, and surgical management. Widely cited in orthopaedics and sports medicine.",
+      "relevant_content": "Comprehensive biomechanical analysis of elbow joint loading — humeroulnar and humeroradial joint contact forces, carrying angle effects on force transmission, UCL structure and loading patterns under valgus stress. Documents that the UCL is the primary restraint to valgus stress at the elbow (approximately 70% of valgus resistance at 90° flexion). Provides force data on elbow flexor contributions and the effects of forearm position on moment arm geometry. Establishes the mechanical basis for medial elbow injury patterns in overhead athletes and loaded pressing movements.",
+      "coi_check": "Clinical academic textbook. No industry funding conflict. Low COI risk.",
+      "role_in_entry": "Primary source for UCL valgus loading mechanics and clinical relevance of the carrying angle in loaded movement contexts"
+    }
+  ],
+
+  "key_claims": [
+    {
+      "claim": "The carrying angle (5-15° of valgus in anatomical position) places the forearm in a non-colinear orientation relative to the humerus, creating an oblique force vector component during elbow flexion and extension under load",
+      "confidence": 0.90,
+      "score_type": "BAC",
+      "notes": "Geometrically deterministic given the carrying angle definition. The angle is directly measurable and has been characterised across large populations. Its effect on force vector orientation during pressing and pulling is a direct trigonometric consequence. Confidence below 0.95 because the practical loading significance of the carrying angle varies with grip width, bar path, and individual angle magnitude — the geometric consequence is clear but its functional impact in exercise contexts is less precisely quantified."
+    },
+    {
+      "claim": "Brachialis is the primary elbow flexor regardless of forearm rotation — it is the workhorse of elbow flexion because its insertion on the ulna is unaffected by pronation or supination",
+      "confidence": 0.93,
+      "score_type": "BAC",
+      "notes": "Anatomically deterministic. Brachialis inserts on the ulnar tuberosity — the ulna does not rotate during forearm pronation/supination. Brachialis therefore produces elbow flexion with equal mechanical advantage in all forearm positions. It also has the largest cross-sectional area of the elbow flexors, making it the greatest absolute force producer. Textbook consensus. Confidence below 1.0 because EMG studies show context-dependent variation in relative brachialis vs biceps activation, and the 'workhorse' designation involves some simplification of a distributed flexor synergy."
+    },
+    {
+      "claim": "Forearm supination increases biceps brachii mechanical advantage for elbow flexion — pronated grip shifts the elbow flexion load to brachialis and brachioradialis",
+      "confidence": 0.92,
+      "score_type": "BAC",
+      "notes": "Anatomy-derived and replicated in EMG studies. When the forearm is supinated, the radial tuberosity faces posteriorly and the biceps line of pull is optimally oriented for both elbow flexion and supination. When pronated, the radius rotates medially over the ulna and the biceps insertion is repositioned away from the optimal pull angle. The shift to brachialis and brachioradialis under pronated load is confirmed in EMG research across multiple labs. Confidence below 0.95 because the magnitude of the shift varies with flexion angle and load — at some positions the difference is smaller."
+    },
+    {
+      "claim": "Valgus loading at the elbow generates medial tensile stress on the ulnar collateral ligament — relevant during overhead throwing and when the elbow tracks medial to the wrist during pressing",
+      "confidence": 0.85,
+      "score_type": "BAC",
+      "notes": "UCL as primary valgus restraint is well-established (Morrey 1993: approximately 70% of valgus resistance at 90° flexion). The generation of medial tensile stress under valgus load is geometrically deterministic. The relevance to pressing mechanics (elbow tracking inside the wrist creates valgus moment) is mechanistically coherent and clinically observed — but the precise valgus moment magnitude during various pressing configurations is less precisely quantified than in throwing biomechanics. Confidence reflects the mechanistic soundness combined with the dynamic loading complexity."
+    },
+    {
+      "claim": "The triceps long head is biarticular — originating on the infraglenoid tubercle, it crosses the shoulder joint; shoulder elevation stretches the long head and increases its passive tension contribution to elbow extension",
+      "confidence": 0.90,
+      "score_type": "BAC",
+      "notes": "Established anatomy — the infraglenoid tubercle origin is unambiguous. The length-tension consequence of shoulder elevation is a direct mechanical consequence of biarticular geometry. Confirmed by EMG studies showing greater long head activation during overhead triceps exercises compared to pressing movements with the arm at the side. Confidence below 0.95 because the precise degree of passive tension increase per degree of shoulder elevation and its functional contribution to total extension force varies with individual muscle length and testing conditions."
+    }
+  ],
+
+  "elbow_flexor_hierarchy": {
+    "brachialis": "Primary flexor — largest cross-sectional area, inserts on ulna (rotation-independent), active throughout the flexion arc in all forearm positions. The ceiling of elbow flexion strength is largely determined by brachialis capacity.",
+    "biceps_brachii": "Powerful when supinated — optimal mechanical advantage for both flexion and supination with forearm supinated. Biarticular (crosses shoulder at long head). Markedly less efficient as a flexor when pronated. The most visible elbow flexor but not the primary force producer in all conditions.",
+    "brachioradialis": "Active in mid-range flexion and with neutral or pronated grip — acts as a speed muscle and fatigue compensator. Inserts distally on the radius — long moment arm but limited force capacity. Dominant in rapid elbow flexion and in positions where biceps is mechanically disadvantaged.",
+    "training_implication": "Supinated curls emphasise biceps; hammer curls (neutral grip) emphasise brachialis and brachioradialis; reverse curls (pronated) maximally shift to brachialis and brachioradialis. Developing all three flexors requires grip rotation variation."
+  },
+
+  "triceps_long_head_note": "Exercises that position the shoulder in elevation (overhead triceps extension, cable overhead extension, incline skull crusher) lengthen the triceps long head at the shoulder and increase its contribution to elbow extension via both active and passive tension. This is the mechanical basis for the superiority of overhead triceps exercises for long head hypertrophy — a principle linking directly to the biomechanics-lengthened-position entry (hypertrophy domain). Exercises with the arm at the side (pushdowns, close-grip bench) shorten the long head at the shoulder and reduce its relative contribution.",
+
+  "cross_reference": "The triceps long head biarticular claim connects to hypertrophy-lengthened-position entry (hypertrophy domain) — loading muscles at long length produces greater hypertrophic stimulus. See also biomechanics-wrist-grip-mechanics entry for grip position effects on force transmission through the elbow chain.",
+
+  "conflicting_evidence": "The magnitude of biceps contribution shift between supinated and pronated grip is debated in EMG literature — some studies show a smaller absolute reduction than the mechanical model predicts, likely because co-activation patterns and motor control strategies partially compensate for the reduced moment arm. The clinical significance of the carrying angle in non-throwing populations is also debated — most individuals complete pressing and pulling movements without carrying-angle-related pathology, suggesting the angle is accommodated by normal joint laxity and movement pattern variability.",
+
+  "what_would_change_this": "1. In-vivo moment arm measurements using ultrasound or MRI across the full forearm rotation arc in a large sample would precisely quantify the biceps moment arm change between supination and pronation. 2. Dynamic elbow loading studies during common resistance training exercises (curl variations) with simultaneous force plate and EMG data would quantify the practical brachialis vs biceps shift under training-relevant loads. 3. Evidence that carrying angle magnitude does not predict medial elbow stress during pressing in a large sample would reduce the practical relevance of the carrying angle claim for the general training population.",
+
+  "open_question": false,
+  "open_question_note": "The core mechanics — brachialis rotation-independence, biceps supination-dependence, UCL valgus loading, triceps long head biarticular geometry — are well-established. The open questions are magnitude-related (precisely how much shift between muscles occurs under real training loads) rather than directional.",
+
+  "practical_summary": "Vary forearm rotation in curl training: supinated for biceps emphasis, neutral or pronated for brachialis and brachioradialis. The brachialis is the size foundation of the upper arm — it pushes the biceps up and creates the peaked appearance; training it in pronated and neutral positions is not optional. Monitor elbow position during pressing — if the elbow tracks significantly inside the wrist, the valgus moment increases UCL stress; cue elbow stacking over the wrist. Include overhead triceps work (cable overhead extension, skull crusher with arms back) to access the triceps long head at its longest position — this is mechanistically different from pushdowns and pressing.",
+
+  "added_by": "founder",
+  "date_added": "2026-04-16",
+  "last_reviewed": "2026-04-16",
+  "next_review": "2028-04-16",
+  "review_trigger": "24-month default for BAC entries. Triggered on publication of in-vivo moment arm studies across forearm rotation positions or dynamic loading studies measuring brachialis vs biceps contribution under training-relevant loads."
+}
