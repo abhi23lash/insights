@@ -1,0 +1,131 @@
+{
+  "id": "biomechanics-wrist-grip-mechanics-001",
+  "domain": "biomechanics",
+  "subdomain": "wrist-and-grip",
+  "tags": ["wrist", "grip", "grip-width", "bench-press", "pressing", "pulling", "pronated-grip", "neutral-grip", "supination", "wrist-extension", "force-transmission", "grip-strength", "radial-deviation", "ulnar-deviation", "kinetic-chain"],
+
+  "score_type": "BAC",
+
+  "claim": "Grip width on horizontal pressing determines shoulder abduction angle, which directly affects the relative contribution of pectoralis major versus anterior deltoid to the pressing force. Pronated grip during vertical and horizontal pulling reduces biceps brachii mechanical advantage; neutral grip restores it. Wrist extension during pressing shifts the load anteriorly away from the radius and ulna, increasing wrist extensor tension and reducing structural efficiency of force transmission through the forearm. Grip strength is a limiting link in the kinetic chain during pulling movements — it fails before target muscles reach fatigue in many individuals. Radial and ulnar deviation under load increases stress on the respective side of the radiocarpal joint.",
+
+  "grade": "not_applicable",
+  "source_type": "research",
+
+  "applies_to": {
+    "population": "anatomically typical adults performing resistance training — claims hold for individuals without significant wrist pathology, carpal tunnel syndrome, or post-surgical hand and wrist anatomy; grip strength limiting factor claim is most relevant to pulling movements with moderate to heavy loads",
+    "individual_variation": "moderate — grip width effects on shoulder abduction vary with arm length and shoulder width; wrist anatomy and grip strength vary substantially between individuals; the directional relationships are universal but optimal grip positions vary individually",
+    "goal": "any — biomechanical facts apply equally to hypertrophy, strength, injury prevention, and performance contexts"
+  },
+
+  "biological_plausibility": {
+    "passes": true,
+    "mechanism": "Grip width on a horizontal pressing bar determines how far the hands are positioned relative to the shoulders — wider grip increases shoulder abduction angle and places the pectoralis major in a mechanically advantageous position for horizontal adduction; narrower grip reduces abduction, shifting the movement toward pure shoulder flexion and increasing anterior deltoid and triceps contribution. Pronated grip (palms facing down or away) in pulling movements positions the forearm with the biceps brachii at mechanical disadvantage (as documented in the elbow mechanics entry); neutral grip (palms facing each other) positions the forearm at mid-rotation, restoring biceps moment arm. Wrist extension during pressing creates a torque arm between the bar contact point (palm or fingers) and the wrist joint — force transmitted from the bar must be redirected through the extended wrist joint by the wrist extensor muscles rather than being transmitted directly through stacked osseous structures (radius-carpal-metacarpal column). Grip strength is limited by the cross-sectional area and neural drive of the finger flexors and intrinsic hand muscles — when these fatigue, grip on the bar fails regardless of the training state of larger proximal muscles. Radial deviation applies a stretch to the ulnar collateral ligament of the wrist and compressive stress to the radial-side carpal joints; ulnar deviation reverses this pattern."
+  },
+
+  "bac_score": 0.79,
+  "bac_dimensions": {
+    "derivation": {
+      "score": 0.875,
+      "basis": "Split derivation basis. Grip width and shoulder abduction angle relationship (geometry — wider grip = greater abduction), pronated vs neutral grip and biceps moment arm (anatomy — radius rotation mechanics, documented in elbow mechanics entry), wrist extension and load path inefficiency (mechanics — joint stacking principle, force direction through extended vs neutral wrist), and radial/ulnar deviation joint stress (anatomy and moment arm geometry) are all derived from physics, anatomy, and direct measurement: derivation 1.0 for these four claims. The grip strength as limiting factor claim extends beyond pure mechanics into fatigue physiology and individual training state — it is mechanistically coherent (weakest link in the kinetic chain) but requires empirical research to establish the specific conditions under which grip fails before target muscles, and the answer varies substantially by individual strength level, training history, and grip-to-target-muscle strength ratio: derivation 0.75. Entry-level derivation = average of 1.0 (×4) and 0.75 (×1) = 0.875."
+    },
+    "replication": {
+      "score": 0.75,
+      "basis": "Grip width effects on pec vs deltoid activation are replicated in EMG literature including Lehman 2005 and subsequent bench press grip studies — directional consensus is strong. Pronated vs neutral grip effects on biceps activation are replicated across elbow flexion and pulling exercise EMG studies. Wrist position effects on force transmission are established in biomechanics but quantified less precisely in training-specific conditions. Grip strength as a limiting factor is clinically and empirically well-recognised in pulling movements but the precise threshold varies by individual. Radial/ulnar deviation joint stress is anatomically established but less extensively studied in training contexts. Rated 0.75 to reflect the variation in quantitative evidence quality across the five claims."
+    },
+    "transferability": {
+      "score": 0.75,
+      "basis": "Minor variation expected. The geometric relationships (wider grip = more abduction; neutral > pronated for biceps) are universal in direction. Variation exists in: (1) arm length and shoulder width — these determine the absolute grip width at which a given shoulder abduction angle is achieved; (2) individual wrist anatomy and grip strength — the limiting factor threshold varies enormously between individuals; (3) individual wrist flexibility — the force transmission efficiency of a given wrist angle varies with wrist laxity and extensor tendon tension. Rated 0.75 rather than 0.50 because the directional relationships are highly consistent even though optimal positions and thresholds vary individually."
+    }
+  },
+  "bac_basis": "BAC = (0.875 + 0.75 + 0.75) / 3 = 0.79. Grip width geometry and wrist position mechanics are robustly physics-derived. The grip strength limiting factor claim involves physiology alongside mechanics, producing 0.75 derivation. Replication and transferability both 0.75 — strong directional consensus, moderate individual variation in optimal positions and thresholds.",
+
+  "eqs": null,
+  "eqs_basis": "null — pure joint mechanics, anatomy, and kinetic chain entry. Claims are falsifiable by measuring joint angles, EMG activation, force vectors, and grip strength directly. No biological adaptation outcome is asserted. EQS does not apply.",
+
+  "sources": [
+    {
+      "citation": "Neumann DA. Kinesiology of the Musculoskeletal System: Foundations for Rehabilitation. 3rd ed. Mosby/Elsevier; 2016.",
+      "type": "biomechanics_textbook",
+      "authority": "Standard kinesiology reference. Synthesises wrist joint mechanics, radiocarpal and intercarpal anatomy, and forearm mechanics from primary anatomy and biomechanics literature.",
+      "relevant_content": "Wrist joint anatomy: radiocarpal and midcarpal articulations, neutral wrist position and load transmission through the radial-carpal-metacarpal column. Radial and ulnar deviation: ligamentous constraints and joint stress distribution across deviation range. Grip mechanics: finger flexor anatomy and their role in force transmission from external load to forearm. Forearm rotation mechanics and the relationship between pronation/supination and forearm-to-hand force transmission. Kinetic chain concept — force transmission from distal hand contact through wrist, forearm, elbow, and shoulder.",
+      "coi_check": "Academic textbook. No industry funding conflict.",
+      "role_in_entry": "Primary source for wrist joint mechanics, deviation stress, grip force transmission, and forearm rotation-grip interaction"
+    },
+    {
+      "citation": "Lehman GJ. The influence of grip width and forearm pronation/supination on upper-body myoelectric activity during the flat bench press. Journal of Strength and Conditioning Research. 2005;19(3):587-591.",
+      "pmid": "16095408",
+      "doi": "10.1519/R-15024.1",
+      "url": "https://doi.org/10.1519/R-15024.1",
+      "type": "research_paper",
+      "authority": "Greg Lehman — chiropractor and biomechanics researcher. This paper is among the most cited on grip width and muscle activation during bench pressing.",
+      "relevant_content": "Measured pectoralis major, anterior deltoid, and triceps EMG activity during flat bench press with narrow grip (hands at shoulder width), wide grip (hands at 2× shoulder width), and a pronated vs supinated forearm condition. Wider grip increased shoulder abduction angle and was associated with greater pectoralis major activation relative to anterior deltoid. Pronated grip (standard bench press) vs a more supinated condition showed differences in upper arm muscle activation patterns. Provides direct empirical support for grip width effects on the pec-vs-deltoid contribution ratio and the forearm rotation effects on upper arm muscle activation.",
+      "key_numbers": {
+        "n": "Not confirmed in abstract — small sample typical of EMG study design",
+        "grip_conditions": "Narrow (shoulder width), wide (2× shoulder width), with forearm rotation variation",
+        "finding": "Wider grip increased pectoralis major relative contribution; grip width and forearm position significantly affected upper arm muscle activation patterns"
+      },
+      "note": "Small sample size typical of EMG study design. Directional findings are consistent with anatomical predictions and replicated across subsequent pressing studies, though exact EMG values vary by study.",
+      "coi_check": "No industry funding identified. Low COI risk.",
+      "role_in_entry": "Primary empirical source for grip width effects on pec vs deltoid activation during horizontal pressing"
+    }
+  ],
+
+  "key_claims": [
+    {
+      "claim": "Grip width on horizontal pressing determines shoulder abduction angle — wider grip increases abduction, increasing pectoralis major contribution; narrower grip reduces abduction, shifting load toward anterior deltoid and triceps",
+      "confidence": 0.88,
+      "score_type": "BAC",
+      "notes": "Geometrically supported and empirically confirmed by Lehman 2005 and multiple subsequent EMG studies. Wider grip = greater shoulder abduction angle = pec major in better mechanical position for horizontal adduction. Narrower grip = more sagittal-plane flexion = greater anterior deltoid contribution. Confidence below 0.95 because the exact abduction angle at a given grip width varies with arm length and shoulder width — the grip:angle relationship is not fixed across individuals, and the EMG magnitude difference varies between studies."
+    },
+    {
+      "claim": "Pronated grip during pulling movements places biceps brachii at mechanical disadvantage — neutral grip restores biceps moment arm and optimises elbow flexor contribution",
+      "confidence": 0.90,
+      "score_type": "BAC",
+      "notes": "Directly linked to the biceps supination-dependence claim in the elbow mechanics entry. During pronated-grip pulling (overhand pull-up, overhand barbell row), the radius rotates medially and the biceps insertion is repositioned away from optimal pull angle. Neutral-grip pulling (hammer grip, neutral grip cable row) restores the mid-rotation forearm position with better biceps moment arm. Well-replicated in EMG studies of pull-up variations. Confidence below 0.95 because motor control compensation and load magnitude can partially offset the mechanical disadvantage."
+    },
+    {
+      "claim": "Wrist extension during pressing shifts the bar contact point anteriorly to the palm and increases wrist extensor tension, reducing the efficiency of direct osseous force transmission through the radius",
+      "confidence": 0.85,
+      "score_type": "BAC",
+      "notes": "Mechanistically derived from joint stacking principles — the most efficient load transmission path aligns the external force with the axial load-bearing axis of the forearm (radius to ulna). Excessive wrist extension shifts the contact point to the fingers/distal palm, requiring wrist extensor co-contraction to redirect force. This increases soft tissue load and reduces the proportion of force transmitted directly through the bony column. Relevant to both bench press and overhead press technique. Confidence below 0.90 because quantitative studies specifically measuring force transmission efficiency under wrist extension conditions in training contexts are limited."
+    },
+    {
+      "claim": "Grip strength is a limiting link in the kinetic chain during pulling movements — for many individuals, grip fails before the target muscles (latissimus dorsi, biceps, mid-back) reach fatigue under heavy loads",
+      "confidence": 0.78,
+      "score_type": "BAC",
+      "notes": "Mechanistically sound: the kinetic chain is only as strong as its weakest link. The finger flexors and hand intrinsics have substantially smaller cross-sectional area than the back and arm muscles they connect to the load. Under heavy pulling conditions this size disparity produces grip failure before proximal muscle failure. Confirmed by the widespread practical use of lifting straps and hook grip — tools specifically designed to bypass grip as the limiting factor. Confidence capped at 0.78 because the threshold at which grip fails before target muscles is highly individual (varies with grip training, individual hand size, and target muscle strength) and has not been precisely characterised in research."
+    },
+    {
+      "claim": "Radial deviation under load increases stress on the ulnar side of the wrist; ulnar deviation increases stress on the radial side — maintaining neutral wrist alignment minimises compressive and tensile loading on both sides",
+      "confidence": 0.85,
+      "score_type": "BAC",
+      "notes": "Anatomically deterministic: radial deviation compresses the radial carpals and stretches the ulnar collateral structures; ulnar deviation reverses this. The neutral wrist position distributes radiocarpal joint load most symmetrically. Clinically relevant to pressing (where grip and wrist alignment vary) and curling (where wrist deviation under load is common). Confidence below 0.90 because the magnitude of joint stress change per degree of deviation under specific loading conditions is not precisely quantified in training contexts."
+    }
+  ],
+
+  "grip_width_practical_reference": {
+    "narrow_grip_pressing": "Hands at or inside shoulder width — reduced shoulder abduction, more anterior deltoid and triceps contribution, greater ROM, more elbow extension demand. Common for close-grip bench press and overhead press variation targeting triceps.",
+    "medium_grip_pressing": "Hands just outside shoulder width — balanced pec and deltoid contribution, standard competition bench press width for most athletes. Balances chest stimulus with shoulder joint stress.",
+    "wide_grip_pressing": "Hands at 1.5-2× shoulder width — increased shoulder abduction, greater pec major contribution, reduced ROM. Increases stress on the shoulder joint at lockout due to increased abduction moment. Not recommended for individuals with anterior shoulder impingement.",
+    "practical_note": "Optimal grip width is individual — arm length and shoulder width determine which grip produces the most mechanically efficient pressing path. The goal is stacking joints (wrist under elbow under shoulder or bar) rather than achieving a prescribed absolute width."
+  },
+
+  "wrist_position_note": "The cue to 'grip the bar tight and keep it in the base of the palm, not the fingers' during pressing directly addresses the wrist extension problem — low bar position in the palm keeps the wrist in neutral or slight extension, maintaining the osseous force transmission column. High-bar or finger position in the grip causes the wrist to extend further, shifting to tendinous force transmission and increasing wrist extensor demand. In overhead pressing, a false grip (thumb on same side as fingers) can help maintain wrist neutral but reduces grip security — a trade-off that requires individual assessment.",
+
+  "cross_reference": "See biomechanics-elbow-mechanics entry (biomechanics-elbow-mechanics-001) for the mechanical basis of pronated vs neutral grip effects on biceps contribution — this entry extends those principles into the context of pulling exercises and grip width for pressing. The kinetic chain concept connects wrist mechanics to elbow (elbow entry) and shoulder mechanics (shoulder mechanics entry).",
+
+  "conflicting_evidence": "EMG studies on grip width and bench press show inconsistent magnitude differences between studies, partly because electrode placement, load selection, and grip width operationalisation vary. Some studies find minimal pec vs deltoid EMG difference between moderate grip widths, challenging the clinical significance of small grip adjustments. The grip strength limiting factor claim is challenged by the observation that trained athletes develop grip strength proportionally — in advanced trainees, grip may not be the limiting factor because it has been trained alongside pulling strength. The claim is most applicable to intermediate to early-advanced lifters or individuals who have not specifically trained grip.",
+
+  "what_would_change_this": "1. In-vivo force measurement studies comparing pec major vs anterior deltoid force (not just EMG) across grip widths in a large sample would provide more mechanically direct evidence than surface EMG alone. 2. Studies specifically quantifying wrist force transmission efficiency under different wrist extension angles using strain gauges or pressure measurement would quantify the osseous vs tendinous load shift claim. 3. Evidence that grip strength is not a significant limiting factor in any standard pulling movement in populations who train regularly would reduce the practical relevance of the grip-as-limiting-factor claim.",
+
+  "open_question": false,
+  "open_question_note": "The directional relationships are well-established. The main open questions are magnitude-related (precise EMG or force differences across grip widths under training conditions) rather than directional — these do not challenge the practical recommendations.",
+
+  "practical_summary": "Match grip width to goal: wider grip for chest emphasis in pressing, narrower for triceps emphasis. Use neutral grip pulling variations (neutral grip pull-up, hammer curl, cable row with neutral handle) when the goal is maximising biceps contribution — pronated grip loads the brachialis and brachioradialis more and the biceps less. Keep the wrist neutral or in minimal extension during pressing — the bar should sit in the base of the palm, not the fingers. Use straps or hook grip for heavy pulling when grip is the limiting factor rather than accepting reduced back/biceps stimulus. Avoid sustained radial or ulnar deviation under load — neutral wrist is the position of minimum radiocarpal stress.",
+
+  "added_by": "founder",
+  "date_added": "2026-04-16",
+  "last_reviewed": "2026-04-16",
+  "next_review": "2028-04-16",
+  "review_trigger": "24-month default for BAC entries. Triggered on publication of in-vivo force measurement studies across grip widths in pressing, or studies specifically quantifying wrist extension force transmission efficiency under training-relevant loads."
+}
