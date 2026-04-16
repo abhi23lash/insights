@@ -1,0 +1,89 @@
+{
+  "id": "training-rest-periods-001",
+  "domain": "hypertrophy",
+  "subdomain": "rest-periods",
+  "tags": ["rest-periods", "interset-rest", "rest-intervals", "hypertrophy", "strength", "muscle-thickness", "volume-load", "training-variables", "resistance-training", "time-under-tension", "training-efficiency"],
+
+  "score_type": "EQS",
+
+  "claim": "In resistance-trained men performing sets to failure, 3-minute interset rest periods produce significantly greater increases in maximal strength (1RM squat and bench press) and muscle thickness (anterior quadriceps; trend for triceps brachii) compared to 1-minute rest periods over 8 weeks when volume is not equated between conditions. The advantage of longer rest may be mediated by higher accumulated training volume rather than a direct physiological effect of rest duration — the longer-rest group achieved approximately 15% more total volume load, though this difference was not statistically resolved due to the study being underpowered for volume-outcome correlations.",
+
+  "grade": "low",
+  "source_type": "research",
+
+  "applies_to": {
+    "training_age": "intermediate to advanced — participants were resistance-trained (minimum 6 months) with squat:bodyweight ratio ≥1.0; results may not transfer to untrained individuals",
+    "natural_status": "natural — participants were explicitly drug-free and abstained from ergogenic supplements; natural status confirmed",
+    "sex": "male only — n=21 male subjects; female response to rest interval manipulation is not captured in this study",
+    "goal": "hypertrophy and strength — outcomes measured were muscle thickness (ultrasound), 1RM strength, and muscle endurance"
+  },
+
+  "biological_plausibility": {
+    "passes": true,
+    "mechanism": "Longer interset rest allows greater phosphocreatine resynthesis (approximately 95-99% complete by 3 minutes), restoring the capacity to complete more repetitions per set at the target load. When sets are performed to failure and volume is not equated, the group with longer rest can complete more total repetitions per set — accumulating greater total training volume over the study period. Training volume (sets × reps × load) has a well-established dose-response relationship with both hypertrophy and strength gains. The alternative mechanism — that metabolic stress from short rest intervals directly enhances hypertrophy — was the prevailing guideline assumption prior to this study, but the findings here run counter to that hypothesis in trained individuals performing full-effort sets."
+  },
+
+  "sources": [
+    {
+      "citation": "Schoenfeld BJ, Pope ZK, Benik FM, Hester GM, Sellers J, Nooner JL, Schnaiter JA, Bond-Williams KE, Carter AS, Ross CL, Just BL, Henselmans M, Krieger JW. Longer interset rest periods enhance muscle strength and hypertrophy in resistance-trained men. Journal of Strength and Conditioning Research. 2016;30(7):1805-1812.",
+      "pmid": "26605807",
+      "doi": "10.1519/JSC.0000000000001272",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26605807/",
+      "finding": "3-minute rest (LONG, n=10) vs 1-minute rest (SHORT, n=11) over 8 weeks in resistance-trained men performing 3 sets × 8-12RM of 7 exercises to failure, 3×/week. LONG produced significantly greater anterior quadriceps thickness increase (+13.3% vs +6.9%, p=0.04; ES 1.23 vs 0.63), trend for greater triceps thickness (+7.0% vs +0.5%, p=0.06; ES 0.37 vs 0.03), significantly greater 1RM squat (+15.2% vs +7.6%, p<0.01; ES 0.58 vs 0.29), and significantly greater 1RM bench press (+12.7% vs +4.1%, p=0.02; ES 0.49 vs 0.16). Elbow flexor thickness increased more in LONG (5.4% vs 2.8%) but interaction was NS (p=0.16). Vastus lateralis thickness increased similarly in both groups (11.5% vs 10.0%, p=0.77). Muscle endurance did not differ significantly between groups (p=0.27). LONG accumulated ~15% greater total volume load (51,385 vs 44,755 kg, p=0.18), and the study was underpowered to correlate volume with adaptations (power 0.05-0.07 for correlation analyses).",
+      "population": "Resistance-trained young men, 18-35 years, squat:bodyweight ratio ≥1.0, drug-free, abstaining from ergogenic supplements throughout the study. All subjects received 24g whey protein + 1g carbohydrate post-workout (supplied by Dymatize Nutrition).",
+      "effect_size": "Anterior quad: ES 1.23 (LONG) vs 0.63 (SHORT). Triceps: ES 0.37 vs 0.03. Elbow flexors: ES 0.39 vs 0.18. 1RM squat: ES 0.58 vs 0.29. 1RM bench: ES 0.49 vs 0.16. Effect sizes consistently and meaningfully favour LONG across all outcomes, even where group × time interactions did not reach significance.",
+      "limitations": "1. Volume was not equated — LONG accumulated ~15% more total volume load. This is the critical confound: it is unknown whether longer rest per se or higher volume drove the superior outcomes. 2. Small sample (n=10-11 per group) — underpowered for volume-outcome correlation analyses (power 0.05-0.07) and for detecting differences in some individual muscle sites. 3. Short duration (8 weeks) — long-term rest period effects unknown. 4. Male participants only — no female data. 5. Muscle thickness measured only at midportion — proximal and distal regional hypertrophy not captured. 6. Volume load data incomplete for machine-based exercises (gym renovation forced use of machines with non-standardised load units). 7. Post-workout protein supplement provided by Dymatize Nutrition — minor COI (supplement given identically to both groups; should not affect between-group comparison, but study was funded/supported in kind by supplement company).",
+      "coi_check": "Dymatize Nutrition supplied the whey protein supplement used in the study. Authors acknowledge Dymatize in the acknowledgments. The supplement was provided identically to both groups, so it should not bias between-group comparisons. COI is low but present — industry supplement supply is flagged. Brad Schoenfeld and Menno Henselmans are commercial coaches and researchers with a prior publication on rest intervals (Henselmans & Schoenfeld 2014, Sports Med) — prior theoretical interest in the topic, but no financial conflict identified for this specific outcome.",
+      "practical_translation": {
+        "text": "Study population was resistance-trained young men performing sets to failure with matched progressive overload protocols. Effect observed was significantly greater strength and muscle thickness gains with 3-minute vs 1-minute rest when volume was not equated — the longer-rest group also accumulated approximately 15% more total volume load. This translates to: for trained individuals aiming to maximise strength and hypertrophy, using rest periods long enough to perform quality sets (approximately 2-3 minutes for compound movements) is superior to artificially shortening rest to 1 minute when this compromises total volume. The mechanism is most plausibly volume accumulation: 1-minute rest limits rep capacity per set, reducing total stimulus over the session. Confidence in this translation: low — because the volume confound prevents isolating rest duration as the causal variable. If total volume were equated (by adding sets in the 1-minute condition), the advantage of 3-minute rest may disappear. The practical implication holds nonetheless: longer rest enables more total work in a fixed-set protocol.",
+        "confidence": "low",
+        "confidence_basis": "Single RCT with critical volume confound uncontrolled, small n, conflicting evidence from prior studies (Ahtiainen 2005: no difference at 2v5min in trained men; Villanueva 2015: SHORT better in elderly men). Effect direction is consistent with prior work in untrained subjects (Buresh 2009) but the mechanism cannot be separated from total volume in this design."
+      }
+    }
+  ],
+
+  "key_claims": [
+    {
+      "claim": "3-minute interset rest produces greater 1RM strength gains than 1-minute rest in resistance-trained men performing sets to failure over 8 weeks",
+      "confidence": 0.72,
+      "notes": "Directly supported by significant group × time interactions for both 1RM squat (p<0.01, ES 0.58 vs 0.29) and 1RM bench (p=0.02, ES 0.49 vs 0.16). Effect sizes are meaningful and at least double in favour of LONG for strength outcomes. Confidence below 0.80 because volume was not equated — higher volume in LONG is a plausible sufficient explanation and was not controlled."
+    },
+    {
+      "claim": "3-minute interset rest produces greater muscle hypertrophy than 1-minute rest in resistance-trained men performing sets to failure over 8 weeks",
+      "confidence": 0.62,
+      "notes": "Supported by significant anterior quadriceps interaction (p=0.04, ES 1.23 vs 0.63) and triceps trend (p=0.06, ES 0.37 vs 0.03). Effect sizes consistently favour LONG across all four muscle sites, even where interactions were not significant. Confidence lower than for strength claim because: (1) only one of four muscle thickness outcomes reached significance; (2) the volume confound is if anything more important for hypertrophy than for strength; (3) conflicting prior literature (Ahtiainen 2005 found no MT difference at 2v5min in trained men)."
+    },
+    {
+      "claim": "1-minute interset rest is insufficient for maximising hypertrophy stimulus in resistance-trained men performing compound movements at 8-12RM loads",
+      "confidence": 0.68,
+      "notes": "The SHORT group showed consistently smaller effect sizes and non-significant pre-post changes in triceps thickness (ES=0.03, p=0.83) and near-significant elbow flexor changes (p=0.08) — in contrast to significant increases in LONG. The implication that 1-minute rest actively limits hypertrophic stimulus in this population is supported by both the significant outcomes and the consistent direction of effect size differences. Confidence below 0.75 because small n limits precision, and this is a single 8-week study."
+    },
+    {
+      "claim": "Rest interval effects on hypertrophy are likely mediated by total training volume rather than a direct physiological effect of rest duration",
+      "confidence": 0.60,
+      "notes": "This is a mechanistic interpretation supported by: (1) LONG accumulated ~15% more total volume load; (2) Henselmans & Schoenfeld 2014 review hypothesised this mechanism; (3) studies that equate volume between rest conditions tend to show no difference (Ahtiainen 2005). However, this study could not confirm volume mediation directly — the volume-outcome correlations were severely underpowered (power 0.05-0.07). Confidence at 0.60 reflects mechanistic plausibility combined with direct non-confirmation in this dataset."
+    }
+  ],
+
+  "volume_confound_note": "This is the central interpretive limitation of this study. The LONG group accumulated approximately 15% more total volume load over 8 weeks (51,385 vs 44,755 kg). This difference was not statistically significant (p=0.18) but the test was severely underpowered (power=0.26). Because training volume has a well-established dose-response relationship with both strength and hypertrophy, the volume difference is a plausible full explanation for the between-group outcome differences. The authors acknowledge this and note their study was underpowered to test the volume mediation hypothesis. The ideal follow-up study would include: (1) a volume-equated condition (LONG 3min, LONG volume-equated 1min, SHORT unequated 1min) to directly test whether rest duration itself or volume drives the adaptation. Buresh et al. 2009 found similar findings without volume equating; Ahtiainen et al. 2005 found no difference with volume equating at 2v5min — this pattern is consistent with the volume mediation hypothesis.",
+
+  "rest_interval_design_note": "Both groups performed sets to momentary concentric failure with progressive loading. Importantly, this design means the 1-minute rest group was limited in their ability to maintain target rep ranges (8-12 RM) across successive sets — they could not complete as many quality reps before hitting failure early due to incomplete phosphocreatine resynthesis. This is a realistic real-world design (fixed rest, adjust load as needed) and reflects what actually happens when rest is restricted in training practice. Studies using volume-equated designs (which add sets in the shorter-rest condition) test a different question — whether rest duration has an effect independent of volume — and consistently find smaller or null differences.",
+
+  "eqs": 0.30,
+  "eqs_basis": "GRADE low (0.40) × population match close (0.75) = 0.30. GRADE downgraded from high (RCT baseline) due to: (1) critical volume confound uncontrolled — limits ability to attribute outcomes to rest duration; (2) small sample (n=10-11 per group) — imprecision; (3) conflicting evidence in the broader literature (Ahtiainen 2005, Villanueva 2015). Population match close (0.75): resistance-trained natural men matches the entry population well; sex is not penalised in training domain per framework; untrained populations and female populations are not represented, pulling from exact (0.90+) toward close (0.75).",
+
+  "conflicting_evidence": "Ahtiainen et al. 2005 (JSCR 19: 572-582) found NO significant differences in muscle CSA or maximal strength between 2-minute and 5-minute rest periods in well-trained men using a volume-equated design — the shorter rest group performed more sets to compensate, equalising volume. This directly supports the volume mediation hypothesis: when volume is equated, rest duration does not appear to affect hypertrophy in trained men. Villanueva et al. 2015 (Eur J Appl Physiol) found that SHORT rest (1 minute) produced GREATER lean body mass gains than LONG rest (4 minutes) in elderly men — though the short-rest group trained closer to failure and different population characteristics likely drive the different response. Buresh et al. 2009 (JSCR 23: 62-71) found greater arm hypertrophy and a trend for greater leg hypertrophy with 2.5-minute vs 1-minute rest in untrained men — directionally consistent with Schoenfeld 2016 but also not volume-equated. The pattern across studies: when volume is NOT equated, longer rest wins; when volume IS equated (by doing more sets in the shorter-rest condition), the advantage largely disappears. This suggests rest duration is an instrument for achieving sufficient volume, not a hypertrophic variable in itself.",
+
+  "what_would_change_this": "1. A three-arm RCT comparing: (a) SHORT 1-minute unequated volume, (b) SHORT 1-minute volume-equated to LONG (more sets), and (c) LONG 3-minute — would directly test whether volume mediates the rest period effect. If arms (b) and (c) produce equivalent outcomes, volume mediation is confirmed and rest duration is not the primary variable. 2. A longer-duration study (≥16 weeks) would clarify whether the strength and hypertrophy differences between rest conditions widen, narrow, or converge over time. 3. Replication in female participants would establish whether the findings transfer across sexes. 4. Evidence that 2-minute rest periods produce equivalent outcomes to 3-minute rest would establish the practical lower bound for trained individuals.",
+
+  "open_question": true,
+  "open_question_note": "The central open question is whether rest interval duration has an independent effect on hypertrophy and strength, or whether its entire effect is mediated by total training volume. The current evidence is consistent with the volume mediation hypothesis but cannot confirm it — no study with a three-arm volume-equated design has been published. Practically: the distinction matters for training design — if volume is the only driver, maximising volume per unit time (shorter rest + more sets) is equivalent to longer rest with fewer sets. If rest duration has an independent effect, this trade-off cannot be made. The current best evidence from volume-equated studies (Ahtiainen 2005) favours the volume-only interpretation in trained men, but a definitive test has not been performed.",
+
+  "practical_summary": "Do not rush rest periods between sets if your goal is strength or hypertrophy. The evidence consistently shows that 1-minute rest produces inferior outcomes to 2-3 minutes when using a fixed number of sets to failure — likely because 1 minute is not long enough to restore phosphocreatine and maintain quality repetitions per set. Minimum recommended rest for compound movements at moderate-to-heavy loads: approximately 2 minutes. Schoenfeld 2016 used 3 minutes and found meaningful advantages. If time is limited, the evidence supports using shorter rest AND adding more sets to compensate for the reduced reps per set — this preserves volume. The old guideline that shorter rest maximises hypertrophy via metabolic stress is not supported in trained individuals performing sets to failure at moderate-to-heavy loads.",
+
+  "added_by": "founder",
+  "date_added": "2026-04-16",
+  "last_reviewed": "2026-04-16",
+  "next_review": "2027-04-16",
+  "review_trigger": "12-month default. Triggered immediately on publication of: (1) any meta-analysis or systematic review on interset rest periods and hypertrophy/strength in resistance-trained populations; (2) any RCT using a three-arm volume-equated design to test the volume mediation hypothesis directly. Monitoring journals: JSCR, Sports Medicine, EJSS, IJSPP."
+}
