@@ -1,0 +1,130 @@
+{
+  "id": "biomechanics-cervical-spine-001",
+  "domain": "biomechanics",
+  "subdomain": "cervical-spine",
+  "tags": ["cervical-spine", "forward-head-posture", "head-position", "cervical-neutral", "chin-tuck", "deep-cervical-flexors", "thoracic-extension", "compressive-load", "shear-force", "posture", "loaded-carries", "overhead-press", "cervical-mechanics", "Hansraj", "effective-head-weight"],
+
+  "score_type": "BAC",
+
+  "claim": "Forward head posture increases the effective compressive and moment load on the cervical spine — at 60 degrees of forward head flexion from neutral, calculated effective head load approaches 27 kg compared to approximately 4-5 kg in neutral. Cervical position affects thoracic extension capacity — forward head posture drives upper thoracic kyphosis and reduces available thoracic extension range upstream. Head position during loaded carries and pressing movements directly affects cervical compressive and shear load magnitudes. Chin tuck (cervical retraction) activates the deep cervical flexors (longus colli, longus capitis) and reduces compressive stress at the upper cervical joints by unloading the suboccipital extensors. Cervical neutral alignment during lifting minimises shear and compressive forces on cervical vertebrae relative to flexed or hyperextended positions.",
+
+  "grade": "not_applicable",
+  "source_type": "research",
+
+  "applies_to": {
+    "population": "anatomically typical adults — claims hold for individuals without significant cervical pathology, cervical disc disease, or post-surgical cervical anatomy; the forward head posture load calculation is most applicable to static or quasi-static posture; the loaded carry and pressing claims apply to resistance training contexts with axial or semi-axial cervical loading",
+    "individual_variation": "moderate — head mass varies between individuals (average 4.5-5.5 kg), affecting the absolute effective loads at any given forward angle; cervical lordosis depth and thoracic kyphosis magnitude vary, affecting the baseline head position and the available range of correction; directional relationships are universal",
+    "goal": "any — cervical mechanics apply equally to injury prevention, performance, and daily movement contexts"
+  },
+
+  "biological_plausibility": {
+    "passes": true,
+    "mechanism": "The cervical spine supports the head (average approximately 4.5-5.5 kg) in neutral alignment. Neutral cervical posture places the head's centre of mass directly over the cervical vertebrae, minimising the moment arm between the load vector (head weight) and the cervical joint axis of rotation. When the head moves into forward flexion, the head's centre of mass shifts anteriorly relative to the cervical joint axis — the perpendicular distance from the head's line of gravity to the cervical joint axis (the moment arm) increases directly with forward flexion angle. By the lever principle (M = F × d), the required counterbalancing posterior cervical extensor force increases proportionally. Hansraj 2014 modelled this relationship: at 0 degrees (neutral) the effective load is the head mass (approximately 4.5-5 kg); at 15 degrees it rises to approximately 12 kg; at 30 degrees to approximately 18 kg; at 45 degrees to approximately 22 kg; and at 60 degrees to approximately 27 kg. These are calculated effective loads representing the force that the posterior cervical musculature (splenius capitis, semispinalis, upper trapezius) must generate to balance the forward head moment — not the actual compressive force on the discs, which is higher due to muscle co-contraction adding to axial compression. Cervical position and thoracic spine are kinematically linked: the upper thoracic vertebrae provide the base of support for the cervical column. When the upper thoracic spine is kyphotic (flexed), the cervical spine must extend at its base to maintain the horizontal gaze, producing a characteristic forward head appearance. Correcting forward head posture therefore requires concurrent thoracic extension capacity — addressing only cervical retraction without thoracic extension is mechanically incomplete. During loaded carries (farmer's carry, yoke carry) and overhead pressing, axial compressive forces are transmitted through the cervical spine in addition to the head's own weight. Forward head position during these activities amplifies the moment arm of the load relative to the cervical joint axis, increasing both the required posterior muscular tension and the resultant compressive force on the cervical discs and facet joints. Deep cervical flexors (longus colli, longus capitis) are short, segmental muscles running anterior to the vertebral bodies of C1-C7. They perform cervical flexion and, when active, stabilise the cervical curve from anterior — acting as the cervical equivalent of the multifidus's role at the lumbar spine. Chin tuck (cervical retraction — drawing the chin posteriorly without downward nod) reduces the forward head moment by bringing the head's centre of mass closer to the cervical joint axis and recruits the deep cervical flexors to provide segmental stabilisation."
+  },
+
+  "bac_score": 0.79,
+  "bac_dimensions": {
+    "derivation": {
+      "score": 0.875,
+      "basis": "Split derivation basis. The forward head posture effective load calculation (moment arm increases with head flexion angle — M = F × d) and cervical neutral minimising shear and compressive forces relative to deviated positions are derived from physics and direct anatomical measurement — moment arms are calculable from geometry and the load values at specific angles are deterministic given head mass: derivation 1.0 for these two claims. The chin tuck and deep cervical flexor activation claim is anatomically established (longus colli and longus capitis are segmental anterior stabilisers) and mechanistically coherent: derivation 1.0. The cervical-thoracic positional linkage (forward head limiting thoracic extension) involves kinematic coupling that is anatomically coherent and clinically well-observed, but the precise degree of thoracic extension limitation from a given forward head position involves empirical kinematic data rather than pure geometry: derivation 0.75. The effect of head position during loaded carries and pressing on cervical loads extends the static forward head model into dynamic loaded contexts — mechanistically coherent but based on extrapolation from the static posture model to dynamic loading conditions rather than direct measurement under axial loads: derivation 0.75. Entry-level derivation = average of 1.0 (×3) and 0.75 (×2) = 0.875."
+    },
+    "replication": {
+      "score": 0.75,
+      "basis": "Forward head posture load calculations are replicated across multiple spine biomechanics modelling studies — Hansraj 2014 being the most cited, with consistent directional results across other published models. The general principle (forward head increases cervical extensor moment demands) is established in Neumann 2016 and clinical spine biomechanics literature. Deep cervical flexor anatomy and their role in segmental stability is replicated across physical therapy and spine biomechanics literature. The cervical-thoracic mobility linkage is clinically established and replicated in manual therapy literature. The specific effective load values from Hansraj 2014 are modelled estimates rather than directly measured intradiscal pressures — some biomechanics researchers note that the model assumptions (static posture, fixed head mass, simple lever model) overestimate real-world cervical loading in some conditions. Rated 0.75 to reflect strong directional consensus with residual debate about the precise quantitative values."
+    },
+    "transferability": {
+      "score": 0.75,
+      "basis": "Minor variation expected. The moment arm mechanics (forward head increases effective load) are universal — every individual experiences greater posterior cervical extensor demand with forward head position. Variation exists in: (1) head mass — varies between individuals (approximately 3.5-6 kg range), affecting absolute effective load values; (2) baseline cervical and thoracic posture — individuals with pre-existing thoracic kyphosis have a higher baseline forward head position and may require different correction strategies; (3) deep cervical flexor activation — the degree of longus colli/capitis activation achievable varies with motor control and training history. Rated 0.75 because the directional relationships are universal but the absolute loads and optimal correction strategies vary individually."
+    }
+  },
+  "bac_basis": "BAC = (0.875 + 0.75 + 0.75) / 3 = 0.79. The moment arm mechanics and chin tuck anatomy are robustly physics- and anatomy-derived at 1.0. The cervical-thoracic mobility linkage and the loaded carry/pressing extrapolation involve empirical kinematic data alongside anatomy, producing 0.75 derivation for those two claims. Replication and transferability both 0.75 — strong directional consensus with moderate individual variation in absolute load values and optimal positions.",
+
+  "eqs": null,
+  "eqs_basis": "null — pure joint mechanics, cervical anatomy, and posture mechanics entry. Claims are falsifiable by measuring joint angles, moment arms, muscle activation (EMG), and cervical loads directly. No biological adaptation outcome is asserted. EQS does not apply.",
+
+  "sources": [
+    {
+      "citation": "Neumann DA. Kinesiology of the Musculoskeletal System: Foundations for Rehabilitation. 3rd ed. Mosby/Elsevier; 2016.",
+      "type": "biomechanics_textbook",
+      "authority": "Standard kinesiology reference. Synthesises cervical spine joint mechanics, deep cervical flexor and extensor anatomy, and posture mechanics from primary anatomy and biomechanics literature.",
+      "relevant_content": "Cervical spine anatomy: seven cervical vertebrae with distinct upper (C0-C2) and lower (C3-C7) cervical regions. Joint mechanics: atlantoaxial rotation, lower cervical flexion/extension, and combined kinematics. Deep cervical flexor anatomy: longus colli (C1-T3 vertebral origin and insertion — primary lower cervical flexor and stabiliser) and longus capitis (C1-C3, occiput — upper cervical flexor). Posterior cervical extensors: splenius capitis and cervicis, semispinalis, upper trapezius — counterbalance forward head moment. Kinematic coupling between cervical and thoracic spine: upper thoracic kyphosis as the structural driver of forward head posture pattern. Moment arm analysis of the head weight and the posterior extensor moment required to maintain neutral vs forward head positions. Chin tuck mechanics: cervical retraction — reduces forward head moment arm and recruits anterior segmental stabilisers.",
+      "coi_check": "Academic textbook. No industry funding conflict.",
+      "role_in_entry": "Primary source for cervical spine anatomy, deep cervical flexor function, thoracic-cervical kinematic linkage, and the biomechanical basis for all five claims"
+    },
+    {
+      "citation": "Hansraj KK. Assessment of stresses in the cervical spine caused by posture and position of the head. Surgical Technology International. 2014;25:277-279.",
+      "pmid": "25393825",
+      "type": "research_paper",
+      "authority": "Kenneth Hansraj — Chief of Spine Surgery, New York Spine Surgery and Rehabilitation Medicine. Published in Surgical Technology International — clinical spine surgery journal. This paper is among the most widely cited on the quantitative relationship between head forward flexion angle and cervical spine loading.",
+      "relevant_content": "Developed a biomechanical model to calculate the effective weight on the cervical spine as a function of head forward flexion angle. Assuming an average head mass of 4.5-5.5 kg (10-12 lbs) in neutral, calculated effective loads at each forward flexion angle: 0 degrees (neutral) — approximately 4.5-5 kg; 15 degrees — approximately 12 kg; 30 degrees — approximately 18 kg; 45 degrees — approximately 22 kg; 60 degrees — approximately 27 kg. The calculated loads represent the posterior cervical extensor force required to maintain the head position against gravity — not the direct compressive force on the cervical disc. Concluded that forward head posture from mobile device use imposes substantial and increasing moment demands on the cervical spine across progressively greater flexion angles.",
+      "key_numbers": {
+        "head_mass_assumed": "4.5-5.5 kg (average adult)",
+        "effective_load_at_0_degrees": "~4.5-5 kg",
+        "effective_load_at_15_degrees": "~12 kg",
+        "effective_load_at_30_degrees": "~18 kg",
+        "effective_load_at_45_degrees": "~22 kg",
+        "effective_load_at_60_degrees": "~27 kg",
+        "model_type": "Static biomechanical model — calculated effective loads, not directly measured intradiscal pressures"
+      },
+      "note": "These values represent calculated effective loads from a static mechanical model, not directly measured cervical disc pressures. The model assumes static posture and a simplified lever system — real-world cervical loading during dynamic movement will differ. The directional relationship (forward angle increases effective load) is mechanistically sound; the absolute values should be interpreted as approximations. This paper is frequently cited in public health contexts for smartphone posture — the numbers are valid as model outputs but should not be treated as precisely measured in-vivo forces.",
+      "coi_check": "No industry funding identified for this specific paper. Clinical academic publication. Low COI risk.",
+      "role_in_entry": "Primary quantitative source for forward head posture effective load values at specific forward flexion angles"
+    }
+  ],
+
+  "key_claims": [
+    {
+      "claim": "Forward head posture increases the effective load and moment demand on the cervical spine — at 60 degrees of forward head flexion, the calculated effective posterior extensor demand approaches 27 kg compared to approximately 4-5 kg in neutral",
+      "confidence": 0.82,
+      "score_type": "BAC",
+      "notes": "The directional relationship is geometrically deterministic — increasing the moment arm of the head's centre of mass from the cervical joint axis must increase the required extensor moment. The specific values (27 kg at 60 degrees) come from Hansraj 2014's static mechanical model and should be understood as modelled effective loads, not directly measured disc pressures. Confidence below 0.90 because: (1) the model is static — real-world cervical loading during dynamic movement, with muscle co-contraction and varying ground reaction forces, differs from the static model; (2) the values depend on assumed head mass (4.5-5.5 kg) which varies between individuals; (3) some biomechanics researchers have noted the model oversimplifies the cervical anatomy. The directional claim is robust; the precise numerical values are approximations."
+    },
+    {
+      "claim": "Cervical position affects thoracic extension capacity — forward head posture drives upper thoracic kyphosis and limits available thoracic extension range",
+      "confidence": 0.80,
+      "score_type": "BAC",
+      "notes": "Kinematically established — the cervical and thoracic spines are a continuous segmental chain. Upper thoracic kyphosis repositions the base of the cervical column anteriorly, requiring compensatory cervical extension to maintain horizontal gaze, which is the forward head pattern. Correcting the forward head without addressing thoracic kyphosis leaves the structural driver unresolved. Clinically well-observed and supported in manual therapy and physical therapy literature. Confidence below 0.90 because the quantitative relationship between thoracic kyphosis angle and cervical extension capacity has not been precisely characterised in a large sample — the directional kinematic coupling is established but the magnitude of restriction varies with individual spinal mobility."
+    },
+    {
+      "claim": "Head position during loaded carries and pressing movements directly affects cervical compressive and shear load magnitudes",
+      "confidence": 0.82,
+      "score_type": "BAC",
+      "notes": "Mechanistically coherent as an extension of the forward head moment model. During loaded carries (farmer's carry, trap bar carry, yoke), compressive forces are transmitted axially through the spine including the cervical column. A forward head position during these activities increases the moment demand on the posterior cervical musculature and adds muscular compressive force to the axial load — increasing total cervical compression beyond the head weight alone. During overhead pressing, the cervical position affects the alignment of the cervical column under the bar path. Confidence below 0.90 because direct measurement of cervical loads during resistance training movements under different head positions has not been performed in vivo — the claim extrapolates the static forward head posture model to dynamic loaded conditions, which is mechanistically valid but not directly confirmed experimentally."
+    },
+    {
+      "claim": "Chin tuck (cervical retraction) activates the deep cervical flexors and reduces compressive stress at the upper cervical joints by unloading the suboccipital extensors",
+      "confidence": 0.85,
+      "score_type": "BAC",
+      "notes": "Anatomically established — chin tuck is the clinical activation cue for longus colli and longus capitis, which act as anterior segmental stabilisers for the cervical spine. By retracting the head, the forward head moment arm is reduced, decreasing the required posterior extensor co-contraction and therefore the total compressive force generated at the upper cervical joints. EMG studies confirm deep cervical flexor activation during chin tuck in physical therapy literature. Confidence below 0.95 because the magnitude of compressive load reduction at specific cervical levels from the chin tuck has not been directly quantified — the directional claim is mechanistically sound but the clinical significance of the reduction in loaded contexts requires further study."
+    },
+    {
+      "claim": "Cervical neutral alignment during lifting minimises shear and compressive forces on cervical vertebrae relative to flexed or hyperextended positions",
+      "confidence": 0.87,
+      "score_type": "BAC",
+      "notes": "Mechanistically established from cervical joint anatomy. Neutral cervical alignment minimises the moment arm of the head's centre of mass from the joint axis, reducing posterior extensor demand and therefore muscular co-contraction-generated compression. Both cervical flexion (forward head) and hyperextension increase the moment arm in opposite directions — extension shifts the head's centre of mass posteriorly and loads the posterior facet joints under compression. Neutral is the position of minimum combined compressive and shear loading from both anterior (disc) and posterior (facet) structures. This principle is consistent with the disc and facet joint anatomy in Neumann 2016. Confidence below 0.95 because 'neutral' is not precisely defined at a single angle for all individuals — the optimal alignment varies with individual cervical lordosis depth, and the load differences between near-neutral positions are small compared to extreme flexion or extension."
+    }
+  ],
+
+  "forward_head_posture_note": {
+    "load_values_context": "The 27 kg figure at 60 degrees is a calculated effective load — the force that posterior cervical extensors must generate to maintain the head position against gravity in a static model. It is not the direct compressive force on the C5-C6 disc, which would be higher due to bilateral muscle co-contraction adding axial compression beyond the moment-balancing force alone. The directional implication (substantial load increase with forward angle) is mechanistically valid; the absolute numbers are model-dependent approximations.",
+    "correction_strategy": "Forward head posture correction requires addressing both the cervical and thoracic components. Cervical retraction (chin tuck) addresses the local forward head moment. Thoracic extension mobility work (foam roller extensions, thoracic rotation, overhead mobility) addresses the upstream structural driver. Both are required for lasting correction — cervical retraction alone works around a stiff thoracic spine rather than resolving it.",
+    "training_application": "During farmer's carries and other loaded carry variations, cue 'tall spine, long neck' — this achieves cervical neutral without hyperextension. During overhead pressing, avoid the tendency to jut the chin forward as the bar passes the face — this is a cervical hyperextension compensation for limited thoracic extension and shoulder flexion range."
+  },
+
+  "cross_reference": "See biomechanics-spine-mechanics entry (biomechanics-spine-mechanics-001) for the lumbar spine bracing and shear resistance principles — the same posterior musculature principles apply at both spinal regions, with multifidus and erectors at the lumbar spine paralleling deep cervical flexors and extensors at the cervical level. See biomechanics-shoulder-mechanics entry (biomechanics-shoulder-mechanics-001) for the relationship between thoracic kyphosis, scapular anterior tilt, and subacromial impingement — forward head posture, thoracic kyphosis, and shoulder mechanics form a connected postural chain.",
+
+  "conflicting_evidence": "The specific load values from Hansraj 2014 have been critiqued on methodological grounds — the static model may overestimate real-world cervical loads because it does not account for the dynamic cervical musculature and ligamentous contributions that partially offset the forward head moment. Some biomechanics researchers argue that the load values are modelling outputs rather than clinically validated measurements and should not be presented as precise empirical facts. The cervical-thoracic mobility linkage direction is consistent across literature, but the precise degree of thoracic restriction that produces a clinically meaningful cervical effect has not been defined. The chin tuck as a therapeutic intervention has a strong directional rationale but RCT evidence for its effectiveness in reducing neck pain or cervical pathology over time is mixed.",
+
+  "what_would_change_this": "1. Direct intradiscal pressure measurement in the cervical spine across forward flexion angles (using Nachemson-style pressure transducers) would replace the modelled Hansraj values with empirically measured disc pressures and either confirm or revise the effective load figures. 2. Kinematic studies quantifying the relationship between thoracic kyphosis angle and available cervical extension range in a large sample would sharpen the cervical-thoracic mobility linkage claim. 3. EMG and cervical load studies during loaded carries and pressing under different controlled head positions would directly confirm the loaded movement claim rather than relying on extrapolation from the static posture model.",
+
+  "open_question": false,
+  "open_question_note": "The directional relationships are well-established: forward head increases posterior extensor demand; cervical-thoracic mobility is linked; chin tuck activates deep cervical flexors; cervical neutral minimises combined joint load. The main open questions are quantitative — the precise cervical disc pressures at given forward angles, and the clinical significance of small cervical position deviations during resistance training. These do not challenge the practical recommendations.",
+
+  "practical_summary": "Forward head posture is not a cosmetic concern — it is a load management problem. At moderate forward angles common during phone use or desk work, the posterior cervical musculature is working at several times the head's resting weight. Address it at the thoracic spine first (extension mobility), then add cervical retraction as the local correction. During resistance training: maintain cervical neutral during farmer's carries and loaded carries — no forward jut, no hyperextension. During overhead pressing, limited thoracic extension is often the reason the head juts forward as the bar passes the face — address thoracic mobility, not just the neck position. Teach chin tuck as both a postural correction and a deep cervical flexor activation cue before loading overhead movements.",
+
+  "added_by": "founder",
+  "date_added": "2026-04-16",
+  "last_reviewed": "2026-04-16",
+  "next_review": "2028-04-16",
+  "review_trigger": "24-month default for BAC entries. Triggered on publication of direct intradiscal pressure measurements in the cervical spine across forward flexion angles, or kinematic studies quantifying the cervical-thoracic mobility linkage in a large sample."
+}
