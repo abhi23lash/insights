@@ -1,0 +1,136 @@
+{
+  "id": "biomechanics-shoulder-mechanics-001",
+  "domain": "biomechanics",
+  "subdomain": "shoulder",
+  "tags": ["shoulder", "glenohumeral", "rotator-cuff", "subacromial", "impingement", "scapular-rhythm", "external-rotation", "deltoid", "force-couple", "humeral-head", "glenoid", "arm-elevation", "overhead-pressing"],
+
+  "score_type": "BAC",
+
+  "claim": "The glenohumeral joint prioritises mobility over bony stability — the shallow glenoid fossa provides minimal osseous constraint, making dynamic rotator cuff stabilisation essential. The rotator cuff functions primarily to compress the humeral head into the glenoid during arm elevation, counteracting the superior translation force produced by the deltoid. Subacromial space is a positional variable — it narrows with humeral internal rotation and forward head posture, making impingement a mechanical phenomenon that can be modified. Scapular upward rotation is a kinematic requirement for full arm elevation; without it the acromion impinges on the superior rotator cuff. External rotation of the humerus during overhead pressing increases subacromial space by rotating the greater tuberosity posteriorly away from the coracoacromial arch.",
+
+  "grade": "not_applicable",
+  "source_type": "research",
+
+  "applies_to": {
+    "population": "anatomically typical adults — claims hold for individuals without significant structural shoulder pathology (large rotator cuff tears, post-surgical anatomy, acromion type III morphology); the impingement claim applies specifically to outlet impingement, not internal or subcoracoid impingement variants",
+    "individual_variation": "moderate — acromion morphology (type I flat, type II curved, type III hooked) and acromioclavicular joint anatomy create structural variation in baseline subacromial space; rotator cuff thickness and glenoid depth vary between individuals; but the directional mechanical relationships are universal",
+    "goal": "any — biomechanical facts apply equally to injury prevention, strength, hypertrophy, and athletic performance contexts"
+  },
+
+  "biological_plausibility": {
+    "passes": true,
+    "mechanism": "The glenohumeral joint is a ball-and-socket joint in which the glenoid fossa (socket) is approximately one-quarter the surface area of the humeral head — contact area is small and bony constraint is minimal. Stability relies on the labrum (deepening the fossa by approximately 50%), joint capsule and glenohumeral ligaments (static constraints), and rotator cuff (dynamic constraint). During deltoid-driven arm elevation, the deltoid line of action has a significant superior translation component until approximately 90° of abduction. Without rotator cuff co-contraction producing a compressive and inferior force vector, the humeral head would migrate superiorly into the acromion. The subacromial space (normally 9-10mm) is the interval between the humeral head and the coracoacromial arch. Internal rotation closes this space by bringing the greater tuberosity — the attachment site for supraspinatus and infraspinatus — anteriorly under the acromion. Forward head posture drives thoracic kyphosis and secondary scapular anterior tilt, which depresses the anterior acromion toward the humeral head. Both mechanisms are geometric and measurable. External rotation reverses the greater tuberosity excursion, mechanically increasing subacromial clearance."
+  },
+
+  "bac_score": 0.79,
+  "bac_dimensions": {
+    "derivation": {
+      "score": 0.875,
+      "basis": "Split derivation basis. Glenohumeral joint bony geometry (glenoid coverage ratio, contact area), rotator cuff force couple mechanics (compressive vector counteracting deltoid superior translation), scapular upward rotation requirement for elevation (kinematic coupling measured by scapulohumeral rhythm studies), and external rotation effect on subacromial space (geometric — greater tuberosity excursion is directly measurable by MRI and cadaveric studies) are all derived from physics and direct anatomical measurement: derivation 1.0 for these four claims. The impingement-as-positional-not-purely-structural claim — while mechanistically coherent and measurable — involves interpreting imaging, clinical outcome, and epidemiological data on the relationship between acromion morphology, positional factors, and symptoms; the 'not purely structural' characterisation requires empirical synthesis beyond pure geometry: derivation 0.75. Entry-level derivation = average of 1.0 (×4) and 0.75 (×1) = 0.875."
+    },
+    "replication": {
+      "score": 0.75,
+      "basis": "Glenohumeral joint instability and rotator cuff force couple mechanics are replicated across anatomy, orthopaedics, and biomechanics literature without meaningful disagreement — textbook-level consensus. Scapulohumeral rhythm (approximately 2:1 glenohumeral-to-scapular motion) and scapular upward rotation requirement are replicated in multiple kinematic studies including Ludewig & Cook 2000. External rotation increasing subacromial space is supported by cadaveric and imaging studies. The positional nature of impingement and the modifiability claim have strong directional support but are not resolved in every imaging/clinical study — rated 0.75 rather than 1.0 to reflect residual debate around structural versus positional contributors in clinical populations."
+    },
+    "transferability": {
+      "score": 0.75,
+      "basis": "Minor variation expected. The directional mechanics (internal rotation narrows subacromial space; deltoid superior translation requires rotator cuff compression) are universal. Variation exists in: (1) acromion morphology — type III (hooked) acromion reduces baseline subacromial space and increases structural impingement risk regardless of positional factors; (2) rotator cuff thickness and tendon insertion anatomy vary between individuals; (3) the degree of space change per degree of rotation varies with humeral head size and glenoid depth. Rated 0.75 rather than 0.50 because the directional relationships are highly consistent across individuals even though absolute space dimensions and thresholds vary."
+    }
+  },
+  "bac_basis": "BAC = (0.875 + 0.75 + 0.75) / 3 = 0.79. The force couple mechanics and glenohumeral geometry are robustly physics-derived. The positional impingement claim requires empirical interpretation and receives 0.75 derivation. Replication is strong but not universal for the positional vs structural debate. Transferability 0.75 — direction universal, magnitude varies with acromion morphology and individual anatomy.",
+
+  "eqs": null,
+  "eqs_basis": "null — pure joint mechanics and anatomy entry. Claims are falsifiable by measuring joint angles, subacromial space dimensions (MRI, ultrasound), force vectors (cadaveric loading), and kinematics (motion capture) directly. No biological adaptation outcome is asserted. EQS does not apply.",
+
+  "sources": [
+    {
+      "citation": "Neumann DA. Kinesiology of the Musculoskeletal System: Foundations for Rehabilitation. 3rd ed. Mosby/Elsevier; 2016.",
+      "type": "biomechanics_textbook",
+      "authority": "Standard kinesiology reference. Synthesises shoulder joint mechanics, rotator cuff anatomy and function, glenohumeral stability, and scapulohumeral rhythm from primary anatomy and biomechanics literature.",
+      "relevant_content": "Glenohumeral joint anatomy: glenoid fossa surface area relative to humeral head (approximately 25-30% coverage), labral contribution to fossa depth, joint capsule and glenohumeral ligament static stabilisation. Rotator cuff anatomy and force vectors: supraspinatus, infraspinatus, teres minor, and subscapularis as compressors and inferior-force producers counteracting deltoid superior translation. Force couple mechanics during arm elevation. Subacromial space anatomy: coracoacromial arch, acromion morphology types, average space dimensions. Scapulohumeral rhythm: approximately 2:1 glenohumeral-to-scapular ratio through elevation arc with individual and task variation. External rotation effect on greater tuberosity position relative to acromion.",
+      "coi_check": "Academic textbook. No industry funding conflict.",
+      "role_in_entry": "Primary source for all five claims — glenohumeral anatomy, rotator cuff force couple, subacromial space mechanics, scapulohumeral rhythm, and external rotation geometry"
+    },
+    {
+      "citation": "Ludewig PM, Cook TM. Alterations in shoulder kinematics and associated muscle activity in people with symptoms of shoulder impingement. Physical Therapy. 2000;80(3):276-291.",
+      "pmid": "10696154",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10696154/",
+      "type": "research_paper",
+      "authority": "Paula Ludewig — Professor, University of Minnesota, Division of Physical Therapy. Leading researcher on scapular kinematics. This paper is among the most cited on scapular mechanics and impingement.",
+      "relevant_content": "Compared 3-D scapular kinematics (electromagnetic tracking) and shoulder muscle EMG between 50 symptomatic (impingement) and 50 asymptomatic male workers during arm elevation tasks. Individuals with impingement symptoms showed: reduced scapular upward rotation at lower elevation angles; decreased scapular posterior tilting throughout elevation; altered muscle activation patterns (decreased lower trapezius, altered serratus anterior). Demonstrated that impingement is associated with kinematic differences in scapular motion — supporting the positional/movement pattern basis of impingement rather than purely structural acromion morphology.",
+      "key_numbers": {
+        "n": "50 symptomatic, 50 asymptomatic male workers",
+        "method": "3-D electromagnetic motion tracking during arm elevation",
+        "finding": "Symptomatic group showed reduced scapular upward rotation and posterior tilting — directly supporting scapular kinematics as a modifiable contributor to impingement"
+      },
+      "coi_check": "No industry funding identified. Low COI risk.",
+      "role_in_entry": "Primary empirical support for scapular upward rotation requirement and the positional/kinematic basis of impingement"
+    },
+    {
+      "citation": "Neer CS. Impingement lesions. Clinical Orthopaedics and Related Research. 1983;(173):70-77.",
+      "pmid": "6825348",
+      "type": "foundational_paper",
+      "authority": "Charles Neer — orthopaedic surgeon, Columbia University. Described the concept of subacromial impingement syndrome and the anatomical basis for mechanical outlet impingement. Foundational paper establishing impingement as a structural-positional phenomenon.",
+      "relevant_content": "Described the coracoacromial arch as the structural ceiling creating the subacromial outlet through which the rotator cuff must pass during elevation. Established that impingement of the supraspinatus tendon against the coracoacromial arch occurs at the anterior-inferior acromion during forward flexion and internal rotation — the basis for the Neer impingement sign (passive forward elevation with internal rotation). Introduced the concept that positional factors (humeral rotation, acromion morphology) determine impingement risk — not tendon degeneration alone. Forms the anatomical basis for the 'positional phenomenon' framing in this entry.",
+      "coi_check": "No industry funding. Academic orthopaedic paper. Low COI risk.",
+      "role_in_entry": "Foundational source establishing impingement as a mechanical and positional phenomenon — the anatomical basis for the subacromial space claim"
+    }
+  ],
+
+  "key_claims": [
+    {
+      "claim": "The glenohumeral joint is inherently unstable — the glenoid fossa covers approximately 25-30% of the humeral head surface area, providing minimal bony constraint; dynamic rotator cuff stabilisation is essential",
+      "confidence": 0.95,
+      "score_type": "BAC",
+      "notes": "Established anatomy — glenoid coverage ratio is directly measurable and well-characterised across cadaveric and imaging studies. The labrum deepens the glenoid by approximately 50% but the joint remains far less constrained than the hip. Near-universal anatomical consensus. Confidence below 1.0 because exact coverage ratios vary between individuals and measurement methods."
+    },
+    {
+      "claim": "The rotator cuff's primary mechanical function during arm elevation is to compress the humeral head into the glenoid and counteract the deltoid's superior translation force vector",
+      "confidence": 0.92,
+      "score_type": "BAC",
+      "notes": "The force couple model — deltoid as primary elevator, rotator cuff as compressor and inferior force producer — is well-established in shoulder biomechanics. Directly supported by cadaveric and in-vivo EMG/imaging studies showing superior humeral head migration in rotator cuff tear populations. Confidence below 1.0 because the relative contribution of each rotator cuff muscle and the exact force magnitudes vary with arm position, load, and individual anatomy."
+    },
+    {
+      "claim": "Subacromial space narrows with humeral internal rotation and forward head posture — impingement is a positional and kinematic phenomenon, not purely a structural diagnosis",
+      "confidence": 0.80,
+      "score_type": "BAC",
+      "notes": "The mechanical basis is sound: internal rotation brings the greater tuberosity anteriorly under the acromion (directly measurable by MRI with arm position change); forward head posture drives thoracic kyphosis and scapular anterior tilt (documented by Ludewig & Cook 2000 and others). The 'not purely structural' framing is supported by evidence that impingement symptoms improve with positional and movement corrections even without structural change — but the contribution of structural factors (acromion type, AC joint morphology) is not negligible, and the claim requires some epidemiological interpretation. Confidence reflects this empirical component."
+    },
+    {
+      "claim": "Scapular upward rotation is a kinematic requirement for full arm elevation — without it the acromion descends toward the rotator cuff as the arm rises",
+      "confidence": 0.93,
+      "score_type": "BAC",
+      "notes": "Geometrically deterministic given the fixed relationship between the acromion (on the scapula) and the humeral head during elevation. If the scapula does not upwardly rotate as the arm elevates, the glenoid does not follow the humeral head and the subacromial space closes. Confirmed by Ludewig & Cook 2000 kinematics and replicated across multiple scapular motion studies. Confidence below 1.0 because individual variation in scapulohumeral rhythm and compensation strategies means some individuals can achieve near-full elevation with altered scapular kinematics before impingement occurs."
+    },
+    {
+      "claim": "External rotation of the humerus during overhead pressing increases subacromial space by rotating the greater tuberosity posteriorly away from the coracoacromial arch",
+      "confidence": 0.88,
+      "score_type": "BAC",
+      "notes": "Geometrically deterministic: external rotation spins the greater tuberosity posterolaterally, increasing the distance between it and the anterior acromion. Directly measured by MRI studies comparing subacromial space in internal vs external rotation. Practically important for overhead pressing cue design — external rotation torque (elbows forward, 'spread the bar apart') is a mechanically defensible cue for subacromial space management. Confidence below 0.95 because the magnitude of space change varies with acromion morphology and the degree of rotation achievable under load."
+    }
+  ],
+
+  "subacromial_space_note": {
+    "normal_dimensions": "Approximately 9-10mm average subacromial space in healthy adults at rest. Values below 7mm are associated with clinical impingement in some classification systems, though symptoms do not perfectly correlate with space dimensions.",
+    "positional_effects": "Internal rotation reduces subacromial space by approximately 1-3mm in imaging studies. Forward head posture and scapular anterior tilt further reduce space through acromion depression. External rotation and scapular upward rotation collectively restore space. These are additive mechanical effects.",
+    "acromion_morphology": "Type I (flat): widest baseline subacromial space. Type II (curved): moderate reduction. Type III (hooked): narrowest baseline space and highest structural impingement risk. Morphology is not modifiable but positional factors are — this is why positional optimisation matters more in type III individuals.",
+    "impingement_types": "This entry addresses outlet (subacromial) impingement — the most common clinical presentation. Internal impingement (posterior rotator cuff contact with posterosuperior glenoid during late cocking) and subcoracoid impingement (subscapularis contact with coracoid) have different mechanics and are not covered here."
+  },
+
+  "cross_reference": "See biomechanics-scapular-mechanics entry (biomechanics-scapular-mechanics-001) for the full scapular motion requirements during arm elevation and the muscles driving them. This shoulder mechanics entry describes the joint-level consequences of scapular motion (or its absence); the scapular mechanics entry describes the muscular causes.",
+
+  "conflicting_evidence": "The relative contribution of structural (acromion morphology) vs positional/kinematic factors to clinical impingement is debated. Some imaging studies find poor correlation between subacromial space dimensions and symptoms — individuals with small spaces may be asymptomatic, and those with large spaces may have severe symptoms. This complicates the positional claim without disproving it: it suggests that tissue health, load tolerance, and sensitisation are co-contributors alongside the mechanical space variables. The 'impingement as positional' framing is directionally supported but overstates the mechanical determinism if taken to mean that space optimisation alone resolves symptoms.",
+
+  "what_would_change_this": "1. Dynamic MRI or ultrasound studies quantifying subacromial space across the full arc of arm elevation in large samples would sharpen the positional-effect magnitudes. 2. Evidence that type III acromion morphology completely determines impingement risk regardless of positional factors would shift the balance toward structural and away from the modifiable positional framing. 3. EMG studies precisely quantifying the relative rotator cuff contribution (which muscles contribute what proportion of compression vs inferior force) across load magnitudes would refine the force couple model.",
+
+  "open_question": true,
+  "open_question_note": "The precise threshold at which subacromial space reduction transitions from asymptomatic to clinically significant is not established — the space-symptom correlation is imperfect. Whether the positional factors described here fully account for impingement in individuals with normal scapular kinematics and acromion morphology is unresolved. Some cases may represent primary tendon degeneration or tissue sensitisation independent of the mechanical space factors documented in this entry.",
+
+  "practical_summary": "The rotator cuff is a compression mechanism, not just a rotation mechanism — train it under load in positions that require humeral head centring (rows, external rotation exercises, overhead pressing with controlled external rotation torque). Cue external rotation during overhead pressing to increase subacromial space — 'elbows forward', 'spread the bar', 'rotate the pits forward' all achieve this mechanically. Subacromial impingement is often a positional problem before it is a structural one — assess and address scapular kinematics and thoracic mobility before attributing shoulder pain to structural pathology. Scapular upward rotation must accompany arm elevation — impaired upward rotation (from weak serratus anterior or lower trapezius) mechanically narrows the subacromial outlet.",
+
+  "added_by": "founder",
+  "date_added": "2026-04-16",
+  "last_reviewed": "2026-04-16",
+  "next_review": "2028-04-16",
+  "review_trigger": "24-month default for BAC entries. Triggered on publication of dynamic MRI or ultrasound studies with large samples quantifying subacromial space across the elevation arc with controlled rotational positions, or any large-scale study resolving the structural vs positional contribution debate in clinical impingement populations."
+}
