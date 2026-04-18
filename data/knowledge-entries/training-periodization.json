@@ -1,0 +1,95 @@
+{
+  "id": "training-periodization-001",
+  "domain": "training",
+  "subdomain": "program_design",
+  "tags": ["periodization", "linear-periodization", "daily-undulating-periodization", "DUP", "LP", "hypertrophy", "program-design", "training-structure"],
+
+  "claim": "Linear periodization (LP) and daily undulating periodization (DUP) produce statistically equivalent muscle hypertrophy when training volume is equated",
+
+  "grade": "moderate",
+  "source_type": "systematic_review_meta_analysis",
+
+  "applies_to": {
+    "training_age": "untrained_to_intermediate",
+    "natural_status": "any",
+    "sex": "any",
+    "goal": "hypertrophy"
+  },
+
+  "biological_plausibility": {
+    "passes": true,
+    "mechanism": "Both LP and DUP deliver progressive mechanical tension and sufficient training volume — the primary mechanistic drivers of hypertrophy. The specific temporal pattern by which load and volume vary (linearly across mesocycles vs daily) does not alter the fundamental stimuli: mTORC1 activation, metabolic stress, and muscle damage accumulate in proportion to total volume and proximity to failure, not to the scheduling pattern. Volume appears to be the dominant variable, not periodization structure."
+  },
+
+  "sources": [
+    {
+      "citation": "Grgic et al. (2017). Effects of linear and daily undulating periodized resistance training programs on measures of muscle hypertrophy: a systematic review and meta-analysis. PeerJ 5:e3695. DOI 10.7717/peerj.3695",
+      "pmid": "28497285",
+      "finding": "Meta-analysis of 13 volume-equated studies (n=417, avg 12±5 weeks) found no significant difference between LP and DUP on muscle hypertrophy. Pooled Cohen's d = -0.02 (95% CI [-0.25, 0.21], p=0.848). Result was robust across all sensitivity analyses and subgroup analyses (direct measures, indirect measures, studies >11 weeks).",
+      "population": "Predominantly untrained young adults (12/13 studies). One study on trained men (Monteiro et al. 2009). Mixed sex across studies. Age range adolescent to elderly with most studies in young adults (19–39 years).",
+      "effect_size": "Cohen's d = -0.02 (trivial, non-significant). Unweighted mean hypertrophy: LP = 3.9% ± 3.0%, DUP = 5.1% ± 4.2% per training cycle. Direct-measure subgroup: LP = 4.7%, DUP = 8.3% (SMD = -0.28, p=0.135, still non-significant).",
+      "limitations": "12/13 studies used untrained populations — generalizability to trained individuals is limited. Average study duration 12 weeks — long-term periodization effects unknown. Heterogeneous hypertrophy measurement methods (BIA, BOD-POD, DXA, ultrasound, MRI, skinfolds). Only LP vs DUP compared — block periodization and reverse LP not assessed. Volume equated by design but not standardized to volitional fatigue. PEDro quality scores 5-7 (moderate quality). No blinding possible in exercise trials.",
+      "coi_check": "No funding received. No competing interests declared.",
+      "practical_translation": {
+        "text": "Study population was predominantly untrained young adults. Effect observed was no meaningful difference in hypertrophy between LP and DUP when volume is equated (d = -0.02). This translates to: the specific periodization model used — whether load progresses linearly across months or varies daily — is not a meaningful driver of muscle growth. Training volume and progressive overload are the variables that matter. Confidence in this translation: moderate for untrained/intermediate lifters, lower for trained individuals (only 1 study in this population).",
+        "confidence": "moderate",
+        "confidence_basis": "13 studies with consistent null finding, robust sensitivity analyses, PRISMA-compliant SR/MA with PEDro quality scoring. Confidence lowered by predominance of untrained subjects and short study durations."
+      }
+    }
+  ],
+
+  "key_claims": [
+    {
+      "claim": "LP and DUP produce statistically equivalent hypertrophy when volume is equated",
+      "confidence": 0.82,
+      "notes": "Robust across all sensitivity analyses. Applies primarily to untrained populations."
+    },
+    {
+      "claim": "Training volume and progressive overload are more important than periodization model for hypertrophy",
+      "confidence": 0.80,
+      "notes": "Supported by dose-response volume evidence (Schoenfeld et al. 2017) and the null periodization findings here"
+    },
+    {
+      "claim": "Both LP and DUP outperform non-periodized training for lean mass retention (though evidence is limited)",
+      "confidence": 0.55,
+      "notes": "Based on single study (Monteiro et al. 2009) where non-periodized group lost 2.1kg LBM vs LP/DUP gains — confounded by lack of load adjustment in that study"
+    },
+    {
+      "claim": "Findings generalize to trained individuals",
+      "confidence": 0.35,
+      "notes": "Only 1/13 studies used trained participants. Trained individuals have attenuated MPS and anabolic signaling responses — periodization may matter more in this population."
+    }
+  ],
+
+  "study_details": {
+    "n_studies": 13,
+    "pooled_n": 417,
+    "n_in_lp_or_dup": 303,
+    "avg_duration_weeks": 12,
+    "duration_range_weeks": "6–26",
+    "quality_scores_pedro": "5–7 (moderate to high; 62–87% of theoretical maximum for exercise trials)",
+    "measurement_methods": ["BIA", "BOD-POD", "DXA", "ultrasound", "MRI", "skinfolds"],
+    "populations_covered": ["untrained young adults", "untrained obese adolescents", "untrained elderly women", "trained young men"],
+    "search_databases": ["PubMed/MEDLINE", "Scopus", "Web of Science", "SPORTDiscus", "NDLTD", "OATD"],
+    "search_cutoff": "September 2016",
+    "pre_registration": "PROSPERO CRD42016047795"
+  },
+
+  "eqs": 0.72,
+  "eqs_basis": "GRADE moderate. Well-conducted PRISMA-compliant SR/MA with pre-registration, dual independent coding, PEDro quality assessment, and robust sensitivity analyses. Main finding (null difference) is highly consistent — all but one effect size classified as trivial to small. Confidence reduced by: (1) 12/13 studies in untrained populations limiting generalizability to trained lifters; (2) average 12-week duration — long-term periodization effects uncharacterized; (3) heterogeneous measurement methods with only 4/13 using direct measures (ultrasound/MRI). COI-clean.",
+
+  "conflicting_evidence": "Simão et al. (2012) and Spineti et al. (2014) showed numerically greater hypertrophy in DUP groups for biceps/triceps thickness, though neither reached statistical significance in the meta-analysis. Inoue et al. (2015) was the only study showing a significant between-group difference (favoring DUP, SMD = 1.06) but included concurrent aerobic training and had the lowest methodological quality score (5/10). This outlier drove marginal directional DUP advantage in direct-measure subgroup analysis that remained non-significant (p=0.135).",
+
+  "what_would_change_this": "A well-powered RCT in resistance-trained individuals (>2 years experience) over 6+ months using direct hypertrophy measures (ultrasound or MRI) showing a significant, practically meaningful difference between LP and DUP would upgrade or downgrade this entry. Evidence that periodization structure affects adherence or injury rates in trained lifters would be relevant even absent direct hypertrophy differences.",
+
+  "open_question": true,
+  "open_question_note": "Whether LP vs DUP matters for trained/advanced lifters is genuinely unknown — the single trained-individual study (Monteiro et al. 2009) was methodologically limited. Whether DUP's variety confers adherence advantages that translate to real-world hypertrophy outcomes is unexplored.",
+
+  "practical_summary": "Don't over-engineer the periodization model. When total volume is matched, LP and DUP produce the same muscle growth. Choose the model that supports adherence and progressive overload — LP suits those who prefer tracking linear progression; DUP suits those who need variety. For untrained to intermediate lifters, consistency and volume accumulation matter far more than periodization structure. Generalization to trained lifters is limited by evidence gaps.",
+
+  "added_by": "founder",
+  "date_added": "2026-04-17",
+  "last_reviewed": "2026-04-17",
+  "next_review": "2027-04-17",
+  "review_trigger": "Any RCT or SR/MA examining periodization effects in trained (>2 years) populations using direct hypertrophy measures published in JSCR, Sports Medicine, or equivalent journals"
+}

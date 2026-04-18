@@ -1,0 +1,148 @@
+{
+  "id": "training-failure-programming-001",
+  "domain": "training",
+  "subdomain": "program_design",
+  "tags": ["training-to-failure", "proximity-to-failure", "RIR", "programming", "exercise-selection", "training-frequency", "overtraining", "motor-unit-recruitment", "load-specificity"],
+
+  "claim": "Whether training to failure is necessary for hypertrophy is load-dependent, exercise-type dependent, and frequency-dependent. At heavy loads, failure is less critical due to early high-threshold motor unit recruitment. At light loads, proximity to failure becomes more important. Continuous failure training carries overtraining and recovery costs that make strategic, selective use more practical than blanket use.",
+
+  "grade": "low",
+  "source_type": "narrative_review",
+
+  "grade_note": "Narrative expert review published as an Evidence-Based Personal Training column. Not a systematic review or meta-analysis. Conclusions are evidence-informed but reflect author synthesis and reasoning, not pooled quantitative analysis. Grade low due to study design — not due to quality of underlying argument.",
+
+  "applies_to": {
+    "training_age": "any",
+    "natural_status": "any",
+    "sex": "any",
+    "goal": "hypertrophy"
+  },
+
+  "relationship_to_existing_entry": "This entry is a programming companion to hypertrophy-proximity-to-failure-001 (Refalo et al. 2023 SR/MA). That entry establishes the evidence base (no superiority of failure, non-linear effort-hypertrophy relationship). This entry adds: load-specificity framework, exercise-type stratification, frequency interaction, and overtraining signal. Use hypertrophy-proximity-to-failure-001 as the primary evidence source; use this entry to translate that evidence into practical programming decisions.",
+
+  "biological_plausibility": {
+    "passes": true,
+    "mechanism": "Motor unit recruitment is size-ordered (Henneman's size principle): heavy loads recruit high-threshold type II fibres almost immediately, independent of effort level. Light loads recruit progressively higher-threshold units as fatigue accumulates — making proximity to failure the mechanism by which those units are eventually exposed to sufficient mechanical tension. This creates a load-dependent interaction: the heavier the load, the less proximity-to-failure matters for full fibre recruitment; the lighter the load, the more failure proximity becomes necessary for equivalent motor unit activation. Additionally, failure training increases metabolite accumulation and acute neuromuscular fatigue, which slow recovery and can — if chronic — suppress anabolic hormone status (IGF-1, testosterone)."
+  },
+
+  "sources": [
+    {
+      "citation": "Schoenfeld BJ, Grgic J. Does Training to Failure Maximize Muscle Hypertrophy? Strength and Conditioning Journal. 2019;41(5):108–113.",
+      "study_design": "Narrative evidence review. NSCA Evidence-Based Personal Training column. Review of longitudinal studies on failure vs non-failure training for hypertrophy, with practical programming recommendations.",
+      "coi_check": "No conflicts of interest declared. No funding source declared.",
+      "key_studies_reviewed": [
+        {
+          "study": "Goto et al. 2005",
+          "finding": "Failure group +13% vs non-failure +4% muscle growth over 12 weeks",
+          "caveat": "Non-failure group took a 30-second mid-set break — does not replicate traditional non-failure RT. Limited ecological validity."
+        },
+        {
+          "study": "Sampson & Groeller 2016",
+          "finding": "No significant difference in biceps CSA between failure and ~2 reps short of failure groups after 12 weeks at 85% 1RM",
+          "caveat": "Heavy load (6RM equivalent) — high-threshold MUs recruited early regardless of effort. Non-failure group did perform one failure set per week to set loads, a potential confound."
+        },
+        {
+          "study": "Martorelli et al. 2017",
+          "finding": "Failure group +17.5% vs volume-equated non-failure group +8.5% muscle thickness over 10 weeks at 70% 1RM in young women",
+          "caveat": "No post-hoc analyses performed; possible Type II error. Young women only — not generalizable to all populations. Difference in relative change was large but not statistically confirmed between groups."
+        },
+        {
+          "study": "da Silva et al. 2018",
+          "finding": "Older men (66±5y): failure and volume-equated non-failure groups had similar quadriceps hypertrophy; non-failure lower-volume group did not improve",
+          "caveat": "Suggests volume is the key variable in older adults and that failure is not necessary when volume is equated. Age is a relevant moderator."
+        },
+        {
+          "study": "Nóbrega et al. 2018",
+          "finding": "At both 80% and 30% 1RM, failure and non-failure conditions produced similar CSA increases after 12 weeks in untrained men",
+          "caveat": "Volume loads between failure and non-failure were nearly identical (high-load: 26,694 vs 26,042kg; low-load: 21,114 vs 20,643kg) — non-failure condition was likely only 1-2 reps shy of failure. May be comparing two near-failure conditions rather than true failure vs non-failure."
+        },
+        {
+          "study": "Pareja-Blanco et al. 2017",
+          "finding": "40% velocity loss (near failure) produced greater vastus lateralis and intermedius hypertrophy than 20% velocity loss (approximately half max reps) over 8 weeks in trained men",
+          "caveat": "Volume not equated — 40% velocity loss group performed more total reps. Cannot disentangle failure proximity effect from volume effect."
+        },
+        {
+          "study": "Izquierdo et al. 2006",
+          "finding": "16 weeks of failure training (70-80% 1RM, 2x/week) blunted resting IGF-1 and testosterone compared to non-failure — indicative of nonfunctional overreaching",
+          "caveat": "Professional athletes (Spanish Basque ball team) — training context matters. Duration 16 weeks of consistent failure training is longer than most hypertrophy phases. Important signal for chronic failure use."
+        }
+      ],
+      "finding": "Current evidence does not support blanket use of training to failure for hypertrophy. At moderate-to-heavy loads (6-12RM), stopping 1-4 reps short of failure does not appear to compromise hypertrophy when volume is equated. At light loads, closer proximity to failure appears more important for full motor unit recruitment. Continuous failure training carries overtraining and recovery costs. Strategic, selective use of failure is recommended.",
+      "population": "Studies reviewed covered untrained to trained adults, predominantly young, mixed sex. Overtraining signal study (Izquierdo 2006) used trained athletes specifically.",
+      "limitations": "Narrative review — subject to author selection bias and interpretation. No pooled effect sizes. Heterogeneous study designs reviewed. Most source studies used untrained populations. Velocity loss studies (Pareja-Blanco) not volume-equated, complicating conclusions about failure independently of volume.",
+      "practical_translation": {
+        "text": "Study population was mixed across reviewed studies. The synthesis effect is: at moderate loads (6-12RM), stopping 1-4 reps short of failure is sufficient; at light loads (15+ reps), closer proximity to failure matters more. This translates to: use failure selectively — last set of an exercise, single-joint isolation exercises, and short peaking blocks rather than every set of every session. Limit failure on squats, deadlifts, presses, and rows specifically. At higher training frequencies (4+x per week per muscle), use failure even more sparingly to preserve recovery between sessions. Confidence in this translation: low — based on narrative synthesis with mechanistically sound but not empirically confirmed practical recommendations.",
+        "confidence": "low",
+        "confidence_basis": "Narrative expert review. Recommendations are mechanistically coherent and consistent with the broader SR/MA evidence base, but specific practical thresholds (e.g. exactly how many sets to take to failure, which frequency cutoff triggers caution) are expert extrapolation, not directly tested parameters."
+      }
+    }
+  ],
+
+  "key_claims": [
+    {
+      "claim": "At heavy loads (6RM range), high-threshold motor units are recruited immediately — proximity to failure is less critical for hypertrophy",
+      "confidence": 0.72,
+      "notes": "Mechanistically well-supported by Henneman's size principle and EMG evidence. Supported empirically by Sampson & Groeller 2016 and the Refalo 2023 meta-analysis. Not load-stratified with statistical power in a single study."
+    },
+    {
+      "claim": "At light loads (30%+ reps, ~15+ RM), closer proximity to failure is required to recruit high-threshold motor units and produce equivalent hypertrophy",
+      "confidence": 0.65,
+      "notes": "Mechanistically predicted and directionally supported (Nóbrega 2018 low-load near-failure conditions). Pareja-Blanco 2017 supports effort matters at lighter loads. Not perfectly confirmed due to volume confounds."
+    },
+    {
+      "claim": "Continuous failure training over extended periods can blunt anabolic hormone status and indicate nonfunctional overreaching",
+      "confidence": 0.60,
+      "notes": "Izquierdo et al. 2006 showed suppressed IGF-1 and testosterone after 16 weeks of failure training. Single study in trained athletes. Duration and population specificity limit generalization, but the signal is clinically meaningful."
+    },
+    {
+      "claim": "Failure training impairs post-exercise recovery for 24-48 hours, which is relevant at higher training frequencies",
+      "confidence": 0.65,
+      "notes": "Moran-Navarro et al. 2017 showed failure training delayed recovery vs non-failure. Mechanistically coherent. Practical implication: at low training frequency (once per week per muscle), failure recovery cost is manageable; at high frequency (4+x per week), it compounds."
+    },
+    {
+      "claim": "Failure should be used more liberally on single-joint machine exercises than on multi-joint free weight exercises",
+      "confidence": 0.70,
+      "notes": "Expert recommendation based on injury risk and neuromuscular fatigue cost differential between exercise types. Not directly tested in an RCT. Mechanistically sound and widely accepted in applied practice."
+    }
+  ],
+
+  "programming_framework": {
+    "when_failure_is_less_necessary": [
+      "Heavy loads (≤8RM) — high-threshold MUs recruited regardless",
+      "Multi-joint free weight exercises (squat, deadlift, press, row) — injury risk and systemic fatigue cost is high",
+      "High training frequency programs (≥4x per week per muscle group) — recovery must be preserved between sessions",
+      "Untrained beginners — hypertrophy stimulus is non-specific; failure not needed to drive adaptation",
+      "Older adults — slower post-exercise recovery; failure may not add benefit when volume is equated"
+    ],
+    "when_failure_is_more_relevant": [
+      "Light loads (15+ RM range) — closer proximity needed to recruit high-threshold fibres",
+      "Single-joint isolation exercises (curls, extensions, flyes, cable work) — lower recovery cost",
+      "Last set of a given exercise — preserves volume on preceding sets while capturing full effort benefit",
+      "Peaking phases of a hypertrophy block — short-duration (4 weeks) strategic use",
+      "Lower training frequency programs (once per week per muscle) — recovery window is adequate"
+    ],
+    "rir_guidance": {
+      "moderate_loads_6_12rm": "RIR 1-4 sufficient for near-maximal hypertrophy",
+      "light_loads_15plus_rm": "RIR 0-2 likely necessary to fully recruit highest-threshold fibres",
+      "heavy_loads_under_6rm": "Failure becomes progressively less relevant; stopping several reps short acceptable"
+    }
+  },
+
+  "eqs": 0.42,
+  "eqs_basis": "Narrative expert review from two respected researchers (Schoenfeld and Grgic) with deep domain expertise and no COI. Mechanistic arguments are well-grounded and consistent with the Refalo 2023 SR/MA findings. EQS capped by study design — narrative reviews cannot contribute high EQS regardless of author quality. Practical programming recommendations are expert extrapolation, not empirically confirmed parameters. Use this entry to generate practical recommendations; use hypertrophy-proximity-to-failure-001 for evidence grounding.",
+
+  "conflicting_evidence": "Martorelli et al. 2017 suggests a meaningful advantage for failure training at 70% 1RM in young women (+17.5% vs +8.5%) — if the between-group trend reached significance, it would challenge the equivalence claim at moderate loads. However, the Refalo 2023 SR/MA (15 studies, pooled) found no significant failure advantage (ES=0.12, p=0.343) — the stronger evidence base. The Pareja-Blanco 2017 velocity loss data (40% > 20% VL for hypertrophy) is the strongest signal in favor of near-failure training, but volume confound limits interpretation.",
+
+  "what_would_change_this": "An RCT stratifying by load (light vs heavy) with volume equated showing significantly different failure-vs-non-failure outcomes across load conditions would confirm the load-specificity framework. Long-term data (>16 weeks) on hormonal and recovery outcomes from strategic vs continuous failure use would either validate or revise the overtraining signal. Studies using objective velocity-based training feedback to precisely control proximity-to-failure across conditions would resolve the ecological validity issues in most current non-failure protocols.",
+
+  "open_question": true,
+  "open_question_note": "The exact proximity-to-failure threshold at which light-load training becomes mechanistically equivalent to heavy-load non-failure training is unknown. Whether the overtraining signal from Izquierdo 2006 is specific to athletic populations or generalizes to recreational trainees is unresolved. Whether strategic periodization of failure (block use vs. constant use) produces meaningfully different long-term hypertrophy outcomes has not been tested.",
+
+  "practical_summary": "Use failure training as a targeted tool, not a default setting. Heavy loads and multi-joint exercises: stop 2-4 reps short — full fibre recruitment is happening anyway. Light loads and isolation exercises: get closer to failure (RIR 0-2) — that's where proximity actually drives recruitment. Reserve true failure sets for the last set of an exercise. At high training frequency, pull back on failure to protect recovery. Don't run failure training continuously for extended blocks — 4-week peaks, then back off. The goal is maximum productive tension across the week's volume, not maximum grinding on any single set.",
+
+  "added_by": "founder",
+  "date_added": "2026-04-17",
+  "last_reviewed": "2026-04-17",
+  "next_review": "2027-04-17",
+  "review_trigger": "Any RCT or meta-analysis specifically examining failure training stratified by load intensity or training frequency published in JSCR, Sports Medicine, or EJSS"
+}
