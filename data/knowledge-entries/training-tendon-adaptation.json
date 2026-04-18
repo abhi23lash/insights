@@ -1,0 +1,103 @@
+{
+  "id": "training-tendon-adaptation-001",
+  "domain": "training",
+  "subdomain": "connective_tissue_adaptation",
+  "tags": ["tendon", "tendon-adaptation", "tendon-stiffness", "mechanical-loading", "collagen", "Young's-modulus", "CSA", "loading-intensity", "Achilles-tendon", "patellar-tendon", "isometric-training", "eccentric-training", "resistance-training", "connective-tissue"],
+
+  "claim": "Human tendons are highly responsive to increased chronic mechanical loading and adapt through measurable changes in mechanical (stiffness), material (Young's modulus), and morphological (cross-sectional area) properties. Loading magnitude is the primary determinant of adaptation — intensities above 70% MVC or 1RM produce large effects while intensities below 70% produce negligible adaptation. Contraction type (isometric, concentric-eccentric, eccentric) is not a significant moderator when intensity is equated. Tendon stiffness gains are primarily driven by changes in material properties (Young's modulus) rather than morphological hypertrophy (CSA), suggesting material adaptation is the earlier and dominant mechanism.",
+
+  "grade": "moderate",
+  "source_type": "systematic_review_meta_analysis",
+
+  "applies_to": {
+    "training_age": "any — studies included untrained and recreationally active participants; no studies on highly trained strength athletes specifically",
+    "natural_status": "any — natural status not reported or controlled for in included studies; all participants were healthy recreationally active adults without clinical conditions",
+    "sex": "predominantly male — 237 of 264 total participants were male; generalizability to females is limited",
+    "goal": "any — tendon adaptation is relevant to hypertrophy, strength, injury prevention, and athletic performance contexts"
+  },
+
+  "biological_plausibility": {
+    "passes": true,
+    "mechanism": "Mechanical loading on tendon tissue deforms tenocytes via integrin-mediated mechanotransduction. Cyclic tensile strain activates stress-activated protein kinases (SAPK) in tenocyte cells in an intensity-dependent manner — higher strain produces greater tenocyte deformation, recruiting more cells into adaptive signalling. This triggers upregulation of collagen synthesis (type I collagen, the primary structural protein), changes in collagen fibril morphology, and increased molecular cross-linking of collagen fibrils. At the tissue level, increased cross-linking and fibril density increase the Young's modulus (material stiffness) of the tendon matrix. Structural hypertrophy (increased CSA) results from net collagen deposition over longer loading periods. Tendon stiffness — the mechanical property most relevant to force transmission and energy storage — increases as a function of both material and morphological changes, but material adaptation (increased Young's modulus) precedes and dominates structural hypertrophy over typical training intervention durations. Loading intensity below a threshold produces insufficient tenocyte deformation to activate adaptive cellular responses, explaining the intensity threshold effect observed at ~70% MVC/RM."
+  },
+
+  "sources": [
+    {
+      "citation": "Bohm S, Mersmann F, Arampatzis A. Human tendon adaptation in response to mechanical loading: a systematic review and meta-analysis of exercise intervention studies on healthy adults. Sports Medicine — Open. 2015;1:7. DOI 10.1186/s40798-015-0009-9",
+      "pmid": "27747846",
+      "study_design": "Systematic review and meta-analysis. Databases: ISI Web of Knowledge, PubMed, Scopus (1970 to November 2014). Random-effects model, generic inverse variance method, Hedges' adjusted g (SMD) for small sample bias correction. Cochrane Risk of Bias tool for bias assessment. Customised methodological quality scale (internal, statistical, external validity). Funnel plot for publication bias. Subgroup analyses on loading intensity, contraction type, and intervention duration. Software: Review Manager v5.2.",
+      "n_studies": 27,
+      "n_interventions": 37,
+      "n_participants": 264,
+      "study_duration_range": "8 to 34 weeks (average 12.9 ± 4.5 weeks; 35/37 interventions ≤14 weeks)",
+      "tendons_covered": "Achilles tendon (N=15 studies) and patellar tendon (N=12 studies)",
+      "finding": "Weighted average effect sizes: tendon stiffness SMD=0.70 (95% CI 0.51, 0.88), p<0.00001, N=37; Young's modulus SMD=0.69 (95% CI 0.36, 1.03), p<0.0001, N=17; CSA SMD=0.24 (95% CI 0.07, 0.42), p=0.006, N=33. All overall effects significant. Heterogeneity: stiffness I²=30% (p=0.05), Young's modulus I²=57% (p=0.002), CSA I²=21% (p=0.14). High-intensity subgroup (>70% MVC/RM): SMD=0.90 (95% CI 0.71, 1.08), p<0.00001, I²=0%, N=27. Low-intensity subgroup (<70%): SMD=0.04 (95% CI -0.46, 0.53), p=0.88, N=5. Intensity subgroup difference: p<0.00001. No significant difference between contraction types at high intensity (isometric SMD=0.95, concentric-eccentric SMD=0.82, eccentric SMD=1.04; all p>0.5 between groups). Duration: ≥12 weeks SMD=0.91 vs 8-12 weeks SMD=0.81, p=0.7 (not significant). Methodological quality: mean 71% ± 9% (range 61-99%). Funnel plot symmetrical — low publication bias risk.",
+      "population": "Healthy adults aged 18-50 years. Predominantly male (237/264). Predominantly recreationally active (approximately 164/264); one study in cricket players, one in distance runners. Untrained participants in several studies. No clinical conditions, no tendinopathy. Average participants per intervention: 9.8 ± 2.3 (range 6-15).",
+      "effect_size": "Stiffness: SMD=0.70 (moderate-large). Young's modulus: SMD=0.69 (moderate-large). CSA: SMD=0.24 (small-moderate). High-intensity subgroup stiffness: SMD=0.90 (large). 26 of 37 interventions showed stiffness SMD>0.50.",
+      "limitations": "1. Small sample sizes per study (6-15 participants) — single-intervention conclusions limited. 2. Predominantly male (237/264) — limited generalizability to female populations. 3. Short intervention durations (35/37 ≤14 weeks) — long-term morphological adaptation (CSA) may be underestimated. 4. Risk of bias assessment unclear in 34/37 interventions — randomization, allocation concealment, and blinding not reported in most studies. 5. Only 3 studies had low risk of bias (Kongsgaard 2007, Malliaras 2013, Carroll 2011). 6. Only Achilles and patellar tendons studied — generalizability to upper body tendons is assumed but not confirmed. 7. Only 2 of 27 studies calculated and reported effect sizes. 8. Plyometric training interventions had uncontrolled load magnitude — intensity confound for that subgroup. 9. English language only.",
+      "coi_check": "No competing interests declared. No financial support received for conduct of study or manuscript preparation. Lead author (Arampatzis) is from the Humboldt-Universität zu Berlin Spine and Movement Sciences lab — no commercial product conflict.",
+      "practical_translation": {
+        "text": "Study population was healthy adults aged 18-50, predominantly male, recreationally active, assessed across Achilles and patellar tendons. Effect observed was: chronic mechanical loading at intensities >70% MVC/1RM produces large tendon stiffness and material property adaptations (SMD ~0.90), while loading below 70% produces negligible effects (SMD=0.04). Contraction type does not matter when intensity is matched — isometric, eccentric, and concentric-eccentric all produce equivalent stiffness gains. Stiffness gains are primarily driven by material property improvement (Young's modulus) not structural hypertrophy (CSA). This translates to: for healthy natural trainees seeking tendon adaptation, high-load resistance training (>70% 1RM) applied across ≥12 weeks is the evidence-based approach. Contraction type is a secondary concern — choose based on exercise context, not as a tendon-specific variable. Expect most tendon adaptation over the first 3 months to come from material property improvement, with structural hypertrophy a longer-term outcome. Confidence in this translation: moderate — because the intensity effect is extremely robust (I²=0%, p<0.00001) but the population was predominantly male with small individual study sample sizes and short durations limiting long-term CSA conclusions.",
+        "confidence": "moderate",
+        "confidence_basis": "27 studies, 37 interventions. Intensity effect is the most robust finding — I²=0% in high-intensity subgroup, p<0.00001 vs low-intensity. Material vs morphological distinction is directionally clear but based on indirect comparison of effect sizes across outcomes rather than within-individual longitudinal tracking. Risk of bias unclear in most studies due to reporting deficits, not identified design flaws. Population predominantly male and recreationally active limits generalizability to female and highly trained populations."
+      }
+    }
+  ],
+
+  "key_claims": [
+    {
+      "claim": "Chronic mechanical loading at >70% MVC/1RM produces large tendon stiffness adaptation (SMD=0.90, I²=0%)",
+      "confidence": 0.88,
+      "notes": "Strongest and most robust finding in the paper. 27 interventions, I²=0% (no heterogeneity), p<0.00001. The signal is unusually clean for exercise science research. Confidence below 0.95 because the intensity threshold is defined at 70% MVC/RM as an operationalised cutoff, not a biologically precise threshold — the actual dose-response curve around the threshold has not been characterised."
+    },
+    {
+      "claim": "Chronic mechanical loading below 70% MVC/1RM produces negligible tendon stiffness adaptation (SMD=0.04)",
+      "confidence": 0.78,
+      "notes": "N=5 in low-intensity subgroup — underpowered for precision. The null result (SMD=0.04, p=0.88) is directionally strong and consistent with the mechanotransduction threshold concept, but the small low-intensity sample limits definitive conclusions about whether any sub-threshold loading has no benefit or simply insufficient benefit."
+    },
+    {
+      "claim": "Contraction type (isometric vs concentric-eccentric vs eccentric) does not significantly affect tendon stiffness adaptation when loading intensity is equated",
+      "confidence": 0.75,
+      "notes": "Subgroup comparison at high intensity: isometric SMD=0.95, concentric-eccentric SMD=0.82, eccentric SMD=1.04, all p>0.5 between groups. Mechanistically explained by loading magnitude — tendon force production determines tenocyte deformation regardless of the contraction type producing that force. Confidence below 0.85 because eccentric subgroup only N=2 — too few to draw strong conclusions about eccentric equivalence specifically."
+    },
+    {
+      "claim": "Tendon stiffness gains are primarily driven by material property adaptation (Young's modulus, SMD=0.69) rather than morphological hypertrophy (CSA, SMD=0.24)",
+      "confidence": 0.72,
+      "notes": "Indirect comparison — stiffness (0.70) and Young's modulus (0.69) effect sizes are nearly identical while CSA (0.24) is substantially smaller. Several studies show Young's modulus increases without CSA changes. Mechanistically coherent: material adaptation (collagen cross-linking, fibril density) is faster-responding than structural hypertrophy. Confidence limited by: (1) indirect comparison methodology; (2) substantial heterogeneity in Young's modulus (I²=57%) suggesting loading condition interactions; (3) CSA may be underestimated due to short intervention durations and ultrasound measurement limitations in some studies."
+    },
+    {
+      "claim": "Tendons begin to adapt to high-intensity loading within 8 weeks and show greater adaptation with ≥12 weeks of training",
+      "confidence": 0.62,
+      "notes": "Duration subgroup: ≥12 weeks SMD=0.91 vs 8-12 weeks SMD=0.81, p=0.7 (not statistically significant). The trend favors longer duration but is underpowered (N=4 in shorter subgroup). Individual studies show significant stiffness increases at 8 weeks. Confidence limited by the non-significant between-subgroup difference and the very small N in the shorter duration group."
+    },
+    {
+      "claim": "Plyometric training may not be optimal for tendon adaptation due to insufficient tendon loading duration during the short ground contact period",
+      "confidence": 0.55,
+      "notes": "Five plyometric interventions showed heterogeneous results (stiffness range: -9% to +28%). Only one (Foure et al.) reached significance. Bohm et al.'s own 2014 data (one of the included studies) showed isometric and concentric-eccentric but not plyometric Achilles tendon stiffness increased significantly. Mechanistic explanation: viscosity of tendinous tissue constrains mechanotransduction transmission when loading duration is too brief. Confidence limited by heterogeneous plyometric protocols and uncontrolled load magnitudes across those studies."
+    }
+  ],
+
+  "adaptation_mechanisms": {
+    "material_properties": "Early and primary mechanism. Increased collagen molecular cross-linking, changes in collagen fibril morphology, and possible fibril density changes increase tissue stiffness per unit area (Young's modulus). Responsive within 8-12 weeks at high loads.",
+    "morphological_properties": "Later and secondary mechanism. Net collagen synthesis and deposition increases tendon CSA. Effect size smaller over typical 8-14 week intervention durations — likely more pronounced with longer habitual loading periods. Region-specific hypertrophy reported at tendon mid-portion.",
+    "plyometric_note": "Short ground contact times (~0.1-0.26s) during plyometric training may not produce sufficient loading duration for tenocyte mechanotransduction via viscous tissue. Plyometric training may improve tendon energy storage and return capacity through different mechanisms than high-load strength training."
+  },
+
+  "eqs": 0.60,
+  "eqs_basis": "GRADE moderate (approximately 0.65): large number of interventions (37), consistent primary finding, I²=0% in the key intensity subgroup — unusually clean signal. Downgraded from high due to: (1) unclear risk of bias in 34/37 interventions (randomization, blinding not reported); (2) small n per study (mean 9.8) limiting precision of individual estimates; (3) short intervention durations (35/37 ≤14 weeks) limiting CSA and long-term conclusions; (4) Young's modulus heterogeneity I²=57% indicating unexplained between-study variability. Population match close (approximately 0.92): healthy adults 18-50, natural status not an exclusion issue, recreationally active matches Pramana's primary user base closely. Partial penalty for 237/264 being male — sex generalizability limited. EQS = 0.65 × 0.92 ≈ 0.60.",
+
+  "conflicting_evidence": "No major direct contradictions of the primary findings. The I²=57% for Young's modulus suggests loading conditions beyond intensity (loading rate, duration of single contraction, loading frequency, joint angle) meaningfully affect material adaptation — the entry's intensity-first simplification may be incomplete for precise programming. Plyometric training studies show heterogeneous results that partially conflict with the 'high intensity = adaptation' model — loading rate and duration may interact with magnitude in ways the intensity subgroup analysis cannot capture. The CSA effect (SMD=0.24) is statistically significant but small and based partly on ultrasound-measured CSA in some studies — reliability concerns for ultrasound CSA measurement noted by the authors themselves.",
+
+  "what_would_change_this": "1. Well-powered studies (n≥30 per group) with proper randomization and allocation concealment would sharpen the effect size estimates and reduce risk of bias concerns. 2. Studies testing the precise intensity dose-response curve below and around 70% MVC/RM would characterise the threshold more precisely. 3. Long-duration studies (≥6 months) tracking both Young's modulus and CSA in parallel would clarify whether CSA eventually catches up to material property gains with sustained loading. 4. Female-majority or sex-stratified studies would address the generalizability limitation. 5. Studies in trained (>2 years) strength athletes would establish whether the intensity threshold shifts with training age.",
+
+  "open_question": true,
+  "open_question_note": "Whether the 70% MVC/RM intensity threshold generalises to upper body tendons (shoulder rotator cuff, elbow flexor tendons, patellar/quadriceps tendons during pressing) has not been directly tested — this meta-analysis covered only Achilles and patellar tendons. The relative contribution of loading rate, loading duration, and number of loading cycles to tendon adaptation independent of peak load magnitude remains incompletely characterised. Whether tendon adaptation rates change with training age (as muscle adaptation rates do) is not established from current data.",
+
+  "practical_summary": "Train tendons with high loads — above 70% 1RM. Below that threshold, the evidence says you are effectively not training the tendon at all. Contraction type doesn't matter once intensity is high: heavy isometrics, eccentric, and full range concentric-eccentric all produce equivalent tendon stiffness gains. Give it time — 12+ weeks for robust adaptation, and understand that the first changes are material (the tendon gets stiffer per unit area) before it physically grows larger. Plyometric training at typical loading parameters is unlikely to be an effective primary tendon loading strategy despite the popular belief otherwise.",
+
+  "added_by": "founder",
+  "date_added": "2026-04-17",
+  "last_reviewed": "2026-04-17",
+  "next_review": "2027-04-17",
+  "review_trigger": "Any SR/MA on tendon adaptation loading parameters published in Sports Medicine, JSCR, or EJSS. Triggered immediately on any study establishing sex differences in tendon adaptation rates or any study testing the intensity threshold in upper body tendons."
+}
