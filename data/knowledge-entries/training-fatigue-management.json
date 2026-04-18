@@ -1,0 +1,125 @@
+{
+  "id": "training-fatigue-management-001",
+  "domain": "training",
+  "subdomain": "program_design",
+  "tags": ["fatigue-management", "supercompensation", "deload", "MEV", "MRV", "volume-landmarks", "periodization", "fitness-fatigue-model", "accumulated-fatigue", "recovery"],
+
+  "score_type": "BAC",
+
+  "claim": "Accumulated fatigue during high-volume training phases masks underlying fitness adaptations — performance decrements during accumulation do not indicate absent adaptation. Volume should be periodized across mesocycles: an accumulation phase is followed by a deload that clears fatigue and allows supercompensation to express. Minimum effective volume maintains existing adaptations with significantly less total work than the volume required to produce them. Consistently training at maximum recoverable volume without planned deloads produces accumulated fatigue and progressive performance decrements. Individual volume tolerance varies substantially based on training age, recovery capacity, and life stress.",
+
+  "grade": "not_applicable",
+  "source_type": "practitioner_consensus",
+
+  "source_type_note": "No single RCT directly tests minimum effective volume or maximum recoverable volume as measurable constructs. Claims are derived from: (1) the fitness-fatigue model established in sport science literature (Banister et al., Zatsiorsky); (2) supercompensation theory from Soviet and Eastern European periodization literature (Matveyev, Bompa); (3) NSCA consensus on periodization principles as synthesised in Haff & Triplett. Directional consistency is high across independent sources. Specific volume landmark values are estimated from training response, not geometrically determinable.",
+
+  "applies_to": {
+    "population": "Intermediate to advanced resistance-trained individuals. MEV and MRV concepts are most operationally relevant once session-to-session adaptation is no longer possible — typically from intermediate training age onward. Novices recover and adapt fast enough that formal deload cycles are rarely necessary.",
+    "individual_variation": "high — volume landmarks shift with training age, caloric status, sleep quality, occupational and psychological stress load, and inter-individual recovery capacity. This is a structural framework, not a set of prescribed numbers. Application requires ongoing individual calibration.",
+    "goal": "hypertrophy, strength, or both"
+  },
+
+  "biological_plausibility": {
+    "passes": true,
+    "mechanism": "The fitness-fatigue model (Banister et al.) holds that a training stimulus produces two simultaneous effects with different time courses: a fitness gain (positive adaptation — MPS elevation, neural adaptations, structural hypertrophy) that is smaller in magnitude but longer-lasting, and a fatigue response (negative — metabolic fatigue, connective tissue stress, neural inhibition, systemic inflammatory load) that is larger in immediate magnitude but dissipates faster. During high-volume accumulation phases, the fatigue component exceeds the fitness component in expressed performance — not because adaptation is absent, but because fatigue masks it. A deload reduces training stimulus sufficiently to allow fatigue to dissipate without meaningfully reversing structural adaptations (protein accretion, myofibrillar growth). As fatigue clears, expressed fitness rises above baseline — this is supercompensation. The MEV-MRV distinction operationalises the dose-response relationship: below MEV, the training stimulus is insufficient to drive positive adaptation beyond maintenance; above MRV, the fatigue produced by each session accumulates faster than it can be cleared before the next session, producing a declining net recovery state."
+  },
+
+  "bac_score": 0.50,
+  "bac_dimensions": {
+    "derivation": {
+      "score": 0.50,
+      "basis": "The fitness-fatigue model and supercompensation are established in sport science literature with mechanistic grounding in protein synthesis dynamics, neural fatigue physiology, and connective tissue recovery kinetics. The claim that fatigue masks fitness is logically derivable from the model's structure — a direct consequence of the fitness and fatigue components having different magnitudes and time constants. However, volume landmarks (MEV, MRV) are not geometrically or anatomically derivable — there is no measurement instrument equivalent to a goniometer for 'maximum recoverable volume'. Landmarks must be estimated from individual training response. Rated 0.50 (multiple independent expert consensus) rather than 1.00 (direct measurement) because precise threshold values require empirical individual estimation rather than physics-based calculation."
+    },
+    "replication": {
+      "score": 0.50,
+      "basis": "The directional claims — accumulated fatigue masks fitness, deloads permit supercompensation, sustained overreach produces performance stall — are consistent across NSCA consensus (Haff & Triplett), classical periodization theory (Bompa & Haff), and the fitness-fatigue model literature (Zatsiorsky & Kraemer). The structural framework is replicated across independent traditions. However, specific volume landmark values per muscle group have not been independently established in controlled experimental conditions across labs. Rated 0.50 (single high-quality source per landmark construct) because the MEV/MRV operationalisation as a practical training tool has not been independently confirmed with quantitative precision — directional claims are replicated, precise thresholds are not."
+    },
+    "transferability": {
+      "score": 0.50,
+      "basis": "The structural logic — fatigue accumulates, deloads clear it, MEV is lower than MAV — is applicable across training populations. However, meaningful individual variation exists in the actual volume at which these thresholds occur. A highly trained individual in caloric surplus with optimal sleep has a materially different MRV than a recreational trainee in a deficit under occupational stress. This variation is not peripheral noise — it is the central practical challenge of applying the framework. Rated 0.50 (meaningful variation expected) because directional recommendations are universal but specific application requires individual calibration that cannot be provided by population-level norms."
+    }
+  },
+  "bac_basis": "BAC = (0.50 + 0.50 + 0.50) / 3 = 0.50. The fitness-fatigue model and supercompensation are sound and directionally replicated across independent periodization traditions. Volume landmark constructs (MEV, MRV) are mechanistically coherent but not geometrically derivable or precisely replicated with quantitative values across labs. High individual variation is the defining practical feature of the framework. BAC 0.50 reflects expert consensus grounding with limited measurement precision and high individual variability.",
+
+  "eqs": null,
+  "eqs_basis": "null — these are structural programming principles derived from physiological recovery models and periodization consensus. They are not biological outcome claims from GRADE-ratable RCTs. No EQS applicable.",
+
+  "sources": [
+    {
+      "citation": "Haff GG, Triplett NT (eds). Essentials of Strength Training and Conditioning. 4th ed. NSCA / Human Kinetics; 2016.",
+      "type": "consensus_textbook",
+      "authority": "National Strength and Conditioning Association reference text representing field consensus on periodization, recovery management, and training design.",
+      "relevant_content": "Establishes the fitness-fatigue model as the mechanistic basis for periodization. Supercompensation as the theoretical basis for deload timing — adaptation is revealed as fatigue dissipates. Systematic periodization across mesocycles (accumulation, intensification, realization/deload) as the standard framework for managing volume and recovery. Documents that in-training performance does not directly track underlying structural adaptation during high-stress phases. Volume management and progressive overload as non-negotiable design principles.",
+      "coi_check": "NSCA educational textbook. No commercial product conflict."
+    },
+    {
+      "citation": "Bompa TO, Haff GG. Periodization: Theory and Methodology of Training. 5th ed. Human Kinetics; 2009.",
+      "type": "reference_textbook",
+      "authority": "Tudor Bompa (York University) is the primary figure who introduced Eastern European periodization theory to Western sport science. Greg Haff is a former NSCA president and recognised periodization researcher. The standard Western reference for classical periodization theory.",
+      "relevant_content": "Matveyev's original supercompensation model and its application to mesocycle structure. The loading-recovery cycle as the fundamental unit of periodization: stress phase (accumulation approaching overreach) followed by recovery phase (deload) produces a performance rebound above baseline. Volume and intensity as the primary manipulable variables across mesocycle phases. Documents the relationship between training load, fatigue accumulation, and performance expression — specifically that performance can decline during productive loading phases and recover above baseline following planned unloading. Defines work capacity as an adaptive quality that increases with training age, expanding the productive volume range over time.",
+      "coi_check": "Academic textbook. No conflict."
+    },
+    {
+      "citation": "Zatsiorsky VM, Kraemer WJ. Science and Practice of Strength Training. 2nd ed. Human Kinetics; 2006.",
+      "type": "reference_textbook",
+      "authority": "Vladimir Zatsiorsky (Penn State biomechanics) and William Kraemer (UConn exercise physiology). Provides the quantitative framework for the fitness-fatigue model in strength training contexts.",
+      "relevant_content": "Quantitative formulation of the fitness-fatigue model: fitness gain and fatigue each modelled as exponential decay processes with different time constants — fatigue larger in immediate magnitude but shorter in duration than fitness gain. Supercompensation as the window post-fatigue-clearance where expressed fitness exceeds pre-training baseline. The implication: optimal training stimulus timing requires understanding both components, not just the fitness component in isolation. Cumulative training above recovery capacity produces a compounding fatigue state that eventually overwhelms the fitness gains in expressed performance.",
+      "coi_check": "Academic textbook. No conflict."
+    }
+  ],
+
+  "key_claims": [
+    {
+      "claim": "Accumulated fatigue during high-volume phases masks underlying fitness adaptations — performance decrements do not indicate absent adaptation",
+      "confidence": 0.72,
+      "score_type": "BAC",
+      "notes": "Mechanistically grounded in the fitness-fatigue model. Performance is the net expression of fitness minus fatigue — when fatigue is high, expressed performance declines even as the fitness component continues to grow. The deload-induced rebound above baseline (supercompensation) is the observable evidence for this claim. Confidence below 0.85 because direct simultaneous measurement of the fitness component independently of fatigue during accumulation phases (e.g. biopsy-confirmed MPS during a period of declining performance) is not standard — the inference relies on the post-deload performance rebound rather than direct measurement of both components in parallel."
+    },
+    {
+      "claim": "Volume should be periodized across mesocycles — accumulation followed by deload allows supercompensation",
+      "confidence": 0.68,
+      "score_type": "BAC",
+      "notes": "Directionally consistent across NSCA, Bompa, and Zatsiorsky sources. The accumulation-deload structure is the foundational mesocycle model in periodization theory. Specific timing parameters (optimal accumulation length, deload depth, deload duration) are not precisely established from controlled trials — practitioner estimates range from 3-8 week accumulation phases with 1 week deload depending on training age and volume. Confidence limited by absence of direct RCT comparison of accumulation-deload vs continuous moderate-volume structures for hypertrophy specifically."
+    },
+    {
+      "claim": "Minimum effective volume maintains existing adaptations with significantly less total work than the volume required to produce them",
+      "confidence": 0.65,
+      "score_type": "BAC",
+      "notes": "Supported by Bickel et al. 2011 (Med Sci Sports Exerc) demonstrating that reducing training to one-ninth of training volume maintained strength gains over 32 weeks in trained participants. Mechanistically coherent — the stimulus required to maintain protein accretion and prevent atrophy is lower than the stimulus required to drive net positive MPS above baseline. Specific MEV values are not empirically established per muscle group and must be estimated from individual response."
+    },
+    {
+      "claim": "Consistently training at maximum recoverable volume without planned deloads produces accumulated fatigue and progressive performance decrements",
+      "confidence": 0.70,
+      "score_type": "BAC",
+      "notes": "Directionally consistent with the overreaching and overtraining literature. Meeusen et al. 2013 European College of Sport Science / ACSM joint consensus on overtraining defines functional overreaching (short-term performance decrement with recovery) and non-functional overreaching (prolonged decrements requiring weeks to months). Sustained near-MRV training without deload is the programmatic equivalent of chronic functional overreaching progressing toward non-functional. Confidence below 0.80 because the precise volume threshold that triggers non-functional overreaching versus productive accumulation is individually determined and not generalizable to a population threshold."
+    },
+    {
+      "claim": "Individual volume tolerance varies substantially based on training age, recovery capacity, and life stress",
+      "confidence": 0.80,
+      "score_type": "BAC",
+      "notes": "High confidence because the sources of variation each have independent mechanistic and empirical support: training age increases work capacity and MPS efficiency; sleep deprivation reduces MPS and elevates cortisol; caloric deficit reduces anabolic signalling; psychological stress elevates cortisol and reduces recovery capacity. The claim that these factors modulate volume tolerance is derivable from the physiology of each factor. This is the highest-confidence claim in the entry and the most important for practical application."
+    }
+  ],
+
+  "volume_landmark_definitions": {
+    "MEV": "Minimum effective volume — the least weekly training volume per muscle group that produces detectable positive adaptation. Below MEV, training produces maintenance at best.",
+    "MAV": "Maximum adaptive volume — the volume range producing the most adaptation per unit of effort, situated between MEV and MRV.",
+    "MRV": "Maximum recoverable volume — the highest weekly volume per muscle group from which full recovery is possible before the next training session targeting that muscle group. Above MRV, fatigue accumulates across sessions.",
+    "note": "These are conceptual landmarks, not fixed numbers. They must be individually estimated from training response and adjusted based on current recovery status. No published table of universal values should be treated as prescriptive."
+  },
+
+  "conflicting_evidence": "Some research questions whether formal periodized structures add value beyond applying consistent progressive overload. Mattocks et al. 2016 (Journal of Trainology) reviewed periodization evidence and found limited support for the superiority of any specific periodization structure over consistent progressive loading. This does not directly contradict fatigue management principles — it challenges whether formal mesocycle structure is necessary rather than whether fatigue accumulates. The overtraining literature shows high individual variation in the volume that triggers non-functional overreaching, making population-level MRV thresholds difficult to specify.",
+
+  "what_would_change_this": "Direct RCT measuring MPS (via biopsy) and structural hypertrophy (ultrasound) during high-volume accumulation phases alongside performance markers would confirm whether adaptation is accruing while performance declines. Studies comparing identical total volume distributed with versus without a planned deload would test whether the accumulation-deload structure produces meaningfully different outcomes than continuous moderate-volume training matched for total work.",
+
+  "open_question": true,
+  "open_question_note": "Optimal accumulation length, deload depth, and deload frequency for different training populations and goals are not established from controlled research. Whether a structured deload week is superior to auto-regulated load reduction has not been definitively tested. MEV and MRV values across individual muscle groups have not been empirically mapped under controlled conditions — current estimates are derived from aggregate training response observation rather than experimental isolation.",
+
+  "practical_summary": "When volume is high and performance is declining, the dip is expected — it is fatigue sitting on top of adaptation. Take the planned deload when scheduled. You need far less volume to keep what you have built than to build it — drop volume substantially during high-stress life periods without fearing regression. Your maximum recoverable volume is not fixed: a deficit, poor sleep, or demanding work period all lower it. Treat individual volume tolerance as a variable to calibrate continuously, not a fixed number to hit.",
+
+  "added_by": "founder",
+  "date_added": "2026-04-17",
+  "last_reviewed": "2026-04-17",
+  "next_review": "2028-04-17",
+  "review_trigger": "24-month default for BAC/consensus entries. Triggered immediately on any RCT or meta-analysis directly testing deload frequency effects on hypertrophy outcomes, or studies empirically establishing MEV/MRV thresholds in controlled conditions, published in Sports Medicine, JSCR, or EJSS."
+}

@@ -1,0 +1,146 @@
+{
+  "id": "training-progression-models-001",
+  "domain": "training",
+  "subdomain": "program_design",
+  "tags": ["progression", "linear-progression", "nonlinear-periodization", "DUP", "periodization", "progressive-overload", "training-age", "novice", "intermediate", "advanced", "program-design"],
+
+  "score_type": "hybrid",
+
+  "claim": "Training age is the primary determinant of which progression model is appropriate. Linear progression — adding load each session — is most effective for novice trainees because session-to-session adaptation is physiologically possible. Nonlinear periodization, which varies intensity and volume within shorter cycles, is more appropriate for intermediate and advanced trainees where session-to-session adaptation is no longer achievable. Daily undulating periodization (DUP) varies the training stimulus within the week and may preserve multiple strength qualities simultaneously. Progressive overload is the non-negotiable constant across all models — the model determines how overload is applied, not whether it is applied.",
+
+  "grade": "low",
+  "source_type": "consensus_review",
+
+  "applies_to": {
+    "training_age": "all — model selection is the training-age-dependent variable",
+    "natural_status": "any",
+    "sex": "any",
+    "goal": "strength, hypertrophy, or both"
+  },
+
+  "biological_plausibility": {
+    "passes": true,
+    "mechanism": "The appropriateness of progression model is mechanistically linked to adaptation rate. Novice trainees have high sensitivity to training stimuli — substantial neural adaptations (motor unit recruitment, rate coding, intermuscular coordination) occur within each session, producing measurable strength increases session to session. This rate of adaptation means LP — which increases load each session — matches the adaptation rate and provides a new, progressive stimulus at every training opportunity. As training age increases, the marginal neural adaptation per session decreases and the structural adaptations (hypertrophy, connective tissue remodelling) that drive further progress occur over longer time scales (weeks rather than sessions). LP fails at this stage because the load increment required to produce adaptation now exceeds what can be recovered between single sessions. Nonlinear models address this by varying the stimulus across sessions or weeks — preventing accommodation (repeated bout effect leading to diminishing returns) and allowing recovery between high-intensity exposures while maintaining total volume. DUP specifically varies load and rep range within the week, maintaining exposure to multiple force-velocity curve positions and potentially preserving a broader range of strength qualities than single-modality weekly blocks. Progressive overload — the systematic increase in training demand over time — is the mechanism by which all models drive adaptation. Model choice only determines the temporal pattern of overload application."
+  },
+
+  "bac_score": 0.67,
+  "bac_dimensions": {
+    "derivation": {
+      "score": 0.75,
+      "basis": "The logical framework is well-grounded: session-to-session adaptation is possible in novices (established from neural adaptation literature and early training response data); as training age increases, adaptation time scale lengthens (established from MPS literature — Kim et al. 2005, Tang et al. 2008 — showing attenuated MPS response per session in trained vs untrained). The inference that LP matches novice adaptation rate and becomes insufficient for trained individuals follows directly from these empirical observations. Progressive overload as the mechanistic constant is nearly axiomatically derivable — without progressive demand increase, accommodation occurs and adaptation stalls. Rated 0.75 rather than 1.00 because the specific transition points between training age categories and model appropriateness are not geometrically calculable — they require empirical estimation from training response, introducing practitioner interpretation into the otherwise logical framework."
+    },
+    "replication": {
+      "score": 0.75,
+      "basis": "The training-age-as-moderator framework is consistent across ACSM Position Stand (2009), Kraemer & Ratamess 2004, NSCA Essentials (Haff & Triplett 2016), and the broader periodization science tradition (Bompa & Haff). Multiple independent professional consensus bodies and academic sources converge on training age as the primary variable determining model complexity requirements. The specific superiority of LP for novices and nonlinear models for advanced trainees is replicated conceptually across sources. Grgic et al. 2017 adds empirical confirmation that LP and DUP are equivalent for hypertrophy when volume is equated — consistent with the claim that model differences matter less than progressive overload application. Rated 0.75 rather than 1.00 because direct head-to-head RCTs of LP vs NLP stratified by training age are limited in number and power."
+    },
+    "transferability": {
+      "score": 0.50,
+      "basis": "The directional principle — novices respond to LP, advanced trainees require more complex variation — is broadly applicable. However, meaningful individual variation exists in the rate of transition between training age categories and in the response to specific models. Some individuals progress on LP longer than the average novice timeline; others plateau earlier. Recovery genetics, sleep quality, stress load, and programming history all modulate where on the novice-to-advanced spectrum a given individual sits at a given time. DUP response particularly varies with individual recovery between daily sessions of different intensities. Rated 0.50 because while the directional framework is universal, the practical prescription requires individual assessment rather than demographic category assignment."
+    }
+  },
+  "bac_basis": "BAC = (0.75 + 0.75 + 0.50) / 3 = 0.67. The logical framework linking training age to model appropriateness is well-grounded in adaptation rate physiology and replicated across independent consensus sources. Derivation and replication at 0.75 reflect empirically grounded logic rather than pure geometry. Transferability at 0.50 reflects genuine individual variation in transition points between training age categories. BAC applies to the structural claims: that LP matches novice adaptation rate, that progressive overload is non-negotiable, and that training age determines model complexity requirements — not to outcome claims about hypertrophy or strength magnitudes.",
+
+  "eqs": 0.25,
+  "eqs_basis": "GRADE very low for model superiority outcome claims. Direct RCT evidence comparing LP, NLP, and DUP outcomes is limited and shows minimal differences when volume is equated (Grgic et al. 2017: pooled d = -0.02 for LP vs DUP on hypertrophy, p=0.848). No well-powered RCT stratified by training age directly compares LP vs NLP for strength or hypertrophy in trained populations. ACSM and Kraemer & Ratamess recommendations are consensus-based, not RCT-derived. Population match partial — training-age-stratified evidence is limited. EQS = 0.25 reflects very low GRADE evidence for specific model outcome superiority despite high BAC confidence in the structural logic framework.",
+
+  "sources": [
+    {
+      "citation": "American College of Sports Medicine. Position Stand: Progression Models in Resistance Training for Healthy Adults. Medicine & Science in Sports & Exercise. 2009;41(3):687–708.",
+      "type": "consensus_position_stand",
+      "authority": "ACSM Position Stand — the primary consensus reference for evidence-based resistance training prescription. Synthesises available evidence on training variables including progression model selection.",
+      "relevant_content": "Establishes training status (novice, intermediate, advanced) as the primary variable determining appropriate progression model. Recommends LP for novice trainees due to the rapid session-to-session neural adaptations available in this population. Recommends periodized, more complex programming for intermediate and advanced trainees. Identifies progressive overload as the fundamental principle underlying all models. Documents that multiple-set, periodized programs produce superior long-term outcomes to single-set or non-periodized programs in trained individuals.",
+      "coi_check": "ACSM position stand. No commercial conflict."
+    },
+    {
+      "citation": "Kraemer WJ, Ratamess NA. Fundamentals of Resistance Training: Progression and Exercise Prescription. Medicine & Science in Sports & Exercise. 2004;36(4):674–688.",
+      "type": "consensus_review",
+      "authority": "William Kraemer (UConn) and Nicholas Ratamess — foundational review establishing resistance training progression principles. Widely cited as the mechanistic basis for NSCA and ACSM training recommendations.",
+      "relevant_content": "Training age as the primary moderator of periodization complexity requirements. Novice trainees: session-to-session neural adaptations allow LP to function — each session provides sufficient stimulus and recovery for performance to increase by the next session. Intermediate trainees: adaptation time scale extends to weeks — weekly periodization (undulating or linear mesocycle blocks) required. Advanced trainees: adaptation occurs across months — complex periodization with block structures and varied stimuli needed to continue driving adaptation. Progressive overload as the mechanistic non-negotiable — without it, the repeated bout effect leads to accommodation and plateaus. Reviews evidence for multi-set, periodized programs producing superior outcomes in trained populations versus non-periodized approaches.",
+      "coi_check": "Academic review. No commercial conflict."
+    },
+    {
+      "citation": "Grgic J, Mikulic P, Podnar H, Pedisic Z. Effects of linear and daily undulating periodized resistance training programs on measures of muscle hypertrophy: a systematic review and meta-analysis. PeerJ. 2017;5:e3695. PMID 28497285.",
+      "type": "systematic_review_meta_analysis",
+      "authority": "See full entry training-periodization-001 for complete analysis.",
+      "relevant_content": "13 studies, n=417, avg 12 weeks. Pooled Cohen's d = -0.02 (95% CI [-0.25, 0.21], p=0.848) for LP vs DUP on hypertrophy — no significant difference. Supports the claim that model differences are secondary to volume and progressive overload. Most studies in untrained populations — limited evidence for trained-specific model comparisons. Conclusion: when volume is equated, LP and DUP produce equivalent hypertrophy regardless of periodization structure.",
+      "coi_check": "No funding. No COI declared.",
+      "practical_translation": {
+        "text": "Study population was predominantly untrained young adults (12/13 studies). Effect observed was no significant difference between LP and DUP on hypertrophy when volume is equated (d = -0.02). This translates to: in untrained populations, model choice does not determine hypertrophy outcome — volume and progressive overload do. For trained individuals, the evidence is insufficient to draw strong conclusions from this meta-analysis specifically. Confidence in this translation: moderate for untrained populations, low for trained.",
+        "confidence": "moderate",
+        "confidence_basis": "13 studies with consistent null finding; robust sensitivity analyses. Generalizability to trained individuals limited by population of included studies."
+      }
+    }
+  ],
+
+  "key_claims": [
+    {
+      "claim": "Linear progression — adding load each session — is most effective for novice trainees where session-to-session adaptation is physiologically achievable",
+      "confidence": 0.72,
+      "score_type": "BAC",
+      "notes": "Logically grounded: novice trainees produce measurable neural adaptations (motor unit recruitment, rate coding, intermuscular coordination) within single sessions, allowing performance to increase by the next session. LP provides a progressively increasing stimulus at every training opportunity, matching this adaptation rate. Confidence below 0.85 because the precise duration of the novice linear progression window varies individually and is not established from a direct RCT with LP vs other models in novices only."
+    },
+    {
+      "claim": "Nonlinear periodization is more appropriate for intermediate and advanced trainees where session-to-session adaptation is no longer possible",
+      "confidence": 0.68,
+      "score_type": "BAC",
+      "notes": "Grounded in adaptation rate physiology — MPS response per session is attenuated in trained vs untrained (Kim et al. 2005; Tang et al. 2008). As training age increases, meaningful adaptation requires more accumulated volume and longer recovery windows than single sessions provide, making LP insufficient. Nonlinear models address accommodation by varying the stimulus. Confidence limited by sparse direct RCT comparisons of LP vs NLP in trained populations stratified by training age."
+    },
+    {
+      "claim": "Daily undulating periodization varies the training stimulus within the week and may preserve multiple strength qualities simultaneously",
+      "confidence": 0.60,
+      "score_type": "BAC",
+      "notes": "Mechanistically supported — varying load and rep range across sessions maintains exposure to multiple points on the force-velocity curve, preventing specific accommodation. The 'simultaneous qualities' claim is partially supported by Grgic et al. 2017 showing DUP equivalent to LP for hypertrophy, with some studies showing slightly greater DUP advantage in direct hypertrophy measures (non-significant). Confidence limited by Grgic 2017's predominantly untrained population and the Harries et al. 2015 meta-analysis showing no LP vs NLP difference for strength either."
+    },
+    {
+      "claim": "Progressive overload is the non-negotiable constant across all progression models",
+      "confidence": 0.88,
+      "score_type": "BAC",
+      "notes": "Near-axiomatically true within the mechanistic framework. Without progressive demand increase, accommodation occurs: the repeated bout effect reduces MPS response, neural adaptation plateaus, and muscle protein synthesis returns to baseline. The only debate is over the temporal pattern of overload application (linear vs nonlinear vs block), not whether overload must be applied. Highest-confidence claim in this entry."
+    },
+    {
+      "claim": "Training age is the primary determinant of which progression model is appropriate",
+      "confidence": 0.72,
+      "score_type": "BAC",
+      "notes": "Consistent across ACSM, Kraemer & Ratamess, and NSCA consensus. Supported by the mechanistic logic linking adaptation rate to session-to-session recovery capacity. Confidence below 0.85 because training age is not always easily operationalised (training consistency, technique history, and training quality modulate effective training age independently of chronological training years), and the precise transition point between novice LP appropriateness and intermediate nonlinear requirements is not empirically established with precision."
+    }
+  ],
+
+  "model_comparison": {
+    "linear_progression": {
+      "structure": "Same movement pattern, fixed volume, load increases each session",
+      "best_for": "Novice trainees — first 3-12 months of consistent training",
+      "limitation": "Requires session-to-session adaptation capacity; fails once neural gains plateau and structural adaptation dominates"
+    },
+    "nonlinear_periodization": {
+      "structure": "Varies intensity and volume within cycles shorter than classic LP mesocycles",
+      "best_for": "Intermediate to advanced trainees",
+      "subtypes": {
+        "weekly_undulating": "Volume and intensity vary week to week within a mesocycle",
+        "daily_undulating": "Volume and intensity vary session to session within the week (e.g. power day, hypertrophy day, strength day)"
+      },
+      "limitation": "Requires more programming complexity; recovery between sessions of different intensities is critical"
+    },
+    "block_periodization": {
+      "structure": "Sequential mesocycles each targeting a specific quality (accumulation, transmutation, realization)",
+      "best_for": "Advanced trainees, peaking for competition",
+      "limitation": "Quality-specific gains during one block may partially detrain during subsequent blocks"
+    }
+  },
+
+  "conflicting_evidence": "Grgic et al. 2017 found no significant difference between LP and DUP for hypertrophy (d = -0.02) when volume is equated — directly challenging any claim of DUP superiority for untrained populations. Harries et al. 2015 (JSCR) found no significant differences between LP and undulating periodization for strength either. Mattocks et al. 2016 questioned whether periodization adds value beyond consistent progressive loading in any population. These findings are consistent with the entry's position that volume and progressive overload are primary drivers — but they reduce confidence in claims about model-specific hypertrophy or strength advantages.",
+
+  "what_would_change_this": "A well-powered RCT directly comparing LP vs NLP in novice, intermediate, and advanced trainees separately — with training age rigorously defined and volume equated — would either confirm or challenge the training-age-as-moderator framework with direct outcome evidence. Evidence that LP produces equivalent long-term outcomes in trained individuals when load is systematically progressed over longer time horizons would reduce confidence in nonlinear models' specific necessity.",
+
+  "open_question": true,
+  "open_question_note": "The precise transition point from novice to intermediate — where LP becomes insufficient and nonlinear models become necessary — is not empirically established. Whether DUP preserves multiple qualities simultaneously better than LP in trained populations has not been tested with adequate power. The relative contribution of model structure versus adherence and preference to long-term outcomes is unknown.",
+
+  "practical_summary": "Match the model to the training age. If the trainee can still add weight to the bar every session — they are a novice and LP is the most efficient path. Once session-to-session progress stalls, the adaptation timescale has lengthened and a model that varies the stimulus within the week or mesocycle is needed. The specific model (DUP, block, weekly undulating) matters less than ensuring progressive overload continues and volume is sufficient. Model choice can legitimately be driven by adherence, preference, and schedule fit when the fundamental variables — volume and overload — are in place.",
+
+  "cross_reference": "See training-periodization-001 (Grgic et al. 2017) for direct evidence on LP vs DUP hypertrophy outcomes. See training-fatigue-management-001 for the MEV/MRV volume landmark framework that determines how much volume is applied within any progression model. See hypertrophy-progressive-overload-volume for the volume dose-response evidence base.",
+
+  "added_by": "founder",
+  "date_added": "2026-04-17",
+  "last_reviewed": "2026-04-17",
+  "next_review": "2027-04-17",
+  "review_trigger": "Any RCT or meta-analysis comparing LP vs NLP stratified by training age with direct hypertrophy or strength outcome measures, published in JSCR, Sports Medicine, MSSE, or EJSS."
+}
