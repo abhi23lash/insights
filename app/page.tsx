@@ -1,79 +1,101 @@
 'use client'
 
-import { useRef, useState } from 'react'
-import { Field } from './components/Field'
+import { useEffect, useRef, useState } from 'react'
 import { ConfidenceLine } from './components/ConfidenceLine'
-
-type FormState = {
-  age: string
-  trainingAge: string
-  goal: string
-  daysPerWeek: string
-}
+import { TextArea } from './components/TextArea'
+import { LoadingIndicator } from './components/LoadingIndicator'
 
 type Result = {
   recommendation: string
-  confidence: number
+  confidence: number | null
   reasoning: string
   whatWouldChangeThis: string
 }
 
-type Errors = Partial<Record<keyof FormState, string>>
+type Turn =
+  | { role: 'user'; content: string }
+  | { role: 'assistant'; kind: 'text'; content: string }
+  | { role: 'assistant'; kind: 'recommendation'; result: Result }
 
-const emptyForm: FormState = { age: '', trainingAge: '', goal: '', daysPerWeek: '' }
+type ApiResponse = { type: 'ask'; question: string } | ({ type: 'recommendation' } & Result) | { error: string }
 
-function validate(form: FormState): Errors {
-  const errors: Errors = {}
-
-  if (!form.age.trim()) errors.age = 'Please enter your age.'
-  else if (!(Number(form.age) > 0)) errors.age = 'Age needs to be a positive number.'
-
-  if (!form.trainingAge.trim()) errors.trainingAge = 'Please enter how many years you have trained.'
-  else if (!(Number(form.trainingAge) >= 0)) errors.trainingAge = 'Years training needs to be a positive number.'
-
-  if (!form.goal.trim()) errors.goal = 'Please enter a training goal.'
-
-  if (!form.daysPerWeek.trim()) errors.daysPerWeek = 'Please enter how many days you can train.'
-  else if (!(Number(form.daysPerWeek) > 0)) errors.daysPerWeek = 'Days per week needs to be a positive number.'
-
-  return errors
+function toApiMessage(turn: Turn) {
+  if (turn.role === 'user') return { role: 'user' as const, content: turn.content }
+  if (turn.kind === 'text') return { role: 'assistant' as const, content: turn.content }
+  const confidenceText = turn.result.confidence === null ? 'not applicable' : `${turn.result.confidence}%`
+  return {
+    role: 'assistant' as const,
+    content: `Recommendation: ${turn.result.recommendation} (confidence ${confidenceText}). Reasoning: ${turn.result.reasoning}`,
+  }
 }
 
 export default function Home() {
-  const [form, setForm] = useState<FormState>(emptyForm)
-  const [errors, setErrors] = useState<Errors>({})
+  const [turns, setTurns] = useState<Turn[]>([])
+  const [draft, setDraft] = useState('')
   const [status, setStatus] = useState<'idle' | 'loading' | 'error'>('idle')
-  const [result, setResult] = useState<Result | null>(null)
-  const firstErrorRef = useRef<HTMLDivElement>(null)
+  const bottomRef = useRef<HTMLDivElement>(null)
+  const composerRef = useRef<HTMLTextAreaElement>(null)
 
-  const handleSubmit = async () => {
-    const nextErrors = validate(form)
-    setErrors(nextErrors)
+  useEffect(() => {
+    bottomRef.current?.scrollIntoView({ behavior: 'smooth' })
+  }, [turns, status])
 
-    if (Object.keys(nextErrors).length > 0) {
-      requestAnimationFrame(() => firstErrorRef.current?.focus())
-      return
-    }
+  useEffect(() => {
+    if (status === 'idle') composerRef.current?.focus({ preventScroll: true })
+  }, [status])
 
+  const send = async (nextTurns: Turn[]) => {
+    setTurns(nextTurns)
     setStatus('loading')
-    setResult(null)
 
     try {
       const res = await fetch('/api/recommend', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(form),
+        body: JSON.stringify({ messages: nextTurns.map(toApiMessage) }),
       })
 
       if (!res.ok) throw new Error('request failed')
 
-      const data = await res.json()
-      if (data.error) throw new Error(data.error)
+      const data: ApiResponse = await res.json()
+      if ('error' in data) throw new Error(data.error)
 
-      setResult(data)
+      if (data.type === 'ask') {
+        setTurns([...nextTurns, { role: 'assistant', kind: 'text', content: data.question }])
+      } else {
+        setTurns([
+          ...nextTurns,
+          {
+            role: 'assistant',
+            kind: 'recommendation',
+            result: {
+              recommendation: data.recommendation,
+              confidence: data.confidence,
+              reasoning: data.reasoning,
+              whatWouldChangeThis: data.whatWouldChangeThis,
+            },
+          },
+        ])
+      }
       setStatus('idle')
     } catch {
       setStatus('error')
+    }
+  }
+
+  const handleSend = () => {
+    if (!draft.trim()) return
+    const nextTurns: Turn[] = [...turns, { role: 'user', content: draft }]
+    setDraft('')
+    send(nextTurns)
+  }
+
+  const handleRetry = () => send(turns)
+
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault()
+      handleSend()
     }
   }
 
@@ -88,103 +110,107 @@ export default function Home() {
         </p>
       </header>
 
-      <div className="flex flex-col gap-[var(--space-md)]">
-        <Field
-          id="age"
-          label="Age"
-          placeholder="e.g. 28"
-          type="number"
-          inputMode="numeric"
-          value={form.age}
-          onChange={v => setForm({ ...form, age: v })}
-          error={errors.age}
-        />
-        <Field
-          id="trainingAge"
-          label="Years training"
-          placeholder="e.g. 3"
-          type="number"
-          inputMode="numeric"
-          value={form.trainingAge}
-          onChange={v => setForm({ ...form, trainingAge: v })}
-          error={errors.trainingAge}
-        />
-        <Field
-          id="goal"
-          label="Primary goal"
-          placeholder="e.g. hypertrophy, strength, fat loss"
-          value={form.goal}
-          onChange={v => setForm({ ...form, goal: v })}
-          error={errors.goal}
-        />
-        <Field
-          id="daysPerWeek"
-          label="Days available per week"
-          placeholder="e.g. 4"
-          type="number"
-          inputMode="numeric"
-          value={form.daysPerWeek}
-          onChange={v => setForm({ ...form, daysPerWeek: v })}
-          error={errors.daysPerWeek}
-        />
-
-        <div className="mt-[var(--space-2xs)]">
-          <button
-            onClick={handleSubmit}
-            disabled={status === 'loading'}
-            className="bg-[var(--color-ink)] text-[var(--color-surface)] text-base rounded-[6px] px-[var(--space-md)] py-[var(--space-xs)] transition-colors duration-150 hover:bg-[var(--color-ink-hover)] disabled:opacity-60"
+      <div className="flex flex-col gap-[var(--space-lg)]" aria-live="polite" aria-atomic="false">
+        {turns.map((turn, i) => (
+          <div
+            key={i}
+            className="flex flex-col gap-[var(--space-2xs)] motion-safe:animate-[turn-in_220ms_cubic-bezier(0.22,1,0.36,1)]"
           >
-            {status === 'loading' ? 'Reading the evidence…' : 'Get my recommendation'}
-          </button>
-        </div>
+            <p className="text-xs font-medium tracking-[0.08em] uppercase text-[var(--color-text-muted)]">
+              {turn.role === 'user' ? 'You' : 'Pramana'}
+            </p>
+
+            {turn.role === 'user' && (
+              <p className="text-base leading-relaxed text-[var(--color-text)] max-w-[65ch]">{turn.content}</p>
+            )}
+
+            {turn.role === 'assistant' && turn.kind === 'text' && (
+              <p className="text-base leading-relaxed text-[var(--color-text)] max-w-[65ch]">{turn.content}</p>
+            )}
+
+            {turn.role === 'assistant' && turn.kind === 'recommendation' && (
+              <div className="flex flex-col gap-[var(--space-md)]">
+                <p className="font-[family-name:var(--font-serif)] text-[1.25rem] leading-relaxed text-[var(--color-text)] text-balance">
+                  {turn.result.recommendation}
+                </p>
+
+                <ConfidenceLine confidence={turn.result.confidence} />
+
+                <section className="flex flex-col gap-[var(--space-2xs)]">
+                  <h2 className="text-xs font-medium tracking-[0.08em] uppercase text-[var(--color-text-muted)]">
+                    Reasoning
+                  </h2>
+                  <p className="text-base leading-relaxed text-[var(--color-text-secondary)] max-w-[65ch]">
+                    {turn.result.reasoning}
+                  </p>
+                </section>
+
+                <section className="flex flex-col gap-[var(--space-2xs)]">
+                  <h2 className="text-xs font-medium tracking-[0.08em] uppercase text-[var(--color-text-muted)]">
+                    What would change this
+                  </h2>
+                  <p className="text-base leading-relaxed text-[var(--color-text-secondary)] max-w-[65ch]">
+                    {turn.result.whatWouldChangeThis}
+                  </p>
+                </section>
+              </div>
+            )}
+          </div>
+        ))}
+
+        {status === 'loading' && (
+          <div className="flex flex-col gap-[var(--space-2xs)] motion-safe:animate-[turn-in_220ms_cubic-bezier(0.22,1,0.36,1)]">
+            <p className="text-xs font-medium tracking-[0.08em] uppercase text-[var(--color-text-muted)]">Pramana</p>
+            <LoadingIndicator />
+          </div>
+        )}
 
         {status === 'error' && (
           <div
             role="alert"
-            tabIndex={-1}
-            ref={firstErrorRef}
-            className="bg-[var(--color-error-soft)] rounded-[6px] px-[var(--space-sm)] py-[var(--space-xs)]"
+            className="bg-[var(--color-error-soft)] rounded-[6px] px-[var(--space-sm)] py-[var(--space-xs)] motion-safe:animate-[turn-in_220ms_cubic-bezier(0.22,1,0.36,1)]"
           >
             <p className="text-sm text-[var(--color-error)]">
               We couldn&apos;t reach Pramana&apos;s evidence engine. Check your connection and try again.
             </p>
             <button
-              onClick={handleSubmit}
-              className="mt-[var(--space-2xs)] text-sm font-medium text-[var(--color-error)] underline underline-offset-2"
+              onClick={handleRetry}
+              className="mt-[var(--space-2xs)] text-sm font-medium text-[var(--color-error)] underline underline-offset-2 outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-error)]"
             >
               Try again
             </button>
           </div>
         )}
+
+        <div ref={bottomRef} />
       </div>
 
-      {result && (
-        <div className="mt-[var(--space-2xl)] pt-[var(--space-lg)] border-t border-[var(--color-border)] flex flex-col gap-[var(--space-lg)]">
-          <p className="font-[family-name:var(--font-serif)] text-[1.25rem] leading-relaxed text-[var(--color-text)] text-balance">
-            {result.recommendation}
-          </p>
-
-          <ConfidenceLine confidence={result.confidence} />
-
-          <section className="flex flex-col gap-[var(--space-2xs)]">
-            <h2 className="text-xs font-medium tracking-[0.08em] uppercase text-[var(--color-text-muted)]">
-              Reasoning
-            </h2>
-            <p className="text-base leading-relaxed text-[var(--color-text-secondary)] max-w-[65ch]">
-              {result.reasoning}
-            </p>
-          </section>
-
-          <section className="flex flex-col gap-[var(--space-2xs)]">
-            <h2 className="text-xs font-medium tracking-[0.08em] uppercase text-[var(--color-text-muted)]">
-              What would change this
-            </h2>
-            <p className="text-base leading-relaxed text-[var(--color-text-secondary)] max-w-[65ch]">
-              {result.whatWouldChangeThis}
-            </p>
-          </section>
+      <div className="mt-[var(--space-xl)] pt-[var(--space-lg)] border-t border-[var(--color-border)] flex flex-col gap-[var(--space-xs)]">
+        <TextArea
+          ref={composerRef}
+          id="composer"
+          label={turns.length === 0 ? 'Your context' : 'Reply'}
+          rows={turns.length === 0 ? 4 : 2}
+          placeholder={
+            turns.length === 0
+              ? "e.g. I'm 28, I've been lifting for 3 years, I want to build muscle, and I can train 4 days a week."
+              : 'Ask a follow-up, or add more detail...'
+          }
+          value={draft}
+          onChange={setDraft}
+          onKeyDown={handleKeyDown}
+        />
+        <div className="flex items-center gap-[var(--space-sm)]">
+          <button
+            onClick={handleSend}
+            disabled={status === 'loading' || !draft.trim()}
+            className="bg-[var(--color-ink)] text-[var(--color-surface)] text-base rounded-[6px] px-[var(--space-md)] py-[var(--space-xs)] transition-colors duration-150 hover:bg-[var(--color-ink-hover)] disabled:opacity-40 outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-ink)]"
+          >
+            {status === 'loading' ? 'Reading the evidence…' : 'Send'}
+          </button>
+          <p className="text-xs text-[var(--color-text-muted)]">Enter to send, Shift+Enter for a new line</p>
         </div>
-      )}
+      </div>
     </main>
   )
 }

@@ -5,7 +5,15 @@ function bandFor(confidence: number) {
   return { label: 'very low', low: true }
 }
 
-export function ConfidenceLine({ confidence }: { confidence: number }) {
+export function ConfidenceLine({ confidence }: { confidence: number | null }) {
+  if (confidence === null) {
+    return (
+      <p className="text-base text-[var(--color-text-secondary)]">
+        Confidence: <span className="text-[var(--color-text-muted)]">not applicable</span>, since this isn&apos;t GRADE/EQS-scored outcome research and there&apos;s no percentage to give.
+      </p>
+    )
+  }
+
   const band = bandFor(confidence)
 
   return (
