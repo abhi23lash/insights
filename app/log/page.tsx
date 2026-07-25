@@ -310,14 +310,14 @@ export default function LogSession() {
         />
       ) : (
         <div className="flex flex-col gap-[var(--space-lg)]">
-          <div className="flex items-center justify-between">
+          <div className="flex flex-col gap-[var(--space-sm)]">
             <ActiveContextCheckIn sessionId={sessionId} />
             {loggedSets.length > 0 && (
               <button
                 type="button"
                 onClick={handleFinishSession}
                 disabled={closingSession}
-                className="text-sm text-[var(--color-ink)] underline underline-offset-2 disabled:opacity-40 outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-ink)]"
+                className="self-start text-sm text-[var(--color-ink)] underline underline-offset-2 disabled:opacity-40 outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-ink)]"
               >
                 {closingSession ? 'Finishing…' : 'Finish session'}
               </button>
@@ -366,6 +366,7 @@ export default function LogSession() {
                   key={t.value}
                   type="button"
                   onClick={() => setSetType(t.value)}
+                  aria-pressed={setType === t.value}
                   className={`text-sm rounded-[6px] px-[var(--space-sm)] py-[var(--space-2xs)] transition-colors duration-150 outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-ink)] ${
                     setType === t.value
                       ? 'bg-[var(--color-ink)] text-[var(--color-surface)]'

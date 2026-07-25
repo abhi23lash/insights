@@ -107,6 +107,7 @@ export function ActiveContextCheckIn({ sessionId }: ActiveContextCheckInProps) {
                     type="button"
                     onClick={() => setSoreness(prev => ({ ...prev, [group]: level }))}
                     aria-label={`${group} soreness ${level}`}
+                    aria-pressed={soreness[group] === level}
                     className={`w-8 h-8 text-sm rounded-[6px] transition-colors duration-150 outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-ink)] ${
                       soreness[group] === level
                         ? 'bg-[var(--color-ink)] text-[var(--color-surface)]'
@@ -130,6 +131,8 @@ export function ActiveContextCheckIn({ sessionId }: ActiveContextCheckInProps) {
               key={level}
               type="button"
               onClick={() => setFatigue(level)}
+              aria-label={`Fatigue ${level}`}
+              aria-pressed={fatigue === level}
               className={`w-8 h-8 text-sm rounded-[6px] transition-colors duration-150 outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-ink)] ${
                 fatigue === level
                   ? 'bg-[var(--color-ink)] text-[var(--color-surface)]'
