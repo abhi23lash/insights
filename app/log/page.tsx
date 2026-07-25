@@ -281,9 +281,14 @@ export default function LogSession() {
             Pick an exercise, log sets as you go.
           </p>
         </div>
-        <Link href="/" className="text-sm text-[var(--color-text-secondary)] underline underline-offset-2">
-          Back to chat
-        </Link>
+        <div className="flex items-baseline gap-[var(--space-sm)]">
+          <Link href="/settings" className="text-sm text-[var(--color-text-secondary)] underline underline-offset-2">
+            Settings
+          </Link>
+          <Link href="/" className="text-sm text-[var(--color-text-secondary)] underline underline-offset-2">
+            Back to chat
+          </Link>
+        </div>
       </header>
 
       {!sessionId ? (
