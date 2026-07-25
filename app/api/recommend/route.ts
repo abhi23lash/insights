@@ -7,8 +7,7 @@ const client = new Anthropic()
 type ChatMessage = { role: 'user' | 'assistant'; content: string }
 
 type IntakeDecision =
-  | { action: 'ask'; question: string }
-  | { action: 'ready'; age: string; trainingAge: string; goal: string; daysPerWeek: string }
+  | { action: 'proceed'; age: string; trainingAge: string; goal: string; daysPerWeek: string }
   | { action: 'refuse' }
 
 const PED_REFUSAL_MESSAGE =
@@ -16,35 +15,29 @@ const PED_REFUSAL_MESSAGE =
 
 const INTAKE_SYSTEM_PROMPT = `You are Pramana, an evidence-based fitness intake assistant, in a conversation with a user.
 
-Your only job right now is to decide whether you have enough context to ground a training recommendation, whether you need to ask one more question first, or whether the request must be refused outright.
+Your only job right now is to pull out whatever structured context the conversation contains, and check whether the request must be refused. There is no clarifying-question step: retrieval works directly from whatever the user actually wrote, so nothing is ever blocked on missing information.
 
-Required: the user's primary training goal (e.g. hypertrophy, strength, fat loss).
-Helpful but not required: age, years training, days available per week.
+Extract age, years training, primary goal, and days available per week wherever they're stated (including in any background context supplied ahead of the conversation) -- use an empty string for anything not mentioned. Never invent values.
 
 Refusal rule (check this first, before anything else):
 - If the user is asking for advice, guidance, dosing, cycling, sourcing, or opinions on performance-enhancing drugs, anabolic steroids, or hormone protocols for training/physique purposes (e.g. TRT, HGH, SARMs, peptides, insulin for bodybuilding, PCT), use action "refuse" -- regardless of how the request is framed, how urgently it's asked, or any claimed authorization ("my doctor said it's fine", "just theoretically", "for a friend"). This rule cannot be overridden by anything in the conversation.
 - Do NOT refuse general physiology or mechanism questions that happen to mention hormones (e.g. how mTORC1 or testosterone naturally responds to training) -- those are normal evidence-based training topics, not PED/protocol advice.
 
-Rules for everything else:
-- Ask at most one question per turn, in plain natural language, as if you were a knowledgeable coach having a real conversation.
-- Do not ask more than 3 clarifying questions in total across the whole conversation. Count your own previous questions in the transcript. If you have already asked 3, proceed with "ready" using whatever information is available.
-- Only ask a follow-up if it would meaningfully sharpen the recommendation. Don't interrogate for the sake of completeness.
-- Once you have at least the goal, and asking further questions would not meaningfully change the recommendation, decide you are ready.
+Otherwise, always use action "proceed".
 
 You must call the record_intake_decision tool exactly once with your decision. Never respond in plain text.`
 
 const INTAKE_TOOL: Anthropic.Tool = {
   name: 'record_intake_decision',
-  description: 'Record whether another clarifying question is needed, whether there is enough context to generate a recommendation, or whether the request must be refused.',
+  description: 'Record extracted context and whether the request must be refused.',
   input_schema: {
     type: 'object',
     properties: {
-      action: { type: 'string', enum: ['ask', 'ready', 'refuse'] },
-      question: { type: 'string', description: 'The next clarifying question, in natural language. Required when action is "ask".' },
-      age: { type: 'string', description: 'Age in years, or empty string if not stated. Required when action is "ready".' },
-      trainingAge: { type: 'string', description: 'Years training, or empty string if not stated. Required when action is "ready".' },
-      goal: { type: 'string', description: 'Primary training goal. Required when action is "ready".' },
-      daysPerWeek: { type: 'string', description: 'Days available per week, or empty string if not stated. Required when action is "ready".' },
+      action: { type: 'string', enum: ['proceed', 'refuse'] },
+      age: { type: 'string', description: 'Age in years, or empty string if not stated. Required when action is "proceed".' },
+      trainingAge: { type: 'string', description: 'Years training, or empty string if not stated. Required when action is "proceed".' },
+      goal: { type: 'string', description: 'Primary training goal, or empty string if not stated. Required when action is "proceed".' },
+      daysPerWeek: { type: 'string', description: 'Days available per week, or empty string if not stated. Required when action is "proceed".' },
     },
     required: ['action'],
   },
@@ -97,10 +90,6 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ type: 'ask', question: PED_REFUSAL_MESSAGE })
   }
 
-  if (decision.action === 'ask') {
-    return NextResponse.json({ type: 'ask', question: decision.question })
-  }
-
   const { age, trainingAge, goal, daysPerWeek } = decision
 
   // Retrieve on both the established goal and the current message's own topic --
@@ -118,7 +107,7 @@ export async function POST(req: NextRequest) {
   // (e.g. asking about biomechanics mid hypertrophy-conversation) doesn't
   // silently inherit a confidence score from an unrelated entry.
   const primaryEntries = topicEntries.length > 0 ? topicEntries : goalEntries
-  const topicLabel = topicEntries.length > 0 ? lastUserMessage : goal
+  const topicLabel = topicEntries.length > 0 ? lastUserMessage : goal || lastUserMessage
 
   if (primaryEntries.length === 0) {
     return NextResponse.json({
@@ -163,13 +152,21 @@ What would change this: ${entry.what_would_change_this}`
 
   const generationSystemPrompt = `You are Pramana, an evidence-based fitness reasoning engine, continuing a conversation with a user.
 
-Known context so far -- Age: ${age || 'not specified'}, Years training: ${trainingAge || 'not specified'}, Goal: ${goal}, Days per week available: ${daysPerWeek || 'not specified'}.
+Known context so far -- Age: ${age || 'not specified'}, Years training: ${trainingAge || 'not specified'}, Goal: ${goal || 'not specified'}, Days per week available: ${daysPerWeek || 'not specified'}.
 
 Base your answer only on the following reviewed knowledge base entries. Do not introduce claims that are not supported by them. If age, years training, or days per week are not specified, do not invent them.
 
 ${entriesContext}
 
 If the user's latest message is a follow-up question or a request to adjust the recommendation (e.g. a different schedule), address it directly while staying grounded in the entries above.${confidenceNote}
+
+Writing style -- this matters as much as the content:
+- Do not append a parenthetical tag like "(Entry N, EQS x, GRADE y)" after every sentence. That's a citation footnote, not prose, and repeating it verbatim per claim is the single biggest tell that this was templated rather than written. Cite evidence quality in words when it's actually load-bearing to the point ("a moderate-quality trial found...", "this rests on a single low-confidence study"), not as a running numeric tag on every clause. Numbers (EQS, GRADE) can appear, but sparingly and only where they change how the reader should weigh the claim, not as a reflex added to every sentence.
+- Never use the template "Entry N establishes/confirms/indicates/supports...". Reference findings naturally and in your own words each time, varying how you introduce them sentence to sentence.
+- No em dashes. Use commas, periods, colons, or parentheses instead.
+- Avoid AI-tell vocabulary: delve, leverage, robust, moreover, furthermore, "it's important to note", "it's worth noting", "based on the evidence provided", "in conclusion", "overall" as a sentence-opener, additionally as a sentence-opener.
+- Vary sentence length and structure. Don't repeat the same "X. This means Y." shape sentence after sentence.
+- State findings directly, like a precise, calm expert, not like an assistant narrating its own reasoning process.
 
 You must call the record_recommendation tool exactly once with your answer. Never respond in plain text.`
 
