@@ -6,6 +6,7 @@ import { NumberField } from '../components/NumberField'
 import { Stepper } from '../components/Stepper'
 import { RestTimer } from '../components/RestTimer'
 import { ExercisePicker } from '../components/ExercisePicker'
+import { ActiveContextCheckIn } from '../components/ActiveContextCheckIn'
 import { useWeightUnit } from '../hooks/useWeightUnit'
 
 type Exercise = {
@@ -237,6 +238,8 @@ export default function LogSession() {
         </button>
       ) : (
         <div className="flex flex-col gap-[var(--space-lg)]">
+          <ActiveContextCheckIn sessionId={sessionId} />
+
           {loggedSets.length > 0 && (
             <div className="flex flex-col gap-[var(--space-2xs)]" aria-live="polite" aria-atomic="false">
               {loggedSets.map(set => (

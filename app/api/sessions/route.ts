@@ -3,7 +3,7 @@ import { supabaseServer } from '@/app/lib/supabase-server'
 import { getCurrentAthleteId } from '@/app/lib/athlete'
 
 export async function POST(req: NextRequest) {
-  const { date, bodyweight, preNotes } = await req.json()
+  const { date, bodyweight, preNotes, fatigueSignal } = await req.json()
 
   const { data, error } = await supabaseServer
     .from('sessions')
@@ -12,6 +12,7 @@ export async function POST(req: NextRequest) {
       date: date ?? new Date().toISOString().slice(0, 10),
       bodyweight: bodyweight ?? null,
       pre_notes: preNotes ?? null,
+      fatigue_signal: fatigueSignal ?? null,
     })
     .select()
     .single()

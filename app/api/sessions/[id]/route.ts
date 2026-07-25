@@ -27,3 +27,22 @@ export async function GET(_req: NextRequest, { params }: { params: Promise<{ id:
 
   return NextResponse.json({ ...session, sets })
 }
+
+export async function PATCH(req: NextRequest, { params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params
+  const { fatigueSignal, postNotes, perceivedSessionQuality } = await req.json()
+
+  const updates: Record<string, unknown> = {}
+  if (fatigueSignal !== undefined) updates.fatigue_signal = fatigueSignal
+  if (postNotes !== undefined) updates.post_notes = postNotes
+  if (perceivedSessionQuality !== undefined) updates.perceived_session_quality = perceivedSessionQuality
+
+  const { data, error } = await supabaseServer.from('sessions').update(updates).eq('id', id).select().single()
+
+  if (error) {
+    console.error('Failed to update session:', error.message)
+    return NextResponse.json({ error: 'Failed to update session' }, { status: 500 })
+  }
+
+  return NextResponse.json(data)
+}
