@@ -11,6 +11,7 @@ export type KnowledgeEntry = {
   applies_to: Record<string, string>
   what_would_change_this: string
   tags: string[]
+  sources: { citation: string; pmid: string | null; doi: string | null }[]
 }
 
 const DOMAIN_KEYWORDS: Record<string, string[]> = {
@@ -54,7 +55,7 @@ export async function getMatchingEntries(goal: string, limit = 6): Promise<Knowl
 
   const { data, error } = await supabaseServer
     .from('knowledge_entries')
-    .select('id, domain, subdomain, claim, grade, source_type, eqs, applies_to, what_would_change_this, tags')
+    .select('id, domain, subdomain, claim, grade, source_type, eqs, applies_to, what_would_change_this, tags, sources')
     .eq('active', true)
 
   if (error) {

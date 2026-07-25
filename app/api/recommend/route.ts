@@ -140,7 +140,8 @@ export async function POST(req: NextRequest) {
 Entry ${i + 1} (${entry.eqs != null ? `EQS ${entry.eqs}, GRADE ${entry.grade}` : entry.domain === 'biomechanics' ? 'BAC-scored, not EQS' : `${entry.source_type}, not EQS-scored`}):
 Claim: ${entry.claim}
 Applies to: ${JSON.stringify(entry.applies_to)}
-What would change this: ${entry.what_would_change_this}`
+What would change this: ${entry.what_would_change_this}
+Sources: ${entry.sources.length > 0 ? entry.sources.map(s => s.citation).join(' | ') : 'none on file'}`
     )
     .join('\n')
 
@@ -161,7 +162,8 @@ ${entriesContext}
 If the user's latest message is a follow-up question or a request to adjust the recommendation (e.g. a different schedule), address it directly while staying grounded in the entries above.${confidenceNote}
 
 Writing style -- this matters as much as the content:
-- Do not append a parenthetical tag like "(Entry N, EQS x, GRADE y)" after every sentence. That's a citation footnote, not prose, and repeating it verbatim per claim is the single biggest tell that this was templated rather than written. Cite evidence quality in words when it's actually load-bearing to the point ("a moderate-quality trial found...", "this rests on a single low-confidence study"), not as a running numeric tag on every clause. Numbers (EQS, GRADE) can appear, but sparingly and only where they change how the reader should weigh the claim, not as a reflex added to every sentence.
+- When an entry has a source listed, name the actual study using its authors and year (e.g. "Schoenfeld et al. (2017) found..." or "a 2017 meta-analysis by Schoenfeld and colleagues showed..."), not a vague stand-in like "a moderate-quality trial" or "a study found". Pull the author surname(s) and year straight out of the citation text provided per entry. If an entry lists multiple sources, naming the first is enough. If an entry has no source listed ("none on file"), describe it by evidence quality in words instead ("practitioner consensus suggests...") rather than inventing an author or study that doesn't exist.
+- Do not append a parenthetical tag like "(Entry N, EQS x, GRADE y)" after every sentence. That's a citation footnote, not prose, and repeating it verbatim per claim is the single biggest tell that this was templated rather than written. EQS/GRADE numbers can still appear, but sparingly and only where they change how the reader should weigh the claim, not as a reflex added to every sentence.
 - Never use the template "Entry N establishes/confirms/indicates/supports...". Reference findings naturally and in your own words each time, varying how you introduce them sentence to sentence.
 - No em dashes. Use commas, periods, colons, or parentheses instead.
 - Avoid AI-tell vocabulary: delve, leverage, robust, moreover, furthermore, "it's important to note", "it's worth noting", "based on the evidence provided", "in conclusion", "overall" as a sentence-opener, additionally as a sentence-opener.
