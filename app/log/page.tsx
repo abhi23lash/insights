@@ -7,7 +7,40 @@ import { Stepper } from '../components/Stepper'
 import { RestTimer } from '../components/RestTimer'
 import { ExercisePicker } from '../components/ExercisePicker'
 import { ActiveContextCheckIn } from '../components/ActiveContextCheckIn'
+import { SessionCloseout } from '../components/SessionCloseout'
 import { useWeightUnit } from '../hooks/useWeightUnit'
+
+type PrHit = {
+  exerciseName: string
+  reps: number
+  weight: number
+  previousBest: number | null
+  isNewE1rmPr: boolean
+  estimatedE1rm: number | null
+}
+
+type DeloadReasoning = {
+  text: string
+  citedClaim: string
+  grade: string
+  eqs: number | null
+}
+
+type WorkingLoadChange = {
+  exerciseName: string
+  outcome: 'success' | 'failure'
+  isInitial: boolean
+  currentWorkingWeight: number
+  consecutiveSuccesses: number
+  consecutiveFailures: number
+  deloadSuggested: boolean
+  reasoning: DeloadReasoning | null
+}
+
+type CloseoutData = {
+  prsHit: PrHit[]
+  workingLoadChanges: WorkingLoadChange[]
+}
 
 type Exercise = {
   id: string
@@ -74,6 +107,8 @@ export default function LogSession() {
   const [rpeInput, setRpeInput] = useState('')
   const [restDuration, setRestDuration] = useState<number | null>(null)
   const [restKey, setRestKey] = useState(0)
+  const [closeoutData, setCloseoutData] = useState<CloseoutData | null>(null)
+  const [closingSession, setClosingSession] = useState(false)
 
   const weightRef = useRef<HTMLInputElement>(null)
   const { unit, step } = useWeightUnit()
@@ -193,6 +228,29 @@ export default function LogSession() {
     submitSet({ ...pendingPayload, deviationFlag: flag })
   }
 
+  const handleFinishSession = async () => {
+    if (!sessionId) return
+    setClosingSession(true)
+    try {
+      const res = await fetch(`/api/sessions/${sessionId}/close`, { method: 'POST' })
+      if (!res.ok) throw new Error('failed')
+      const data: CloseoutData = await res.json()
+      setCloseoutData(data)
+    } catch {
+      setStatus('error')
+    } finally {
+      setClosingSession(false)
+    }
+  }
+
+  const handleStartNewSession = () => {
+    setSessionId(null)
+    setLoggedSets([])
+    setCloseoutData(null)
+    setRestDuration(null)
+    resetForm()
+  }
+
   const lastSetForExercise = [...loggedSets].reverse().find(s => s.exerciseId === selectedExerciseId)
 
   const handleRepeatLastSet = () => {
@@ -236,9 +294,30 @@ export default function LogSession() {
         >
           Start session
         </button>
+      ) : closeoutData ? (
+        <SessionCloseout
+          setCount={loggedSets.length}
+          exerciseCount={new Set(loggedSets.map(s => s.exerciseId)).size}
+          unit={unit}
+          prsHit={closeoutData.prsHit}
+          workingLoadChanges={closeoutData.workingLoadChanges}
+          onStartNew={handleStartNewSession}
+        />
       ) : (
         <div className="flex flex-col gap-[var(--space-lg)]">
-          <ActiveContextCheckIn sessionId={sessionId} />
+          <div className="flex items-center justify-between">
+            <ActiveContextCheckIn sessionId={sessionId} />
+            {loggedSets.length > 0 && (
+              <button
+                type="button"
+                onClick={handleFinishSession}
+                disabled={closingSession}
+                className="text-sm text-[var(--color-ink)] underline underline-offset-2 disabled:opacity-40 outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-ink)]"
+              >
+                {closingSession ? 'Finishing…' : 'Finish session'}
+              </button>
+            )}
+          </div>
 
           {loggedSets.length > 0 && (
             <div className="flex flex-col gap-[var(--space-2xs)]" aria-live="polite" aria-atomic="false">
