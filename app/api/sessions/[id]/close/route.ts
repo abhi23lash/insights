@@ -32,6 +32,13 @@ type PrHit = {
   estimatedE1rm: number | null
 }
 
+type DeloadReasoning = {
+  text: string
+  citedClaim: string
+  grade: string
+  eqs: number | null
+}
+
 type WorkingLoadChange = {
   exerciseName: string
   outcome: 'success' | 'failure'
@@ -40,6 +47,42 @@ type WorkingLoadChange = {
   consecutiveSuccesses: number
   consecutiveFailures: number
   deloadSuggested: boolean
+  reasoning: DeloadReasoning | null
+}
+
+// Grounds the deload suggestion in the actual knowledge base rather than just
+// reporting the counter -- this is the "why", not just the "what changed".
+// Deliberately a precise tag match rather than the broader recommendation-
+// style matcher: a topic-level "training" domain match would pull in and
+// could rank a higher-EQS but irrelevant entry (e.g. periodization) above
+// the one that actually addresses fatigue/deload, since EQS-desc sorting
+// doesn't know about topical relevance within a domain.
+async function getDeloadReasoning(): Promise<DeloadReasoning | null> {
+  const { data: entries, error } = await supabaseServer
+    .from('knowledge_entries')
+    .select('claim, grade, eqs')
+    .eq('active', true)
+    .contains('tags', ['deload'])
+    .limit(1)
+
+  if (error) {
+    console.error('Failed to fetch deload reasoning entry:', error.message)
+    return null
+  }
+  if (!entries || entries.length === 0) return null
+
+  const entry = entries[0]
+
+  return {
+    text:
+      'Three consecutive difficult sessions on this lift can reflect accumulated fatigue masking your ' +
+      'true capacity rather than a real strength plateau. A deload may be warranted -- though Pramana ' +
+      "doesn't yet compute how much to reduce the weight by; that calculation is deferred to the " +
+      'evidence-grounded recommendation system, not decided here.',
+    citedClaim: entry.claim,
+    grade: entry.grade,
+    eqs: entry.eqs,
+  }
 }
 
 async function detectPrs(sessionId: string, athleteId: string, sets: SessionSet[]): Promise<PrHit[]> {
@@ -142,6 +185,7 @@ async function updateWorkingLoads(
   }
 
   const changes: WorkingLoadChange[] = []
+  let deloadReasoning: DeloadReasoning | null | undefined // undefined = not fetched yet
 
   for (const [exerciseId, exerciseSets] of byExercise) {
     const outcome = exerciseOutcome(exerciseSets)
@@ -196,6 +240,11 @@ async function updateWorkingLoads(
       continue
     }
 
+    const deloadSuggested = (row.consecutive_failures as number) >= 3
+    if (deloadSuggested && deloadReasoning === undefined) {
+      deloadReasoning = await getDeloadReasoning()
+    }
+
     changes.push({
       exerciseName,
       outcome,
@@ -203,7 +252,8 @@ async function updateWorkingLoads(
       currentWorkingWeight: row.current_working_weight as number,
       consecutiveSuccesses: row.consecutive_successes as number,
       consecutiveFailures: row.consecutive_failures as number,
-      deloadSuggested: (row.consecutive_failures as number) >= 3,
+      deloadSuggested,
+      reasoning: deloadSuggested ? (deloadReasoning ?? null) : null,
     })
   }
 
