@@ -30,13 +30,19 @@ type Result = {
 type Turn =
   | { role: 'user'; content: string }
   | { role: 'assistant'; kind: 'text'; content: string }
+  | { role: 'assistant'; kind: 'logged'; content: string }
   | { role: 'assistant'; kind: 'recommendation'; result: Result }
 
-type ApiResponse = { type: 'ask'; question: string } | ({ type: 'recommendation' } & Result) | { error: string }
+type ApiResponse =
+  | { type: 'ask'; question: string }
+  | { type: 'logged'; summary: string }
+  | ({ type: 'recommendation' } & Result)
+  | { error: string }
 
 function toApiMessage(turn: Turn) {
   if (turn.role === 'user') return { role: 'user' as const, content: turn.content }
   if (turn.kind === 'text') return { role: 'assistant' as const, content: turn.content }
+  if (turn.kind === 'logged') return { role: 'assistant' as const, content: turn.content }
   const confidenceText = turn.result.confidence === null ? 'not applicable' : `${turn.result.confidence}%`
   return {
     role: 'assistant' as const,
@@ -114,6 +120,8 @@ export default function Home() {
 
       if (data.type === 'ask') {
         setTurns([...nextTurns, { role: 'assistant', kind: 'text', content: data.question }])
+      } else if (data.type === 'logged') {
+        setTurns([...nextTurns, { role: 'assistant', kind: 'logged', content: data.summary }])
       } else {
         setTurns([
           ...nextTurns,
@@ -199,6 +207,10 @@ export default function Home() {
 
             {turn.role === 'assistant' && turn.kind === 'text' && (
               <p className="text-base leading-relaxed text-[var(--color-text)] max-w-[65ch]">{turn.content}</p>
+            )}
+
+            {turn.role === 'assistant' && turn.kind === 'logged' && (
+              <p className="text-base leading-relaxed text-[var(--color-text-secondary)] max-w-[65ch]">{turn.content}</p>
             )}
 
             {turn.role === 'assistant' && turn.kind === 'recommendation' && (

@@ -8,6 +8,8 @@ import { RestTimer } from '../components/RestTimer'
 import { ExercisePicker } from '../components/ExercisePicker'
 import { ActiveContextCheckIn } from '../components/ActiveContextCheckIn'
 import { SessionCloseout } from '../components/SessionCloseout'
+import { SessionHistorySidebar } from '../components/SessionHistorySidebar'
+import { SessionHistoryDetail } from '../components/SessionHistoryDetail'
 import { useWeightUnit } from '../hooks/useWeightUnit'
 
 type PrHit = {
@@ -109,6 +111,8 @@ export default function LogSession() {
   const [restKey, setRestKey] = useState(0)
   const [closeoutData, setCloseoutData] = useState<CloseoutData | null>(null)
   const [closingSession, setClosingSession] = useState(false)
+  const [viewingSessionId, setViewingSessionId] = useState<string | null>(null)
+  const [historyRefreshSignal, setHistoryRefreshSignal] = useState(0)
 
   const weightRef = useRef<HTMLInputElement>(null)
   const { unit, step } = useWeightUnit()
@@ -130,6 +134,7 @@ export default function LogSession() {
       const data = await res.json()
       setSessionId(data.id)
       setStatus('idle')
+      setHistoryRefreshSignal(s => s + 1)
     } catch {
       setStatus('error')
     }
@@ -179,6 +184,7 @@ export default function LogSession() {
       setStatus('idle')
       setRestDuration(REST_SECONDS[payload.setType])
       setRestKey(k => k + 1)
+      setHistoryRefreshSignal(s => s + 1)
       weightRef.current?.focus()
     } catch {
       setStatus('error')
@@ -251,6 +257,10 @@ export default function LogSession() {
     resetForm()
   }
 
+  const handleSelectHistorySession = (id: string) => {
+    setViewingSessionId(id === sessionId ? null : id)
+  }
+
   const lastSetForExercise = [...loggedSets].reverse().find(s => s.exerciseId === selectedExerciseId)
 
   const handleRepeatLastSet = () => {
@@ -271,7 +281,7 @@ export default function LogSession() {
   }
 
   return (
-    <main className="max-w-[640px] mx-auto px-[var(--space-sm)] py-[var(--space-2xl)]">
+    <main className="max-w-[900px] mx-auto px-[var(--space-sm)] py-[var(--space-2xl)]">
       <header className="mb-[var(--space-xl)] flex items-baseline justify-between">
         <div>
           <h1 className="font-[family-name:var(--font-serif)] text-[1.75rem] leading-tight text-[var(--color-text)]">
@@ -291,24 +301,35 @@ export default function LogSession() {
         </div>
       </header>
 
-      {!sessionId ? (
-        <button
-          onClick={startSession}
-          disabled={status === 'loading'}
-          className="bg-[var(--color-ink)] text-[var(--color-surface)] text-base rounded-[6px] px-[var(--space-md)] py-[var(--space-xs)] transition-colors duration-150 hover:bg-[var(--color-ink-hover)] disabled:opacity-40 outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-ink)]"
-        >
-          Start session
-        </button>
-      ) : closeoutData ? (
-        <SessionCloseout
-          setCount={loggedSets.length}
-          exerciseCount={new Set(loggedSets.map(s => s.exerciseId)).size}
-          unit={unit}
-          prsHit={closeoutData.prsHit}
-          workingLoadChanges={closeoutData.workingLoadChanges}
-          onStartNew={handleStartNewSession}
+      <div className="grid grid-cols-1 sm:grid-cols-[180px_1fr] gap-[var(--space-xl)] items-start">
+        <SessionHistorySidebar
+          activeSessionId={sessionId}
+          viewingSessionId={viewingSessionId}
+          onSelect={handleSelectHistorySession}
+          refreshSignal={historyRefreshSignal}
         />
-      ) : (
+
+        <div className="max-w-[640px] w-full">
+          {viewingSessionId ? (
+            <SessionHistoryDetail sessionId={viewingSessionId} unit={unit} onClose={() => setViewingSessionId(null)} />
+          ) : !sessionId ? (
+            <button
+              onClick={startSession}
+              disabled={status === 'loading'}
+              className="bg-[var(--color-ink)] text-[var(--color-surface)] text-base rounded-[6px] px-[var(--space-md)] py-[var(--space-xs)] transition-colors duration-150 hover:bg-[var(--color-ink-hover)] disabled:opacity-40 outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-ink)]"
+            >
+              Start session
+            </button>
+          ) : closeoutData ? (
+            <SessionCloseout
+              setCount={loggedSets.length}
+              exerciseCount={new Set(loggedSets.map(s => s.exerciseId)).size}
+              unit={unit}
+              prsHit={closeoutData.prsHit}
+              workingLoadChanges={closeoutData.workingLoadChanges}
+              onStartNew={handleStartNewSession}
+            />
+          ) : (
         <div className="flex flex-col gap-[var(--space-lg)]">
           <div className="flex flex-col gap-[var(--space-sm)]">
             <ActiveContextCheckIn sessionId={sessionId} />
@@ -501,7 +522,9 @@ export default function LogSession() {
             )}
           </div>
         </div>
-      )}
+          )}
+        </div>
+      </div>
     </main>
   )
 }
