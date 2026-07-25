@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
+import Link from 'next/link'
 import { ConfidenceLine } from './components/ConfidenceLine'
 import { TextArea } from './components/TextArea'
 import { LoadingIndicator } from './components/LoadingIndicator'
@@ -101,13 +102,18 @@ export default function Home() {
 
   return (
     <main className="max-w-[640px] mx-auto px-[var(--space-sm)] py-[var(--space-2xl)]">
-      <header className="mb-[var(--space-xl)]">
-        <h1 className="font-[family-name:var(--font-serif)] text-[1.75rem] leading-tight text-[var(--color-text)]">
-          Pramana
-        </h1>
-        <p className="mt-[var(--space-3xs)] text-sm text-[var(--color-text-muted)]">
-          Tell it where you are. It will tell you what the evidence supports, and how sure it is.
-        </p>
+      <header className="mb-[var(--space-xl)] flex items-baseline justify-between">
+        <div>
+          <h1 className="font-[family-name:var(--font-serif)] text-[1.75rem] leading-tight text-[var(--color-text)]">
+            Pramana
+          </h1>
+          <p className="mt-[var(--space-3xs)] text-sm text-[var(--color-text-muted)]">
+            Tell it where you are. It will tell you what the evidence supports, and how sure it is.
+          </p>
+        </div>
+        <Link href="/log" className="text-sm text-[var(--color-text-secondary)] underline underline-offset-2">
+          Log session
+        </Link>
       </header>
 
       <div className="flex flex-col gap-[var(--space-lg)]" aria-live="polite" aria-atomic="false">
