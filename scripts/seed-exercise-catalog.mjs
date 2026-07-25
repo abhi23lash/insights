@@ -45,6 +45,21 @@ const CATALOG = [
   { name: 'Seated Calf Raise', aliases: [], movement_pattern: 'isolation', resistance_profile: 'plate_loaded', loading_type: 'external_weight', primary_muscle_group: 'calves', secondary_muscles: [], is_unilateral: false },
   { name: 'Rear Delt Fly', aliases: ['reverse fly', 'rear delt raise'], movement_pattern: 'isolation', resistance_profile: 'free_weight', loading_type: 'external_weight', primary_muscle_group: 'rear_delts', secondary_muscles: [], is_unilateral: false },
 
+  // Gap fill: pattern audit found vertical_push nearly empty, and zero
+  // coverage for hamstring/quad isolation, basic curls, traps, or core.
+  { name: 'Dumbbell Shoulder Press', aliases: ['DB shoulder press', 'seated DB press'], movement_pattern: 'vertical_push', resistance_profile: 'free_weight', loading_type: 'external_weight', primary_muscle_group: 'shoulders', secondary_muscles: ['triceps'], is_unilateral: false },
+  { name: 'Machine Shoulder Press', aliases: [], movement_pattern: 'vertical_push', resistance_profile: 'selectorized', loading_type: 'external_weight', primary_muscle_group: 'shoulders', secondary_muscles: ['triceps'], is_unilateral: false },
+  { name: 'Seated Leg Curl', aliases: ['leg curl'], movement_pattern: 'isolation', resistance_profile: 'selectorized', loading_type: 'external_weight', primary_muscle_group: 'hamstrings', secondary_muscles: [], is_unilateral: false },
+  { name: 'Lying Leg Curl', aliases: ['prone leg curl'], movement_pattern: 'isolation', resistance_profile: 'plate_loaded', loading_type: 'external_weight', primary_muscle_group: 'hamstrings', secondary_muscles: [], is_unilateral: false },
+  { name: 'Leg Extension', aliases: [], movement_pattern: 'isolation', resistance_profile: 'selectorized', loading_type: 'external_weight', primary_muscle_group: 'quads', secondary_muscles: [], is_unilateral: false },
+  { name: 'Barbell Curl', aliases: ['bicep curl'], movement_pattern: 'isolation', resistance_profile: 'free_weight', loading_type: 'external_weight', primary_muscle_group: 'biceps', secondary_muscles: [], is_unilateral: false },
+  { name: 'Barbell Shrug', aliases: ['shrug', 'trap shrug'], movement_pattern: 'isolation', resistance_profile: 'free_weight', loading_type: 'external_weight', primary_muscle_group: 'traps', secondary_muscles: [], is_unilateral: false },
+  { name: 'Face Pull', aliases: [], movement_pattern: 'isolation', resistance_profile: 'cable', loading_type: 'external_weight', primary_muscle_group: 'rear_delts', secondary_muscles: ['traps'], is_unilateral: false },
+  { name: 'Walking Lunge', aliases: ['lunge'], movement_pattern: 'squat', resistance_profile: 'free_weight', loading_type: 'external_weight', primary_muscle_group: 'quads', secondary_muscles: ['glutes'], is_unilateral: true },
+  { name: 'Cable Crunch', aliases: ['ab crunch'], movement_pattern: 'isolation', resistance_profile: 'cable', loading_type: 'external_weight', primary_muscle_group: 'abs', secondary_muscles: [], is_unilateral: false },
+  { name: 'Hanging Leg Raise', aliases: [], movement_pattern: 'isolation', resistance_profile: 'bodyweight', loading_type: 'bodyweight', primary_muscle_group: 'abs', secondary_muscles: [], is_unilateral: false },
+  { name: 'Trap Bar Deadlift', aliases: ['hex bar deadlift'], movement_pattern: 'hinge', resistance_profile: 'free_weight', loading_type: 'external_weight', primary_muscle_group: 'posterior_chain', secondary_muscles: [], is_unilateral: false },
+
   { name: 'Low-Bar Squat', aliases: ['low bar squat'], movement_pattern: 'squat', resistance_profile: 'free_weight', loading_type: 'external_weight', primary_muscle_group: 'quads', secondary_muscles: ['glutes', 'hamstrings'], is_unilateral: false },
   { name: 'Goblet Squat', aliases: [], movement_pattern: 'squat', resistance_profile: 'free_weight', loading_type: 'external_weight', primary_muscle_group: 'quads', secondary_muscles: [], is_unilateral: false },
   { name: 'Smith Machine Squat', aliases: ['smith squat'], movement_pattern: 'squat', resistance_profile: 'plate_loaded', loading_type: 'external_weight', primary_muscle_group: 'quads', secondary_muscles: ['glutes'], is_unilateral: false },
