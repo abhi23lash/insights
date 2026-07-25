@@ -5,6 +5,20 @@ import Link from 'next/link'
 import { ConfidenceLine } from './components/ConfidenceLine'
 import { TextArea } from './components/TextArea'
 import { LoadingIndicator } from './components/LoadingIndicator'
+import { PreChatContextModal, type PreChatContext } from './components/PreChatContextModal'
+
+const EMPTY_CONTEXT: PreChatContext = { age: '', trainingAge: '', goal: '', daysPerWeek: '' }
+const PRECHAT_STORAGE_KEY = 'pramana_prechat_context_v1'
+
+function formatContextNote(context: PreChatContext): string | null {
+  const parts: string[] = []
+  if (context.age.trim()) parts.push(`${context.age.trim()} years old`)
+  if (context.trainingAge.trim()) parts.push(`training for ${context.trainingAge.trim()} years`)
+  if (context.goal.trim()) parts.push(`goal: ${context.goal.trim()}`)
+  if (context.daysPerWeek.trim()) parts.push(`${context.daysPerWeek.trim()} days per week available`)
+  if (parts.length === 0) return null
+  return `[Background: ${parts.join(', ')}]`
+}
 
 type Result = {
   recommendation: string
@@ -34,26 +48,63 @@ export default function Home() {
   const [turns, setTurns] = useState<Turn[]>([])
   const [draft, setDraft] = useState('')
   const [status, setStatus] = useState<'idle' | 'loading' | 'error'>('idle')
+  const [preChatContext, setPreChatContext] = useState<PreChatContext>(EMPTY_CONTEXT)
+  const [showPreChatModal, setShowPreChatModal] = useState(false)
+  const [hasStoredContext, setHasStoredContext] = useState(false)
   const bottomRef = useRef<HTMLDivElement>(null)
   const composerRef = useRef<HTMLTextAreaElement>(null)
+
+  useEffect(() => {
+    const stored = localStorage.getItem(PRECHAT_STORAGE_KEY)
+    if (stored) {
+      setPreChatContext(JSON.parse(stored))
+      setHasStoredContext(true)
+    } else {
+      setShowPreChatModal(true)
+    }
+  }, [])
 
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: 'smooth' })
   }, [turns, status])
 
   useEffect(() => {
-    if (status === 'idle') composerRef.current?.focus({ preventScroll: true })
-  }, [status])
+    if (status === 'idle' && !showPreChatModal) composerRef.current?.focus({ preventScroll: true })
+  }, [status, showPreChatModal])
+
+  const closePreChatModal = (context: PreChatContext) => {
+    localStorage.setItem(PRECHAT_STORAGE_KEY, JSON.stringify(context))
+    setPreChatContext(context)
+    setHasStoredContext(true)
+    setShowPreChatModal(false)
+  }
+
+  // First-time dismiss (Escape/backdrop/Skip) needs to persist "seen, nothing
+  // provided" so the modal doesn't nag on every reload. Reopening later via
+  // "Edit context" and cancelling should just close without clobbering
+  // whatever context was already saved.
+  const dismissPreChatModal = () => {
+    if (hasStoredContext) setShowPreChatModal(false)
+    else closePreChatModal(EMPTY_CONTEXT)
+  }
 
   const send = async (nextTurns: Turn[]) => {
     setTurns(nextTurns)
     setStatus('loading')
 
     try {
+      const apiMessages = nextTurns.map(toApiMessage)
+      // Fold pre-chat context into the first message only, invisibly -- it's
+      // never shown as its own turn, just silently informs the first answer.
+      if (nextTurns.length === 1) {
+        const note = formatContextNote(preChatContext)
+        if (note) apiMessages[0] = { ...apiMessages[0], content: `${note}\n\n${apiMessages[0].content}` }
+      }
+
       const res = await fetch('/api/recommend', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ messages: nextTurns.map(toApiMessage) }),
+        body: JSON.stringify({ messages: apiMessages }),
       })
 
       if (!res.ok) throw new Error('request failed')
@@ -102,6 +153,14 @@ export default function Home() {
 
   return (
     <main className="max-w-[640px] mx-auto px-[var(--space-sm)] py-[var(--space-2xl)]">
+      {showPreChatModal && (
+        <PreChatContextModal
+          initial={preChatContext}
+          onSubmit={closePreChatModal}
+          onDismiss={dismissPreChatModal}
+        />
+      )}
+
       <header className="mb-[var(--space-xl)] flex items-baseline justify-between">
         <div>
           <h1 className="font-[family-name:var(--font-serif)] text-[1.75rem] leading-tight text-[var(--color-text)]">
@@ -111,9 +170,17 @@ export default function Home() {
             Tell it where you are. It will tell you what the evidence supports, and how sure it is.
           </p>
         </div>
-        <Link href="/log" className="text-sm text-[var(--color-text-secondary)] underline underline-offset-2">
-          Log session
-        </Link>
+        <div className="flex items-baseline gap-[var(--space-sm)]">
+          <button
+            onClick={() => setShowPreChatModal(true)}
+            className="text-sm text-[var(--color-text-secondary)] underline underline-offset-2 outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-ink)]"
+          >
+            Edit context
+          </button>
+          <Link href="/log" className="text-sm text-[var(--color-text-secondary)] underline underline-offset-2">
+            Log session
+          </Link>
+        </div>
       </header>
 
       <div className="flex flex-col gap-[var(--space-lg)]" aria-live="polite" aria-atomic="false">
