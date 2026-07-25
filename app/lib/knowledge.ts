@@ -36,28 +36,37 @@ function extractTagWords(goal: string): string[] {
     .filter(word => word.length > 2 && !STOPWORDS.has(word))
 }
 
+// Exact-element overlap (Postgres array `ov`) can't match a hyphenated
+// compound tag like "training-frequency" against the word "frequency" --
+// the query gets split into single words on non-letters, but the stored tag
+// stays one hyphenated string, so it can never equal a fragment of itself.
+// Matching in-process against the whole table (small: dozens of rows) lets
+// this check substrings both ways instead.
+function tagsMatch(tags: string[], tagWords: string[]): boolean {
+  return tags.some(tag => tagWords.some(word => tag.includes(word) || word.includes(tag)))
+}
+
 export async function getMatchingEntries(goal: string, limit = 6): Promise<KnowledgeEntry[]> {
   const domains = matchDomains(goal)
   const tagWords = extractTagWords(goal)
 
-  const orParts: string[] = []
-  if (domains.length > 0) orParts.push(`domain.in.(${domains.join(',')})`)
-  if (tagWords.length > 0) orParts.push(`tags.ov.{${tagWords.join(',')}}`)
-
-  if (orParts.length === 0) return []
+  if (domains.length === 0 && tagWords.length === 0) return []
 
   const { data, error } = await supabaseServer
     .from('knowledge_entries')
     .select('id, domain, subdomain, claim, grade, source_type, eqs, applies_to, what_would_change_this, tags')
     .eq('active', true)
-    .or(orParts.join(','))
-    .order('eqs', { ascending: false, nullsFirst: false })
-    .limit(limit)
 
   if (error) {
     console.error('Knowledge base query failed:', error.message)
     return []
   }
 
-  return data ?? []
+  const matched = (data ?? []).filter(
+    entry => domains.includes(entry.domain) || tagsMatch(entry.tags, tagWords)
+  )
+
+  return matched
+    .sort((a, b) => (b.eqs ?? -1) - (a.eqs ?? -1))
+    .slice(0, limit)
 }
